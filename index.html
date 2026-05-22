@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Old Wisdom // Retold — The Hidden Curriculum Elite Families Never Share</title>
+<meta name="description" content="For generations, successful families have passed down the real rules of influence, strategy, and self-mastery — privately. Now it's in your teen's hands. The Social Playbook by Eric Han.">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-deep: #0C0C0F;
+  --bg-card: #151519;
+  --bg-card-hover: #1C1C22;
+  --bg-warm: #12110F;
+  --blue: #4D94FF;
+  --blue-soft: #6BA5FF;
+  --blue-glow: rgba(77,148,255,0.15);
+  --red: #E03E4E;
+  --red-soft: #FF6B7A;
+  --green: #3ECF8E;
+  --gold: #D4A84B;
+  --gold-soft: #E8C878;
+  --gold-glow: rgba(212,168,75,0.12);
+  --yellow-brush: #FFD700;
+  --white: #F5F5F5;
+  --text: #D4D4D8;
+  --text-dim: #8E8E96;
+  --text-muted: #5A5A64;
+  --border: rgba(255,255,255,0.06);
+  --border-warm: rgba(212,168,75,0.15);
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+html { scroll-behavior: auto; }
+body {
+  background: var(--bg-deep);
+  color: var(--white);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+/* ===== UTILITY ===== */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3rem); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+/* ===== GRAIN OVERLAY ===== */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(12,12,15,0.7);
+  backdrop-filter: blur(24px) saturate(1.6);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  border-bottom: 1px solid var(--border);
+  transition: transform 0.4s var(--ease-out);
+}
+.navbar.hide { transform: translateY(-100%); }
+
+.nav-brand {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+}
+
+.nav-right { display: flex; align-items: center; gap: 1.5rem; }
+
+.nav-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  transition: color 0.3s;
+}
+.nav-link:hover { color: var(--white); }
+
+.nav-btn {
+  padding: 0.45rem 1.2rem;
+  background: var(--gold);
+  color: var(--bg-deep);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.nav-btn:hover { background: var(--gold-soft); transform: translateY(-1px); }
+
+@media (max-width: 640px) {
+  .nav-link { display: none; }
+}
+
+/* ===== PROGRESS ===== */
+.progress {
+  position: fixed; top: 0; left: 0; height: 2px; z-index: 1001;
+  background: linear-gradient(90deg, var(--blue), var(--gold));
+  transform-origin: left; transform: scaleX(0);
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0 4rem;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.12;
+  pointer-events: none;
+}
+.hero-glow-1 { top: -10%; right: -5%; background: var(--blue); }
+.hero-glow-2 { bottom: -20%; left: -10%; background: var(--gold); opacity: 0.08; }
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text { flex: 1; min-width: 0; }
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  background: var(--blue-glow);
+  border: 1px solid rgba(77,148,255,0.2);
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--blue-soft);
+  margin-bottom: 1.5rem;
+}
+.hero-eyebrow .dot {
+  width: 6px; height: 6px;
+  background: var(--blue);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.hero-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.2rem;
+}
+.hero-h1 .accent { color: var(--gold); }
+
+.hero-sub {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 480px;
+  font-weight: 400;
+}
+.hero-sub strong { color: var(--white); font-weight: 600; }
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 2rem;
+  background: var(--gold);
+  color: var(--bg-deep);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s var(--ease-out);
+}
+.btn-primary:hover { background: var(--gold-soft); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(212,168,75,0.3); }
+.btn-primary svg { transition: transform 0.3s; }
+.btn-primary:hover svg { transform: translateX(3px); }
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.8rem;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.btn-secondary:hover { border-color: var(--text-dim); color: var(--white); background: rgba(255,255,255,0.03); }
+
+.hero-book-wrap {
+  flex: 0 0 auto;
+  width: clamp(240px, 30vw, 380px);
+  position: relative;
+}
+
+.hero-book-img {
+  width: 100%;
+  filter: drop-shadow(0 30px 60px rgba(0,0,0,0.6)) drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+  transition: transform 0.6s var(--ease-out);
+}
+.hero-book-wrap:hover .hero-book-img {
+  transform: translateY(-8px) rotate(1deg);
+}
+
+.hero-book-badge {
+  position: absolute;
+  top: -10px; right: -10px;
+  background: var(--blue);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  padding: 0.35rem 0.8rem;
+  border-radius: 6px;
+  transform: rotate(3deg);
+}
+
+@media (max-width: 768px) {
+  .hero-inner { flex-direction: column-reverse; text-align: center; }
+  .hero-book-wrap { width: 220px; }
+  .hero-sub { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
+}
+
+/* ===== TRUST BAR ===== */
+.trust-bar {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.trust-inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem 3rem;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+.trust-icon {
+  width: 20px; height: 20px;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+/* ===== PROBLEM SECTION ===== */
+.problem {
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  position: relative;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.problem-label {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.4em;
+  color: var(--red-soft);
+  margin-bottom: 1rem;
+}
+
+.problem-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.problem-body {
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.problem-body strong { color: var(--white); }
+
+.problem-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.problem-card {
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: all 0.3s;
+}
+.problem-card:hover { background: var(--bg-card-hover); border-color: rgba(255,255,255,0.1); }
+
+.problem-card-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.problem-card-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.problem-card-desc {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .problem-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== WHAT'S INSIDE ===== */
+.inside {
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  position: relative;
+}
+
+.inside-header {
+  text-align: center;
+  margin-bottom: clamp(3rem, 5vw, 4rem);
+}
+
+.section-label {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+
+.section-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.05;
+}
+
+.inside-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.inside-card {
+  padding: 2rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  transition: all 0.4s var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+.inside-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--blue);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-out);
+}
+.inside-card:hover::before { transform: scaleX(1); }
+.inside-card:hover { transform: translateY(-4px); border-color: rgba(77,148,255,0.15); }
+
+.inside-num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 0.8rem;
+  opacity: 0.6;
+}
+
+.inside-card-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.inside-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .inside-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== PARENT PITCH ===== */
+.parent-pitch {
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  background: var(--bg-warm);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.parent-pitch-glow {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; height: 500px;
+  background: var(--gold);
+  filter: blur(200px);
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+.parent-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.parent-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+.parent-h2 .warm { color: var(--gold-soft); }
+
+.parent-body {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.parent-checks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.parent-check {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.check-icon {
+  width: 22px; height: 22px;
+  background: rgba(212,168,75,0.15);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  flex-shrink: 0;
+  font-size: 0.75rem;
+}
+
+.parent-quote-card {
+  padding: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-warm);
+  border-radius: 16px;
+  position: relative;
+}
+
+.parent-quote-mark {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--gold);
+  line-height: 1;
+  opacity: 0.3;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.parent-quote-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-style: italic;
+  color: var(--text);
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.parent-quote-attr {
+  font-size: 0.85rem;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .parent-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== SERIES PREVIEW ===== */
+.series {
+  padding: clamp(5rem, 10vw, 8rem) 0;
+}
+
+.series-header {
+  text-align: center;
+  margin-bottom: clamp(3rem, 5vw, 4rem);
+}
+
+.series-header .section-h2 { margin-bottom: 0.8rem; }
+.series-sub {
+  font-size: 1rem;
+  color: var(--text-dim);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.series-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.series-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s var(--ease-out);
+  position: relative;
+}
+.series-card:hover { transform: translateY(-6px); }
+.series-card.live:hover { border-color: rgba(77,148,255,0.25); }
+.series-card.coming:hover { border-color: rgba(255,255,255,0.1); }
+
+.series-card-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
+.series-card-body {
+  padding: 1.5rem;
+}
+
+.series-card-status {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+.status-live { background: rgba(77,148,255,0.15); color: var(--blue-soft); }
+.status-coming { background: rgba(255,255,255,0.06); color: var(--text-dim); }
+
+.series-card-name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.4rem;
+}
+.card-s .series-card-name { color: var(--blue-soft); }
+.card-w .series-card-name { color: var(--red-soft); }
+.card-d .series-card-name { color: var(--gold-soft); }
+
+.series-card-desc {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.series-card-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.series-card .btn-primary {
+  width: 100%;
+  justify-content: center;
+  font-size: 0.85rem;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.coming-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(12,12,15,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.series-card.coming:hover .coming-overlay { opacity: 1; }
+.coming-overlay span {
+  padding: 0.6rem 1.5rem;
+  background: rgba(12,12,15,0.9);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .series-cards { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+}
+
+/* ===== EMAIL CAPTURE ===== */
+.capture {
+  padding: clamp(5rem, 10vw, 7rem) 0;
+  background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-warm) 100%);
+  border-top: 1px solid var(--border);
+}
+
+.capture-card {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem clamp(1.5rem, 4vw, 3rem);
+  background: var(--bg-card);
+  border: 1px solid var(--border-warm);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.capture-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--gold));
+}
+
+.capture-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.capture-h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.05;
+  margin-bottom: 0.8rem;
+}
+
+.capture-sub {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.capture-fine {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ===== BREVO FORM OVERRIDES ===== */
+#sib-container {
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+.sib-form { background-color: transparent !important; padding: 0 !important; }
+.sib-form-container { padding: 0 !important; }
+.sib-form-block { padding: 4px 0 !important; }
+.sib-form-block__button {
+  font-family: var(--font-body) !important;
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  color: var(--bg-deep) !important;
+  background-color: var(--gold) !important;
+  border-radius: 8px !important;
+  border: none !important;
+  padding: 0.8rem 1.5rem !important;
+  width: 100% !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+  letter-spacing: 0.05em !important;
+}
+.sib-form-block__button:hover { background-color: var(--gold-soft) !important; }
+#sib-container input.input {
+  font-family: var(--font-body) !important;
+  font-size: 0.92rem !important;
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  color: var(--white) !important;
+  padding: 0.8rem 1.2rem !important;
+  width: 100% !important;
+  outline: none !important;
+  transition: border-color 0.3s !important;
+}
+#sib-container input.input:focus { border-color: var(--gold) !important; }
+#sib-container input.input::placeholder { color: var(--text-muted) !important; }
+.entry__label { display: none !important; }
+.entry__specification { display: none !important; }
+.entry__error {
+  font-family: var(--font-body) !important;
+  font-size: 0.78rem !important;
+  background: rgba(224,62,78,0.1) !important;
+  border-color: var(--red) !important;
+  color: var(--red) !important;
+  border-radius: 6px !important;
+}
+.sib-form__declaration { display: none !important; }
+/* Success state */
+#sib-container .sib-form-message-panel {
+  background: rgba(62,207,142,0.08) !important;
+  border-color: rgba(62,207,142,0.3) !important;
+  border-radius: 10px !important;
+}
+.sib-form-message-panel__text {
+  font-family: var(--font-body) !important;
+  color: #3ECF8E !important;
+  font-size: 0.92rem !important;
+}
+
+/* ===== FINAL CTA ===== */
+.final-cta {
+  padding: clamp(6rem, 12vw, 10rem) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta-glow {
+  position: absolute;
+  top: 40%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px; height: 400px;
+  background: var(--gold);
+  filter: blur(180px);
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.final-cta-content { position: relative; z-index: 2; }
+
+.final-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.95;
+  margin-bottom: 1rem;
+}
+.final-h2 .gold { color: var(--gold); }
+
+.final-sub {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.final-cta .btn-primary {
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+}
+
+.final-book-strip {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 3rem;
+}
+.final-mini {
+  width: 70px;
+  border-radius: 4px;
+  opacity: 0.4;
+  transition: all 0.3s;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.4));
+}
+.final-mini.active { opacity: 1; transform: translateY(-4px); }
+.final-mini:hover { opacity: 0.8; }
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+.footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+</style>
+</head>
+<body>
+
+<script>
+// ===== SINGLE SOURCE OF TRUTH — update this one line only =====
+const AMAZON_URL = 'https://a.co/d/0gjqlkB6';
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('a[data-amazon]').forEach(a => { a.href = AMAZON_URL; });
+});
+</script>
+
+<!-- Progress -->
+<div class="progress" id="prog"></div>
+
+<!-- Navbar -->
+<nav class="navbar" id="nav">
+  <div class="nav-brand">OLD WISDOM // RETOLD</div>
+  <div class="nav-right">
+    <a href="#inside" class="nav-link">WHAT'S INSIDE</a>
+    <a href="#series" class="nav-link">THE SERIES</a>
+    <a data-amazon href="#" target="_blank" rel="noopener" class="nav-btn">BUY ON AMAZON</a>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="hero">
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          THE CURRICULUM SCHOOL WILL NEVER TEACH
+        </div>
+        <h1 class="hero-h1">
+          WHAT THE <span class="accent">ELITE</span><br>TEACH THEIR<br>KIDS PRIVATELY
+        </h1>
+        <p class="hero-sub">
+          For centuries, the world's most successful families passed down the real rules of influence, strategy, and social mastery — <strong>behind closed doors.</strong> This is that wisdom. Decoded for the next generation. Finally in your teen's hands.
+        </p>
+        <div class="hero-actions">
+          <a data-amazon href="#" target="_blank" rel="noopener" class="btn-primary">
+            GET IT ON AMAZON
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#capture" class="btn-secondary">
+            📖 FREE CHAPTER PREVIEW
+          </a>
+        </div>
+      </div>
+      <div class="hero-book-wrap">
+        <img class="hero-book-img" src="assets/social-cover.png" alt="The Social Playbook by Eric Han — 30 strategies for teens" />
+        <div class="hero-book-badge">BOOK 1</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TRUST BAR ==================== -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        CENTURIES OF PROVEN WISDOM
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        NOT TAUGHT IN ANY SCHOOL
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        LANGUAGE TEENS RESPECT
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg>
+        LIFE SKILLS THAT COMPOUND FOREVER
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PROBLEM ==================== -->
+<section class="problem" id="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="reveal">
+        <div class="problem-label">THE UNCOMFORTABLE TRUTH</div>
+        <h2 class="problem-h2">WHILE YOUR TEEN<br>STUDIES FOR TESTS,<br>OTHER KIDS ARE<br>LEARNING THIS</h2>
+        <p class="problem-body">
+          Somewhere right now, a parent is teaching their child how rooms work. How to read people. How to speak so others listen. How to walk into any situation and own it. <strong>They didn't learn it at school. Nobody does.</strong>
+        </p>
+        <p class="problem-body">
+          Sun Tzu, Aristotle, Marcus Aurelius, Carnegie — the sharpest minds in human history decoded influence, strategy, and human nature. <strong>Successful families have quietly applied this wisdom for generations.</strong> It's why some kids seem to just "get it" — and others spend years figuring out what they were never taught.
+        </p>
+        <p class="problem-body">
+          Your teen doesn't have to be one of the ones who figures it out too late.
+        </p>
+      </div>
+      <div class="problem-cards reveal">
+        <div class="problem-card">
+          <div class="problem-card-icon">🎓</div>
+          <div>
+            <div class="problem-card-title">School teaches knowledge. Not power.</div>
+            <div class="problem-card-desc">Grades open doors. Social intelligence determines what happens once they're inside. Most teens graduate never learning the difference.</div>
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-icon">🧱</div>
+          <div>
+            <div class="problem-card-title">Social gaps become career gaps</div>
+            <div class="problem-card-desc">The teen who can't read a room or handle conflict becomes the adult who gets overlooked — no matter how talented they are.</div>
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-icon">⏳</div>
+          <div>
+            <div class="problem-card-title">These skills take years to self-teach</div>
+            <div class="problem-card-desc">Most people don't understand how influence works until their 30s — after a decade of missed opportunities, wrong friendships, and avoidable failure.</div>
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-icon">🔒</div>
+          <div>
+            <div class="problem-card-title">The wisdom exists. It was just never accessible.</div>
+            <div class="problem-card-desc">The classics are dense and written for scholars. Until now, no one had translated them into a form a modern teen would actually pick up and use.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHAT'S INSIDE ==================== -->
+<section class="inside" id="inside">
+  <div class="container">
+    <div class="inside-header reveal">
+      <div class="section-label">WHAT YOUR TEEN GAINS</div>
+      <h2 class="section-h2">SKILLS THAT COMPOUND<br>FOR THE REST OF THEIR LIFE</h2>
+    </div>
+    <div class="inside-grid">
+      <div class="inside-card reveal">
+        <div class="inside-num">01</div>
+        <div class="inside-card-title">Walk Into Any Room With Confidence</div>
+        <div class="inside-card-desc">Conversation frameworks drawn from ancient rhetoric — rebuilt for how teens actually talk. No more freezing up, no more awkward silences.</div>
+      </div>
+      <div class="inside-card reveal">
+        <div class="inside-num">02</div>
+        <div class="inside-card-title">Read People Before They Speak</div>
+        <div class="inside-card-desc">The same pattern recognition that generals, diplomats, and negotiators use — distilled into habits a teen can start applying tomorrow.</div>
+      </div>
+      <div class="inside-card reveal">
+        <div class="inside-num">03</div>
+        <div class="inside-card-title">Become Someone Others Want to Follow</div>
+        <div class="inside-card-desc">Authentic influence — the kind that opens doors, earns respect, and makes people remember you. Not manipulation. The real thing.</div>
+      </div>
+      <div class="inside-card reveal">
+        <div class="inside-num">04</div>
+        <div class="inside-card-title">Handle Pressure, Conflict and Criticism</div>
+        <div class="inside-card-desc">Stoic and strategic frameworks for staying composed when it matters most — peer pressure, confrontations, high-stakes moments.</div>
+      </div>
+      <div class="inside-card reveal">
+        <div class="inside-num">05</div>
+        <div class="inside-card-title">Stand Apart in Every Setting</div>
+        <div class="inside-card-desc">There's a specific quality that makes certain people unforgettable. This playbook breaks down exactly what it is — and how to develop it.</div>
+      </div>
+      <div class="inside-card reveal">
+        <div class="inside-num">06</div>
+        <div class="inside-card-title">A Compounding Advantage Over Others</div>
+        <div class="inside-card-desc">Every skill in this book builds on the last. Learn these at 15 and you're a decade ahead of people who only discover them at 35.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PARENT PITCH ==================== -->
+<section class="parent-pitch" id="parents">
+  <div class="parent-pitch-glow"></div>
+  <div class="container">
+    <div class="parent-grid">
+      <div class="reveal">
+        <div class="section-label">A NOTE FOR PARENTS</div>
+        <h2 class="parent-h2">THE PRIVATE EDUCATION<br><span class="warm">MONEY USED TO BE<br>THE ONLY WAY TO GET</span></h2>
+        <p class="parent-body">
+          Elite schools don't just teach academics. They teach students how to carry themselves. How to network. How to enter a room and be taken seriously. How to think strategically and act with composure. That's always been the real advantage — and it was never about the curriculum.
+        </p>
+        <p class="parent-body">
+          This series packages that private education into something your teen will actually read — without pressure, without lectures, without it feeling like homework.
+        </p>
+        <div class="parent-checks">
+          <div class="parent-check">
+            <div class="check-icon">✓</div>
+            Built on philosophy's greatest minds — Sun Tzu, Aristotle, the Stoics — in language teens absorb naturally
+          </div>
+          <div class="parent-check">
+            <div class="check-icon">✓</div>
+            Gives shy or socially anxious teens a system, not just "be more confident" advice
+          </div>
+          <div class="parent-check">
+            <div class="check-icon">✓</div>
+            Develops the emotional intelligence and self-awareness employers and universities look for
+          </div>
+          <div class="parent-check">
+            <div class="check-icon">✓</div>
+            No pressure, no shame — reads like a strategy guide, not a self-help lecture
+          </div>
+          <div class="parent-check">
+            <div class="check-icon">✓</div>
+            Skills that transfer to every area of life — friendships, leadership, future careers
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="parent-quote-card">
+          <div class="parent-quote-mark">"</div>
+          <p class="parent-quote-text">The families who've produced the world's most successful people have always understood something the rest of us weren't told: mastering people is a skill — and it can be taught. This is that lesson. Finally written for the generation that needs it most.</p>
+          <div class="parent-quote-attr">— FROM THE INTRODUCTION</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERIES PREVIEW ==================== -->
+<section class="series" id="series">
+  <div class="container">
+    <div class="series-header reveal">
+      <div class="section-label">THE FULL SYSTEM</div>
+      <h2 class="section-h2">ONE BOOK GIVES THEM<br>AN EDGE. THREE BOOKS<br>CHANGES THEIR TRAJECTORY.</h2>
+      <p class="series-sub">Each playbook targets a different domain of mastery. Together they form the complete private curriculum.</p>
+    </div>
+    <div class="series-cards">
+      <!-- Social — LIVE -->
+      <div class="series-card live card-s reveal">
+        <img class="series-card-img" src="assets/social-cover.png" alt="The Social Playbook" />
+        <div class="series-card-body">
+          <div class="series-card-status status-live">BOOK 1 — AVAILABLE NOW</div>
+          <h3 class="series-card-name">THE SOCIAL PLAYBOOK</h3>
+          <p class="series-card-desc">The hidden rules of human connection — how to make people feel seen, remembered, and drawn to you. Start here.</p>
+          <div class="series-card-meta">30 strategies · ~180 pages · Paperback & Kindle</div>
+          <a data-amazon href="#" target="_blank" rel="noopener" class="btn-primary">
+            GET IT ON AMAZON
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- War — COMING -->
+      <div class="series-card coming card-w reveal">
+        <img class="series-card-img" src="assets/series-mockup.png" alt="The War Playbook" />
+        <div class="series-card-body">
+          <div class="series-card-status status-coming">BOOK 2 — COMING SOON</div>
+          <h3 class="series-card-name">THE WAR PLAYBOOK</h3>
+          <p class="series-card-desc">How to win without fighting — strategic thinking, conflict navigation, and staying three moves ahead. Built on Sun Tzu and the great strategists.</p>
+          <div class="series-card-meta">33 strategies · Be first to know ↓</div>
+        </div>
+        <div class="coming-overlay"><span>🔔 JOIN THE WAITLIST BELOW</span></div>
+      </div>
+      <!-- Discipline — COMING -->
+      <div class="series-card coming card-d reveal">
+        <img class="series-card-img" src="assets/series-mockup.png" alt="The Discipline Playbook" />
+        <div class="series-card-body">
+          <div class="series-card-status status-coming">BOOK 3 — COMING SOON</div>
+          <h3 class="series-card-name">THE DISCIPLINE PLAYBOOK</h3>
+          <p class="series-card-desc">The inner game — habits, self-mastery, and the mental frameworks elite performers have used to outwork everyone around them.</p>
+          <div class="series-card-meta">28 strategies · Be first to know ↓</div>
+        </div>
+        <div class="coming-overlay"><span>🔔 JOIN THE WAITLIST BELOW</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ADULTS TOO ==================== -->
+<section style="padding: clamp(5rem,10vw,8rem) 0; background: var(--bg-warm); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem,5vw,5rem); align-items: center;">
+      <div class="reveal">
+        <div class="section-label" style="color: var(--red-soft);">NOT JUST FOR TEENS</div>
+        <h2 class="parent-h2">MOST ADULTS ARE<br><span style="color: var(--gold-soft);">STILL MISSING<br>THESE SKILLS</span></h2>
+        <p class="problem-body">
+          Here's the thing nobody says out loud: <strong>the social gaps that hold teens back don't disappear at 18.</strong> They follow people into careers, marriages, and leadership roles. The adult who struggles to be heard in meetings, who avoids conflict until it explodes, who can't quite connect with the people they need — they're still running the same patterns from adolescence.
+        </p>
+        <p class="problem-body">
+          The Social Playbook works for adults too. And there's something powerful about a parent reading it alongside their teen — not just to understand what they're learning, but to close the same gaps in themselves, at the same time.
+        </p>
+        <p class="problem-body" style="color: var(--gold-soft); font-weight: 600;">
+          The best thing you can give your teen isn't a book. It's a parent who's applying the same principles.
+        </p>
+      </div>
+      <div class="reveal">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="problem-card">
+            <div class="problem-card-icon">💼</div>
+            <div>
+              <div class="problem-card-title">Career impact — still underestimated</div>
+              <div class="problem-card-desc">Influence, strategic communication, and reading rooms determine who gets promoted. Technical skill is rarely the differentiator past a certain level.</div>
+            </div>
+          </div>
+          <div class="problem-card">
+            <div class="problem-card-icon">🧩</div>
+            <div>
+              <div class="problem-card-title">Conflict patterns run deep</div>
+              <div class="problem-card-desc">Most adult conflict — in relationships, at work, with family — traces to underdeveloped skills formed in adolescence. This is where they get corrected.</div>
+            </div>
+          </div>
+          <div class="problem-card">
+            <div class="problem-card-icon">🔁</div>
+            <div>
+              <div class="problem-card-title">Practice together, compound together</div>
+              <div class="problem-card-desc">When parent and teen work from the same framework, every dinner conversation becomes a low-stakes rehearsal. The learning multiplies.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== QUIZ CTA ==================== -->
+<section style="padding: clamp(4rem,8vw,6rem) 0;">
+  <div class="container">
+    <div class="reveal" style="max-width: 700px; margin: 0 auto; text-align: center; padding: 3rem clamp(1.5rem,4vw,3rem); background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--blue), var(--gold));"></div>
+      <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎯</div>
+      <h3 class="capture-h3" style="font-family: var(--font-display); font-size: clamp(1.6rem,4vw,2.2rem); margin-bottom: 0.8rem;">NOT SURE IF YOUR TEEN NEEDS THIS?</h3>
+      <p class="capture-sub" style="font-size: 0.95rem; color: var(--text-dim); line-height: 1.7; margin-bottom: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto;">Take our free 12-question Social Skills Diagnostic. You'll get a personalised breakdown of exactly which skill areas your teen — or you — are missing, and which chapters address each one.</p>
+      <div style="display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap;">
+        <a href="quiz.html" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.85rem 2rem; background: var(--gold); color: var(--bg-deep); font-size: 0.95rem; font-weight: 700; border-radius: 8px; text-decoration: none; transition: all 0.3s;">
+          TAKE THE FREE QUIZ
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.75rem; color: var(--text-muted);">~3 minutes · Free · Personalised report delivered instantly</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHO THIS IS NOT FOR ==================== -->
+<style>
+.notfor { padding: clamp(4rem,8vw,6rem) 0; border-top: 1px solid var(--border); }
+.notfor-inner { max-width: 680px; margin: 0 auto; }
+.notfor-head { text-align: center; margin-bottom: 2.5rem; }
+.notfor-list { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
+.notfor-row {
+  padding: 1rem 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--red);
+  border-radius: 0 12px 12px 0;
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+.notfor-row.yes { border-left-color: var(--green); }
+.notfor-icon { font-size: 1rem; flex-shrink: 0; margin-top: 2px; line-height: 1; }
+.notfor-icon.x { color: var(--red); }
+.notfor-icon.y { color: var(--green); }
+.notfor-title { font-weight: 600; font-size: 0.93rem; margin-bottom: 0.2rem; }
+.notfor-desc { font-size: 0.82rem; color: var(--text-dim); line-height: 1.5; }
+</style>
+<section class="notfor">
+  <div class="container">
+    <div class="notfor-inner">
+      <div class="notfor-head reveal">
+        <div class="section-label">IMPORTANT</div>
+        <h2 class="section-h2" style="font-size: clamp(2rem,5vw,3.2rem);">THIS BOOK IS<br>NOT FOR EVERYONE</h2>
+      </div>
+
+      <div class="notfor-list reveal">
+        <div class="notfor-row">
+          <div class="notfor-icon x">✕</div>
+          <div>
+            <div class="notfor-title">Parents who think buying a book is enough</div>
+            <div class="notfor-desc">Handing your teen a book and walking away won't move the needle. This works best when a parent is loosely engaged — even just asking "what did you read today?" makes a difference.</div>
+          </div>
+        </div>
+        <div class="notfor-row">
+          <div class="notfor-icon x">✕</div>
+          <div>
+            <div class="notfor-title">Anyone who believes social skills are fixed personality traits</div>
+            <div class="notfor-desc">If you genuinely believe people are born social or not — and can't be taught — this book will challenge that. But it won't work if you're not open to it.</div>
+          </div>
+        </div>
+        <div class="notfor-row">
+          <div class="notfor-icon x">✕</div>
+          <div>
+            <div class="notfor-title">Teens who aren't ready to look at themselves honestly</div>
+            <div class="notfor-desc">The strategies here require some self-awareness. If a teen isn't willing to reflect on how they come across to others, the insights won't land yet. The timing has to be right.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notfor-list reveal">
+        <div class="notfor-row yes">
+          <div class="notfor-icon y">✓</div>
+          <div>
+            <div class="notfor-title">Teens who feel overlooked and want to change that — seriously</div>
+            <div class="notfor-desc">If you sense the gap and you're ready to close it, the system is here. Tips, frameworks, and the reasoning behind each one — so you actually understand why it works.</div>
+          </div>
+        </div>
+        <div class="notfor-row yes">
+          <div class="notfor-icon y">✓</div>
+          <div>
+            <div class="notfor-title">Parents who want their kid to thrive — not just survive adolescence</div>
+            <div class="notfor-desc">You already know the gap is real. This is the tool you've been looking for — and one you can read alongside them.</div>
+          </div>
+        </div>
+        <div class="notfor-row yes">
+          <div class="notfor-icon y">✓</div>
+          <div>
+            <div class="notfor-title">Adults who recognise they're still closing these gaps themselves</div>
+            <div class="notfor-desc">The most powerful thing you can model for your teen is being a learner. Read it together. Apply it together. The conversations that follow are half the value.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== EMAIL CAPTURE ==================== -->
+<section class="capture" id="capture">
+  <div class="container">
+    <div class="capture-card reveal">
+      <div class="capture-icon">🏛️</div>
+      <h3 class="capture-h3">GET CHAPTER 1 — FREE</h3>
+      <p class="capture-sub">See the wisdom for yourself before you buy. Get the first chapter delivered to your inbox now — plus first access when Books 2 and 3 drop. Most people on this list will have the full series before it's widely known.</p>
+
+      <div id="sib-form-container" class="sib-form-container" style="max-width:440px;margin:0 auto 1rem;">
+        <div id="sib-container" class="sib-container--large sib-container--vertical">
+          <form id="sib-form" method="POST" action="https://2df17076.sibforms.com/serve/MUIFACze_wUIeuITzxnAEwXh8Gy1hsXVG4fD5YN2aNgM7p4gOSzphsjUKatSn-wAF3cwYJ8oX9dWi70j7B5fevA1xn_QlA_BoRjhbgdH1Z7gGFHpVB0TIjCkQa2lk-oh50sFLt0NlCZerukxI7n9Q2bKJK9VDk3UcDBNB34WM1xNMbSZz9KUCNLfTkJNewBzfhtSUfwTWYLux2pRfA==" data-type="subscription">
+            <div style="padding:6px 0;">
+              <div class="sib-input sib-form-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row">
+                    <label class="entry__label" for="EMAIL">Email</label>
+                    <div class="entry__field">
+                      <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="your@email.com" data-required="true" required />
+                    </div>
+                  </div>
+                  <label class="entry__error entry__error--primary"></label>
+                </div>
+              </div>
+            </div>
+            <div style="padding:6px 0;">
+              <div class="sib-form-block">
+                <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+                  <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                    <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                  </svg>
+                  SEND IT →
+                </button>
+              </div>
+            </div>
+            <input type="text" name="email_address_check" value="" class="input--hidden">
+            <input type="hidden" name="locale" value="en">
+            <input type="hidden" name="html_type" value="simple">
+          </form>
+        </div>
+      </div>
+
+      <p class="capture-fine">No spam. Unsubscribe anytime. Your email stays between us.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FINAL CTA ==================== -->
+<section class="final-cta" id="cta">
+  <div class="final-cta-glow"></div>
+  <div class="container">
+    <div class="final-cta-content reveal">
+      <h2 class="final-h2">DON'T LET THEM<br><span class="gold">FIGURE IT OUT AT 35.</span></h2>
+      <p class="final-sub">The wisdom that changes trajectories. Finally written for the generation that needs it most. Give your teen the edge that used to cost a private education.</p>
+      <a data-amazon href="#" target="_blank" rel="noopener" class="btn-primary">
+        GET THE SOCIAL PLAYBOOK
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <div class="final-book-strip">
+        <img class="final-mini active" src="assets/social-cover.png" alt="Book 1" />
+        <img class="final-mini" src="assets/series-mockup.png" alt="Book 2" />
+        <img class="final-mini" src="assets/series-mockup.png" alt="Book 3" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">OLD WISDOM // RETOLD</div>
+    <div class="footer-copy">© 2026 Eric Han. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+// ===== Progress Bar =====
+gsap.to('#prog', {
+  scaleX: 1, ease: 'none',
+  scrollTrigger: { trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: 0.3 }
+});
+
+// ===== Navbar auto-hide =====
+let lastY = 0;
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  nav.classList.toggle('hide', y > lastY && y > 80);
+  lastY = y;
+}, { passive: true });
+
+// ===== Hero entrance =====
+gsap.set('.hero-eyebrow', { opacity: 0, y: 20 });
+gsap.set('.hero-h1', { opacity: 0, y: 40 });
+gsap.set('.hero-sub', { opacity: 0, y: 20 });
+gsap.set('.hero-actions', { opacity: 0, y: 20 });
+gsap.set('.hero-book-img', { opacity: 0, y: 60, scale: 0.92 });
+gsap.set('.hero-book-badge', { opacity: 0, scale: 0.8 });
+
+const htl = gsap.timeline({ delay: 0.2 });
+htl
+  .to('.hero-book-img', { opacity: 1, y: 0, scale: 1, duration: 1, ease: 'power3.out' })
+  .to('.hero-book-badge', { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(2)' }, '-=0.5')
+  .to('.hero-eyebrow', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.6')
+  .to('.hero-h1', { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')
+  .to('.hero-sub', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
+  .to('.hero-actions', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.3');
+
+// ===== Hero parallax on scroll =====
+gsap.to('.hero-book-img', {
+  y: -80, scale: 0.9, ease: 'none',
+  scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1 }
+});
+
+// ===== Scroll reveals =====
+document.querySelectorAll('.reveal').forEach(el => {
+  gsap.to(el, {
+    opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+    scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
+  });
+});
+
+// ===== Inside cards stagger =====
+gsap.utils.toArray('.inside-card').forEach((card, i) => {
+  gsap.to(card, {
+    opacity: 1, y: 0, duration: 0.7, delay: i * 0.08, ease: 'power3.out',
+    scrollTrigger: { trigger: card, start: 'top 88%', toggleActions: 'play none none none' }
+  });
+});
+
+// ===== Problem cards stagger =====
+gsap.utils.toArray('.problem-card').forEach((card, i) => {
+  gsap.from(card, {
+    opacity: 0, x: 30, duration: 0.6, delay: i * 0.1, ease: 'power3.out',
+    scrollTrigger: { trigger: card, start: 'top 90%', toggleActions: 'play none none none' }
+  });
+});
+
+// ===== Series cards stagger =====
+gsap.utils.toArray('.series-card').forEach((card, i) => {
+  gsap.to(card, {
+    opacity: 1, y: 0, duration: 0.7, delay: i * 0.12, ease: 'power3.out',
+    scrollTrigger: { trigger: card, start: 'top 88%', toggleActions: 'play none none none' }
+  });
+});
+
+// ===== Email capture =====
+function handleCapture() {
+  const input = document.querySelector('.capture-input');
+  const email = input.value.trim();
+  if (!email || !email.includes('@')) {
+    input.style.borderColor = 'var(--red)';
+    setTimeout(() => input.style.borderColor = '', 1500);
+    return;
+  }
+  // Replace with actual email service integration
+  const card = document.querySelector('.capture-card');
+  card.innerHTML = `
+    <div style="padding: 2rem 0;">
+      <div style="font-size: 3rem; margin-bottom: 1rem;">🎉</div>
+      <h3 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 0.8rem;">YOU'RE IN</h3>
+      <p style="color: var(--text-dim); font-size: 0.95rem;">Check your inbox for Chapter 1. We'll notify you when the next books drop.</p>
+    </div>
+  `;
+}
+
+// Enter key submit
+document.querySelector('.capture-input')?.addEventListener('keydown', e => {
+  if (e.key === 'Enter') handleCapture();
+});
+</script>
+
+</body>
+</html>

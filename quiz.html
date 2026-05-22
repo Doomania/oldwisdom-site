@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Skills Diagnostic — Old Wisdom // Retold</title>
+<meta name="description" content="A 12-question diagnostic to identify your teen's (or your own) social skill gaps — and the exact strategies to fix them.">
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0C0C0F;
+  --bg-card: #131318;
+  --bg-elevated: #1A1A22;
+  --gold: #D4A84B;
+  --gold-soft: #E8C878;
+  --gold-dim: rgba(212,168,75,0.12);
+  --gold-border: rgba(212,168,75,0.2);
+  --blue: #4D94FF;
+  --blue-dim: rgba(77,148,255,0.1);
+  --red: #E03E4E;
+  --red-dim: rgba(224,62,78,0.1);
+  --green: #3ECF8E;
+  --green-dim: rgba(62,207,142,0.1);
+  --white: #F0F0F2;
+  --text: #C8C8D0;
+  --dim: #7A7A88;
+  --muted: #44444E;
+  --border: rgba(255,255,255,0.06);
+  --font-d: 'Bebas Neue', sans-serif;
+  --font-b: 'Outfit', sans-serif;
+  --ease: cubic-bezier(0.23, 1, 0.32, 1);
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+html, body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--font-b);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Grain */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Ambient glow */
+.ambient {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(140px);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.ambient-1 { width: 500px; height: 500px; top: -100px; right: -100px; background: var(--gold); }
+.ambient-2 { width: 400px; height: 400px; bottom: -100px; left: -100px; background: var(--blue); }
+body.path-teen .ambient-1 { opacity: 0.06; }
+body.path-teen .ambient-2 { opacity: 0.04; }
+body.path-parent .ambient-1 { opacity: 0.08; }
+body.path-parent .ambient-2 { opacity: 0.03; }
+
+/* Layout */
+.screen {
+  display: none;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  animation: fadeUp 0.5s var(--ease) both;
+}
+.screen.active { display: flex; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.inner {
+  width: 100%;
+  max-width: 680px;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(12,12,15,0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+.header-logo {
+  font-family: var(--font-d);
+  font-size: 0.9rem;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+}
+.header-back {
+  font-size: 0.8rem;
+  color: var(--dim);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.header-back:hover { color: var(--white); }
+
+/* ===== SPLASH ===== */
+.splash-label {
+  font-family: var(--font-d);
+  font-size: 0.75rem;
+  letter-spacing: 0.5em;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.splash-h1 {
+  font-family: var(--font-d);
+  font-size: clamp(2.8rem, 8vw, 5rem);
+  line-height: 0.95;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+.splash-h1 .g { color: var(--gold); }
+
+.splash-sub {
+  text-align: center;
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  max-width: 520px;
+  margin: 0 auto 2.5rem;
+}
+.splash-sub strong { color: var(--white); }
+
+.path-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.path-card {
+  padding: 2rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.35s var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+.path-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+.path-card.teen::after { background: radial-gradient(ellipse at 50% 0%, rgba(77,148,255,0.1), transparent 70%); }
+.path-card.parent::after { background: radial-gradient(ellipse at 50% 0%, rgba(212,168,75,0.1), transparent 70%); }
+.path-card:hover { transform: translateY(-4px); }
+.path-card.teen:hover { border-color: rgba(77,148,255,0.3); }
+.path-card.parent:hover { border-color: rgba(212,168,75,0.3); }
+.path-card:hover::after { opacity: 1; }
+
+.path-emoji { font-size: 2.5rem; margin-bottom: 0.8rem; display: block; }
+.path-title {
+  font-family: var(--font-d);
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+.path-card.teen .path-title { color: var(--blue); }
+.path-card.parent .path-title { color: var(--gold); }
+.path-desc { font-size: 0.82rem; color: var(--dim); line-height: 1.4; }
+
+.splash-note {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+@media (max-width: 480px) {
+  .path-cards { grid-template-columns: 1fr; }
+}
+
+/* ===== PROGRESS BAR ===== */
+.quiz-progress {
+  margin-bottom: 2rem;
+}
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.progress-label {
+  font-size: 0.75rem;
+  color: var(--dim);
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+.progress-count {
+  font-family: var(--font-d);
+  font-size: 1rem;
+  color: var(--gold);
+}
+.progress-track {
+  height: 3px;
+  background: var(--muted);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--gold));
+  border-radius: 3px;
+  transition: width 0.5s var(--ease);
+}
+
+/* ===== QUESTION ===== */
+.q-category {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+.cat-connection { background: var(--blue-dim); color: var(--blue); }
+.cat-influence { background: var(--gold-dim); color: var(--gold-soft); }
+.cat-conflict { background: var(--red-dim); color: var(--red); }
+.cat-awareness { background: var(--green-dim); color: var(--green); }
+
+.q-text {
+  font-family: var(--font-d);
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  line-height: 1.15;
+  margin-bottom: 0.6rem;
+}
+
+.q-scenario {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  padding: 1rem 1.2rem;
+  background: var(--bg-elevated);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.option {
+  padding: 1rem 1.3rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  transition: all 0.25s var(--ease);
+  text-align: left;
+}
+.option:hover { background: var(--bg-elevated); border-color: rgba(255,255,255,0.12); transform: translateX(4px); }
+.option.selected {
+  background: var(--gold-dim);
+  border-color: var(--gold-border);
+}
+
+.option-letter {
+  width: 26px; height: 26px;
+  border-radius: 6px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-d);
+  font-size: 0.85rem;
+  color: var(--dim);
+  flex-shrink: 0;
+  transition: all 0.25s;
+}
+.option.selected .option-letter {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--bg);
+}
+
+.option-text { font-size: 0.92rem; color: var(--text); line-height: 1.45; padding-top: 2px; }
+.option.selected .option-text { color: var(--white); }
+
+.q-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.btn-ghost {
+  padding: 0.6rem 1.2rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--dim);
+  font-family: var(--font-b);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-ghost:hover { border-color: var(--text); color: var(--white); }
+.btn-ghost:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.btn-next {
+  padding: 0.7rem 1.8rem;
+  background: var(--gold);
+  border: none;
+  border-radius: 8px;
+  color: var(--bg);
+  font-family: var(--font-b);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.btn-next:hover { background: var(--gold-soft); transform: translateY(-2px); }
+.btn-next:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+/* ===== EMAIL GATE ===== */
+.gate-icon { font-size: 3rem; text-align: center; margin-bottom: 1rem; }
+.gate-h2 {
+  font-family: var(--font-d);
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  text-align: center;
+  line-height: 1.05;
+  margin-bottom: 0.8rem;
+}
+.gate-sub {
+  text-align: center;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 480px;
+  margin-left: auto; margin-right: auto;
+}
+
+.gate-preview {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.gate-pill {
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--dim);
+}
+
+.gate-form {
+  display: flex;
+  gap: 0.6rem;
+  max-width: 440px;
+  margin: 0 auto 0.8rem;
+}
+.gate-input {
+  flex: 1;
+  padding: 0.85rem 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--white);
+  font-family: var(--font-b);
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.gate-input::placeholder { color: var(--muted); }
+.gate-input:focus { border-color: var(--gold); }
+.gate-input.error { border-color: var(--red); }
+
+.gate-submit {
+  padding: 0.85rem 1.5rem;
+  background: var(--gold);
+  color: var(--bg);
+  font-family: var(--font-b);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+.gate-submit:hover { background: var(--gold-soft); }
+
+.gate-fine {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+/* ===== BREVO OVERRIDES (quiz) ===== */
+#sib-container {
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+.sib-form { background-color: transparent !important; padding: 0 !important; }
+.sib-form-container { padding: 0 !important; }
+.sib-form-block { padding: 4px 0 !important; }
+.sib-form-block__button {
+  font-family: var(--font-b) !important;
+  font-size: 0.92rem !important;
+  font-weight: 700 !important;
+  color: var(--bg) !important;
+  background-color: var(--gold) !important;
+  border-radius: 10px !important;
+  border: none !important;
+  padding: 0.85rem 1.5rem !important;
+  width: 100% !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+  letter-spacing: 0.05em !important;
+}
+.sib-form-block__button:hover { background-color: var(--gold-soft) !important; }
+#sib-container input.input {
+  font-family: var(--font-b) !important;
+  font-size: 0.92rem !important;
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px !important;
+  color: var(--white) !important;
+  padding: 0.85rem 1.2rem !important;
+  width: 100% !important;
+  outline: none !important;
+  transition: border-color 0.3s !important;
+}
+#sib-container input.input:focus { border-color: var(--gold) !important; }
+#sib-container input.input::placeholder { color: var(--muted) !important; }
+.entry__label { display: none !important; }
+.entry__specification { display: none !important; }
+.entry__error {
+  font-family: var(--font-b) !important;
+  font-size: 0.78rem !important;
+  background: rgba(224,62,78,0.1) !important;
+  border-color: var(--red) !important;
+  color: var(--red) !important;
+  border-radius: 6px !important;
+}
+.sib-form__declaration { display: none !important; }
+
+@media (max-width: 480px) {
+  .gate-form { flex-direction: column; }
+}
+
+/* ===== RESULTS ===== */
+.result-header { margin-bottom: 2rem; }
+
+.result-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.result-profile {
+  font-family: var(--font-d);
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.result-tagline {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+}
+
+.result-score-bar {
+  margin-bottom: 2rem;
+}
+.score-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--dim);
+  margin-bottom: 0.4rem;
+}
+.score-track {
+  height: 8px;
+  background: var(--muted);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.score-fill {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 1.2s var(--ease) 0.3s;
+}
+
+.gaps-title {
+  font-family: var(--font-d);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.gap-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.gap-card {
+  padding: 1.2rem 1.4rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: start;
+  animation: slideIn 0.5s var(--ease) both;
+}
+.gap-card:nth-child(2) { animation-delay: 0.1s; }
+.gap-card:nth-child(3) { animation-delay: 0.2s; }
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.gap-num {
+  font-family: var(--font-d);
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--muted);
+}
+.gap-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.25rem; }
+.gap-desc { font-size: 0.82rem; color: var(--dim); line-height: 1.4; }
+.gap-chapter {
+  font-size: 0.7rem;
+  color: var(--gold);
+  font-weight: 600;
+  background: var(--gold-dim);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+.result-cta-box {
+  padding: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: 16px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.result-cta-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--gold));
+}
+.cta-box-h {
+  font-family: var(--font-d);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+.cta-box-sub {
+  font-size: 0.88rem;
+  color: var(--dim);
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+.btn-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  background: var(--gold);
+  color: var(--bg);
+  font-family: var(--font-b);
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s var(--ease);
+}
+.btn-buy:hover { background: var(--gold-soft); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,168,75,0.3); }
+.btn-buy svg { transition: transform 0.3s; }
+.btn-buy:hover svg { transform: translateX(3px); }
+
+.result-retake {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.result-retake:hover { color: var(--text); }
+
+/* ===== AI REPORT ===== */
+.ai-report {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+}
+.ai-report::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--blue));
+}
+.ai-report-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ai-report-label .spinner {
+  width: 12px; height: 12px;
+  border: 2px solid var(--muted);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: none;
+}
+.ai-report-label .spinner.active { display: block; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.ai-report-text {
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 60px;
+}
+.ai-report-text p { margin-bottom: 0.8rem; }
+.ai-report-text p:last-child { margin-bottom: 0; }
+.ai-report-text.loading { color: var(--muted); font-style: italic; }
+
+/* ===== SHARE ===== */
+.share-box {
+  margin: 1.5rem 0;
+  padding: 1.4rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+.share-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--dim);
+  margin-bottom: 0.8rem;
+}
+.share-caption {
+  font-size: 0.83rem;
+  color: var(--text);
+  line-height: 1.6;
+  background: var(--bg-elevated);
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.9rem;
+  white-space: pre-line;
+  user-select: all;
+}
+.share-btns {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.share-btn {
+  padding: 0.5rem 1.1rem;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.share-btn:hover { background: var(--bg-card-hover, #1C1C22); border-color: rgba(255,255,255,0.15); color: var(--white); }
+.share-btn.copied { border-color: var(--green); color: var(--green); }
+</style>
+</head>
+<body>
+
+<div class="ambient ambient-1"></div>
+<div class="ambient ambient-2"></div>
+
+<header class="site-header">
+  <div class="header-logo">OLD WISDOM // RETOLD</div>
+  <a href="index.html" class="header-back">← Back to site</a>
+</header>
+
+<!-- ==================== SPLASH ==================== -->
+<div class="screen active" id="screen-splash" style="padding-top: 5rem;">
+  <div class="inner">
+    <div class="splash-label">FREE DIAGNOSTIC TOOL</div>
+    <h1 class="splash-h1">HOW STRONG ARE<br>YOUR SOCIAL<br><span class="g">SKILLS?</span></h1>
+    <p class="splash-sub">12 real-world scenarios. 3 minutes. A personalised breakdown of your <strong>exact skill gaps</strong> — and the strategies to close them.</p>
+    <div class="path-cards">
+      <div class="path-card teen" onclick="startQuiz('teen')">
+        <span class="path-emoji">🎯</span>
+        <div class="path-title">I'M A TEEN</div>
+        <div class="path-desc">See where your social skills actually stand — and what's holding you back</div>
+      </div>
+      <div class="path-card parent" onclick="startQuiz('parent')">
+        <span class="path-emoji">👁</span>
+        <div class="path-title">I'M A PARENT</div>
+        <div class="path-desc">Assess the gaps your teen may have — and what skills they're missing</div>
+      </div>
+    </div>
+    <div class="splash-note">Takes ~3 minutes · Free · No login required</div>
+  </div>
+</div>
+
+<!-- ==================== QUIZ ==================== -->
+<div class="screen" id="screen-quiz" style="padding-top: 5rem;">
+  <div class="inner">
+    <div class="quiz-progress">
+      <div class="progress-meta">
+        <span class="progress-label" id="progressLabel">QUESTION</span>
+        <span class="progress-count" id="progressCount">1 / 12</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill" style="width: 8.33%"></div>
+      </div>
+    </div>
+
+    <div id="questionArea"></div>
+
+    <div class="q-nav">
+      <button class="btn-ghost" id="btnBack" onclick="goBack()" disabled>← BACK</button>
+      <button class="btn-next" id="btnNext" onclick="goNext()" disabled>
+        NEXT <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== EMAIL GATE ==================== -->
+<div class="screen" id="screen-gate">
+  <div class="inner">
+    <div class="gate-icon">🔍</div>
+    <h2 class="gate-h2">ONE STEP TO<br>YOUR RESULTS</h2>
+    <p class="gate-sub">We've identified your 3 key social skill gaps. Enter your email to unlock your personalised report — and get Chapter 1 of <em>The Social Playbook</em> free.</p>
+    <div class="gate-preview">
+      <span class="gate-pill">Your social profile</span>
+      <span class="gate-pill">3 specific gap areas</span>
+      <span class="gate-pill">Which strategies fix each gap</span>
+      <span class="gate-pill">Free chapter</span>
+    </div>
+
+    <div id="sib-form-container" class="sib-form-container" style="max-width:440px;margin:0 auto 1rem;">
+      <div id="sib-container" class="sib-container--large sib-container--vertical">
+        <form id="sib-form-quiz" method="POST" action="https://2df17076.sibforms.com/serve/MUIFAFLTeUIjjYrCGUDcLKi-tbVd-tiL2O-VvyT_cdstRP_xHmfyUKzVyZr2GMD4jQZy1ffonWNA74fQKYPfaDgg4Hg7LJzZxYrFf32q__OLNlu5-IQPDM4RGzD2b8v5gjlN8O1f3XvOxCiqmFWUxd2sX2BBZ9dp_WN7NeLKw5mRcgyKNRC1gg871f4tjPh69T3kvqFdKuxRqlWhPw==" data-type="subscription">
+          <div style="padding:6px 0;">
+            <div class="sib-input sib-form-block">
+              <div class="form__entry entry_block">
+                <div class="form__label-row">
+                  <label class="entry__label" for="EMAIL_QUIZ">Email</label>
+                  <div class="entry__field">
+                    <input class="input" type="text" id="EMAIL_QUIZ" name="EMAIL" autocomplete="off" placeholder="your@email.com" data-required="true" required />
+                  </div>
+                </div>
+                <label class="entry__error entry__error--primary"></label>
+              </div>
+            </div>
+          </div>
+          <div style="padding:6px 0;">
+            <div class="sib-form-block">
+              <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form-quiz" type="submit">
+                <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                  <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                </svg>
+                SHOW MY RESULTS →
+              </button>
+            </div>
+          </div>
+          <input type="text" name="email_address_check" value="" class="input--hidden">
+          <input type="hidden" name="locale" value="en">
+          <input type="hidden" name="html_type" value="simple">
+        </form>
+      </div>
+    </div>
+
+    <div class="gate-fine">No spam. Unsubscribe anytime. Your report stays private.</div>
+  </div>
+</div>
+
+<!-- ==================== RESULTS ==================== -->
+<div class="screen" id="screen-results" style="align-items: flex-start; padding-top: 5rem;">
+  <div class="inner" id="resultsInner"></div>
+</div>
+
+<script>
+const AMAZON_URL = 'https://a.co/d/0gjqlkB6';
+
+// ==================== SHARE ====================
+
+function buildShareCaption(profile, gaps) {
+  const gapLine = gaps.map(g => g.title.split(' ').slice(0, 3).join(' ')).join(', ');
+  const quizUrl = 'oldwisdomretold.com/quiz';
+
+  const captions = {
+    teen: `just took a social skills diagnostic and got "${profile.label}" 😭\n\nmy top 3 gaps: ${gapLine}\n\nif you've ever felt like you weren't saying the right things at the right time — this quiz actually breaks it down properly\n\nfree → ${quizUrl}\n\n#socialskills #selfimprovement #teenlife #glowtip #oldwisdomretold`,
+    parent: `took a social skills quiz as a parent and honestly learned something 👀\n\nresult: "${profile.label}"\nkey gaps to work on: ${gapLine}\n\nthis is the stuff school never teaches. there's a free diagnostic + a book that covers all of it\n\n→ ${quizUrl}\n\n#parentingtips #raisingteens #socialskills #oldwisdomretold`
+  };
+
+  document.getElementById('shareCaption').textContent = captions[currentPath];
+  document.getElementById('tiktokBtn').href = 'https://www.tiktok.com/upload';
+  document.getElementById('igBtn').href = 'https://www.instagram.com/';
+  document.getElementById('shareBox').style.display = 'block';
+}
+
+function copyCaption() {
+  const text = document.getElementById('shareCaption').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '✓ Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '📋 Copy Caption'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+// ==================== UTILS ====================
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function retake() {
+  currentPath = currentPath === 'teen' ? 'parent' : 'teen';
+  currentQ = 0;
+  answers = {};
+  document.body.className = 'path-' + currentPath;
+  showScreen('screen-quiz');
+  renderQuestion();
+}
+
+// ==================== GATE — Brevo form listener ====================
+function initGateForm() {
+  const form = document.getElementById('sib-form-quiz');
+  if (!form) return;
+  form.addEventListener('submit', function() {
+    const emailInput = document.getElementById('EMAIL_QUIZ');
+    if (emailInput && emailInput.value.includes('@')) {
+      userEmail = emailInput.value.trim();
+      setTimeout(() => showResults(), 800);
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-amazon]').forEach(a => { a.href = AMAZON_URL; });
+  initGateForm();
+});
+
+</script>
+</body>
+</html>
