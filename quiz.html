@@ -36,6 +36,17 @@
   --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
+/* ===== ACCESSIBILITY ===== */
+.skip-link { position: absolute; top: -100%; left: 1rem; background: var(--gold); color: var(--bg); padding: 0.5rem 1rem; font-weight: 700; border-radius: 0 0 6px 6px; z-index: 9999; transition: top 0.2s; font-family: var(--font-b); }
+.skip-link:focus { top: 0; }
+*:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+button, a { cursor: pointer; touch-action: manipulation; }
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
 html, body {
   min-height: 100vh;
   background: var(--bg);
@@ -180,7 +191,12 @@ body.path-parent .ambient-2 { opacity: 0.03; }
 .path-card.parent:hover { border-color: rgba(212,168,75,0.3); }
 .path-card:hover::after { opacity: 1; }
 
-.path-emoji { font-size: 2.5rem; margin-bottom: 0.8rem; display: block; }
+.path-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.9rem; flex-shrink: 0; }
+.path-icon svg { width: 26px; height: 26px; }
+.path-card.teen .path-icon { background: var(--blue-dim); border: 1px solid rgba(77,148,255,0.2); }
+.path-card.teen .path-icon svg { color: var(--blue); }
+.path-card.parent .path-icon { background: var(--gold-dim); border: 1px solid var(--gold-border); }
+.path-card.parent .path-icon svg { color: var(--gold); }
 .path-title {
   font-family: var(--font-d);
   font-size: 1.6rem;
@@ -353,7 +369,8 @@ body.path-parent .ambient-2 { opacity: 0.03; }
 .btn-next:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 
 /* ===== EMAIL GATE ===== */
-.gate-icon { font-size: 3rem; text-align: center; margin-bottom: 1rem; }
+.gate-icon { width: 56px; height: 56px; background: rgba(77,148,255,0.08); border: 1px solid rgba(77,148,255,0.2); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; }
+.gate-icon svg { width: 28px; height: 28px; color: var(--blue); }
 .gate-h2 {
   font-family: var(--font-d);
   font-size: clamp(2rem, 6vw, 3.2rem);
@@ -470,9 +487,9 @@ body.path-parent .ambient-2 { opacity: 0.03; }
   outline: none !important;
   transition: border-color 0.3s !important;
 }
-#sib-container input.input:focus { border-color: var(--gold) !important; }
+#sib-container input.input:focus { border-color: var(--gold) !important; outline: 2px solid var(--gold) !important; outline-offset: 2px !important; }
 #sib-container input.input::placeholder { color: var(--muted) !important; }
-.entry__label { display: none !important; }
+.entry__label { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; }
 .entry__specification { display: none !important; }
 .entry__error {
   font-family: var(--font-b) !important;
@@ -748,10 +765,12 @@ body.path-parent .ambient-2 { opacity: 0.03; }
 </head>
 <body>
 
-<div class="ambient ambient-1"></div>
-<div class="ambient ambient-2"></div>
+<a href="#quiz-main" class="skip-link">Skip to quiz</a>
 
-<header class="site-header">
+<div class="ambient ambient-1" aria-hidden="true"></div>
+<div class="ambient ambient-2" aria-hidden="true"></div>
+
+<header class="site-header" role="banner" aria-label="Old Wisdom // Retold quiz">
   <div class="header-logo">OLD WISDOM // RETOLD</div>
   <a href="index.html" class="header-back">← Back to site</a>
 </header>
@@ -763,13 +782,17 @@ body.path-parent .ambient-2 { opacity: 0.03; }
     <h1 class="splash-h1">HOW STRONG ARE<br>YOUR SOCIAL<br><span class="g">SKILLS?</span></h1>
     <p class="splash-sub">12 real-world scenarios. 3 minutes. A personalised breakdown of your <strong>exact skill gaps</strong> — and the strategies to close them.</p>
     <div class="path-cards">
-      <div class="path-card teen" onclick="startQuiz('teen')">
-        <span class="path-emoji">🎯</span>
+      <div class="path-card teen" onclick="startQuiz('teen')" role="button" tabindex="0" aria-label="Take the quiz as a teen">
+        <div class="path-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
         <div class="path-title">I'M A TEEN</div>
         <div class="path-desc">See where your social skills actually stand — and what's holding you back</div>
       </div>
-      <div class="path-card parent" onclick="startQuiz('parent')">
-        <span class="path-emoji">👁</span>
+      <div class="path-card parent" onclick="startQuiz('parent')" role="button" tabindex="0" aria-label="Take the quiz as a parent">
+        <div class="path-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
         <div class="path-title">I'M A PARENT</div>
         <div class="path-desc">Assess the gaps your teen may have — and what skills they're missing</div>
       </div>
@@ -803,9 +826,11 @@ body.path-parent .ambient-2 { opacity: 0.03; }
 </div>
 
 <!-- ==================== EMAIL GATE ==================== -->
-<div class="screen" id="screen-gate">
-  <div class="inner">
-    <div class="gate-icon">🔍</div>
+<div class="screen" id="screen-gate" role="main" aria-label="Enter email to unlock results">
+  <div class="inner" id="quiz-main">
+    <div class="gate-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </div>
     <h2 class="gate-h2">ONE STEP TO<br>YOUR RESULTS</h2>
     <p class="gate-sub">We've identified your 3 key social skill gaps. Enter your email to unlock your personalised report — and get Chapter 1 of <em>The Social Playbook</em> free.</p>
     <div class="gate-preview">
@@ -824,7 +849,7 @@ body.path-parent .ambient-2 { opacity: 0.03; }
                 <div class="form__label-row">
                   <label class="entry__label" for="EMAIL_QUIZ">Email</label>
                   <div class="entry__field">
-                    <input class="input" type="text" id="EMAIL_QUIZ" name="EMAIL" autocomplete="off" placeholder="your@email.com" data-required="true" required />
+                    <input class="input" type="email" id="EMAIL_QUIZ" name="EMAIL" autocomplete="email" placeholder="your@email.com" data-required="true" required aria-required="true" aria-label="Your email address" />
                   </div>
                 </div>
                 <label class="entry__error entry__error--primary"></label>
@@ -858,6 +883,16 @@ body.path-parent .ambient-2 { opacity: 0.03; }
 </div>
 
 <script>
+// Keyboard support for path cards
+document.querySelectorAll('.path-card').forEach(card => {
+  card.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      card.click();
+    }
+  });
+});
+
 const AMAZON_URL = 'https://a.co/d/0gjqlkB6';
 
 // ==================== SHARE ====================
@@ -883,7 +918,7 @@ function copyCaption() {
     const btn = document.getElementById('copyBtn');
     btn.textContent = '✓ Copied!';
     btn.classList.add('copied');
-    setTimeout(() => { btn.textContent = '📋 Copy Caption'; btn.classList.remove('copied'); }, 2000);
+    setTimeout(() => { btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg> Copy Caption'; btn.classList.remove('copied'); }, 2000);
   });
 }
 
