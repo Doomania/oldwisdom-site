@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Social Skills Diagnostic — Old Wisdom // Retold</title>
-<meta name="description" content="A 12-question diagnostic to identify your teen's (or your own) social skill gaps — and the exact strategies to fix them.">
+<meta name="description" content="A 15-question diagnostic to identify your teen's (or your own) social skill gaps — and the exact strategies to fix them.">
 <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,6 +25,8 @@
   --red-dim: rgba(224,62,78,0.1);
   --green: #3ECF8E;
   --green-dim: rgba(62,207,142,0.1);
+  --purple: #A78BFA;
+  --purple-dim: rgba(167,139,250,0.1);
   --white: #F0F0F2;
   --text: #C8C8D0;
   --dim: #7A7A88;
@@ -33,7 +35,6 @@
   --font-d: 'Bebas Neue', sans-serif;
   --font-b: 'Outfit', sans-serif;
   --ease: cubic-bezier(0.23, 1, 0.32, 1);
-  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* ===== ACCESSIBILITY ===== */
@@ -42,733 +43,176 @@
 *:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
 button, a { cursor: pointer; touch-action: manipulation; }
 
-/* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
 
-html, body {
-  min-height: 100vh;
-  background: var(--bg);
-  color: var(--white);
-  font-family: var(--font-b);
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
+html, body { min-height: 100vh; background: var(--bg); color: var(--white); font-family: var(--font-b); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
-/* Grain */
-body::before {
-  content: '';
-  position: fixed; inset: 0;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 9999;
-}
+body::before { content: ''; position: fixed; inset: 0; opacity: 0.015; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
 
-/* Ambient glow */
-.ambient {
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(140px);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 1s;
-}
+.ambient { position: fixed; border-radius: 50%; filter: blur(140px); pointer-events: none; opacity: 0; transition: opacity 1s; }
 .ambient-1 { width: 500px; height: 500px; top: -100px; right: -100px; background: var(--gold); }
 .ambient-2 { width: 400px; height: 400px; bottom: -100px; left: -100px; background: var(--blue); }
 body.path-teen .ambient-1 { opacity: 0.06; }
 body.path-teen .ambient-2 { opacity: 0.04; }
 body.path-parent .ambient-1 { opacity: 0.08; }
-body.path-parent .ambient-2 { opacity: 0.03; }
+body.path-parent .ambient-2 { opacity: 0.015; }
 
-/* Layout */
-.screen {
-  display: none;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1.5rem;
-  animation: fadeUp 0.5s var(--ease) both;
-}
+.screen { display: none; min-height: 100vh; align-items: center; justify-content: center; padding: 2rem 1.5rem; animation: fadeUp 0.5s var(--ease) both; }
 .screen.active { display: flex; }
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-.inner {
-  width: 100%;
-  max-width: 680px;
-}
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.inner { width: 100%; max-width: 680px; }
 
 /* ===== HEADER ===== */
-.site-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  padding: 1rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(12,12,15,0.8);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border);
-}
-.header-logo {
-  font-family: var(--font-d);
-  font-size: 0.9rem;
-  letter-spacing: 0.25em;
-  color: var(--gold);
-}
-.header-back {
-  font-size: 0.8rem;
-  color: var(--dim);
-  text-decoration: none;
-  transition: color 0.3s;
-}
+.site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; background: rgba(12,12,15,0.8); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+.header-logo { font-family: var(--font-d); font-size: 0.9rem; letter-spacing: 0.25em; color: var(--gold); }
+.header-back { font-size: 0.8rem; color: var(--dim); text-decoration: none; transition: color 0.3s; }
 .header-back:hover { color: var(--white); }
 
 /* ===== SPLASH ===== */
-.splash-label {
-  font-family: var(--font-d);
-  font-size: 0.75rem;
-  letter-spacing: 0.5em;
-  color: var(--gold);
-  margin-bottom: 1.2rem;
-  text-align: center;
-}
-
-.splash-h1 {
-  font-family: var(--font-d);
-  font-size: clamp(2.8rem, 8vw, 5rem);
-  line-height: 0.95;
-  text-align: center;
-  margin-bottom: 0.8rem;
-}
+.splash-label { font-family: var(--font-d); font-size: 0.75rem; letter-spacing: 0.5em; color: var(--gold); margin-bottom: 1.2rem; text-align: center; }
+.splash-h1 { font-family: var(--font-d); font-size: clamp(2.8rem, 8vw, 5rem); line-height: 0.95; text-align: center; margin-bottom: 0.8rem; }
 .splash-h1 .g { color: var(--gold); }
-
-.splash-sub {
-  text-align: center;
-  color: var(--text);
-  font-size: 1.05rem;
-  line-height: 1.65;
-  max-width: 520px;
-  margin: 0 auto 2.5rem;
-}
+.splash-sub { text-align: center; color: var(--text); font-size: 1.05rem; line-height: 1.65; max-width: 520px; margin: 0 auto 2.5rem; }
 .splash-sub strong { color: var(--white); }
 
-.path-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.path-card {
-  padding: 2rem 1.5rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.35s var(--ease);
-  position: relative;
-  overflow: hidden;
-}
-.path-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 0.35s;
-}
+.path-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+.path-card { padding: 2rem 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; cursor: pointer; text-align: center; transition: all 0.35s var(--ease); position: relative; overflow: hidden; }
+.path-card::after { content: ''; position: absolute; inset: 0; opacity: 0; transition: opacity 0.35s; }
 .path-card.teen::after { background: radial-gradient(ellipse at 50% 0%, rgba(77,148,255,0.1), transparent 70%); }
 .path-card.parent::after { background: radial-gradient(ellipse at 50% 0%, rgba(212,168,75,0.1), transparent 70%); }
 .path-card:hover { transform: translateY(-4px); }
 .path-card.teen:hover { border-color: rgba(77,148,255,0.3); }
 .path-card.parent:hover { border-color: rgba(212,168,75,0.3); }
 .path-card:hover::after { opacity: 1; }
-
 .path-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.9rem; flex-shrink: 0; }
 .path-icon svg { width: 26px; height: 26px; }
 .path-card.teen .path-icon { background: var(--blue-dim); border: 1px solid rgba(77,148,255,0.2); }
 .path-card.teen .path-icon svg { color: var(--blue); }
 .path-card.parent .path-icon { background: var(--gold-dim); border: 1px solid var(--gold-border); }
 .path-card.parent .path-icon svg { color: var(--gold); }
-.path-title {
-  font-family: var(--font-d);
-  font-size: 1.6rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.4rem;
-}
+.path-title { font-family: var(--font-d); font-size: 1.6rem; letter-spacing: 0.05em; margin-bottom: 0.4rem; }
 .path-card.teen .path-title { color: var(--blue); }
 .path-card.parent .path-title { color: var(--gold); }
 .path-desc { font-size: 0.82rem; color: var(--dim); line-height: 1.4; }
+.splash-note { text-align: center; font-size: 0.78rem; color: var(--muted); }
+@media (max-width: 480px) { .path-cards { grid-template-columns: 1fr; } }
 
-.splash-note {
-  text-align: center;
-  font-size: 0.78rem;
-  color: var(--muted);
-}
-
-@media (max-width: 480px) {
-  .path-cards { grid-template-columns: 1fr; }
-}
-
-/* ===== PROGRESS BAR ===== */
-.quiz-progress {
-  margin-bottom: 2rem;
-}
-.progress-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-.progress-label {
-  font-size: 0.75rem;
-  color: var(--dim);
-  letter-spacing: 0.08em;
-  font-weight: 600;
-}
-.progress-count {
-  font-family: var(--font-d);
-  font-size: 1rem;
-  color: var(--gold);
-}
-.progress-track {
-  height: 3px;
-  background: var(--muted);
-  border-radius: 3px;
-  overflow: hidden;
-}
-.progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--blue), var(--gold));
-  border-radius: 3px;
-  transition: width 0.5s var(--ease);
-}
+/* ===== PROGRESS ===== */
+.quiz-progress { margin-bottom: 2rem; }
+.progress-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+.progress-label { font-size: 0.75rem; color: var(--dim); letter-spacing: 0.08em; font-weight: 600; }
+.progress-count { font-family: var(--font-d); font-size: 1rem; color: var(--gold); }
+.progress-track { height: 3px; background: var(--muted); border-radius: 3px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--blue), var(--gold)); border-radius: 3px; transition: width 0.5s var(--ease); }
 
 /* ===== QUESTION ===== */
-.q-category {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-bottom: 0.8rem;
-  padding: 0.25rem 0.7rem;
-  border-radius: 4px;
-  display: inline-block;
-}
+.q-category { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.8rem; padding: 0.25rem 0.7rem; border-radius: 4px; display: inline-block; }
 .cat-connection { background: var(--blue-dim); color: var(--blue); }
+.cat-reading { background: var(--green-dim); color: var(--green); }
 .cat-influence { background: var(--gold-dim); color: var(--gold-soft); }
 .cat-conflict { background: var(--red-dim); color: var(--red); }
-.cat-awareness { background: var(--green-dim); color: var(--green); }
+.cat-anxiety { background: var(--purple-dim); color: var(--purple); }
 
-.q-text {
-  font-family: var(--font-d);
-  font-size: clamp(1.5rem, 4vw, 2.2rem);
-  line-height: 1.15;
-  margin-bottom: 0.6rem;
-}
+.q-text { font-family: var(--font-d); font-size: clamp(1.5rem, 4vw, 2.2rem); line-height: 1.15; margin-bottom: 0.6rem; }
+.q-scenario { font-size: 0.9rem; color: var(--text); line-height: 1.6; margin-bottom: 2rem; padding: 1rem 1.2rem; background: var(--bg-elevated); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; font-style: italic; }
 
-.q-scenario {
-  font-size: 0.9rem;
-  color: var(--text);
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  padding: 1rem 1.2rem;
-  background: var(--bg-elevated);
-  border-left: 3px solid var(--gold);
-  border-radius: 0 8px 8px 0;
-  font-style: italic;
-}
-
-.options {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.option {
-  padding: 1rem 1.3rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  cursor: pointer;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.9rem;
-  transition: all 0.25s var(--ease);
-  text-align: left;
-}
+.options { display: flex; flex-direction: column; gap: 0.7rem; }
+.option { padding: 1rem 1.3rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; cursor: pointer; display: flex; align-items: flex-start; gap: 0.9rem; transition: all 0.25s var(--ease); text-align: left; }
 .option:hover { background: var(--bg-elevated); border-color: rgba(255,255,255,0.12); transform: translateX(4px); }
-.option.selected {
-  background: var(--gold-dim);
-  border-color: var(--gold-border);
-}
-
-.option-letter {
-  width: 26px; height: 26px;
-  border-radius: 6px;
-  background: var(--bg-elevated);
-  border: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-d);
-  font-size: 0.85rem;
-  color: var(--dim);
-  flex-shrink: 0;
-  transition: all 0.25s;
-}
-.option.selected .option-letter {
-  background: var(--gold);
-  border-color: var(--gold);
-  color: var(--bg);
-}
-
+.option.selected { background: var(--gold-dim); border-color: var(--gold-border); }
+.option-letter { width: 26px; height: 26px; border-radius: 6px; background: var(--bg-elevated); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: var(--font-d); font-size: 0.85rem; color: var(--dim); flex-shrink: 0; transition: all 0.25s; }
+.option.selected .option-letter { background: var(--gold); border-color: var(--gold); color: var(--bg); }
 .option-text { font-size: 0.92rem; color: var(--text); line-height: 1.45; padding-top: 2px; }
 .option.selected .option-text { color: var(--white); }
 
-.q-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1.5rem;
-}
-
-.btn-ghost {
-  padding: 0.6rem 1.2rem;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  color: var(--dim);
-  font-family: var(--font-b);
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: all 0.3s;
-}
+.q-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem; }
+.btn-ghost { padding: 0.6rem 1.2rem; background: transparent; border: 1px solid var(--border); border-radius: 8px; color: var(--dim); font-family: var(--font-b); font-size: 0.85rem; cursor: pointer; transition: all 0.3s; min-height: 44px; }
 .btn-ghost:hover { border-color: var(--text); color: var(--white); }
 .btn-ghost:disabled { opacity: 0.3; cursor: not-allowed; }
-
-.btn-next {
-  padding: 0.7rem 1.8rem;
-  background: var(--gold);
-  border: none;
-  border-radius: 8px;
-  color: var(--bg);
-  font-family: var(--font-b);
-  font-size: 0.9rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s var(--ease);
-  display: flex; align-items: center; gap: 0.5rem;
-}
+.btn-next { padding: 0.7rem 1.8rem; background: var(--gold); border: none; border-radius: 8px; color: var(--bg); font-family: var(--font-b); font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: all 0.3s var(--ease); display: flex; align-items: center; gap: 0.5rem; min-height: 44px; }
 .btn-next:hover { background: var(--gold-soft); transform: translateY(-2px); }
 .btn-next:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 
-/* ===== EMAIL GATE ===== */
+/* ===== GATE ===== */
 .gate-icon { width: 56px; height: 56px; background: rgba(77,148,255,0.08); border: 1px solid rgba(77,148,255,0.2); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; }
 .gate-icon svg { width: 28px; height: 28px; color: var(--blue); }
-.gate-h2 {
-  font-family: var(--font-d);
-  font-size: clamp(2rem, 6vw, 3.2rem);
-  text-align: center;
-  line-height: 1.05;
-  margin-bottom: 0.8rem;
-}
-.gate-sub {
-  text-align: center;
-  color: var(--text);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  max-width: 480px;
-  margin-left: auto; margin-right: auto;
-}
+.gate-h2 { font-family: var(--font-d); font-size: clamp(2rem, 6vw, 3.2rem); text-align: center; line-height: 1.05; margin-bottom: 0.8rem; }
+.gate-sub { text-align: center; color: var(--text); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; max-width: 480px; margin-left: auto; margin-right: auto; }
+.gate-preview { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+.gate-pill { padding: 0.3rem 0.8rem; border-radius: 100px; font-size: 0.75rem; font-weight: 600; background: var(--bg-elevated); border: 1px solid var(--border); color: var(--dim); }
+.gate-fine { text-align: center; font-size: 0.72rem; color: var(--muted); }
 
-.gate-preview {
-  display: flex;
-  gap: 0.6rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-.gate-pill {
-  padding: 0.3rem 0.8rem;
-  border-radius: 100px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  background: var(--bg-elevated);
-  border: 1px solid var(--border);
-  color: var(--dim);
-}
-
-.gate-form {
-  display: flex;
-  gap: 0.6rem;
-  max-width: 440px;
-  margin: 0 auto 0.8rem;
-}
-.gate-input {
-  flex: 1;
-  padding: 0.85rem 1.2rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  color: var(--white);
-  font-family: var(--font-b);
-  font-size: 0.92rem;
-  outline: none;
-  transition: border-color 0.3s;
-}
-.gate-input::placeholder { color: var(--muted); }
-.gate-input:focus { border-color: var(--gold); }
-.gate-input.error { border-color: var(--red); }
-
-.gate-submit {
-  padding: 0.85rem 1.5rem;
-  background: var(--gold);
-  color: var(--bg);
-  font-family: var(--font-b);
-  font-size: 0.9rem;
-  font-weight: 700;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: all 0.3s;
-}
-.gate-submit:hover { background: var(--gold-soft); }
-
-.gate-fine {
-  text-align: center;
-  font-size: 0.72rem;
-  color: var(--muted);
-}
-
-/* ===== BREVO OVERRIDES (quiz) ===== */
-#sib-container {
-  background-color: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  max-width: 100% !important;
-  padding: 0 !important;
-}
+/* ===== BREVO ===== */
+#sib-container { background-color: transparent !important; border: none !important; border-radius: 0 !important; max-width: 100% !important; padding: 0 !important; }
 .sib-form { background-color: transparent !important; padding: 0 !important; }
 .sib-form-container { padding: 0 !important; }
 .sib-form-block { padding: 4px 0 !important; }
-.sib-form-block__button {
-  font-family: var(--font-b) !important;
-  font-size: 0.92rem !important;
-  font-weight: 700 !important;
-  color: var(--bg) !important;
-  background-color: var(--gold) !important;
-  border-radius: 10px !important;
-  border: none !important;
-  padding: 0.85rem 1.5rem !important;
-  width: 100% !important;
-  text-align: center !important;
-  cursor: pointer !important;
-  transition: background-color 0.3s !important;
-  letter-spacing: 0.05em !important;
-}
+.sib-form-block__button { font-family: var(--font-b) !important; font-size: 0.92rem !important; font-weight: 700 !important; color: var(--bg) !important; background-color: var(--gold) !important; border-radius: 10px !important; border: none !important; padding: 0.85rem 1.5rem !important; width: 100% !important; text-align: center !important; cursor: pointer !important; transition: background-color 0.3s !important; letter-spacing: 0.05em !important; min-height: 48px !important; }
 .sib-form-block__button:hover { background-color: var(--gold-soft) !important; }
-#sib-container input.input {
-  font-family: var(--font-b) !important;
-  font-size: 0.92rem !important;
-  background: rgba(255,255,255,0.04) !important;
-  border: 1px solid var(--border) !important;
-  border-radius: 10px !important;
-  color: var(--white) !important;
-  padding: 0.85rem 1.2rem !important;
-  width: 100% !important;
-  outline: none !important;
-  transition: border-color 0.3s !important;
-}
+#sib-container input.input { font-family: var(--font-b) !important; font-size: 0.92rem !important; background: rgba(255,255,255,0.04) !important; border: 1px solid var(--border) !important; border-radius: 10px !important; color: var(--white) !important; padding: 0.85rem 1.2rem !important; width: 100% !important; outline: none !important; transition: border-color 0.3s !important; }
 #sib-container input.input:focus { border-color: var(--gold) !important; outline: 2px solid var(--gold) !important; outline-offset: 2px !important; }
 #sib-container input.input::placeholder { color: var(--muted) !important; }
 .entry__label { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; }
 .entry__specification { display: none !important; }
-.entry__error {
-  font-family: var(--font-b) !important;
-  font-size: 0.78rem !important;
-  background: rgba(224,62,78,0.1) !important;
-  border-color: var(--red) !important;
-  color: var(--red) !important;
-  border-radius: 6px !important;
-}
+.entry__error { font-family: var(--font-b) !important; font-size: 0.78rem !important; background: rgba(224,62,78,0.1) !important; border-color: var(--red) !important; color: var(--red) !important; border-radius: 6px !important; }
 .sib-form__declaration { display: none !important; }
-
-@media (max-width: 480px) {
-  .gate-form { flex-direction: column; }
-}
+#sib-container .sib-form-message-panel { background: rgba(62,207,142,0.08) !important; border-color: rgba(62,207,142,0.3) !important; border-radius: 10px !important; }
+.sib-form-message-panel__text { font-family: var(--font-b) !important; color: #3ECF8E !important; font-size: 0.92rem !important; }
 
 /* ===== RESULTS ===== */
 .result-header { margin-bottom: 2rem; }
+.result-badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0.9rem; border-radius: 100px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 1rem; }
+.result-profile { font-family: var(--font-d); font-size: clamp(2.5rem, 8vw, 4rem); line-height: 1; margin-bottom: 0.5rem; }
+.result-tagline { font-size: 1rem; color: var(--text); line-height: 1.55; margin-bottom: 1.5rem; }
+.result-score-bar { margin-bottom: 2rem; }
+.score-label { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--dim); margin-bottom: 0.4rem; }
+.score-track { height: 8px; background: var(--muted); border-radius: 8px; overflow: hidden; }
+.score-fill { height: 100%; border-radius: 8px; transition: width 1.2s var(--ease) 0.3s; }
 
-.result-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.3rem 0.9rem;
-  border-radius: 100px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  margin-bottom: 1rem;
-}
-
-.result-profile {
-  font-family: var(--font-d);
-  font-size: clamp(2.5rem, 8vw, 4rem);
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-
-.result-tagline {
-  font-size: 1rem;
-  color: var(--text);
-  line-height: 1.55;
-  margin-bottom: 1.5rem;
-}
-
-.result-score-bar {
-  margin-bottom: 2rem;
-}
-.score-label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.78rem;
-  color: var(--dim);
-  margin-bottom: 0.4rem;
-}
-.score-track {
-  height: 8px;
-  background: var(--muted);
-  border-radius: 8px;
-  overflow: hidden;
-}
-.score-fill {
-  height: 100%;
-  border-radius: 8px;
-  transition: width 1.2s var(--ease) 0.3s;
-}
-
-.gaps-title {
-  font-family: var(--font-d);
-  font-size: 1rem;
-  letter-spacing: 0.15em;
-  color: var(--gold);
-  margin-bottom: 1rem;
-}
-
-.gap-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  margin-bottom: 2rem;
-}
-
-.gap-card {
-  padding: 1.2rem 1.4rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 1rem;
-  align-items: start;
-  animation: slideIn 0.5s var(--ease) both;
-}
+.gaps-title { font-family: var(--font-d); font-size: 1rem; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 1rem; }
+.gap-cards { display: flex; flex-direction: column; gap: 0.9rem; margin-bottom: 2rem; }
+.gap-card { padding: 1.2rem 1.4rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; animation: slideIn 0.5s var(--ease) both; }
 .gap-card:nth-child(2) { animation-delay: 0.1s; }
 .gap-card:nth-child(3) { animation-delay: 0.2s; }
-
-@keyframes slideIn {
-  from { opacity: 0; transform: translateX(-16px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-.gap-num {
-  font-family: var(--font-d);
-  font-size: 1.8rem;
-  line-height: 1;
-  color: var(--muted);
-}
+@keyframes slideIn { from { opacity: 0; transform: translateX(-16px); } to { opacity: 1; transform: translateX(0); } }
+.gap-top { display: flex; align-items: flex-start; gap: 1rem; }
+.gap-num { font-family: var(--font-d); font-size: 1.8rem; line-height: 1; color: var(--muted); flex-shrink: 0; }
+.gap-main { flex: 1; }
 .gap-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.25rem; }
-.gap-desc { font-size: 0.82rem; color: var(--dim); line-height: 1.4; }
-.gap-chapter {
-  font-size: 0.7rem;
-  color: var(--gold);
-  font-weight: 600;
-  background: var(--gold-dim);
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  white-space: nowrap;
-  margin-top: 2px;
-}
+.gap-desc { font-size: 0.82rem; color: var(--dim); line-height: 1.5; }
+.gap-chapter { font-size: 0.7rem; color: var(--gold); font-weight: 600; background: var(--gold-dim); padding: 0.2rem 0.5rem; border-radius: 4px; white-space: nowrap; margin-top: 2px; flex-shrink: 0; }
+.diag-block { margin-top: 0.8rem; padding-top: 0.8rem; border-top: 1px dashed var(--border); }
+.diag-h { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; color: var(--gold); margin-bottom: 0.35rem; text-transform: uppercase; }
+.diag-text { font-size: 0.82rem; color: var(--text); line-height: 1.55; margin-bottom: 0.6rem; }
+.diag-list { margin: 0 0 0.6rem 1.1rem; padding: 0; }
+.diag-list li { font-size: 0.8rem; color: var(--dim); line-height: 1.55; margin-bottom: 0.15rem; }
+.practice-box { margin-top: 0.4rem; padding: 0.65rem 0.85rem; background: var(--gold-dim); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; font-size: 0.82rem; color: var(--text); line-height: 1.5; }
+.practice-box strong { color: var(--gold-soft); }
 
-.result-cta-box {
-  padding: 2rem;
-  background: var(--bg-card);
-  border: 1px solid var(--gold-border);
-  border-radius: 16px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 1rem;
-}
-.result-cta-box::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--blue), var(--gold));
-}
-.cta-box-h {
-  font-family: var(--font-d);
-  font-size: clamp(1.4rem, 4vw, 2rem);
-  margin-bottom: 0.5rem;
-}
-.cta-box-sub {
-  font-size: 0.88rem;
-  color: var(--dim);
-  margin-bottom: 1.2rem;
-  line-height: 1.5;
-}
-.btn-buy {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.85rem 2rem;
-  background: var(--gold);
-  color: var(--bg);
-  font-family: var(--font-b);
-  font-size: 0.95rem;
-  font-weight: 700;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s var(--ease);
-}
+.result-cta-box { padding: 2rem; background: var(--bg-card); border: 1px solid var(--gold-border); border-radius: 16px; text-align: center; position: relative; overflow: hidden; margin-bottom: 1rem; }
+.result-cta-box::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--blue), var(--gold)); }
+.cta-box-h { font-family: var(--font-d); font-size: clamp(1.4rem, 4vw, 2rem); margin-bottom: 0.5rem; }
+.cta-box-sub { font-size: 0.88rem; color: var(--dim); margin-bottom: 1.2rem; line-height: 1.5; }
+.cta-btns { display: flex; gap: 0.7rem; justify-content: center; flex-wrap: wrap; }
+.btn-buy { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.8rem; background: var(--gold); color: var(--bg); font-family: var(--font-b); font-size: 0.92rem; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; text-decoration: none; transition: all 0.3s var(--ease); min-height: 48px; }
 .btn-buy:hover { background: var(--gold-soft); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,168,75,0.3); }
-.btn-buy svg { transition: transform 0.3s; }
-.btn-buy:hover svg { transform: translateX(3px); }
-
-.result-retake {
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--muted);
-  cursor: pointer;
-  transition: color 0.3s;
-}
-.result-retake:hover { color: var(--text); }
-
-/* ===== AI REPORT ===== */
-.ai-report {
-  margin: 1.5rem 0;
-  padding: 1.5rem;
-  background: var(--bg-elevated);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  position: relative;
-  overflow: hidden;
-}
-.ai-report::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--gold), var(--blue));
-}
-.ai-report-label {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  color: var(--gold);
-  margin-bottom: 0.8rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.ai-report-label .spinner {
-  width: 12px; height: 12px;
-  border: 2px solid var(--muted);
-  border-top-color: var(--gold);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-  display: none;
-}
-.ai-report-label .spinner.active { display: block; }
-@keyframes spin { to { transform: rotate(360deg); } }
-
-.ai-report-text {
-  font-size: 0.88rem;
-  color: var(--text);
-  line-height: 1.7;
-  min-height: 60px;
-}
-.ai-report-text p { margin-bottom: 0.8rem; }
-.ai-report-text p:last-child { margin-bottom: 0; }
-.ai-report-text.loading { color: var(--muted); font-style: italic; }
+.btn-buy.war { background: #CC2233; color: #fff; }
+.btn-buy.war:hover { background: #E84455; box-shadow: 0 8px 24px rgba(204,34,51,0.3); }
 
 /* ===== SHARE ===== */
-.share-box {
-  margin: 1.5rem 0;
-  padding: 1.4rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-}
-.share-label {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  color: var(--dim);
-  margin-bottom: 0.8rem;
-}
-.share-caption {
-  font-size: 0.83rem;
-  color: var(--text);
-  line-height: 1.6;
-  background: var(--bg-elevated);
-  padding: 0.9rem 1rem;
-  border-radius: 8px;
-  margin-bottom: 0.9rem;
-  white-space: pre-line;
-  user-select: all;
-}
-.share-btns {
-  display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-}
-.share-btn {
-  padding: 0.5rem 1.1rem;
-  border-radius: 7px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  border: 1px solid var(--border);
-  background: var(--bg-elevated);
-  color: var(--text);
-  cursor: pointer;
-  transition: all 0.25s;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-.share-btn:hover { background: var(--bg-card-hover, #1C1C22); border-color: rgba(255,255,255,0.15); color: var(--white); }
+.share-box { margin: 1.5rem 0; padding: 1.4rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; }
+.share-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; color: var(--dim); margin-bottom: 0.8rem; }
+.share-caption { font-size: 0.83rem; color: var(--text); line-height: 1.6; background: var(--bg-elevated); padding: 0.9rem 1rem; border-radius: 8px; margin-bottom: 0.9rem; white-space: pre-line; user-select: all; }
+.share-btns { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.share-btn { padding: 0.5rem 1.1rem; border-radius: 7px; font-size: 0.8rem; font-weight: 600; border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text); cursor: pointer; transition: all 0.25s; display: flex; align-items: center; gap: 0.4rem; text-decoration: none; min-height: 40px; }
+.share-btn:hover { background: #1C1C22; border-color: rgba(255,255,255,0.15); color: var(--white); }
 .share-btn.copied { border-color: var(--green); color: var(--green); }
+
+.result-retake { text-align: center; font-size: 0.8rem; color: var(--muted); cursor: pointer; transition: color 0.3s; padding: 0.5rem; }
+.result-retake:hover { color: var(--text); }
 </style>
-<link rel="canonical" href="https://oldwisdomretold.com/quiz.html">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://oldwisdomretold.com/quiz.html">
-<meta property="og:title" content="Free Social Skills Diagnostic — 12 Questions, 3 Minutes">
-<meta property="og:description" content="Find your teen's exact social skill gaps — and the strategies that fix each one.">
-<meta property="og:image" content="https://oldwisdomretold.com/assets/series-mockup.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://oldwisdomretold.com/quiz.html","url":"https://oldwisdomretold.com/quiz.html","name":"Social Skills Diagnostic — Old Wisdom // Retold","description":"A free 12-question diagnostic for teens and parents that identifies the exact social skill gaps — connection, awareness, influence, composure — and the strategies that fix each one.","isPartOf":{"@type":"WebSite","@id":"https://oldwisdomretold.com/#website"}},{"@type":"Quiz","name":"Social Skills Diagnostic","about":{"@type":"Thing","name":"Social skills for teenagers"},"educationalLevel":"Ages 12-16","numberOfQuestions":12,"provider":{"@type":"Person","name":"Eric Han","@id":"https://oldwisdomretold.com/#author"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://oldwisdomretold.com/"},{"@type":"ListItem","position":2,"name":"Social Skills Diagnostic","item":"https://oldwisdomretold.com/quiz.html"}]}]}</script>
 </head>
 <body>
 
@@ -782,12 +226,12 @@ body.path-parent .ambient-2 { opacity: 0.03; }
   <a href="index.html" class="header-back">← Back to site</a>
 </header>
 
-<!-- ==================== SPLASH ==================== -->
+<!-- SPLASH -->
 <div class="screen active" id="screen-splash" style="padding-top: 5rem;">
-  <div class="inner">
+  <div class="inner" id="quiz-main">
     <div class="splash-label">FREE DIAGNOSTIC TOOL</div>
     <h1 class="splash-h1">HOW STRONG ARE<br>YOUR SOCIAL<br><span class="g">SKILLS?</span></h1>
-    <p class="splash-sub">12 real-world scenarios. 3 minutes. A personalised breakdown of your <strong>exact skill gaps</strong> — and the strategies to close them.</p>
+    <p class="splash-sub" id="splashSub">15 real-world scenarios. 4 minutes. A personalised breakdown of your <strong>exact skill gaps</strong> — and the strategies to close them.</p>
     <div class="path-cards">
       <div class="path-card teen" onclick="startQuiz('teen')" role="button" tabindex="0" aria-label="Take the quiz as a teen">
         <div class="path-icon" aria-hidden="true">
@@ -804,37 +248,35 @@ body.path-parent .ambient-2 { opacity: 0.03; }
         <div class="path-desc">Assess the gaps your teen may have — and what skills they're missing</div>
       </div>
     </div>
-    <div class="splash-note">Takes ~3 minutes · Free · No login required</div>
+    <div class="splash-note">Takes ~4 minutes · Free · No login required</div>
   </div>
 </div>
 
-<!-- ==================== QUIZ ==================== -->
+<!-- QUIZ -->
 <div class="screen" id="screen-quiz" style="padding-top: 5rem;">
   <div class="inner">
     <div class="quiz-progress">
       <div class="progress-meta">
         <span class="progress-label" id="progressLabel">QUESTION</span>
-        <span class="progress-count" id="progressCount">1 / 12</span>
+        <span class="progress-count" id="progressCount">1 / 15</span>
       </div>
       <div class="progress-track">
-        <div class="progress-fill" id="progressFill" style="width: 8.33%"></div>
+        <div class="progress-fill" id="progressFill" style="width: 6.7%"></div>
       </div>
     </div>
-
     <div id="questionArea"></div>
-
     <div class="q-nav">
       <button class="btn-ghost" id="btnBack" onclick="goBack()" disabled>← BACK</button>
       <button class="btn-next" id="btnNext" onclick="goNext()" disabled>
-        NEXT <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        NEXT <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </button>
     </div>
   </div>
 </div>
 
-<!-- ==================== EMAIL GATE ==================== -->
+<!-- EMAIL GATE -->
 <div class="screen" id="screen-gate" role="main" aria-label="Enter email to unlock results">
-  <div class="inner" id="quiz-main">
+  <div class="inner">
     <div class="gate-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     </div>
@@ -843,7 +285,7 @@ body.path-parent .ambient-2 { opacity: 0.03; }
     <div class="gate-preview">
       <span class="gate-pill">Your social profile</span>
       <span class="gate-pill">3 specific gap areas</span>
-      <span class="gate-pill">Which strategies fix each gap</span>
+      <span class="gate-pill">One practice for this week</span>
       <span class="gate-pill">Free chapter</span>
     </div>
 
@@ -854,26 +296,30 @@ body.path-parent .ambient-2 { opacity: 0.03; }
             <div class="sib-input sib-form-block">
               <div class="form__entry entry_block">
                 <div class="form__label-row">
-                  <label class="entry__label" for="EMAIL_QUIZ">Email</label>
+                  <label class="entry__label" for="EMAIL_QUIZ">Your email address</label>
                   <div class="entry__field">
-                    <input class="input" type="email" id="EMAIL_QUIZ" name="EMAIL" autocomplete="email" placeholder="your@email.com" data-required="true" required aria-required="true" aria-label="Your email address" />
+                    <input class="input" type="email" id="EMAIL_QUIZ" name="EMAIL" autocomplete="email" placeholder="your@email.com" data-required="true" required aria-required="true" />
                   </div>
                 </div>
-                <label class="entry__error entry__error--primary"></label>
+                <label class="entry__error entry__error--primary" role="alert"></label>
               </div>
             </div>
           </div>
+          <!-- Hidden result attributes → Brevo (create matching contact attributes in Brevo first) -->
+          <input type="hidden" name="PROFILE" id="fldPROFILE" value="">
+          <input type="hidden" name="TOTAL_SCORE" id="fldTOTAL" value="">
+          <input type="hidden" name="LOWEST_BUCKET" id="fldLOWEST" value="">
+          <input type="hidden" name="TOP_3_GAPS" id="fldGAPS" value="">
+          <input type="hidden" name="PATH" id="fldPATH" value="">
           <div style="padding:6px 0;">
             <div class="sib-form-block">
-              <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form-quiz" type="submit">
-                <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
-                  <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                </svg>
+              <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form-quiz" type="submit" aria-label="Show my results and subscribe">
+                <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/></svg>
                 SHOW MY RESULTS →
               </button>
             </div>
           </div>
-          <input type="text" name="email_address_check" value="" class="input--hidden">
+          <input type="text" name="email_address_check" value="" class="input--hidden" aria-hidden="true">
           <input type="hidden" name="locale" value="en">
           <input type="hidden" name="html_type" value="simple">
         </form>
@@ -884,372 +330,640 @@ body.path-parent .ambient-2 { opacity: 0.03; }
   </div>
 </div>
 
-<!-- ==================== RESULTS ==================== -->
+<!-- RESULTS -->
 <div class="screen" id="screen-results" style="align-items: flex-start; padding-top: 5rem;">
   <div class="inner" id="resultsInner"></div>
 </div>
 
 <script>
-// Keyboard support for path cards
-document.querySelectorAll('.path-card').forEach(card => {
-  card.addEventListener('keydown', e => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      card.click();
-    }
-  });
-});
+const BOOK1_URL = "https://a.co/d/0gjqlkB6";
+const BOOK2_URL = "https://a.co/d/0gu0a2CR";
 
+// ==================== QUESTIONS: 5 buckets x 3 each = 15 ====================
+// Buckets: connection, reading, influence, conflict, anxiety
 
-// ==================== CONFIG ====================
-const SOCIAL_URL = 'https://a.co/d/0gjqlkB6';
-const WAR_URL    = 'https://a.co/d/0gu0a2CR';
-const AMAZON_URL = SOCIAL_URL; // legacy hook
-
-const CATS = {
-  connection: { label: 'CONNECTION', cls: 'cat-connection' },
-  awareness:  { label: 'AWARENESS',  cls: 'cat-awareness'  },
-  influence:  { label: 'INFLUENCE',  cls: 'cat-influence'  },
-  conflict:   { label: 'CONFLICT',   cls: 'cat-conflict'   }
+const questions = {
+  teen: [
+    { cat: "connection", catLabel: "CONNECTION",
+      q: "YOU WALK INTO A PARTY WHERE YOU ONLY KNOW ONE PERSON.",
+      scenario: "They disappear to get drinks and you're standing alone. A group nearby is laughing. What do you do?",
+      options: [
+        { text: "Wait for your friend to come back and stay on your phone", score: 0 },
+        { text: "Linger near the group hoping someone talks to you", score: 1 },
+        { text: "Wait for a natural gap and make a light comment to the group", score: 2 },
+        { text: "Confidently introduce yourself and ask how they know the host", score: 3 }
+      ]},
+    { cat: "connection", catLabel: "CONNECTION",
+      q: "YOU JUST MET SOMEONE YOU ACTUALLY WANT TO STAY CONNECTED WITH.",
+      scenario: "The conversation was good. It's ending. What do you do in the last 30 seconds?",
+      options: [
+        { text: "Nothing — hope you cross paths again", score: 0 },
+        { text: "Say it was nice meeting them and leave it there", score: 1 },
+        { text: "Swap socials and send a follow request later", score: 2 },
+        { text: "Reference something specific from the conversation and suggest a reason to stay in touch", score: 3 }
+      ]},
+    { cat: "connection", catLabel: "CONNECTION",
+      q: "ONE OF YOUR CLOSEST FRIENDS IS SOMEONE YOU'VE ONLY EVER KNOWN ONLINE.",
+      scenario: "You game and chat daily but have never met in person. Meanwhile your in-person connections feel thinner. How do you handle this?",
+      options: [
+        { text: "Online is enough — in-person friendships are overrated", score: 0 },
+        { text: "Keep the online friendship but feel stuck about real-life ones", score: 1 },
+        { text: "Value it as real, while slowly working on one or two in-person connections", score: 2 },
+        { text: "Treat it as real AND deliberately transfer the same skills — shared interests, consistency, showing up — to people you see in person", score: 3 }
+      ]},
+    { cat: "reading", catLabel: "ROOM READING",
+      q: "A FRIEND GOES QUIET AND STOPS RESPONDING LIKE THEY USED TO.",
+      scenario: "You haven't argued. Everything seemed fine. You sense something is off. What do you do?",
+      options: [
+        { text: "Act normal and hope it resolves itself", score: 0 },
+        { text: "Ask other friends if they know what's wrong", score: 1 },
+        { text: "Send a message saying you've noticed and you're there if they need to talk", score: 2 },
+        { text: "Check in with a specific shared memory — something that shows you pay attention to them", score: 3 }
+      ]},
+    { cat: "reading", catLabel: "ROOM READING",
+      q: "YOU WALK INTO A GROUP MID-CONVERSATION AND THE ENERGY SHIFTS.",
+      scenario: "The laughter stops. A couple of quick glances. You can't tell if it's about you or nothing at all.",
+      options: [
+        { text: "Assume they were talking about you and quietly withdraw", score: 0 },
+        { text: "Act like nothing happened and force your way into the conversation", score: 1 },
+        { text: "Stay relaxed, read tone and body language, and check in with one person later", score: 2 },
+        { text: "Clock the shift without reacting, let the conversation restart naturally, then verify with someone you trust", score: 3 }
+      ]},
+    { cat: "reading", catLabel: "ROOM READING",
+      q: "YOU'RE TELLING A STORY AND SENSE YOU'RE LOSING THE GROUP.",
+      scenario: "Eyes drifting. Someone checks their phone. You're only halfway through.",
+      options: [
+        { text: "Keep going — you started it, you finish it", score: 0 },
+        { text: "Speed up nervously and rush to the end", score: 1 },
+        { text: "Wrap it early and ask someone else a question", score: 2 },
+        { text: "Land the point in one sharp line, then hand the conversation over with a question", score: 3 }
+      ]},
+    { cat: "influence", catLabel: "INFLUENCE",
+      q: "YOU WANT YOUR PARENTS TO SAY YES TO SOMETHING IMPORTANT.",
+      scenario: "You've asked before and they said no. You really believe this matters. How do you approach it this time?",
+      options: [
+        { text: "Bring it up again and hope they're in a better mood", score: 0 },
+        { text: "Make your case with reasons why you deserve it", score: 1 },
+        { text: "Ask what their concerns are first, then address each one", score: 2 },
+        { text: "Pick the right moment, acknowledge their perspective, then present your case with a solution to their biggest concern", score: 3 }
+      ]},
+    { cat: "influence", catLabel: "INFLUENCE",
+      q: "YOUR GROUP IS DECIDING SOMETHING AND YOUR IDEA IS BEING IGNORED.",
+      scenario: "Others are louder. You genuinely think your idea is the best option but nobody is listening.",
+      options: [
+        { text: "Let it go and follow the group decision", score: 0 },
+        { text: "Repeat your idea more loudly", score: 1 },
+        { text: "Ask a question that leads the group to your conclusion themselves", score: 2 },
+        { text: "Get one person on side first, then re-present with their support", score: 3 }
+      ]},
+    { cat: "influence", catLabel: "INFLUENCE",
+      q: "YOU WANT TO BE TAKEN MORE SERIOUSLY BY PEOPLE OLDER THAN YOU.",
+      scenario: "You're the youngest in the room and people aren't fully engaging with what you say.",
+      options: [
+        { text: "Accept it — that's just how it works when you're young", score: 0 },
+        { text: "Talk more to show you belong in the conversation", score: 1 },
+        { text: "Speak less but make each contribution specific and well-reasoned", score: 2 },
+        { text: "Ask sharp questions that show you've done your homework — let your thinking do the work", score: 3 }
+      ]},
+    { cat: "conflict", catLabel: "CONFLICT",
+      q: "SOMEONE CALLS YOU OUT IN THE GROUP CHAT — AND TWO OTHERS PILE ON.",
+      scenario: "They're partially right, but the way it's happening is unfair. Everyone in the chat is watching.",
+      options: [
+        { text: "Fire back immediately and defend yourself against all three", score: 0 },
+        { text: "Go silent and leave the chat", score: 1 },
+        { text: "Send one calm message acknowledging what's valid and correcting what isn't — then stop", score: 2 },
+        { text: "Refuse the public battle: one composed line if needed, then address the main person privately", score: 3 }
+      ]},
+    { cat: "conflict", catLabel: "CONFLICT",
+      q: "A CLOSE FRIEND DID SOMETHING THAT GENUINELY HURT YOU.",
+      scenario: "They don't seem aware of it. You're deciding whether to bring it up or let it go.",
+      options: [
+        { text: "Let it go — it'll cause more drama than it's worth", score: 0 },
+        { text: "Drop hints until they figure it out", score: 1 },
+        { text: "Bring it up directly but choose the right time and place", score: 2 },
+        { text: "Tell them exactly what happened, how it made you feel, and what you need going forward — without blame", score: 3 }
+      ]},
+    { cat: "conflict", catLabel: "CONFLICT",
+      q: "YOU SEE A STORY OF YOUR FRIEND GROUP HANGING OUT. YOU WEREN'T INVITED.",
+      scenario: "No explanation. No message. Just the post, and the feeling in your stomach.",
+      options: [
+        { text: "Say nothing and quietly pull away from the group", score: 0 },
+        { text: "Post something of your own to show you don't care", score: 1 },
+        { text: "Ask one friend directly and calmly what happened", score: 2 },
+        { text: "Ask directly without accusation, actually listen to the answer, then decide what the friendship is worth", score: 3 }
+      ]},
+    { cat: "anxiety", catLabel: "CONFIDENCE",
+      q: "YOU MESSAGE SOMEONE WHO MATTERS. READ. NO REPLY. HOURS PASS.",
+      scenario: "You keep checking. Your brain starts writing stories about what it means.",
+      options: [
+        { text: "Spiral — re-read the message, draft follow-ups, assume the worst", score: 0 },
+        { text: "Send a double text to force a response", score: 1 },
+        { text: "Put the phone down, do something else, follow up once tomorrow if needed", score: 2 },
+        { text: "Assume nothing — silence is data, not a verdict. One casual follow-up later tells you everything", score: 3 }
+      ]},
+    { cat: "anxiety", catLabel: "CONFIDENCE",
+      q: "YOU'VE DRAFTED A POST THREE TIMES — AND DELETED IT EVERY TIME.",
+      scenario: "You want to share it. But the fear of judgment, low likes, or the wrong person seeing it stops you.",
+      options: [
+        { text: "Never post — invisible is safer", score: 0 },
+        { text: "Post it, then delete it if it doesn't get likes in 20 minutes", score: 1 },
+        { text: "Post it and mute notifications for an hour", score: 2 },
+        { text: "Post it, notice the fear, and let the numbers mean nothing — visibility is a skill you're training", score: 3 }
+      ]},
+    { cat: "anxiety", catLabel: "CONFIDENCE",
+      q: "SOMEONE IS PRESSURING YOU INTO SOMETHING YOU DON'T WANT TO DO.",
+      scenario: "They're using social pressure — making you feel like you'll look bad if you don't go along.",
+      options: [
+        { text: "Go along with it to avoid the awkwardness", score: 0 },
+        { text: "Say no but feel anxious about how they'll react", score: 1 },
+        { text: "Say no clearly and calmly without over-explaining", score: 2 },
+        { text: "Name the move out loud — then hold your position without apology", score: 3 }
+      ]}
+  ],
+  parent: [
+    { cat: "connection", catLabel: "CONNECTION",
+      q: "YOUR TEEN IS AT A NEW SCHOOL OR IN A NEW GROUP.",
+      scenario: "It's been three weeks. They seem fine but haven't mentioned any real friends. When you ask, they say it's fine.",
+      options: [
+        { text: "Leave it — they'll figure it out when they're ready", score: 0 },
+        { text: "Tell them to join a club or sport to meet people", score: 1 },
+        { text: "Ask specific questions about individuals they've noticed, not just how school was", score: 2 },
+        { text: "Help them identify one person they'd like to know better and coach a low-stakes opening move", score: 3 }
+      ]},
+    { cat: "connection", catLabel: "CONNECTION",
+      q: "YOUR TEEN HAS ONE VERY CLOSE FRIEND AND STRUGGLES TO BRANCH OUT.",
+      scenario: "Deeply loyal to this one person, anxious in broader social settings. The friendship is healthy but narrow.",
+      options: [
+        { text: "It's fine — quality over quantity", score: 0 },
+        { text: "Encourage them to invite the friend to larger group events", score: 1 },
+        { text: "Help them identify specific people they'd like to know better and a low-stakes way in", score: 2 },
+        { text: "Teach the difference between connection and dependency — and help them build a wider social range deliberately", score: 3 }
+      ]},
+    { cat: "connection", catLabel: "CONNECTION",
+      q: "YOUR TEEN'S CLOSEST FRIENDSHIPS ARE ENTIRELY ONLINE.",
+      scenario: "Gaming friends, Discord servers, group chats — real bonds, but nobody they see in person. In-person social muscles are going unused.",
+      options: [
+        { text: "Restrict screen time — those aren't real friendships anyway", score: 0 },
+        { text: "Allow it but stay out of it entirely", score: 1 },
+        { text: "Respect it as real while creating low-pressure in-person opportunities", score: 2 },
+        { text: "Treat it as real, learn who these friends are, and coach transferring those same connection skills to in-person settings", score: 3 }
+      ]},
+    { cat: "reading", catLabel: "ROOM READING",
+      q: "YOUR TEEN DOESN'T SEEM AWARE OF HOW THEY COME ACROSS.",
+      scenario: "They interrupt, dominate conversations, or go quiet at the wrong moments — and seem genuinely surprised when friendships strain.",
+      options: [
+        { text: "They're young — awareness will come with time", score: 0 },
+        { text: "Point out specific moments after they happen", score: 1 },
+        { text: "Have a direct but gentle conversation about how social perception works", score: 2 },
+        { text: "Teach room-reading as a learnable skill — body language, energy shifts, who's engaged — using real moments and shows you watch together", score: 3 }
+      ]},
+    { cat: "reading", catLabel: "ROOM READING",
+      q: "YOUR TEEN IS CONVINCED A TEACHER UNFAIRLY TARGETS THEM.",
+      scenario: "The teacher does seem tougher on them. But your teen's response may also be making it worse.",
+      options: [
+        { text: "Back your teen and raise a concern with the school", score: 0 },
+        { text: "Tell them to ignore the teacher and focus on the work", score: 1 },
+        { text: "Help them see what the teacher might be responding to — as information, not blame", score: 2 },
+        { text: "Coach them to change the dynamic themselves — small deliberate moves that shift how they're perceived", score: 3 }
+      ]},
+    { cat: "reading", catLabel: "ROOM READING",
+      q: "YOUR TEEN KEEPS TALKING AFTER EVERYONE HAS CHECKED OUT.",
+      scenario: "Eyes drift, phones come out — and they don't notice. It's costing them socially and they don't know why.",
+      options: [
+        { text: "That's just their personality", score: 0 },
+        { text: "Point it out afterwards when it happens", score: 1 },
+        { text: "Gently teach the cues — fading eye contact, shifting posture, phones appearing", score: 2 },
+        { text: "Make room-reading a named skill you practise together — debrief real moments, spot the cues in movies and shows", score: 3 }
+      ]},
+    { cat: "influence", catLabel: "INFLUENCE",
+      q: "YOUR TEEN SAYS THEY NEVER GET LISTENED TO AT SCHOOL.",
+      scenario: "Their ideas get dismissed or ignored in group settings. They feel invisible.",
+      options: [
+        { text: "Reassure them it will get better", score: 0 },
+        { text: "Tell them to speak up more and be more confident", score: 1 },
+        { text: "Talk through what they said and how they said it — look for patterns", score: 2 },
+        { text: "Teach the difference between speaking more and speaking better — then role-play it with them", score: 3 }
+      ]},
+    { cat: "influence", catLabel: "INFLUENCE",
+      q: "YOUR TEEN CAVES WHEN SOMEONE MORE CONFIDENT DISAGREES.",
+      scenario: "If someone pushes back, they fold — even when they were right. They mistake volume for correctness.",
+      options: [
+        { text: "Tell them to believe in themselves more", score: 0 },
+        { text: "Practise debates at home so they get used to defending positions", score: 1 },
+        { text: "Teach them to separate the argument from the person — logic versus pressure", score: 2 },
+        { text: "Introduce Socratic questioning — hold a position by asking better questions, not being louder", score: 3 }
+      ]},
+    { cat: "influence", catLabel: "INFLUENCE",
+      q: "YOUR TEEN WANTS SOMETHING FROM A TEACHER OR COACH — BUT WON'T ASK.",
+      scenario: "A team spot, an extension, a reference. The ask is reasonable. They just can't bring themselves to do it.",
+      options: [
+        { text: "Ask on their behalf", score: 0 },
+        { text: "Tell them to toughen up and just ask", score: 1 },
+        { text: "Help them script the ask beforehand", score: 2 },
+        { text: "Role-play the ask together, send them in solo, then debrief how it went", score: 3 }
+      ]},
+    { cat: "conflict", catLabel: "CONFLICT",
+      q: "YOUR TEEN EXPLODES IN ARGUMENTS, THEN SHUTS DOWN COMPLETELY.",
+      scenario: "Zero to a hundred in seconds, says things they regret, then total silence. Nothing ever resolves.",
+      options: [
+        { text: "Give them space and hope they calm down on their own", score: 0 },
+        { text: "Tell them they need to control their emotions better", score: 1 },
+        { text: "Teach them to name what they're feeling before they speak", score: 2 },
+        { text: "Work through composure techniques together — and model them yourself in your own disagreements", score: 3 }
+      ]},
+    { cat: "conflict", catLabel: "CONFLICT",
+      q: "YOUR TEEN WAS PILED ON IN A GROUP CHAT LAST NIGHT.",
+      scenario: "One person started it, others joined. Your teen is somewhere between devastated and furious, drafting replies.",
+      options: [
+        { text: "Tell them to leave the chat and move on", score: 0 },
+        { text: "Screenshot everything and contact the school or parents immediately", score: 1 },
+        { text: "Help them respond once with composure — or not at all — then process it offline", score: 2 },
+        { text: "Coach the strategic response: no public battles, one calm line if needed, address the main person privately, protect their standing", score: 3 }
+      ]},
+    { cat: "conflict", catLabel: "CONFLICT",
+      q: "YOUR TEEN HOLDS GRUDGES AND CAN'T MOVE ON.",
+      scenario: "When someone wrongs them — even slightly — they cut the person off completely. They'd rather end a friendship than have a repair conversation.",
+      options: [
+        { text: "Respect it — they know who's worth their time", score: 0 },
+        { text: "Tell them forgiveness is for them, not the other person", score: 1 },
+        { text: "Help them distinguish between protecting themselves and punishing others", score: 2 },
+        { text: "Teach repair as a skill — how to reopen a relationship after a break, what to say and how to say it", score: 3 }
+      ]},
+    { cat: "anxiety", catLabel: "CONFIDENCE",
+      q: "YOUR TEEN SPIRALS WHEN SOMEONE DOESN'T REPLY.",
+      scenario: "A message left on read sends them into hours of checking, re-reading, and worst-case stories.",
+      options: [
+        { text: "Tell them it's not a big deal", score: 0 },
+        { text: "Distract them with something else", score: 1 },
+        { text: "Name the pattern with them and agree one wait-and-return rule", score: 2 },
+        { text: "Teach the reframe — silence is data, not a verdict — and build a rule together that they own", score: 3 }
+      ]},
+    { cat: "anxiety", catLabel: "CONFIDENCE",
+      q: "YOUR TEEN DRAFTS POSTS AND DELETES THEM — EVERY TIME.",
+      scenario: "They want to share things but fear judgment, low likes, or the wrong person seeing it. So they stay invisible.",
+      options: [
+        { text: "Good — less posting is safer anyway", score: 0 },
+        { text: "Tell them nobody cares what they post", score: 1 },
+        { text: "Talk about what specifically they're afraid of", score: 2 },
+        { text: "Treat visibility as a trainable skill — small reps, low-stakes first, debrief the feelings after", score: 3 }
+      ]},
+    { cat: "anxiety", catLabel: "CONFIDENCE",
+      q: "YOUR TEEN HAS AN EXCUSE FOR EVERY SOCIAL EVENT.",
+      scenario: "Birthday parties, team dinners, school events — there's always a reason not to go. The avoidance is becoming the pattern.",
+      options: [
+        { text: "Stop pushing — they're just an introvert", score: 0 },
+        { text: "Force attendance — they'll thank you later", score: 1 },
+        { text: "Negotiate small, time-boxed attendance with an agreed exit plan", score: 2 },
+        { text: "Build a gradual exposure ladder together — celebrate the reps, not the outcomes", score: 3 }
+      ]}
+  ]
 };
 
-// 12 questions · 3 per category · options scored 0–3
-const QUESTIONS = [
- { cat:'connection',
-   t:'You join a new class or team where everyone already knows each other.',
-   p:'Your teen joins a new class or team where everyone already knows each other.',
-   q:'What\u2019s the most likely move?',
-   opts:[
-    {x:'Wait for someone to make the first move', s:1},
-    {x:'Find a shared moment \u2014 comment on what\u2019s happening, ask a quick question', s:3},
-    {x:'Stick to the one person vaguely known and talk only to them', s:2},
-    {x:'Keep the head down \u2014 easier to stay invisible', s:0}]},
- { cat:'conflict',
-   t:'Someone makes a dig at you in front of others.',
-   p:'Someone makes a dig at your teen in front of others.',
-   q:'What usually happens next?',
-   opts:[
-    {x:'Fire back harder', s:1},
-    {x:'Freeze, then replay it all night', s:0},
-    {x:'A calm one-liner or an unbothered pause \u2014 then move on', s:3},
-    {x:'Laugh along even though it stung', s:2}]},
- { cat:'awareness',
-   t:'Mid-conversation, a friend suddenly goes quiet.',
-   p:'Mid-conversation, your teen\u2019s friend suddenly goes quiet.',
-   q:'What\u2019s the instinct?',
-   opts:[
-    {x:'Keep talking to fill the silence', s:1},
-    {x:'Assume they\u2019re bored and pull back', s:0},
-    {x:'Switch to a more fun topic', s:2},
-    {x:'Ask \u201cyou good?\u201d \u2014 and actually wait for the answer', s:3}]},
- { cat:'influence',
-   t:'Someone states an opinion you know is wrong.',
-   p:'Someone tells your teen something they know is wrong.',
-   q:'What\u2019s the usual response?',
-   opts:[
-    {x:'Correct them straight away with facts', s:1},
-    {x:'Ask a question that lets them spot the gap themselves', s:3},
-    {x:'Start with what they got right, then add the other view', s:2},
-    {x:'Let it slide \u2014 even when it matters', s:0}]},
- { cat:'connection',
-   t:'A group chat is planning something fun this weekend.',
-   p:'Your teen\u2019s group chat is planning something fun this weekend.',
-   q:'What\u2019s the move?',
-   opts:[
-    {x:'Ask directly: \u201ckeen \u2014 what time and where?\u201d', s:3},
-    {x:'Type \u201csounds fun\u201d and hope for a direct invite', s:2},
-    {x:'Wait until the day, then ask what happened', s:1},
-    {x:'Leave it on read \u2014 if they wanted me there, they\u2019d say so', s:0}]},
- { cat:'conflict',
-   t:'A disagreement in the group chat starts turning into a pile-on.',
-   p:'A disagreement in your teen\u2019s group chat turns into a pile-on.',
-   q:'What\u2019s the play?',
-   opts:[
-    {x:'Say your piece once, clearly \u2014 then step out of the loop', s:3},
-    {x:'Fight it out message by message', s:1},
-    {x:'Mute it and pretend it isn\u2019t happening', s:2},
-    {x:'Join in \u2014 better them than me', s:0}]},
- { cat:'awareness',
-   t:'You\u2019re telling a story and notice people checking their phones.',
-   p:'Your teen is telling a story and people start checking their phones.',
-   q:'What happens?',
-   opts:[
-    {x:'Talk louder and faster to win attention back', s:1},
-    {x:'Wrap it fast and flip to a question about them', s:3},
-    {x:'Call it out: \u201cam I boring you?\u201d', s:0},
-    {x:'Trail off, feeling it', s:2}]},
- { cat:'influence',
-   t:'You need a teacher, coach or parent to say yes to something.',
-   p:'Your teen needs a teacher, coach or you to say yes to something.',
-   q:'How does the ask go?',
-   opts:[
-    {x:'Small agreements first, then the big ask', s:3},
-    {x:'Lead with what\u2019s in it for them, then ask', s:2},
-    {x:'Ask cold, no setup', s:1},
-    {x:'Hint around it and hope they offer', s:0}]},
- { cat:'connection',
-   t:'You\u2019re introduced to three new people at once.',
-   p:'Your teen is introduced to three new people at once.',
-   q:'What happens with the names?',
-   opts:[
-    {x:'Repeat each name on the spot, use one later in the convo', s:3},
-    {x:'Listen closely, but feel awkward saying names out loud', s:2},
-    {x:'Catch one, dodge the other two', s:1},
-    {x:'Gone instantly \u2014 avoid names for the rest of the day', s:0}]},
- { cat:'conflict',
-   t:'You lose \u2014 a tryout, a grade, a game \u2014 and the winner rubs it in.',
-   p:'Your teen loses \u2014 a tryout, a grade, a game \u2014 and the winner rubs it in.',
-   q:'What\u2019s the reaction?',
-   opts:[
-    {x:'Study what they did better and adjust', s:3},
-    {x:'Train harder \u2014 doing exactly the same thing', s:2},
-    {x:'Decide it was rigged', s:0},
-    {x:'Want to quit the whole thing', s:1}]},
- { cat:'awareness',
-   t:'After hanging out with someone, how much do you know about what\u2019s going on in their life?',
-   p:'After your teen hangs out with someone, how much do they know about that person\u2019s life?',
-   q:'Honest answer:',
-   opts:[
-    {x:'Heaps \u2014 mostly asked and listened', s:3},
-    {x:'About even, both ways', s:2},
-    {x:'Not much \u2014 did most of the talking', s:1},
-    {x:'Never really tracked that', s:0}]},
- { cat:'influence',
-   t:'The group is deciding something and you want your idea picked.',
-   p:'Your teen\u2019s group is deciding something and they want their idea picked.',
-   q:'What\u2019s the strategy?',
-   opts:[
-    {x:'Frame it so it feels like the group\u2019s idea', s:3},
-    {x:'Spell out the benefit for each person', s:2},
-    {x:'Say it once \u2014 drop it if ignored', s:1},
-    {x:'Go along with whatever, even while disagreeing', s:0}]}
-];
+// ==================== PROFILES (score /45) ====================
 
-const PROFILES = [
- { min:0,  max:13, label:'THE HIDDEN PLAYER',       tag:'The skills aren\u2019t missing \u2014 they\u2019ve never been unlocked. Every gap below is trainable, and the fixes are specific.' },
- { min:14, max:22, label:'THE SELECTIVE OPERATOR',  tag:'Strong in safe rooms \u2014 the gaps show up under pressure. Close the three below and the ceiling lifts fast.' },
- { min:23, max:29, label:'THE RISING STRATEGIST',   tag:'Most moves are already right. A few blind spots are quietly expensive \u2014 here\u2019s exactly where.' },
- { min:30, max:36, label:'THE ROOM READER',         tag:'Top-tier instincts. The next level isn\u2019t more instinct \u2014 it\u2019s turning it into a repeatable system.' }
-];
+function getProfile(score, path) {
+  const pct = Math.round((score / 45) * 100);
+  const profiles = {
+    teen: [
+      { min: 0, max: 15, label: "THE INVISIBLE ONE", color: "#E03E4E", tagline: "You have instincts — but they're going unused. Social situations feel unpredictable because you don't yet have a system. The good news: this is entirely learnable, and starting now puts you years ahead." },
+      { min: 16, max: 27, label: "THE AWARE OBSERVER", color: "#4D94FF", tagline: "You notice more than most. You read situations well but struggle to act on what you see. The gap between insight and action is exactly where The Social Playbook operates." },
+      { min: 28, max: 37, label: "THE EMERGING PLAYER", color: "#D4A84B", tagline: "You're good at this — better than you probably know. But specific gaps are holding you back from the next level. Close those three and the difference will be immediate." },
+      { min: 38, max: 45, label: "THE NATURAL STRATEGIST", color: "#3ECF8E", tagline: "You already operate at a high level. Your value from this series is refinement — turning instincts into systems you can repeat under pressure." }
+    ],
+    parent: [
+      { min: 0, max: 15, label: "FLYING BLIND", color: "#E03E4E", tagline: "You care deeply but haven't had the tools to support your teen's social development in a structured way. That's not a failure — this was never widely taught. It is now." },
+      { min: 16, max: 27, label: "THE CONCERNED OBSERVER", color: "#4D94FF", tagline: "You see what's happening but aren't sure how to step in without making it worse. That instinct to pause is the right one. Now pair it with strategy." },
+      { min: 28, max: 37, label: "THE SUPPORTIVE COACH", color: "#D4A84B", tagline: "You're already doing many things right. The gaps are specific — a few frameworks you haven't had access to. Add those and you move from supportive to genuinely transformative." },
+      { min: 38, max: 45, label: "THE STRATEGIC PARENT", color: "#3ECF8E", tagline: "You approach your teen's social development with real intentionality. This series gives you a shared language to practise these principles together." }
+    ]
+  };
+  const p = profiles[path].find(x => score >= x.min && score <= x.max) || profiles[path][0];
+  return { ...p, pct };
+}
 
-const GAP_META = {
- connection: { title:'Making the First Move',
-   desc:'Openings, invitations, names \u2014 the mechanics of turning strangers into friends instead of waiting to be chosen.',
-   chapter:'The Magnetic Field \u00b7 The Rizz Patch', book:1 },
- awareness: { title:'Reading the Room',
-   desc:'Noticing what people actually signal \u2014 boredom, discomfort, interest \u2014 and adjusting before it costs you.',
-   chapter:'The Listener\u2019s High Ground \u00b7 The POV Switch', book:1 },
- influence: { title:'Changing Minds Without a Fight',
-   desc:'Getting to yes without arguing \u2014 framing, questions, and asks that people actually want to agree to.',
-   chapter:'The \u201cYes\u201d Chain \u00b7 The Debate Lord L', book:1 },
- conflict: { title:'Staying Composed Under Fire',
-   desc:'Digs, pile-ons, provocation, losing \u2014 responding from strategy instead of impulse, and winning without fighting.',
-   chapter:'Win Without Fighting \u00b7 Rage Is a Terrible General', book:2 }
+// ==================== GAP DATA (5 buckets) ====================
+
+const gapData = {
+  connection: {
+    title: "Making & Deepening Connections",
+    chapter: "Ch 1–6",
+    desc: "Starting conversations, keeping them alive, and turning brief encounters into real relationships — online and off.",
+    meaning: "Your teen struggles to initiate and build relationships. Left alone, this narrows their world — fewer friendships, fewer opportunities, more reliance on whoever happens to include them.",
+    signs: ["Eats lunch alone by default, not by choice", "Friendships fade after a term instead of deepening", "Finds it easier to talk to adults or online friends than peers in person"],
+    practice: "This week: have them ask one person one specific question about something that person cares about — and actually listen to the answer."
+  },
+  reading: {
+    title: "Reading Rooms & People",
+    chapter: "Ch 7–12",
+    desc: "Noticing tone, energy shifts, and unspoken signals — knowing what a room is telling you before anyone says it.",
+    meaning: "Your teen misses social signals others catch automatically. This is why friendships strain without them knowing why, and why they're often the last to realise a dynamic has shifted.",
+    signs: ["Interrupts or overtalks without noticing", "Misses sarcasm, tone shifts, or fading interest", "Genuinely surprised when a friend turns out to be upset"],
+    practice: "This week: after one group moment, ask what they noticed about how people reacted — pure observation, zero judgment."
+  },
+  influence: {
+    title: "Influence Without Force",
+    chapter: "Ch 13–18",
+    desc: "Being heard, taken seriously, and getting to yes — without volume, without manipulation.",
+    meaning: "Your teen's ideas get overlooked and their asks go unmade. Over time this compounds into being underestimated everywhere — classrooms now, workplaces later.",
+    signs: ["Their ideas get repeated louder by someone else — who gets the credit", "Won't ask teachers or coaches for anything", "Folds fast in any disagreement with a confident person"],
+    practice: "This week: before one ask, have them write down the other person's most likely objection first — then plan one sentence that answers it."
+  },
+  conflict: {
+    title: "Conflict & Group Pressure",
+    chapter: "Ch 19–24",
+    desc: "Holding your ground without burning bridges, surviving group-chat pile-ons, and repairing relationships after friction.",
+    meaning: "Your teen either avoids conflict until it explodes, or escalates fast and repairs never. Both patterns cost friendships — and both follow people into adult relationships and workplaces.",
+    signs: ["Ghosts friends instead of repairing after friction", "Explodes, then goes completely silent", "Avoids a person entirely after any disagreement"],
+    practice: "This week: one rule for one disagreement — name the feeling out loud before making the argument."
+  },
+  anxiety: {
+    title: "Social Confidence & Avoidance",
+    chapter: "Ch 25–30",
+    desc: "Handling being left on read, posting without spiralling, saying no under pressure, and showing up when avoidance feels safer.",
+    meaning: "Your teen's default is avoidance — of events, of visibility, of any moment they could be judged. Every avoided rep reinforces the fear. The pattern doesn't age out; it hardens.",
+    signs: ["Drafts messages or posts, then deletes them", "Spirals when replies are slow", "Has an excuse ready for every social event"],
+    practice: "This week: one small visible rep — a message sent, a hand raised, a post kept up. Celebrate the rep, not the outcome."
+  }
 };
 
 // ==================== STATE ====================
-let currentPath = 'teen';
+
+let currentPath = "teen";
 let currentQ = 0;
 let answers = {};
-let userEmail = '';
+let RESULT = null;
 
-// ==================== FLOW ====================
+// ==================== QUIZ LOGIC ====================
+
 function startQuiz(path) {
   currentPath = path;
   currentQ = 0;
   answers = {};
-  document.body.className = 'path-' + path;
-  showScreen('screen-quiz');
+  RESULT = null;
+  document.body.className = "path-" + path;
+  showScreen("screen-quiz");
   renderQuestion();
 }
 
 function renderQuestion() {
-  const Q = QUESTIONS[currentQ];
-  const cat = CATS[Q.cat];
-  document.getElementById('progressCount').textContent = (currentQ + 1) + ' / ' + QUESTIONS.length;
-  document.getElementById('progressFill').style.width = ((currentQ + 1) / QUESTIONS.length * 100) + '%';
-  const scenario = currentPath === 'parent' ? Q.p : Q.t;
-  document.getElementById('questionArea').innerHTML =
-    '<span class="q-category ' + cat.cls + '">' + cat.label + '</span>' +
-    '<div class="q-scenario">' + scenario + '</div>' +
-    '<h2 class="q-text">' + Q.q + '</h2>' +
-    '<div class="options">' + Q.opts.map((o, i) =>
-      '<div class="option' + (answers[currentQ] === i ? ' selected' : '') + '" role="button" tabindex="0" onclick="selectOption(' + i + ')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();selectOption(' + i + ');}">' +
-        '<span class="option-letter">' + String.fromCharCode(65 + i) + '</span>' +
-        '<span class="option-text">' + o.x + '</span>' +
-      '</div>').join('') + '</div>';
-  document.getElementById('btnBack').disabled = currentQ === 0;
-  document.getElementById('btnNext').disabled = answers[currentQ] === undefined;
-  document.getElementById('btnNext').innerHTML = (currentQ === QUESTIONS.length - 1 ? 'SEE RESULTS ' : 'NEXT ') +
-    '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+  const qs = questions[currentPath];
+  const q = qs[currentQ];
+  const total = qs.length;
 
-function selectOption(i) {
-  answers[currentQ] = i;
-  document.querySelectorAll('#questionArea .option').forEach((el, k) => el.classList.toggle('selected', k === i));
-  document.getElementById('btnNext').disabled = false;
-}
+  document.getElementById("progressCount").textContent = (currentQ + 1) + " / " + total;
+  document.getElementById("progressFill").style.width = (((currentQ + 1) / total) * 100) + "%";
+  document.getElementById("progressLabel").textContent = q.catLabel;
 
-function goBack() { if (currentQ > 0) { currentQ--; renderQuestion(); } }
-function goNext() {
-  if (answers[currentQ] === undefined) return;
-  if (currentQ < QUESTIONS.length - 1) { currentQ++; renderQuestion(); }
-  else showScreen('screen-gate');
-}
+  const catClass = { connection: "cat-connection", reading: "cat-reading", influence: "cat-influence", conflict: "cat-conflict", anxiety: "cat-anxiety" }[q.cat];
+  const selected = answers[currentQ];
 
-// ==================== SCORING ====================
-function computeResults() {
-  const catScore = { connection: 0, awareness: 0, influence: 0, conflict: 0 };
-  const catMax   = { connection: 0, awareness: 0, influence: 0, conflict: 0 };
-  QUESTIONS.forEach((Q, qi) => {
-    catMax[Q.cat] += 3;
-    const a = answers[qi];
-    if (a !== undefined) catScore[Q.cat] += Q.opts[a].s;
+  document.getElementById("questionArea").innerHTML =
+    '<span class="q-category ' + catClass + '">' + q.catLabel + '</span>' +
+    '<div class="q-text">' + q.q + '</div>' +
+    '<div class="q-scenario">' + q.scenario + '</div>' +
+    '<div class="options">' +
+    q.options.map(function(opt, i) {
+      return '<div class="option ' + (selected === opt.score ? "selected" : "") + '" onclick="selectOption(' + opt.score + ', this)" role="button" tabindex="0">' +
+        '<div class="option-letter">' + "ABCD"[i] + '</div>' +
+        '<div class="option-text">' + opt.text + '</div>' +
+        '</div>';
+    }).join("") +
+    '</div>';
+
+  // Keyboard support for options
+  document.querySelectorAll(".option").forEach(function(o) {
+    o.addEventListener("keydown", function(e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); o.click(); }
+    });
   });
-  const total = Object.values(catScore).reduce((a, b) => a + b, 0);
-  const profile = PROFILES.find(p => total >= p.min && total <= p.max) || PROFILES[1];
-  const gaps = Object.keys(catScore)
-    .sort((a, b) => catScore[a] - catScore[b])
-    .slice(0, 3)
-    .map(cat => Object.assign({ cat: cat, score: catScore[cat], max: catMax[cat] }, GAP_META[cat]));
-  return { total: total, max: 36, profile: profile, gaps: gaps, catScore: catScore };
+
+  document.getElementById("btnBack").disabled = currentQ === 0;
+  document.getElementById("btnNext").disabled = selected === undefined;
+
+  const isLast = currentQ === qs.length - 1;
+  document.getElementById("btnNext").innerHTML = isLast
+    ? 'SEE MY RESULTS <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>'
+    : 'NEXT <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+}
+
+function selectOption(score, el) {
+  answers[currentQ] = score;
+  document.querySelectorAll(".option").forEach(function(o) { o.classList.remove("selected"); });
+  el.classList.add("selected");
+  document.getElementById("btnNext").disabled = false;
+}
+
+function goNext() {
+  const qs = questions[currentPath];
+  if (currentQ < qs.length - 1) {
+    currentQ++;
+    renderQuestion();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    computeResults();
+    showScreen("screen-gate");
+  }
+}
+
+function goBack() {
+  if (currentQ > 0) { currentQ--; renderQuestion(); }
+}
+
+// ==================== COMPUTE + BREVO HIDDEN FIELDS ====================
+
+function computeResults() {
+  const qs = questions[currentPath];
+  const total = Object.values(answers).reduce(function(a, b) { return a + b; }, 0);
+  const profile = getProfile(total, currentPath);
+
+  // Per-bucket ratios
+  const buckets = { connection: [], reading: [], influence: [], conflict: [], anxiety: [] };
+  qs.forEach(function(q, i) { if (answers[i] !== undefined) buckets[q.cat].push(answers[i]); });
+  const ratios = {};
+  Object.keys(buckets).forEach(function(cat) {
+    const arr = buckets[cat];
+    const max = arr.length * 3;
+    ratios[cat] = max > 0 ? arr.reduce(function(a, b) { return a + b; }, 0) / max : 0;
+  });
+
+  const sorted = Object.entries(ratios).sort(function(a, b) { return a[1] - b[1]; });
+  const lowest = sorted[0][0];
+  const gaps = sorted.slice(0, 3).map(function(e) { return { key: e[0], ...gapData[e[0]] }; });
+
+  RESULT = { total: total, profile: profile, gaps: gaps, lowest: lowest };
+
+  // Populate Brevo hidden fields
+  document.getElementById("fldPROFILE").value = profile.label;
+  document.getElementById("fldTOTAL").value = String(total);
+  document.getElementById("fldLOWEST").value = lowest;
+  document.getElementById("fldGAPS").value = gaps.map(function(g) { return g.title; }).join(" | ");
+  document.getElementById("fldPATH").value = currentPath;
+}
+
+// ==================== GATE ====================
+
+function initGateForm() {
+  const form = document.getElementById("sib-form-quiz");
+  if (!form) return;
+  form.addEventListener("submit", function() {
+    const emailInput = document.getElementById("EMAIL_QUIZ");
+    if (emailInput && emailInput.value.includes("@")) {
+      setTimeout(function() { showResults(); }, 800);
+    }
+  });
 }
 
 // ==================== RESULTS ====================
+
 function showResults() {
-  const R = computeResults();
-  const pct = Math.round(R.total / R.max * 100);
-  const weakest = R.gaps[0];
-  const warPrimary = weakest.cat === 'conflict';
-  const primary = warPrimary
-    ? { url: WAR_URL,    name: 'The War Playbook',    head: 'YOUR BIGGEST GAP IS COMPOSURE.', sub: 'The War Playbook turns Sun Tzu into 30 tactics for exactly this \u2014 digs, pile-ons, pressure, losing well. Win without fighting.' }
-    : { url: SOCIAL_URL, name: 'The Social Playbook', head: 'EVERY GAP ABOVE HAS A CHAPTER.', sub: 'The Social Playbook covers all three \u2014 scenario first, then the exact move. 5\u20138 minute chapters ' + (currentPath === 'parent' ? 'your teen' : 'you') + ' will actually finish.' };
-  const secondary = warPrimary
-    ? { url: SOCIAL_URL, txt: 'Also see The Social Playbook \u2014 for the connection and influence gaps \u2192' }
-    : { url: WAR_URL,    txt: 'Dealing with a bully or constant conflict? The War Playbook \u2192' };
+  if (!RESULT) computeResults();
+  const profile = RESULT.profile;
+  const gaps = RESULT.gaps;
 
-  const barColor = pct < 40 ? 'var(--red)' : pct < 70 ? 'var(--gold)' : 'var(--green)';
-  const who = currentPath === 'parent' ? 'Your teen\u2019s profile' : 'Your profile';
+  const isParent = currentPath === "parent";
 
-  document.getElementById('resultsInner').innerHTML =
-    '<div class="result-header">' +
-      '<span class="result-badge" style="background:var(--gold-dim);color:var(--gold-soft);">' + who.toUpperCase() + '</span>' +
-      '<h1 class="result-profile">' + R.profile.label + '</h1>' +
-      '<p class="result-tagline">' + R.profile.tag + '</p>' +
-      '<div class="result-score-bar">' +
-        '<div class="score-label"><span>SOCIAL SKILLS SCORE</span><span>' + R.total + ' / ' + R.max + '</span></div>' +
-        '<div class="score-track"><div class="score-fill" id="scoreFill" style="width:0;background:' + barColor + ';"></div></div>' +
+  const gapHTML = gaps.map(function(g, i) {
+    const teenBlock =
+      '<div class="diag-block">' +
+      '<div class="practice-box"><strong>Try this week:</strong> ' + g.practice.replace("have them ", "").replace("them ", "you ") + '</div>' +
+      '</div>';
+    const parentBlock =
+      '<div class="diag-block">' +
+      '<div class="diag-h">What this means</div>' +
+      '<div class="diag-text">' + g.meaning + '</div>' +
+      '<div class="diag-h">Signs to watch</div>' +
+      '<ul class="diag-list">' + g.signs.map(function(s) { return "<li>" + s + "</li>"; }).join("") + '</ul>' +
+      '<div class="practice-box"><strong>One practice this week:</strong> ' + g.practice + '</div>' +
+      '</div>';
+    return '<div class="gap-card">' +
+      '<div class="gap-top">' +
+      '<div class="gap-num">0' + (i + 1) + '</div>' +
+      '<div class="gap-main">' +
+      '<div class="gap-title">' + g.title + '</div>' +
+      '<div class="gap-desc">' + g.desc + '</div>' +
       '</div>' +
-    '</div>' +
-    '<div class="gaps-title">TOP 3 GAPS \u2014 AND THE CHAPTERS THAT FIX THEM</div>' +
-    '<div class="gap-cards">' + R.gaps.map((g, i) =>
-      '<div class="gap-card">' +
-        '<div class="gap-num">0' + (i + 1) + '</div>' +
-        '<div>' +
-          '<span class="q-category ' + CATS[g.cat].cls + '">' + CATS[g.cat].label + ' \u00b7 ' + g.score + '/' + g.max + '</span>' +
-          '<div class="gap-title">' + g.title + '</div>' +
-          '<div class="gap-desc">' + g.desc + '</div>' +
-        '</div>' +
-        '<div class="gap-chapter">' + g.chapter + ' \u00b7 BOOK ' + g.book + '</div>' +
-      '</div>').join('') + '</div>' +
-    '<div class="result-cta-box">' +
-      '<h2 class="cta-box-h">' + primary.head + '</h2>' +
-      '<p class="cta-box-sub">' + primary.sub + '</p>' +
-      '<a class="btn-buy" href="' + primary.url + '" target="_blank" rel="noopener noreferrer">GET ' + primary.name.toUpperCase() + ' <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' +
-      '<p style="margin-top:0.9rem;font-size:0.8rem;"><a href="' + secondary.url + '" target="_blank" rel="noopener noreferrer" style="color:var(--dim);text-decoration:underline;">' + secondary.txt + '</a></p>' +
-    '</div>' +
-    '<div style="margin:2rem 0 1rem;">' +
-      '<div class="gaps-title" style="color:var(--text);">SHARE YOUR RESULT</div>' +
-      '<pre class="share-caption" id="shareCaption">' + buildShareCaption(R.profile, R.gaps) + '</pre>' +
-      shareButtons() +
-    '</div>' +
-    '<a class="result-retake" href="javascript:void(0)" onclick="retake()">Retake as ' + (currentPath === 'teen' ? 'a parent' : 'a teen') + ' \u2192</a>';
+      '<div class="gap-chapter">' + g.chapter + '</div>' +
+      '</div>' +
+      (isParent ? parentBlock : teenBlock) +
+      '</div>';
+  }).join("");
 
-  showScreen('screen-results');
-  setTimeout(() => { const f = document.getElementById('scoreFill'); if (f) f.style.width = pct + '%'; }, 100);
+  const ctaHeadline = isParent
+    ? "EVERY GAP HAS A STRATEGY.<br>IT'S IN THE SERIES."
+    : "THE PLAYBOOKS<br>CLOSE ALL THREE GAPS";
+  const ctaSub = isParent
+    ? "Chapters mapped to each gap above. Book 1 covers connection and confidence. Book 2 covers strategy and conflict. Read them alongside your teen."
+    : "Chapters mapped directly to your three gaps. Ancient wisdom, written in language that actually works for you.";
+
+  document.getElementById("resultsInner").innerHTML =
+    '<div class="result-header">' +
+    '<div class="result-badge" style="background:' + profile.color + '22;color:' + profile.color + ';border:1px solid ' + profile.color + '44;">YOUR SOCIAL PROFILE</div>' +
+    '<div class="result-profile" style="color:' + profile.color + '">' + profile.label + '</div>' +
+    '<div class="result-tagline">' + profile.tagline + '</div>' +
+    '<div class="result-score-bar">' +
+    '<div class="score-label"><span>OVERALL SOCIAL INTELLIGENCE</span><span style="color:' + profile.color + ';font-weight:700">' + profile.pct + '%</span></div>' +
+    '<div class="score-track"><div class="score-fill" id="scoreFill" style="width:0%;background:linear-gradient(90deg,var(--blue),' + profile.color + ')"></div></div>' +
+    '</div>' +
+    '</div>' +
+    '<div class="gaps-title">YOUR 3 KEY SKILL GAPS</div>' +
+    '<div class="gap-cards">' + gapHTML + '</div>' +
+    '<div class="share-box" id="shareBox" style="display:none">' +
+    '<div class="share-label">SHARE YOUR RESULT</div>' +
+    '<div class="share-caption" id="shareCaption"></div>' +
+    '<div class="share-btns">' +
+    '<button class="share-btn" id="copyBtn" onclick="copyCaption()" aria-label="Copy caption to clipboard"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg> Copy Caption</button>' +
+    '<a class="share-btn" id="tiktokBtn" href="https://www.tiktok.com/upload" target="_blank" rel="noopener noreferrer" aria-label="Open TikTok upload"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg> TikTok</a>' +
+    '<a class="share-btn" id="igBtn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Instagram</a>' +
+    '</div>' +
+    '</div>' +
+    '<div class="result-cta-box">' +
+    '<div class="cta-box-h">' + ctaHeadline + '</div>' +
+    '<div class="cta-box-sub">' + ctaSub + '</div>' +
+    '<div class="cta-btns">' +
+    '<a href="' + BOOK1_URL + '" target="_blank" rel="noopener noreferrer" class="btn-buy" aria-label="Buy The Social Playbook on Amazon">BOOK 1 — SOCIAL <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' +
+    '<a href="' + BOOK2_URL + '" target="_blank" rel="noopener noreferrer" class="btn-buy war" aria-label="Buy The War Playbook on Amazon">BOOK 2 — WAR <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' +
+    '</div>' +
+    '</div>' +
+    '<div class="result-retake" onclick="retake()" role="button" tabindex="0">← Retake as the other path</div>';
+
+  showScreen("screen-results");
+  setTimeout(function() {
+    const fill = document.getElementById("scoreFill");
+    if (fill) fill.style.width = profile.pct + "%";
+  }, 300);
+
+  buildShareCaption(profile, gaps);
 }
 
 // ==================== SHARE ====================
+
 function buildShareCaption(profile, gaps) {
-  const gapLine = gaps.map(g => g.title).join(', ');
-  const quizUrl = 'oldwisdomretold.com/quiz.html';
+  const gapLine = gaps.map(function(g) { return g.title.split(" ").slice(0, 3).join(" "); }).join(", ");
+  const quizUrl = "oldwisdomretold.com/quiz.html";
+
   const captions = {
-    teen: 'just took a social skills diagnostic and got "' + profile.label + '" \ud83d\ude2d\n\nmy top 3 gaps: ' + gapLine + '\n\nif you\u2019ve ever felt like you weren\u2019t saying the right things at the right time \u2014 this quiz actually breaks it down properly\n\nfree \u2192 ' + quizUrl + '\n\n#socialskills #selfimprovement #teenlife #oldwisdomretold',
-    parent: 'took a social skills quiz as a parent and honestly learned something \ud83d\udc40\n\nresult: "' + profile.label + '"\nkey gaps to work on: ' + gapLine + '\n\nthis is the stuff school never teaches. there\u2019s a free diagnostic + a book series that covers all of it\n\n\u2192 ' + quizUrl + '\n\n#parentingtips #raisingteens #socialskills #oldwisdomretold'
+    teen: 'just took a social skills diagnostic and got "' + profile.label + '" 😭\n\nmy top 3 gaps: ' + gapLine + '\n\nif you have ever felt like you were not saying the right things at the right time — this quiz actually breaks it down properly\n\nfree → ' + quizUrl + '\n\n#socialskills #selfimprovement #teenlife #oldwisdomretold',
+    parent: 'took a social skills quiz as a parent and honestly learned something 👀\n\nresult: "' + profile.label + '"\nkey gaps to work on: ' + gapLine + '\n\nthis is the stuff school never teaches. free diagnostic + a book series that covers all of it\n\n→ ' + quizUrl + '\n\n#parentingtips #raisingteens #socialskills #oldwisdomretold'
   };
-  return captions[currentPath] || captions.teen;
-}
 
-// path-aware share buttons: parent = native/WhatsApp, teen = copy-first (TikTok/IG paste flow)
-function shareButtons() {
-  if (currentPath === 'parent') {
-    return '<div class="share-btns">' +
-      '<button class="share-btn" onclick="shareNative()">\ud83d\udce4 Share\u2026</button>' +
-      '<button class="share-btn" onclick="shareWhatsApp()">WhatsApp</button>' +
-      '<button class="share-btn" id="copyBtn" onclick="copyCaption()">Copy</button></div>';
-  }
-  return '<div class="share-btns">' +
-    '<button class="share-btn" id="copyBtn" onclick="copyCaption()">Copy Caption</button>' +
-    '<button class="share-btn" onclick="shareNative()">\ud83d\udce4 Share\u2026</button></div>';
-}
-
-function shareNative() {
-  const text = document.getElementById('shareCaption').textContent;
-  if (navigator.share) {
-    navigator.share({ text: text, url: 'https://oldwisdomretold.com/quiz.html' }).catch(() => {});
-  } else { shareWhatsApp(); }
-}
-
-function shareWhatsApp() {
-  const text = document.getElementById('shareCaption').textContent;
-  window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  document.getElementById("shareCaption").textContent = captions[currentPath];
+  document.getElementById("shareBox").style.display = "block";
 }
 
 function copyCaption() {
-  const text = document.getElementById('shareCaption').textContent;
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = document.getElementById('copyBtn');
-    btn.textContent = '\u2713 Copied';
-    btn.classList.add('copied');
-    setTimeout(() => { btn.textContent = 'Copy Caption'; btn.classList.remove('copied'); }, 2000);
+  const text = document.getElementById("shareCaption").textContent;
+  navigator.clipboard.writeText(text).then(function() {
+    const btn = document.getElementById("copyBtn");
+    btn.textContent = "✓ Copied!";
+    btn.classList.add("copied");
+    setTimeout(function() {
+      btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg> Copy Caption';
+      btn.classList.remove("copied");
+    }, 2000);
   });
 }
 
-// ==================== SCREENS ====================
+// ==================== UTILS ====================
+
 function showScreen(id) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.querySelectorAll(".screen").forEach(function(s) { s.classList.remove("active"); });
+  document.getElementById(id).classList.add("active");
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function retake() {
-  currentPath = currentPath === 'teen' ? 'parent' : 'teen';
+  currentPath = currentPath === "teen" ? "parent" : "teen";
   currentQ = 0;
   answers = {};
-  document.body.className = 'path-' + currentPath;
-  showScreen('screen-quiz');
+  RESULT = null;
+  document.body.className = "path-" + currentPath;
+  showScreen("screen-quiz");
   renderQuestion();
 }
 
-// ==================== GATE — Brevo capture without navigation ====================
-function initGateForm() {
-  const form = document.getElementById('sib-form-quiz');
-  if (!form) return;
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const emailInput = document.getElementById('EMAIL_QUIZ');
-    if (!emailInput || !emailInput.value.includes('@')) return;
-    userEmail = emailInput.value.trim();
-    // fire-and-forget to Brevo; results show regardless
-    try { fetch(form.action, { method: 'POST', body: new FormData(form), mode: 'no-cors' }).catch(() => {}); } catch (err) {}
-    showResults();
-  });
-}
+// ==================== INIT ====================
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('[data-amazon]').forEach(a => { a.href = AMAZON_URL; });
+document.addEventListener("DOMContentLoaded", function() {
   initGateForm();
+
+  // Keyboard support for path cards
+  document.querySelectorAll(".path-card").forEach(function(card) {
+    card.addEventListener("keydown", function(e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); card.click(); }
+    });
+  });
+
+  // Concern param from landing page audience paths
+  const concern = new URLSearchParams(window.location.search).get("concern");
+  const concernCopy = {
+    friends: "Friendship gaps are the most common — and the most fixable. <strong>15 scenarios</strong> will pinpoint exactly where connection breaks down.",
+    conflict: "Conflict avoidance and blow-ups come from the same missing skill set. <strong>15 scenarios</strong> will show you which one.",
+    confidence: "Confidence is not a personality trait — it is a stack of small skills. <strong>This diagnostic finds the missing ones.</strong>",
+    drama: "Teens get pulled into drama when they cannot read rooms or hold boundaries. <strong>Find out which gap is doing the damage.</strong>"
+  };
+  if (concern && concernCopy[concern]) {
+    document.getElementById("splashSub").innerHTML = concernCopy[concern] + " 4 minutes. Free.";
+  }
 });
 </script>
 </body>
