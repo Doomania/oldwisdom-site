@@ -3,27 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Social Skills Quiz for Teens — 15 Questions, Instant Result | Old Wisdom // Retold</title>
+<title>Free Teen Social Skills Quiz | Old Wisdom // Retold</title>
 <meta name="description" content="A 15-question diagnostic to identify your teen's (or your own) social skill gaps — and the exact strategies to fix them.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://oldwisdomretold.com/quiz.html" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:author" content="Eric Han" />
+<meta property="article:published_time" content="2026-07-01T00:00:00+12:00" />
 <meta property="og:site_name" content="Old Wisdom // Retold" />
 <meta property="og:title" content="Free Social Skills Quiz for Teens — 15 Questions, Instant Result" />
 <meta property="og:description" content="Sun Tzu, Carnegie and the Stoics rebuilt as game-style playbooks for teens. 30 short chapters per book, 5–8 minutes each. By Auckland author Eric Han." />
 <meta property="og:url" content="https://oldwisdomretold.com/quiz.html" />
-<meta property="og:image" content="https://oldwisdomretold.com/assets/og-card.png" />
+<meta property="og:image" content="https://oldwisdomretold.com/assets/og-card-2026.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="639" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="The Social, War, and Discipline Playbooks by Eric Han" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Free Social Skills Quiz for Teens — 15 Questions, Instant Result" />
-<meta name="twitter:image" content="https://oldwisdomretold.com/assets/og-card.png" />
-<meta name="pinterest-rich-pin" content="true" />
+<meta name="twitter:image" content="https://oldwisdomretold.com/assets/og-card-2026.jpg" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Quiz",
   "name": "Teen Social Skills Quiz",
-  "dateModified": "2026-07-10",
+  "dateModified": "2026-07-16",
   "about": "15-question diagnostic identifying a teen's social skill gaps across confidence, reading people, conflict handling and influence — with matched strategies from the Old Wisdom // Retold series.",
   "educationalAlignment": {"@type": "AlignmentObject", "targetName": "Social skills for teens 12–17"},
   "provider": {"@id": "https://oldwisdomretold.com/#author"},
@@ -103,7 +107,7 @@ body.path-parent .ambient-2 { opacity: 0.015; }
 .splash-sub strong { color: var(--white); }
 
 .path-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
-.path-card { padding: 2rem 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; cursor: pointer; text-align: center; transition: all 0.35s var(--ease); position: relative; overflow: hidden; }
+.path-card { width: 100%; padding: 2rem 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; color: inherit; cursor: pointer; font: inherit; text-align: center; transition: all 0.35s var(--ease); position: relative; overflow: hidden; }
 .path-card::after { content: ''; position: absolute; inset: 0; opacity: 0; transition: opacity 0.35s; }
 .path-card.teen::after { background: radial-gradient(ellipse at 50% 0%, rgba(77,148,255,0.1), transparent 70%); }
 .path-card.parent::after { background: radial-gradient(ellipse at 50% 0%, rgba(212,168,75,0.1), transparent 70%); }
@@ -130,7 +134,7 @@ body.path-parent .ambient-2 { opacity: 0.015; }
 .progress-label { font-size: 0.75rem; color: var(--dim); letter-spacing: 0.08em; font-weight: 600; }
 .progress-count { font-family: var(--font-d); font-size: 1rem; color: var(--gold); }
 .progress-track { height: 3px; background: var(--muted); border-radius: 3px; overflow: hidden; }
-.progress-fill { height: 100%; background: linear-gradient(90deg, var(--blue), var(--gold)); border-radius: 3px; transition: width 0.5s var(--ease); }
+.progress-fill { width: 100%; height: 100%; background: linear-gradient(90deg, var(--blue), var(--gold)); border-radius: 3px; transform: scaleX(0); transform-origin: left; transition: transform 0.5s var(--ease); }
 
 /* ===== QUESTION ===== */
 .q-category { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.8rem; padding: 0.25rem 0.7rem; border-radius: 4px; display: inline-block; }
@@ -168,6 +172,8 @@ body.path-parent .ambient-2 { opacity: 0.015; }
 .gate-preview { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
 .gate-pill { padding: 0.3rem 0.8rem; border-radius: 100px; font-size: 0.75rem; font-weight: 600; background: var(--bg-elevated); border: 1px solid var(--border); color: var(--dim); }
 .gate-fine { text-align: center; font-size: 0.72rem; color: var(--muted); }
+.gate-status { min-height: 1.4rem; margin-top: 0.6rem; text-align: center; font-size: 0.78rem; color: var(--dim); }
+.gate-status.error { color: var(--red); }
 
 /* ===== BREVO ===== */
 #sib-container { background-color: transparent !important; border: none !important; border-radius: 0 !important; max-width: 100% !important; padding: 0 !important; }
@@ -194,7 +200,7 @@ body.path-parent .ambient-2 { opacity: 0.015; }
 .result-score-bar { margin-bottom: 2rem; }
 .score-label { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--dim); margin-bottom: 0.4rem; }
 .score-track { height: 8px; background: var(--muted); border-radius: 8px; overflow: hidden; }
-.score-fill { height: 100%; border-radius: 8px; transition: width 1.2s var(--ease) 0.3s; }
+.score-fill { width: 100%; height: 100%; border-radius: 8px; transform: scaleX(0); transform-origin: left; transition: transform 1.2s var(--ease) 0.3s; }
 
 .gaps-title { font-family: var(--font-d); font-size: 1rem; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 1rem; }
 .gap-cards { display: flex; flex-direction: column; gap: 0.9rem; margin-bottom: 2rem; }
@@ -223,8 +229,12 @@ body.path-parent .ambient-2 { opacity: 0.015; }
 .cta-btns { display: flex; gap: 0.7rem; justify-content: center; flex-wrap: wrap; }
 .btn-buy { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.8rem; background: var(--gold); color: var(--bg); font-family: var(--font-b); font-size: 0.92rem; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; text-decoration: none; transition: all 0.3s var(--ease); min-height: 48px; }
 .btn-buy:hover { background: var(--gold-soft); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,168,75,0.3); }
+.btn-buy.digital { flex-basis: 100%; justify-content: center; }
+.btn-buy.book { background: var(--blue); color: #fff; }
+.btn-buy.book:hover { background: #6BA5FF; box-shadow: 0 8px 24px rgba(77,148,255,0.25); }
 .btn-buy.war { background: #CC2233; color: #fff; }
 .btn-buy.war:hover { background: #E84455; box-shadow: 0 8px 24px rgba(204,34,51,0.3); }
+.cta-books-label { flex-basis: 100%; margin-top: 0.35rem; color: var(--muted); font-size: 0.72rem; letter-spacing: 0.08em; }
 
 /* ===== SHARE ===== */
 .share-box { margin: 1.5rem 0; padding: 1.4rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; }
@@ -246,7 +256,7 @@ body.path-parent .ambient-2 { opacity: 0.015; }
 <div class="ambient ambient-1" aria-hidden="true"></div>
 <div class="ambient ambient-2" aria-hidden="true"></div>
 
-<header class="site-header" role="banner" aria-label="Old Wisdom // Retold quiz">
+<header class="site-header" aria-label="Old Wisdom // Retold quiz">
   <div class="header-logo">OLD WISDOM // RETOLD</div>
   <a href="index.html" class="header-back">← Back to site</a>
 </header>
@@ -258,20 +268,20 @@ body.path-parent .ambient-2 { opacity: 0.015; }
     <h1 class="splash-h1">HOW STRONG ARE<br>YOUR SOCIAL<br><span class="g">SKILLS?</span></h1>
     <p class="splash-sub" id="splashSub">15 real-world scenarios. 4 minutes. A personalised breakdown of your <strong>exact skill gaps</strong> — and the strategies to close them.</p>
     <div class="path-cards">
-      <div class="path-card teen" onclick="startQuiz('teen')" role="button" tabindex="0" aria-label="Take the quiz as a teen">
+      <button type="button" class="path-card teen" onclick="startQuiz('teen')" aria-label="Take the quiz as a teen">
         <div class="path-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
         </div>
         <div class="path-title">I'M A TEEN</div>
         <div class="path-desc">See where your social skills actually stand — and what's holding you back</div>
-      </div>
-      <div class="path-card parent" onclick="startQuiz('parent')" role="button" tabindex="0" aria-label="Take the quiz as a parent">
+      </button>
+      <button type="button" class="path-card parent" onclick="startQuiz('parent')" aria-label="Take the quiz as a parent">
         <div class="path-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
         <div class="path-title">I'M A PARENT</div>
         <div class="path-desc">Assess the gaps your teen may have — and what skills they're missing</div>
-      </div>
+      </button>
     </div>
     <div class="splash-note">Takes ~4 minutes · Free · No login required</div>
     <section aria-label="What this quiz measures" style="max-width:520px;margin:2.5rem auto 0;font-size:0.82rem;color:var(--dim);line-height:1.65;text-align:center;">
@@ -289,13 +299,13 @@ body.path-parent .ambient-2 { opacity: 0.015; }
         <span class="progress-count" id="progressCount">1 / 15</span>
       </div>
       <div class="progress-track">
-        <div class="progress-fill" id="progressFill" style="width: 6.7%"></div>
+        <div class="progress-fill" id="progressFill"></div>
       </div>
     </div>
     <div id="questionArea"></div>
     <div class="q-nav">
-      <button class="btn-ghost" id="btnBack" onclick="goBack()" disabled>← BACK</button>
-      <button class="btn-next" id="btnNext" onclick="goNext()" disabled>
+      <button type="button" class="btn-ghost" id="btnBack" onclick="goBack()" disabled>← BACK</button>
+      <button type="button" class="btn-next" id="btnNext" onclick="goNext()" disabled>
         NEXT <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </button>
     </div>
@@ -326,7 +336,7 @@ body.path-parent .ambient-2 { opacity: 0.015; }
                 <div class="form__label-row">
                   <label class="entry__label" for="EMAIL_QUIZ">Your email address</label>
                   <div class="entry__field">
-                    <input class="input" type="email" id="EMAIL_QUIZ" name="EMAIL" autocomplete="email" placeholder="your@email.com" data-required="true" required aria-required="true" />
+                    <input class="input" type="email" id="EMAIL_QUIZ" name="EMAIL" autocomplete="email" placeholder="your@email.com" data-required="true" required aria-required="true" aria-describedby="gateStatus" />
                   </div>
                 </div>
                 <label class="entry__error entry__error--primary" role="alert"></label>
@@ -347,13 +357,14 @@ body.path-parent .ambient-2 { opacity: 0.015; }
               </button>
             </div>
           </div>
-          <input type="text" name="email_address_check" value="" class="input--hidden" aria-hidden="true">
+          <input type="text" name="email_address_check" value="" class="input--hidden" hidden tabindex="-1" autocomplete="off" aria-hidden="true">
           <input type="hidden" name="locale" value="en">
           <input type="hidden" name="html_type" value="simple">
         </form>
       </div>
     </div>
 
+    <div class="gate-status" id="gateStatus" role="status" aria-live="polite"></div>
     <div class="gate-fine">No spam. Unsubscribe anytime. Your report stays private.</div>
   </div>
 </div>
@@ -739,7 +750,7 @@ function renderQuestion() {
   const total = qs.length;
 
   document.getElementById("progressCount").textContent = (currentQ + 1) + " / " + total;
-  document.getElementById("progressFill").style.width = (((currentQ + 1) / total) * 100) + "%";
+  document.getElementById("progressFill").style.transform = "scaleX(" + ((currentQ + 1) / total) + ")";
   document.getElementById("progressLabel").textContent = q.catLabel;
 
   const catClass = { connection: "cat-connection", reading: "cat-reading", influence: "cat-influence", conflict: "cat-conflict", anxiety: "cat-anxiety" }[q.cat];
@@ -833,10 +844,38 @@ function computeResults() {
 function initGateForm() {
   const form = document.getElementById("sib-form-quiz");
   if (!form) return;
-  form.addEventListener("submit", function() {
+  form.addEventListener("submit", async function(event) {
+    event.preventDefault();
     const emailInput = document.getElementById("EMAIL_QUIZ");
-    if (emailInput && emailInput.value.includes("@")) {
-      setTimeout(function() { showResults(); }, 800);
+    const status = document.getElementById("gateStatus");
+    const button = form.querySelector('button[type="submit"]');
+
+    if (!form.checkValidity() || !emailInput || !emailInput.value.includes("@")) {
+      form.reportValidity();
+      status.textContent = "Enter a valid email address to save and open your report.";
+      status.classList.add("error");
+      return;
+    }
+
+    status.textContent = "Saving your result…";
+    status.classList.remove("error");
+    button.disabled = true;
+    button.setAttribute("aria-busy", "true");
+
+    try {
+      await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        mode: "no-cors",
+        keepalive: true
+      });
+      status.textContent = "Saved. Opening your report…";
+      showResults();
+    } catch (error) {
+      status.textContent = "We couldn't save the email. Check your connection and try again.";
+      status.classList.add("error");
+      button.disabled = false;
+      button.removeAttribute("aria-busy");
     }
   });
 }
@@ -877,11 +916,14 @@ function showResults() {
   }).join("");
 
   const ctaHeadline = isParent
-    ? "EVERY GAP HAS A STRATEGY.<br>IT'S IN THE SERIES."
-    : "THE PLAYBOOKS<br>CLOSE ALL THREE GAPS";
+    ? "TURN THIS RESULT INTO<br>ONE PREPARED MOVE."
+    : "KNOW THE GAP.<br>PREPARE THE NEXT MOVE.";
   const ctaSub = isParent
-    ? "Chapters mapped to each gap above. Book 1 covers connection and confidence. Book 2 covers strategy and conflict. Read them alongside your teen."
-    : "Chapters mapped directly to your three gaps. Ancient wisdom, written in language that actually works for you.";
+    ? "Use the 10-Minute Social Reset before one real message, conversation, disagreement, event, boundary, or repair. It is a complete $0.99 starting point, not a subscription."
+    : "Prepare one natural sentence and one manageable rep before the next social moment. The reset is $0.99 and works without changing who you are.";
+  const resetUrl = "reset.html?gap=" + encodeURIComponent(RESULT.lowest) +
+    "&path=" + encodeURIComponent(currentPath) +
+    "&utm_source=quiz&utm_medium=owned&utm_campaign=diagnostic_result";
 
   document.getElementById("resultsInner").innerHTML =
     '<div class="result-header">' +
@@ -890,7 +932,7 @@ function showResults() {
     '<div class="result-tagline">' + profile.tagline + '</div>' +
     '<div class="result-score-bar">' +
     '<div class="score-label"><span>OVERALL SOCIAL INTELLIGENCE</span><span style="color:' + profile.color + ';font-weight:700">' + profile.pct + '%</span></div>' +
-    '<div class="score-track"><div class="score-fill" id="scoreFill" style="width:0%;background:linear-gradient(90deg,var(--blue),' + profile.color + ')"></div></div>' +
+    '<div class="score-track"><div class="score-fill" id="scoreFill" style="background:linear-gradient(90deg,var(--blue),' + profile.color + ')"></div></div>' +
     '</div>' +
     '</div>' +
     '<div class="gaps-title">YOUR 3 KEY SKILL GAPS</div>' +
@@ -908,8 +950,10 @@ function showResults() {
     '<div class="cta-box-h">' + ctaHeadline + '</div>' +
     '<div class="cta-box-sub">' + ctaSub + '</div>' +
     '<div class="cta-btns">' +
-    '<a href="' + BOOK1_URL + '" target="_blank" rel="noopener noreferrer" class="btn-buy" aria-label="Buy The Social Playbook on Amazon">BOOK 1 — SOCIAL <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' +
-    '<a href="' + BOOK2_URL + '" target="_blank" rel="noopener noreferrer" class="btn-buy war" aria-label="Buy The War Playbook on Amazon">BOOK 2 — WAR <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' +
+    '<a href="' + resetUrl + '" class="btn-buy digital" aria-label="See the matched 10-Minute Social Reset for 99 cents" data-event="tripwire_clicked" data-event-label="quiz result ' + RESULT.lowest + '">SEE MY $0.99 SOCIAL RESET <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' +
+    '<div class="cta-books-label">PREFER TO START WITH A BOOK?</div>' +
+    '<a href="' + BOOK1_URL + '" target="_blank" rel="noopener noreferrer" class="btn-buy book" aria-label="Buy The Social Playbook on Amazon" data-event="amazon_clicked" data-event-label="social playbook quiz result">BOOK 1 — SOCIAL</a>' +
+    '<a href="' + BOOK2_URL + '" target="_blank" rel="noopener noreferrer" class="btn-buy war" aria-label="Buy The War Playbook on Amazon" data-event="amazon_clicked" data-event-label="war playbook quiz result">BOOK 2 — WAR</a>' +
     '</div>' +
     '</div>' +
     '<div class="result-retake" onclick="retake()" role="button" tabindex="0">← Retake as the other path</div>';
@@ -917,7 +961,7 @@ function showResults() {
   showScreen("screen-results");
   setTimeout(function() {
     const fill = document.getElementById("scoreFill");
-    if (fill) fill.style.width = profile.pct + "%";
+    if (fill) fill.style.transform = "scaleX(" + (profile.pct / 100) + ")";
   }, 300);
 
   buildShareCaption(profile, gaps);
@@ -974,13 +1018,6 @@ function retake() {
 document.addEventListener("DOMContentLoaded", function() {
   initGateForm();
 
-  // Keyboard support for path cards
-  document.querySelectorAll(".path-card").forEach(function(card) {
-    card.addEventListener("keydown", function(e) {
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); card.click(); }
-    });
-  });
-
   // Concern param from landing page audience paths
   const concern = new URLSearchParams(window.location.search).get("concern");
   const concernCopy = {
@@ -994,5 +1031,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 </script>
+<script src="assets/store-config.js"></script>
+<script src="assets/funnel.js"></script>
 </body>
 </html>
