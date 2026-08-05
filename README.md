@@ -10,6 +10,7 @@ index.html      series hub — hero, definition strip, book series, FAQ, email c
 quiz.html       15-question social skills diagnostic → routes to Social/War Playbook
 articles/       static parent guides using the existing site design and metadata conventions
 assets/         covers, mockups, article and social images
+scripts/        repeatable local QA gates, including article SEO
 robots.txt      crawler rules (all allowed + sitemap ref)
 sitemap.xml     production URL index
 llms.txt        AI-engine site map (series, books, articles)
@@ -37,12 +38,19 @@ No build step. No dependencies beyond CDN fonts + GSAP (animation only, content 
 - Email gate posts to Brevo (`sib-form-quiz`) via `fetch`, no page navigation
 - Share: parent path → native share sheet + WhatsApp; teen path → copy-caption first
 
+## Article SEO QA
+Run before approval and again against the live clean URL after deployment:
+```bash
+python scripts/seo_article_qa.py articles/quiet-kids-and-confidence.html --canonical 'https://oldwisdomretold.com/articles/quiet-kids-and-confidence' --keyword 'quiet teenager confidence'
+```
+The gate checks title/meta length, indexability, canonical/OG agreement, headings, content depth, keyword placement, internal and authority links, image optimization, Article schema, author entity, and visible publication details.
+
 ## Deploy
 Production is deployed from this GitHub repository to Cloudflare at https://oldwisdomretold.com. The site is plain static files from the repository root: no local build command and no package manager. Push only after approval and local QA; then verify the Cloudflare deployment and live URL.
 
 ## Editing checklist
 - [ ] Keep FAQ visible text and FAQPage schema in sync
 - [ ] Update `llms.txt` + `sitemap.xml` when adding a book, article, or page
-- [ ] For articles: validate canonical/OG metadata, mobile/desktop rendering, internal discovery link, and final live URL after Cloudflare deploy
+- [ ] For articles: run `scripts/seo_article_qa.py`, validate mobile/desktop rendering, and verify the clean live URL after Cloudflare deploy
 - [ ] Re-run rich-results test after schema edits
 - [ ] Test quiz end-to-end on mobile after JS changes (gate → results → CTA)
