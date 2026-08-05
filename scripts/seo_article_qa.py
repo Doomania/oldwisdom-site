@@ -148,7 +148,7 @@ def run(source: str, canonical_expected: str, keyword: str) -> int:
             image_issues.append(f"non-modern:{image.get('src', '')}")
     check("IMAGES", bool(parser.images) and not image_issues, "optimized" if not image_issues else ", ".join(image_issues))
     hero = next((image for image in parser.images if "hero-image" in image.get("class", "")), {})
-    check("HERO_PRIORITY", hero.get("fetchpriority") == "high" and hero.get("decoding") == "async", str(hero))
+    check("HERO_PRIORITY", hero.get("fetchpriority") == "high" and hero.get("decoding") == "async" and bool(hero.get("srcset")) and bool(hero.get("sizes")), str(hero))
 
     schema_docs: list[dict] = []
     try:
