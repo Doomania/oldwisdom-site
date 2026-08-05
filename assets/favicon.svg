@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Old Wisdom Retold">
+  <rect width="64" height="64" rx="12" fill="#0c0c0f"/>
+  <rect x="3" y="3" width="58" height="58" rx="9" fill="none" stroke="#d4a84b" stroke-width="3"/>
+  <path d="M19 43 29 21h7L26 43zm15 0 10-22h7L41 43z" fill="#d4a84b"/>
+</svg>
