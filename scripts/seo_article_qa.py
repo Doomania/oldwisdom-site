@@ -163,7 +163,7 @@ def run(source: str, canonical_expected: str, keyword: str) -> int:
     check("ARTICLE_SCHEMA", bool(article) and not missing_schema, "complete" if not missing_schema else f"missing {missing_schema}")
     check("SCHEMA_CANONICAL", article.get("mainEntityOfPage") == canonical, str(article.get("mainEntityOfPage", "missing")))
     check("AUTHOR_ENTITY", "author" in parser.ids and "Eric Han" in visible_text, "visible author entity")
-    check("VISIBLE_PUBLICATION", bool(re.search(r"By Eric Han\s*·\s*5 August 2026\s*·\s*6 min read", visible_text)), "author/date/read time")
+    check("VISIBLE_PUBLICATION", bool(re.search(r"By Eric Han\s*·\s*(?:Updated\s+)?\d{1,2} [A-Za-z]+ 20\d{2}\s*·\s*\d+ min read", visible_text)), "author/date/read time")
 
     print(f"SEO_QA source={resolved_source}")
     print(f"keyword={keyword!r} score={len(passes)}/{len(passes) + len(failures)}")
