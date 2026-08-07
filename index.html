@@ -50,7 +50,7 @@
 }
 
 /* ===== BASE ===== */
-html { scroll-behavior: auto; }
+html { scroll-behavior: auto; overflow-x: hidden; }
 body { background: var(--bg-deep); color: var(--white); font-family: var(--font-body); overflow-x: hidden; -webkit-font-smoothing: antialiased; line-height: 1.6; font-size: 16px; }
 body::after { content: ''; position: fixed; inset: 0; opacity: 0.015; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3rem); }
@@ -301,6 +301,13 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .path-chip { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; padding: 0.9rem 1.1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: all 0.25s var(--ease-out); min-height: 48px; }
 .path-chip:hover { border-color: rgba(212,168,75,0.35); color: var(--white); transform: translateY(-2px); background: var(--bg-card-hover); }
 .path-chip svg { flex-shrink: 0; color: var(--gold); }
+.parent-guide-card { margin-top: 1rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1.25rem; padding: 1.35rem 1.5rem; background: linear-gradient(135deg, rgba(212,168,75,0.12), rgba(107,165,255,0.06)); border: 1px solid rgba(212,168,75,0.32); border-radius: 14px; color: var(--text); text-decoration: none; transition: all 0.25s var(--ease-out); }
+.parent-guide-card:hover { transform: translateY(-2px); border-color: rgba(212,168,75,0.6); background: linear-gradient(135deg, rgba(212,168,75,0.17), rgba(107,165,255,0.09)); }
+.parent-guide-kicker { display: block; margin-bottom: 0.35rem; color: var(--gold); font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.22em; }
+.parent-guide-title { display: block; color: var(--white); font-family: var(--font-display); font-size: clamp(1.35rem, 3vw, 1.75rem); letter-spacing: 0.03em; line-height: 1.05; }
+.parent-guide-desc { display: block; max-width: 680px; margin-top: 0.45rem; color: var(--text-dim); font-size: 0.9rem; line-height: 1.5; }
+.parent-guide-link { color: var(--gold-soft); font-size: 0.85rem; font-weight: 700; white-space: nowrap; }
+@media (max-width: 620px) { .parent-guide-card { grid-template-columns: 1fr; } .parent-guide-link { margin-top: 0.2rem; } }
 @media (max-width: 900px) { .paths-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .paths-grid { grid-template-columns: 1fr; } }
 
@@ -492,11 +499,27 @@ button, a { cursor: pointer; touch-action: manipulation; }
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       <a class="path-chip" href="quiz.html?concern=conflict">My teen avoids conflict — or explodes
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      <a class="path-chip" href="quiz.html?concern=confidence">My teen lacks confidence
+      <a class="path-chip" href="articles/quiet-kids-and-confidence?utm_source=home&amp;utm_medium=owned&amp;utm_campaign=los_ch01_quiet_confidence&amp;utm_content=concern_path">My quiet teen needs time to answer
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       <a class="path-chip" href="quiz.html?concern=drama">My teen gets pulled into drama
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
+    <a class="parent-guide-card" href="articles/quiet-kids-and-confidence?utm_source=home&amp;utm_medium=owned&amp;utm_campaign=los_ch01_quiet_confidence&amp;utm_content=parent_guide_card" data-event="parent_guide_clicked" data-event-label="home article card">
+      <span>
+        <span class="parent-guide-kicker">PRACTICAL GUIDE FOR PARENTS · 6 MIN READ</span>
+        <strong class="parent-guide-title">QUIET IS NOT THE SAME AS UNCONFIDENT</strong>
+        <span class="parent-guide-desc">Learn The Ten-Second Space—a simple way to give a quiet teenager room to answer without turning their pause into a label.</span>
+      </span>
+      <span class="parent-guide-link">READ THE GUIDE →</span>
+    </a>
+    <a class="parent-guide-card" href="articles/signs-of-real-teen-confidence?utm_source=home&amp;utm_medium=owned&amp;utm_campaign=los_ch23_confidence_receipts&amp;utm_content=parent_guide_card" data-event="parent_guide_clicked" data-event-label="home confidence receipts article card">
+      <span>
+        <span class="parent-guide-kicker">PRACTICAL GUIDE FOR PARENTS · 8 MIN READ</span>
+        <strong class="parent-guide-title">5 SIGNS YOUR TEEN IS BUILDING REAL CONFIDENCE</strong>
+        <span class="parent-guide-desc">Learn the five Confidence Receipts—choosing, voicing, holding, acting and recovering—without turning one moment into a label.</span>
+      </span>
+      <span class="parent-guide-link">READ THE GUIDE →</span>
+    </a>
   </div>
 </section>
 
