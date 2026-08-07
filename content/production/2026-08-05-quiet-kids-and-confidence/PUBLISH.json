@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "published",
+  "audience": "parent",
+  "slug": "quiet-kids-and-confidence",
+  "title": "Quiet Is Not the Same as Unconfident",
+  "summary": "Give a quiet teenager room to answer without turning a pause into a label.",
+  "published": "2026-08-05",
+  "journey_stage": "SEE",
+  "supports_stages": ["UNDERSTAND", "REFLECT", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["judgment", "ownership"],
+  "release_move": "Let the teenager answer in their own time and interpret their own experience before offering a solution.",
+  "legacy_output": "articles/quiet-kids-and-confidence.html",
+  "next_step": {
+    "kind": "quiz",
+    "label": "Explore what may be happening"
+  },
+  "pinterest_campaign": {
+    "campaign": "los_ch01_quiet_confidence",
+    "content": "quiet-kids-and-confidence"
+  }
+}

@@ -282,8 +282,6 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .final-h2 .gold { color: var(--gold); }
 .final-sub { font-size: 1.05rem; color: var(--text); margin-bottom: 2.5rem; max-width: 480px; margin-left: auto; margin-right: auto; line-height: 1.65; }
 .final-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-.final-system-link { margin-top: 1.35rem; color: var(--text-dim); font-size: 0.85rem; }
-.final-system-link a { color: var(--gold-soft); text-underline-offset: 3px; }
 .btn-war-cta { background: var(--red) !important; }
 .btn-war-cta:hover { background: var(--red-soft) !important; box-shadow: 0 8px 30px rgba(204,34,51,0.3) !important; }
 .final-book-strip { display: flex; justify-content: center; gap: 1.2rem; margin-top: 3rem; }
@@ -451,6 +449,7 @@ button, a { cursor: pointer; touch-action: manipulation; }
   <div class="nav-right">
     <a href="#inside" class="nav-link">WHAT'S INSIDE</a>
     <a href="#series" class="nav-link">THE BOOKS</a>
+    <a href="parents/" class="nav-link" data-event="parent_hub_clicked" data-event-label="home nav">PARENT HUB</a>
     <a href="quiz.html?utm_source=home&utm_medium=owned&utm_campaign=diagnostic" class="nav-btn nav-btn-gold" aria-label="Take the free social skills quiz" data-event="quiz_clicked" data-event-label="home nav">FREE QUIZ</a>
   </div>
 </nav>
@@ -915,7 +914,6 @@ button, a { cursor: pointer; touch-action: manipulation; }
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
-      <p class="final-system-link">Already know the gap? <a href="system.html?utm_source=home&amp;utm_medium=owned&amp;utm_campaign=digital_system" data-event="system_clicked" data-event-label="home final supporting link">Explore the digital practice system.</a></p>
       <div class="final-book-strip" aria-label="Series overview">
         <img class="final-mini active" src="assets/social-cover-2026.webp" alt="Book 1: The Social Playbook" width="1000" height="1400" loading="lazy" />
         <img class="final-mini active" src="assets/war-cover-2026.webp" alt="Book 2: The War Playbook" width="1000" height="1400" loading="lazy" />
@@ -931,8 +929,8 @@ button, a { cursor: pointer; touch-action: manipulation; }
     <div class="footer-brand">OLD WISDOM // RETOLD</div>
     <div class="footer-links" style="display:flex;gap:1.2rem;justify-content:center;margin:0.6rem 0;flex-wrap:wrap;">
       <a href="#series" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Books</a>
+      <a href="parents/" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Parent Hub</a>
       <a href="quiz.html" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Free Quiz</a>
-      <a href="system.html" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Digital System</a>
       <a href="privacy.html" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Privacy Policy</a>
       <a href="terms.html" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Terms of Service</a>
       <a href="mailto:hello@oldwisdomretold.com" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Contact</a>
@@ -1011,9 +1009,6 @@ if (!prefersReducedMotion && hasGSAP) {
   });
 }
 </script>
-
-<script src="assets/store-config.js"></script>
-<script src="assets/funnel.js"></script>
 
 </body>
 </html>

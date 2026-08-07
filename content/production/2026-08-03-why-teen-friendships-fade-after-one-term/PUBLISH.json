@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "audience": "parent",
+  "slug": "why-teen-friendships-fade-after-one-term",
+  "title": "Why Teen Friendships Fade After One Term",
+  "summary": "Help a teenager understand friendship drift and choose one small follow-up without taking over the relationship.",
+  "journey_stage": "UNDERSTAND",
+  "supports_stages": ["SEE", "REFLECT", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["judgment", "capability", "ownership"],
+  "release_move": "Support one small follow-up, then let the teenager decide whom they want to keep investing in and how they want to respond.",
+  "next_step": {
+    "kind": "quiz",
+    "concern": "friends",
+    "label": "Explore the next skill to practise"
+  },
+  "pinterest_campaign": {
+    "campaign": "connection",
+    "content": "why-teen-friendships-fade-after-one-term"
+  }
+}

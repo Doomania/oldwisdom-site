@@ -229,12 +229,10 @@ body.path-parent .ambient-2 { opacity: 0.015; }
 .cta-btns { display: flex; gap: 0.7rem; justify-content: center; flex-wrap: wrap; }
 .btn-buy { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.8rem; background: var(--gold); color: var(--bg); font-family: var(--font-b); font-size: 0.92rem; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; text-decoration: none; transition: all 0.3s var(--ease); min-height: 48px; }
 .btn-buy:hover { background: var(--gold-soft); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,168,75,0.3); }
-.btn-buy.digital { flex-basis: 100%; justify-content: center; }
 .btn-buy.book { background: var(--blue); color: #fff; }
 .btn-buy.book:hover { background: #6BA5FF; box-shadow: 0 8px 24px rgba(77,148,255,0.25); }
 .btn-buy.war { background: #CC2233; color: #fff; }
 .btn-buy.war:hover { background: #E84455; box-shadow: 0 8px 24px rgba(204,34,51,0.3); }
-.cta-books-label { flex-basis: 100%; margin-top: 0.35rem; color: var(--muted); font-size: 0.72rem; letter-spacing: 0.08em; }
 
 /* ===== SHARE ===== */
 .share-box { margin: 1.5rem 0; padding: 1.4rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; }
@@ -916,14 +914,11 @@ function showResults() {
   }).join("");
 
   const ctaHeadline = isParent
-    ? "TURN THIS RESULT INTO<br>ONE PREPARED MOVE."
-    : "KNOW THE GAP.<br>PREPARE THE NEXT MOVE.";
+    ? "EVERY GAP HAS A STRATEGY.<br>IT'S IN THE SERIES."
+    : "THE PLAYBOOKS<br>CLOSE ALL THREE GAPS";
   const ctaSub = isParent
-    ? "Use the 10-Minute Social Reset before one real message, conversation, disagreement, event, boundary, or repair. It is a complete $0.99 starting point, not a subscription."
-    : "Prepare one natural sentence and one manageable rep before the next social moment. The reset is $0.99 and works without changing who you are.";
-  const resetUrl = "reset.html?gap=" + encodeURIComponent(RESULT.lowest) +
-    "&path=" + encodeURIComponent(currentPath) +
-    "&utm_source=quiz&utm_medium=owned&utm_campaign=diagnostic_result";
+    ? "Chapters are mapped to each gap above. Book 1 covers connection and confidence. Book 2 covers strategy and conflict. Read them alongside your teen."
+    : "Chapters are mapped directly to your three gaps. Ancient wisdom, written in language that works for real teen life.";
 
   document.getElementById("resultsInner").innerHTML =
     '<div class="result-header">' +
@@ -950,9 +945,7 @@ function showResults() {
     '<div class="cta-box-h">' + ctaHeadline + '</div>' +
     '<div class="cta-box-sub">' + ctaSub + '</div>' +
     '<div class="cta-btns">' +
-    '<a href="' + resetUrl + '" class="btn-buy digital" aria-label="See the matched 10-Minute Social Reset for 99 cents" data-event="tripwire_clicked" data-event-label="quiz result ' + RESULT.lowest + '">SEE MY $0.99 SOCIAL RESET <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' +
-    '<div class="cta-books-label">PREFER TO START WITH A BOOK?</div>' +
-    '<a href="' + BOOK1_URL + '" target="_blank" rel="noopener noreferrer" class="btn-buy book" aria-label="Buy The Social Playbook on Amazon" data-event="amazon_clicked" data-event-label="social playbook quiz result">BOOK 1 — SOCIAL</a>' +
+    '<a href="' + BOOK1_URL + '" target="_blank" rel="noopener noreferrer" class="btn-buy book" aria-label="Buy The Social Playbook on Amazon" data-event="amazon_clicked" data-event-label="social playbook quiz result">BOOK 1 — SOCIAL <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' +
     '<a href="' + BOOK2_URL + '" target="_blank" rel="noopener noreferrer" class="btn-buy war" aria-label="Buy The War Playbook on Amazon" data-event="amazon_clicked" data-event-label="war playbook quiz result">BOOK 2 — WAR</a>' +
     '</div>' +
     '</div>' +
@@ -1031,7 +1024,5 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 </script>
-<script src="assets/store-config.js"></script>
-<script src="assets/funnel.js"></script>
 </body>
 </html>

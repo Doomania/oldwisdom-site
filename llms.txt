@@ -7,10 +7,15 @@ A non-fiction book series for teens 12-16 that rebuilds classic wisdom - Sun Tzu
 - Book 3: The Discipline Playbook - coming (the Stoics)
 
 ## Pages
-- https://oldwisdomretold.com/: series overview, FAQ for parents, free Chapter 1
+- https://oldwisdomretold.com/: canonical book-series landing page with The Social Playbook and The War Playbook, parent FAQ, free Chapter 1, and routes to the free diagnostic
 - https://oldwisdomretold.com/quiz.html: free 15-question social skills diagnostic (teen and parent versions)
-- https://oldwisdomretold.com/articles/quiet-kids-and-confidence: parent guide to separating quiet temperament from low confidence, giving a teen time to answer, and knowing when to look closer
-- https://oldwisdomretold.com/articles/signs-of-real-teen-confidence: parent guide to five observable Confidence Receipts—choosing, voicing, holding, acting, and recovering—without treating quietness, loudness, or one incident as proof
+
+<!-- PARENT-HUB:START -->
+## Parent Hub
+- https://oldwisdomretold.com/parents/: Parent Growth guides organised by SEE → UNDERSTAND → REFLECT → GUIDE → RELEASE.
+- https://oldwisdomretold.com/articles/quiet-kids-and-confidence: Give a quiet teenager room to answer without turning a pause into a label.
+- https://oldwisdomretold.com/articles/signs-of-real-teen-confidence: Notice growing confidence through choices, voice, boundaries, brave action, and recovery without adding pressure.
+<!-- PARENT-HUB:END -->
 
 ## Author
 Eric Han — Auckland NZ. Dad of a 12-year-old (the series' first test reader). Cybersecurity professional. Every chapter passes a read-aloud test with a real teen before publishing.

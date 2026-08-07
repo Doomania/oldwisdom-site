@@ -1,0 +1,49 @@
+:root { --canvas:#0c0c0f; --card:#151519; --raised:#1c1c22; --text:#f5f5f5; --body:#d4d4d8; --muted:#a7a7af; --gold:#d4a84b; --gold-soft:#e8c878; --line:rgba(255,255,255,.1); --blue:#6ba5ff; --green:#67d7a0; --purple:#c3a7ff; --red:#ef6878; --font-display:"Bebas Neue",sans-serif; --font-body:"Outfit",sans-serif; }
+* { box-sizing:border-box; }
+html { background:var(--canvas); color:var(--text); }
+body { margin:0; font-family:var(--font-body); line-height:1.7; }
+a { color:var(--gold-soft); }
+.skip-link { position:absolute; left:1rem; top:-5rem; z-index:5; background:var(--gold); color:var(--canvas); padding:.6rem 1rem; font-weight:700; }
+.skip-link:focus { top:1rem; }
+.parent-nav { max-width:1100px; min-height:72px; margin:auto; padding:0 1.25rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.brand { color:var(--gold); font-family:var(--font-display); font-size:1.25rem; letter-spacing:.08em; text-decoration:none; }
+.parent-nav-links { display:flex; gap:1rem; font-size:.9rem; }
+.parent-nav-links a { color:var(--body); text-decoration:none; }
+.parent-nav-links a:hover { color:var(--gold-soft); }
+.hub-hero,.parent-hero { max-width:1100px; margin:auto; padding:clamp(4rem,9vw,7rem) 1.25rem 3rem; }
+.hub-hero { max-width:850px; text-align:center; }
+.eyebrow { margin:0 0 .8rem; color:var(--gold); font-family:var(--font-display); letter-spacing:.16em; font-size:.82rem; }
+h1,h2,h3 { font-family:var(--font-display); letter-spacing:.035em; line-height:1; }
+.hub-hero h1,.parent-hero h1 { margin:0; font-size:clamp(3rem,9vw,6rem); }
+.hub-hero > p:last-child,.dek { max-width:700px; margin:1.35rem auto 0; color:var(--body); font-size:clamp(1rem,2vw,1.2rem); }
+.parent-hero { max-width:900px; text-align:left; }
+.parent-hero .dek { margin-left:0; }
+.byline { color:var(--muted); font-size:.9rem; }
+.hero-image { display:block; width:100%; height:auto; margin:2rem 0 0; border-radius:14px; border:1px solid var(--line); }
+.hub-main,.parent-article { width:min(100% - 2.5rem, 900px); margin:0 auto; padding:1rem 0 5rem; }
+.journey-map { padding:1.5rem; border:1px solid var(--line); border-radius:16px; background:linear-gradient(135deg,rgba(212,168,75,.12),rgba(77,148,255,.05)); }
+.journey-map h2 { margin:0 0 1.2rem; font-size:1.9rem; }
+.journey-map ol { list-style:none; display:grid; grid-template-columns:repeat(5,1fr); gap:.75rem; padding:0; margin:0; }
+.journey-map li { padding:.75rem; border-left:2px solid var(--gold); background:rgba(0,0,0,.18); }
+.journey-map strong { display:block; font-family:var(--font-display); font-size:1.1rem; letter-spacing:.08em; }
+.journey-map span { display:block; color:var(--muted); font-size:.82rem; line-height:1.45; }
+.guide-stage { padding-top:4rem; }
+.guide-stage h2 { margin:0; font-size:2.5rem; }
+.stage-intro { margin:.5rem 0 1.25rem; color:var(--muted); }
+.guide-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; }
+.guide-card { padding:1.4rem; border:1px solid var(--line); border-radius:14px; background:var(--card); color:var(--text); text-decoration:none; transition:transform .2s,border-color .2s; }
+.guide-card:hover { transform:translateY(-3px); border-color:rgba(212,168,75,.55); }
+.guide-card .card-meta { color:var(--gold); font-size:.75rem; font-weight:700; letter-spacing:.08em; }
+.guide-card h3 { margin:.6rem 0; font-size:1.7rem; }
+.guide-card p { color:var(--body); margin:0; font-size:.94rem; }
+.empty-stage { color:var(--muted); font-style:italic; }
+.parent-article { font-size:1.06rem; color:var(--body); }
+.parent-article h2 { margin:3rem 0 1rem; color:var(--text); font-size:2.2rem; }
+.parent-article h3 { margin:2rem 0 .75rem; color:var(--text); font-size:1.55rem; }
+.parent-article p,.parent-article li { max-width:72ch; }
+.parent-article blockquote { margin:1.5rem 0; padding:1rem 1.25rem; border-left:3px solid var(--gold); background:var(--raised); color:var(--text); }
+.journey-card,.next-step,.author-box { margin-top:3rem; padding:1.4rem; border:1px solid var(--line); border-radius:14px; background:var(--raised); }
+.journey-card h2,.next-step h2,.author-box h2 { margin:0 0 .75rem; font-size:1.75rem; }
+.next-step a { display:inline-block; padding:.65rem 1rem; border-radius:8px; background:var(--gold); color:var(--canvas); font-weight:700; text-decoration:none; }
+.parent-footer { padding:2.5rem 1.25rem; border-top:1px solid var(--line); text-align:center; color:var(--muted); font-size:.9rem; }
+@media (max-width:680px) { .journey-map ol { grid-template-columns:1fr; } .parent-nav { min-height:64px; } .parent-nav-links { gap:.7rem; font-size:.82rem; } }

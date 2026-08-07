@@ -1,0 +1,16 @@
+# Local browser QA artifacts
+output/playwright/
+.playwright-cli/
+
+# Local image-generation intermediates (deploy the optimized WebP/JPG assets)
+tmp/imagegen/
+assets/social-cover-2026.png
+assets/war-cover-2026.png
+assets/discipline-cover-2026.png
+
+# Generated repository analysis (regenerate locally when needed)
+graphify-out/
+
+# Python build and test caches
+__pycache__/
+*.py[cod]

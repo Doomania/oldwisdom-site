@@ -1,9 +1,16 @@
 REQUIRED IMAGE ASSETS
 =====================
 
-1. social-cover.png       ← Book 1 front cover only (already included)
-2. series-mockup.png      ← 3-book group mockup (already included)
-3. war-cover.png          ← Book 2 cover (add when ready)
-4. discipline-cover.png   ← Book 3 cover (add when ready)
+CURRENT WEBSITE ASSETS (JULY 2026 WRAPS)
+=======================================
+
+1. social-cover-2026.webp       ← Book 1 transparent mockup, 1000 × 1400
+2. war-cover-2026.webp          ← Book 2 transparent mockup, 1000 × 1400
+3. discipline-cover-2026.webp   ← Book 3 transparent mockup, 1000 × 1400
+4. series-mockup-2026.webp      ← Three-book transparent group, 1800 × 1120
+5. og-card-2026.jpg             ← Social/Pinterest share image, 1200 × 630
+
+The dated raw PNG exports remain in this folder as source material. The website
+uses the trimmed, normalized files above so the baked checkerboard is never shown.
 
 See deployment guide for full specs.

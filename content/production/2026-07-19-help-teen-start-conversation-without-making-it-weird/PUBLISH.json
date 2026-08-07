@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "audience": "parent",
+  "slug": "help-teen-start-conversation-without-making-it-weird",
+  "title": "How to Help a Teen Start a Conversation Without Making It Weird",
+  "summary": "A calmer way to coach the first social move without pushing a quiet teenager to perform.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "RELEASE"],
+  "teen_outcomes": ["capability", "ownership"],
+  "release_move": "Let your teenager choose the opener and decide whether the first attempt was useful, rather than grading the interaction for them.",
+  "next_step": {
+    "kind": "quiz",
+    "concern": "friends",
+    "label": "Explore the next skill to practise"
+  },
+  "pinterest_campaign": {
+    "campaign": "connection",
+    "content": "help-teen-start-conversation-without-making-it-weird"
+  }
+}
