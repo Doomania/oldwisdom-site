@@ -10,3 +10,7 @@ assets/discipline-cover-2026.png
 
 # Generated repository analysis (regenerate locally when needed)
 graphify-out/
+
+# Python build and test caches
+__pycache__/
+*.py[cod]

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "published",
+  "audience": "parent",
+  "slug": "signs-of-real-teen-confidence",
+  "title": "5 Signs Your Teen Is Building Real Confidence",
+  "summary": "Notice growing confidence through choices, voice, boundaries, brave action, and recovery without adding pressure.",
+  "published": "2026-08-07",
+  "journey_stage": "REFLECT",
+  "supports_stages": ["SEE", "UNDERSTAND", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["judgment", "capability", "ownership", "independence"],
+  "release_move": "Name the process lightly, then leave space for the teenager to decide what the next attempt means to them.",
+  "legacy_output": "articles/signs-of-real-teen-confidence.html",
+  "next_step": {
+    "kind": "quiz",
+    "label": "Find the next skill to practise"
+  },
+  "pinterest_campaign": {
+    "campaign": "los_ch23_confidence_receipts",
+    "content": "signs-of-real-teen-confidence"
+  }
+}

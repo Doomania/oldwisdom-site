@@ -5,12 +5,25 @@ dated, topic-specific folder here each Monday.
 
 Each batch should contain:
 
+- `PUBLISH.json`, the machine-readable Parent Guide publishing contract;
 - long-form YouTube script;
 - companion article draft;
 - two short-video scripts;
 - five Pinterest pin titles and descriptions;
 - search, thumbnail, chapter, description, and UTM metadata;
 - `SOURCES.md` with source links and a claim audit.
+
+## Publishing contract
+
+Hermes edits the bundle, never site templates or generated output. `PUBLISH.json`
+declares the title, journey stage, teen outcomes, release move, optional next
+step, and publication status. A published non-legacy guide also supplies
+`ARTICLE.md`, responsive hero assets, and an optional social image in `media/`.
+
+Run `python scripts/site.py check content/production/<bundle>` before review.
+After approval, run `python scripts/site.py build`; it creates the Parent Hub,
+the guide page where applicable, and the managed Parent Hub entries in the
+sitemap and `llms.txt`.
 
 ## Human review gate
 

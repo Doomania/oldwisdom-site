@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>{{title}} | Old Wisdom Retold</title>
+  <meta name="description" content="{{description}}">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="{{canonical}}">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_NZ">
+  <meta property="og:site_name" content="Old Wisdom // Retold">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{social_image}}">
+  <meta property="og:image:alt" content="{{social_image_alt}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:image" content="{{social_image}}">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/parent-hub.css">
+  <script type="application/ld+json">{{article_schema}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#article">Skip to article</a>
+  <nav class="parent-nav" aria-label="Main navigation">
+    <a class="brand" href="../index.html">OLD WISDOM // RETOLD</a>
+    <div class="parent-nav-links"><a href="../parents/">Parent Hub</a><a href="../quiz.html">Free Quiz</a></div>
+  </nav>
+  <header class="parent-hero">
+    <p class="eyebrow">PARENT GROWTH · {{journey_stage}}</p>
+    <h1>{{title}}</h1>
+    <p class="dek">{{summary}}</p>
+    <p class="byline">By {{author}} · {{published_display}} · {{reading_time}} min read</p>
+    {{hero}}
+  </header>
+  <main id="article" class="parent-article">
+    {{body}}
+    <section class="journey-card" aria-labelledby="release-heading">
+      <p class="eyebrow">RELEASE</p>
+      <h2 id="release-heading">What to return to your teen</h2>
+      <p>{{release_move}}</p>
+    </section>
+    {{next_step}}
+    <aside class="author-box"><h2>About {{author}}</h2><p>{{author}} writes Old Wisdom Retold, turning classic wisdom into practical tools for teenagers and the parents guiding them.</p></aside>
+  </main>
+  <footer class="parent-footer"><a href="../parents/">Parent Hub</a> · © 2026 Eric Han</footer>
+</body>
+</html>

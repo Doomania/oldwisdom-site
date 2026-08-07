@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://oldwisdomretold.com/</loc><lastmod>2026-07-18</lastmod></url>
 <url><loc>https://oldwisdomretold.com/quiz.html</loc><lastmod>2026-07-18</lastmod></url>
+<!-- PARENT-HUB:START -->
+<url><loc>https://oldwisdomretold.com/parents/</loc><lastmod>2026-08-07</lastmod></url>
 <url><loc>https://oldwisdomretold.com/articles/quiet-kids-and-confidence</loc><lastmod>2026-08-05</lastmod></url>
 <url><loc>https://oldwisdomretold.com/articles/signs-of-real-teen-confidence</loc><lastmod>2026-08-07</lastmod></url>
+<!-- PARENT-HUB:END -->
 </urlset>

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Old Wisdom // Retold turns durable ideas from classic strategy, philosophy, and human psychology into practical, game-style playbooks that teens will actually use. The platform should grow as a global, evergreen book and education system rather than a client-service business.
+Old Wisdom // Retold turns durable ideas from classic strategy, philosophy, and human psychology into practical teen Playbooks and a separate Parent Growth education layer. The platform should grow as a global, evergreen book and education system rather than a client-service business.
 
 ## Primary Audience
 
@@ -16,7 +16,7 @@ School teaches academic knowledge but rarely teaches the practical social skills
 
 ## Product Promise
 
-Give a parent and teen a calm, usable system for understanding a specific social gap, choosing one strategy, and practising it in real life without lectures, shame, or manipulation.
+Give teens practical, usable strategies they can own. Give parents calm guidance that helps them see, understand, reflect, guide, and release without lectures, shame, or manipulation.
 
 ## Existing Product System
 

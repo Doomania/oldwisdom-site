@@ -9,16 +9,19 @@ Live: https://oldwisdomretold.com
 index.html      series hub — hero, definition strip, book series, FAQ, email capture
 quiz.html       15-question social skills diagnostic → routes to the Playbooks
 articles/       static parent guides using the existing site design and metadata conventions
+parents/        generated Parent Hub, organised by the Parent Growth Journey
 assets/         covers, mockups, article and social images
 automation/     evergreen topic queue and publication tracking
 content/        review-gated evergreen production batches, including Pinterest packages
-scripts/        repeatable local QA gates, including article SEO
+scripts/        Parent Hub publisher and repeatable local QA gates
+templates/      shared static Parent Hub page shells
+config/         site configuration for static publishing
 robots.txt      crawler rules (all allowed + sitemap ref)
 sitemap.xml     production URL index
 llms.txt        AI-engine site map (series, books, articles)
 ```
 
-No build step. No dependencies beyond CDN fonts + GSAP on the homepage (animation only, content is static HTML).
+The deployed site is plain static HTML. The Parent Hub uses a Python standard-library build step before commit; production still has no runtime application server or package manager. CDN fonts and GSAP are used only for homepage presentation.
 
 ## Books
 | # | Title | Source wisdom | Amazon |
@@ -47,12 +50,29 @@ python scripts/seo_article_qa.py articles/quiet-kids-and-confidence.html --canon
 ```
 The gate checks title/meta length, indexability, canonical/OG agreement, headings, content depth, keyword placement, internal and authority links, image optimization, Article schema, author entity, and visible publication details.
 
+## Parent Hub publishing
+
+Hermes works in one review-gated Publishing Bundle under `content/production/`.
+The bundle's `PUBLISH.json` controls Parent Growth stage, teen outcomes, release
+move, optional next step, and publication status. Hermes does not edit HTML,
+schema, sitemap, `llms.txt`, templates, or application code.
+
+```bash
+python scripts/site.py check content/production/<bundle>
+python scripts/site.py build
+python scripts/site.py check --all
+```
+
+`build` generates `parents/index.html` and manages only the marked Parent Hub
+regions of `sitemap.xml` and `llms.txt`. Existing article URLs stay under
+`/articles/<slug>`.
+
 ## Deploy
-Production is deployed from this GitHub repository to Cloudflare at https://oldwisdomretold.com. The site is plain static files from the repository root: no local build command and no package manager. Push only after approval and local QA; then verify the Cloudflare deployment and live URL.
+Production is deployed from this GitHub repository to Cloudflare at https://oldwisdomretold.com. Push only after approval and local QA; then verify the Cloudflare deployment and live URL.
 
 ## Editing checklist
 - [ ] Keep FAQ visible text and FAQPage schema in sync
-- [ ] Update `llms.txt` + `sitemap.xml` when adding a book, article, or page
+- [ ] Run `python scripts/site.py build` and `python scripts/site.py check --all` for Parent Hub changes
 - [ ] For articles: run `scripts/seo_article_qa.py`, validate mobile/desktop rendering, and verify the clean live URL after Cloudflare deploy
 - [ ] Re-run rich-results test after schema edits
 - [ ] Test quiz end-to-end on mobile after JS changes (gate → results → CTA)

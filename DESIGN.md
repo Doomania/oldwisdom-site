@@ -52,7 +52,7 @@ Use accents to communicate product or state. Do not decorate every surface with 
 
 ### Navigation
 
-Fixed or sticky dark translucent header with a gold wordmark. Keep the number of primary destinations low. On the canonical homepage, preserve a book-and-quiz-first hierarchy; the digital system remains a downstream option. Blue and red identify the two Amazon books, while the current primary action may use gold.
+Fixed or sticky dark translucent header with a gold wordmark. Keep the number of primary destinations low. On the canonical homepage, preserve the book-and-quiz hierarchy and add one durable Parent Hub route; do not add a new homepage navigation item for every guide. Blue and red identify the two Amazon books, while gold identifies the primary action and Parent Growth editorial emphasis.
 
 ### Buttons
 
@@ -83,11 +83,11 @@ Profiles use colour plus text, never colour alone. Gap recommendations should na
 
 ## Imagery
 
-Book covers and the three-book mockup are the primary brand imagery. Author photography is supporting credibility, not the visual centre of the funnel. Prefer product-specific editorial compositions over generic stock photography or abstract AI gradients.
+Book covers and the three-book mockup are the primary brand imagery. Author photography is supporting credibility, not the visual centre of the site. Parent Hub imagery should be calm, specific editorial context rather than generic stock photography or abstract AI gradients.
 
-## Conversion Principles
+## Decision Principles
 
 - One dominant next step per viewport or decision block.
-- Explain what the buyer gets, who it is for, how it is used, and what happens after purchase before asking for payment.
-- Use honest proof: product contents, sample pages, diagnostic fit, author context, and specific practices.
-- Keep Amazon books visible as accessible alternatives while giving the higher-margin digital system a distinct, clearly explained path.
+- For a Parent Guide, choose the next step because it helps the reader, not because it forces a product path.
+- Use honest proof: book contents, sample pages, diagnostic fit, author context, sources, and specific practices.
+- Keep Amazon Playbooks visible as relevant teen tools. They are never an automatic Parent Hub destination.
