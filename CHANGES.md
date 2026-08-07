@@ -1,5 +1,16 @@
 # GEO + Conversion rework — commit to Doomania/oldwisdom-site (root)
 
+- Replaced the previous book renders with the July 2026 wraps: extracted the baked checkerboard, normalized all three mockups to a consistent 5:7 transparent canvas, rebuilt the three-book group, and added a dark 1200 × 630 social-sharing image with versioned filenames for cache-safe rollout.
+
+## Site and content groundwork — 18 July 2026
+
+- Preserved the root URL as the book-series and quiz landing page for existing Pinterest traffic, restored book/quiz-first navigation, and added explicit Amazon tracking to both live book cards.
+- Hardened the homepage for mobile-first indexing and phone visitors with safe-area support, 44px navigation targets, a compact first viewport, and a no-CDN animation fallback that leaves all content visible.
+- Strengthened SEO, GEO, and Pinterest extraction with a clearer series description, expanded Open Graph metadata, explicit `WebSite` and `BookSeries` JSON-LD nodes, stable canonical URL, and visible book names above the fold.
+- Fixed the quiz email gate so it saves to Brevo without navigating away before results appear.
+- Replaced three missing sample-page images with an honest HTML explanation of the book's chapter rhythm.
+- Added the evergreen content queue and review-gated production bundles used for articles, videos, shorts, Pinterest pins, metadata, and source audits.
+
 ## index.html
 - Meta description → extraction format (series definition, both books named)
 - Added: canonical, OG/Twitter tags (share cards were bare before)

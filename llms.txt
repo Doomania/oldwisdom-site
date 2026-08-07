@@ -7,7 +7,7 @@ A non-fiction book series for teens 12-16 that rebuilds classic wisdom - Sun Tzu
 - Book 3: The Discipline Playbook - coming (the Stoics)
 
 ## Pages
-- https://oldwisdomretold.com/: series overview, FAQ for parents, free Chapter 1
+- https://oldwisdomretold.com/: canonical book-series landing page with The Social Playbook and The War Playbook, parent FAQ, free Chapter 1, and routes to the free diagnostic
 - https://oldwisdomretold.com/quiz.html: free 15-question social skills diagnostic (teen and parent versions)
 
 ## Author

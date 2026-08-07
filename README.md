@@ -7,14 +7,16 @@ Live: https://oldwisdomretold.com
 ## Structure
 ```
 index.html      series hub — hero, definition strip, book series, FAQ, email capture
-quiz.html       12-question social skills diagnostic → routes to Social/War Playbook
-assets/         covers, mockups
+quiz.html       15-question social skills diagnostic → routes to the Playbooks
+assets/         covers, mockups, article and social images
+automation/     evergreen topic queue and publication tracking
+content/        review-gated evergreen production batches, including Pinterest packages
 robots.txt      crawler rules (all allowed + sitemap ref)
-sitemap.xml     /, /quiz.html
+sitemap.xml     production URL index
 llms.txt        AI-engine site map (series + book summaries)
 ```
 
-No build step. No dependencies beyond CDN fonts + GSAP (animation only, content is static HTML).
+No build step. No dependencies beyond CDN fonts + GSAP on the homepage (animation only, content is static HTML).
 
 ## Books
 | # | Title | Source wisdom | Amazon |
@@ -30,9 +32,9 @@ No build step. No dependencies beyond CDN fonts + GSAP (animation only, content 
 - Validate after any content edit: https://search.google.com/test/rich-results
 
 ## Quiz logic (quiz.html)
-- 12 scenarios, 3 per category: connection / awareness / influence / conflict
+- 15 scenarios, 3 per category: connection / reading / influence / conflict / anxiety
 - Score 0–3 per answer → 4 profile tiers, top-3 weakest categories = "gaps"
-- Routing: weakest gap = `conflict` → War Playbook primary CTA; else Social Playbook primary, other book linked as secondary
+- Routing: results explain the weakest gaps and offer both Playbooks as relevant tools
 - Email gate posts to Brevo (`sib-form-quiz`) via `fetch`, no page navigation
 - Share: parent path → native share sheet + WhatsApp; teen path → copy-caption first
 
