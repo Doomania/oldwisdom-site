@@ -19,6 +19,9 @@ from typing import Any
 STAGES = ("SEE", "UNDERSTAND", "REFLECT", "GUIDE", "RELEASE")
 OUTCOMES = ("judgment", "capability", "ownership", "independence")
 NEXT_STEPS = ("guide", "reflection", "quiz", "download", "playbook", "none")
+TERRITORIES = ("connection", "reading", "influence", "conflict", "confidence")
+TEST_ANGLES = ("SEE", "REFLECT", "LONG_TERM_CAPABILITY")
+PLAYBOOK_IDS = ("social", "war", "discipline")
 STAGE_COPY = {
     "SEE": "Separate what happened from the story you are tempted to tell about it.",
     "UNDERSTAND": "Make room for context, development, and the teenager's perspective.",
@@ -62,9 +65,11 @@ def repository_root() -> Path:
 
 def load_config(root: Path) -> dict[str, Any]:
     config = read_json(root / "config" / "site.json")
-    for field in ("site_name", "base_url", "author", "language", "parent_hub_path"):
+    for field in ("site_name", "base_url", "author", "language", "parent_hub_path", "parent_growth_brevo_form_action"):
         if not isinstance(config.get(field), str) or not config[field].strip():
             raise PublicationError(f"config/site.json: missing {field}")
+    if not config["parent_growth_brevo_form_action"].startswith("https://"):
+        raise PublicationError("config/site.json: parent_growth_brevo_form_action must use HTTPS")
     return config
 
 
@@ -83,11 +88,15 @@ def bundle_paths(root: Path) -> list[Path]:
 
 def validate_bundle(root: Path, manifest_path: Path) -> Bundle:
     meta = read_json(manifest_path)
-    required = ("schema_version", "status", "audience", "slug", "title", "summary", "journey_stage", "teen_outcomes", "release_move")
+    required = (
+        "schema_version", "status", "audience", "slug", "title", "summary",
+        "journey_stage", "supports_stages", "teen_outcomes", "release_move",
+        "qa_score", "territory", "test_angle", "core_belief_shift", "book_relevance",
+    )
     for field in required:
         if not meta.get(field):
             raise PublicationError(f"{manifest_path}: missing {field}")
-    if meta["schema_version"] != 1:
+    if meta["schema_version"] != 2:
         raise PublicationError(f"{manifest_path}: unsupported schema_version")
     if meta["status"] not in {"draft", "review", "published"}:
         raise PublicationError(f"{manifest_path}: status must be draft, review, or published")
@@ -97,20 +106,43 @@ def validate_bundle(root: Path, manifest_path: Path) -> Bundle:
         raise PublicationError(f"{manifest_path}: slug must be lowercase kebab-case")
     if meta["journey_stage"] not in STAGES:
         raise PublicationError(f"{manifest_path}: unknown journey_stage")
-    supported = meta.get("supports_stages", [])
-    if not isinstance(supported, list) or any(stage not in STAGES for stage in supported):
+    supported = meta["supports_stages"]
+    if not isinstance(supported, list) or not supported or any(stage not in STAGES for stage in supported):
         raise PublicationError(f"{manifest_path}: supports_stages must use Parent Growth Journey stages")
     outcomes = meta["teen_outcomes"]
     if not isinstance(outcomes, list) or not outcomes or any(outcome not in OUTCOMES for outcome in outcomes):
         raise PublicationError(f"{manifest_path}: teen_outcomes must contain approved outcomes")
     if not isinstance(meta["release_move"], str) or len(meta["release_move"].strip()) < 20:
         raise PublicationError(f"{manifest_path}: release_move must be a useful ownership move")
+    qa_score = meta["qa_score"]
+    if isinstance(qa_score, bool) or not isinstance(qa_score, int) or not 16 <= qa_score <= 20:
+        raise PublicationError(f"{manifest_path}: qa_score must be an integer from 16 to 20")
+    if meta["territory"] not in TERRITORIES:
+        raise PublicationError(f"{manifest_path}: territory must be one of {', '.join(TERRITORIES)}")
+    if meta["test_angle"] not in TEST_ANGLES:
+        raise PublicationError(f"{manifest_path}: test_angle must be one of {', '.join(TEST_ANGLES)}")
+    belief_shift = meta["core_belief_shift"]
+    if not isinstance(belief_shift, dict) or set(belief_shift) != {"from", "to"}:
+        raise PublicationError(f"{manifest_path}: core_belief_shift must contain only from and to")
+    if any(not isinstance(value, str) or len(value.strip()) < 20 for value in belief_shift.values()) or belief_shift["from"].strip() == belief_shift["to"].strip():
+        raise PublicationError(f"{manifest_path}: core_belief_shift must name distinct, useful beliefs")
+    relevance = meta["book_relevance"]
+    if not isinstance(relevance, dict) or relevance.get("status") not in {"relevant", "none"}:
+        raise PublicationError(f"{manifest_path}: book_relevance needs status=relevant or status=none")
+    if not isinstance(relevance.get("reason"), str) or len(relevance["reason"].strip()) < 20:
+        raise PublicationError(f"{manifest_path}: book_relevance needs a useful reason")
+    if relevance["status"] == "relevant" and relevance.get("id") not in PLAYBOOK_IDS:
+        raise PublicationError(f"{manifest_path}: relevant book_relevance needs a recognised Playbook id")
+    if relevance["status"] == "none" and "id" in relevance:
+        raise PublicationError(f"{manifest_path}: non-relevant book_relevance must not name a Playbook")
 
     next_step = meta.get("next_step", {"kind": "none"})
     if not isinstance(next_step, dict) or next_step.get("kind") not in NEXT_STEPS:
         raise PublicationError(f"{manifest_path}: invalid next_step")
     if next_step.get("kind") == "playbook" and (not next_step.get("id") or not next_step.get("reason")):
         raise PublicationError(f"{manifest_path}: Playbook next steps need id and relevance reason")
+    if next_step.get("kind") == "playbook" and (relevance["status"] != "relevant" or relevance.get("id") != next_step["id"]):
+        raise PublicationError(f"{manifest_path}: Playbook next step must match an explicitly relevant book_relevance")
     if next_step.get("kind") in {"guide", "reflection", "download"} and not next_step.get("target"):
         raise PublicationError(f"{manifest_path}: {next_step['kind']} next step needs target")
 
@@ -291,6 +323,25 @@ def destination(bundle: Bundle) -> str:
     return f'<section class="next-step"><p class="eyebrow">NEXT STEP</p><h2>{label}</h2>{reason_html}<a href="{href}">{label}</a></section>'
 
 
+def parent_growth_signup(config: dict[str, Any], source: str) -> str:
+    form_id = f"parent-growth-signup-{source}"
+    email_id = f"parent-growth-email-{source}"
+    action = html.escape(config["parent_growth_brevo_form_action"], quote=True)
+    return (
+        '<section class="parent-signup" aria-labelledby="parent-signup-heading-' + source + '">'
+        '<p class="eyebrow">PARENT GROWTH NOTE</p>'
+        '<h2 id="parent-signup-heading-' + source + '">One useful guide when it matters.</h2>'
+        '<p>Get practical Parent Growth guides in your inbox. No noise, no pressure, and you can unsubscribe anytime.</p>'
+        f'<form id="{form_id}" method="POST" action="{action}" data-type="subscription">'
+        f'<label for="{email_id}">Email address</label>'
+        f'<div class="parent-signup-fields"><input id="{email_id}" name="EMAIL" type="email" autocomplete="email" placeholder="you@example.com" required>'
+        '<button type="submit">GET THE NEXT GUIDE</button></div>'
+        '<input type="text" name="email_address_check" value="" class="signup-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">'
+        '<input type="hidden" name="locale" value="en"><input type="hidden" name="html_type" value="simple">'
+        '</form></section>'
+    )
+
+
 def article_schema(config: dict[str, Any], bundle: Bundle, word_count: int, social_image: str) -> str:
     canonical = f"{config['base_url']}/articles/{bundle.slug}"
     schema = {
@@ -341,8 +392,9 @@ def generated_article(root: Path, config: dict[str, Any], bundle: Bundle) -> tup
     )
     social_url = f"{config['base_url']}/{asset_target(bundle, social['source'])}"
     values = {
-        "title": html.escape(bundle.meta["title"]),
-        "description": html.escape(bundle.meta["summary"], quote=True),
+        "article_title": html.escape(bundle.meta["title"]),
+        "seo_title": html.escape(bundle.meta.get("seo_title", bundle.meta["title"])),
+        "seo_description": html.escape(bundle.meta.get("seo_description", bundle.meta["summary"]), quote=True),
         "canonical": f"{config['base_url']}/articles/{bundle.slug}",
         "social_image": social_url,
         "social_image_alt": html.escape(social.get("alt", hero["alt"]), quote=True),
@@ -356,6 +408,7 @@ def generated_article(root: Path, config: dict[str, Any], bundle: Bundle) -> tup
         "body": body,
         "release_move": html.escape(bundle.meta["release_move"]),
         "next_step": destination(bundle),
+        "parent_growth_signup": parent_growth_signup(config, "guide"),
     }
     return root / "articles" / f"{bundle.slug}.html", render_template(root, "parent-guide.html", values).encode("utf-8"), copied
 
@@ -391,6 +444,7 @@ def render_hub(root: Path, config: dict[str, Any], bundles: list[Bundle]) -> tup
         "collection_schema": hub_schema(config, published).replace("<", "\\u003c"),
         "journey_map": journey_map,
         "guide_sections": "\n    ".join(sections),
+        "parent_growth_signup": parent_growth_signup(config, "hub"),
     }
     return root / config["parent_hub_path"], render_template(root, "parent-hub.html", values).encode("utf-8")
 
@@ -407,7 +461,10 @@ def replace_region(path: Path, start: str, end: str, content: str) -> bytes:
 
 def generated_indexes(root: Path, config: dict[str, Any], bundles: list[Bundle]) -> dict[Path, bytes]:
     published = sorted((bundle for bundle in bundles if bundle.published), key=lambda item: item.meta["published"])
-    sitemap_lines = [f"<url><loc>{config['base_url']}/parents/</loc><lastmod>{date.today().isoformat()}</lastmod></url>"]
+    parent_lastmod = max((bundle.meta.get("modified", bundle.meta["published"]) for bundle in published), default=None)
+    sitemap_lines = [
+        f"<url><loc>{config['base_url']}/parents/</loc>" + (f"<lastmod>{parent_lastmod}</lastmod>" if parent_lastmod else "") + "</url>"
+    ]
     sitemap_lines.extend(f"<url><loc>{config['base_url']}/articles/{bundle.slug}</loc><lastmod>{bundle.meta['published']}</lastmod></url>" for bundle in published)
     llms_lines = ["## Parent Hub", "- https://oldwisdomretold.com/parents/: Parent Growth guides organised by SEE → UNDERSTAND → REFLECT → GUIDE → RELEASE."]
     llms_lines.extend(f"- https://oldwisdomretold.com/articles/{bundle.slug}: {bundle.meta['summary']}" for bundle in published)

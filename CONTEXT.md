@@ -47,3 +47,9 @@ not edit templates, application logic, schema, or generated site files.
 An optional, explicitly chosen action after a Parent Guide. It can be another
 guide, reflection, quiz, download, relevant Playbook, or no action.
 _Avoid_: Default funnel, mandatory product CTA
+
+**Teen Guide stream**:
+A future direct-to-teen publishing stream, separate from Parent Guides. Until
+it has its own renderer, the live teen system is the Playbooks; the reserved
+source seam is `content/teen-guides/`.
+_Avoid_: Publishing teen material through Parent Hub

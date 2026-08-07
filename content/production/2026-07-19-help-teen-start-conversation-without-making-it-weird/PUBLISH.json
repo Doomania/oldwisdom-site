@@ -1,14 +1,42 @@
 {
-  "schema_version": 1,
-  "status": "draft",
+  "schema_version": 2,
+  "status": "published",
   "audience": "parent",
   "slug": "help-teen-start-conversation-without-making-it-weird",
   "title": "How to Help a Teen Start a Conversation Without Making It Weird",
   "summary": "A calmer way to coach the first social move without pushing a quiet teenager to perform.",
+  "seo_title": "Help Your Teen Start a Conversation",
+  "seo_description": "Help a teen start conversations without pressure. Use room-based openers, one follow-up question, a reply, and a parent coaching script that protects ownership.",
+  "published": "2026-08-07",
   "journey_stage": "GUIDE",
   "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "RELEASE"],
   "teen_outcomes": ["capability", "ownership"],
   "release_move": "Let your teenager choose the opener and decide whether the first attempt was useful, rather than grading the interaction for them.",
+  "qa_score": 16,
+  "territory": "connection",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "A teen needs to feel confident before they can start a conversation.",
+    "to": "A teen builds confidence by practising one bounded social move and owning the next attempt."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "This guide gives a complete first practice and points to the diagnostic; a Playbook does not need to be the immediate destination."
+  },
+  "hero": {
+    "source": "media/conversation-coaching.webp",
+    "alt": "A parent calmly listening while a teenager practises a small social next step at home.",
+    "width": 1200,
+    "height": 800,
+    "variants": [
+      {"source": "media/conversation-coaching-480.webp", "width": 480},
+      {"source": "media/conversation-coaching-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/conversation-coaching.webp",
+    "alt": "A parent calmly listening while a teenager practises a small social next step at home."
+  },
   "next_step": {
     "kind": "quiz",
     "concern": "friends",

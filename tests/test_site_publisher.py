@@ -21,16 +21,17 @@ class ParentGuidePublisherTests(unittest.TestCase):
                     "author": "Eric Han",
                     "language": "en-NZ",
                     "parent_hub_path": "parents/index.html",
+                    "parent_growth_brevo_form_action": "https://example.com/subscribe",
                 }
             ),
             encoding="utf-8",
         )
         (self.root / "templates" / "parent-guide.html").write_text(
-            "{{title}}|{{description}}|{{canonical}}|{{social_image}}|{{social_image_alt}}|{{article_schema}}|{{journey_stage}}|{{summary}}|{{author}}|{{published_display}}|{{reading_time}}|{{hero}}|{{body}}|{{release_move}}|{{next_step}}",
+            "{{article_title}}|{{seo_title}}|{{seo_description}}|{{canonical}}|{{social_image}}|{{social_image_alt}}|{{article_schema}}|{{journey_stage}}|{{summary}}|{{author}}|{{published_display}}|{{reading_time}}|{{hero}}|{{body}}|{{release_move}}|{{next_step}}|{{parent_growth_signup}}",
             encoding="utf-8",
         )
         (self.root / "templates" / "parent-hub.html").write_text(
-            "{{canonical}}|{{collection_schema}}|{{journey_map}}|{{guide_sections}}", encoding="utf-8"
+            "{{canonical}}|{{collection_schema}}|{{journey_map}}|{{guide_sections}}|{{parent_growth_signup}}", encoding="utf-8"
         )
         (self.root / "sitemap.xml").write_text(
             "<urlset>\n<!-- PARENT-HUB:START -->\n<!-- PARENT-HUB:END -->\n</urlset>", encoding="utf-8"
@@ -57,7 +58,7 @@ class ParentGuidePublisherTests(unittest.TestCase):
 
     def manifest(self):
         return {
-            "schema_version": 1,
+            "schema_version": 2,
             "status": "published",
             "audience": "parent",
             "slug": "example-guide",
@@ -68,6 +69,17 @@ class ParentGuidePublisherTests(unittest.TestCase):
             "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "RELEASE"],
             "teen_outcomes": ["capability", "ownership"],
             "release_move": "Let the teenager decide which small practice feels useful and what they will try next.",
+            "qa_score": 18,
+            "territory": "connection",
+            "test_angle": "LONG_TERM_CAPABILITY",
+            "core_belief_shift": {
+                "from": "A teen needs to feel confident before attempting a social move.",
+                "to": "A teen builds confidence by choosing and repeating one manageable social move.",
+            },
+            "book_relevance": {
+                "status": "none",
+                "reason": "The most useful next step is the guide's practice, not a product recommendation.",
+            },
             "hero": {
                 "source": "media/hero.webp",
                 "alt": "A parent listening to a teenager",
@@ -111,6 +123,35 @@ class ParentGuidePublisherTests(unittest.TestCase):
         with self.assertRaisesRegex(PublicationError, "relevance reason"):
             validate_bundle(self.root, path)
 
+    def test_v4_governance_gates_reject_weak_or_incomplete_metadata(self):
+        cases = [
+            ("qa_score", 15, "qa_score"),
+            ("territory", "parenting", "territory"),
+            ("test_angle", "GUIDE", "test_angle"),
+            ("core_belief_shift", {"from": "Too short", "to": "Also too short"}, "core_belief_shift"),
+            ("book_relevance", {"status": "relevant", "reason": "A Playbook might help with the topic."}, "recognised Playbook id"),
+        ]
+        for field, value, message in cases:
+            with self.subTest(field=field):
+                data = self.manifest()
+                data[field] = value
+                path = self.write_manifest(data)
+                with self.assertRaisesRegex(PublicationError, message):
+                    validate_bundle(self.root, path)
+
+    def test_playbook_next_step_must_match_declared_book_relevance(self):
+        data = self.manifest()
+        data["book_relevance"] = {
+            "status": "relevant",
+            "id": "social",
+            "reason": "The Social Playbook develops the same conversation skill in more depth.",
+        }
+        data["next_step"] = {"kind": "playbook", "id": "war", "reason": "A mismatched CTA."}
+        path = self.write_manifest(data)
+
+        with self.assertRaisesRegex(PublicationError, "must match"):
+            validate_bundle(self.root, path)
+
     def test_pinterest_campaign_requires_every_pin_to_keep_utm_attribution(self):
         self.write_manifest(self.manifest())
         campaign = self.bundle / "PINTEREST.md"
@@ -118,6 +159,17 @@ class ParentGuidePublisherTests(unittest.TestCase):
 
         with self.assertRaisesRegex(PublicationError, "expected five titled pins"):
             validate_bundle(self.root, self.bundle / "PUBLISH.json")
+
+    def test_build_is_deterministic_and_missing_managed_marker_fails_closed(self):
+        self.write_manifest(self.manifest())
+        build_site(self.root)
+        first_sitemap = (self.root / "sitemap.xml").read_bytes()
+        self.assertEqual(build_site(self.root, check_only=True), [])
+        self.assertEqual(first_sitemap, (self.root / "sitemap.xml").read_bytes())
+
+        (self.root / "llms.txt").write_text("# Site without generated region", encoding="utf-8")
+        with self.assertRaisesRegex(PublicationError, "missing or duplicate managed region"):
+            build_site(self.root)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,24 @@
+name: Production URL smoke test
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: Production site URL to verify after Cloudflare deployment
+        required: false
+        default: https://oldwisdomretold.com
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  verify-clean-urls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify canonical URLs and 404 behaviour
+        run: python scripts/verify_clean_urls.py --base-url "${{ inputs.base_url }}"

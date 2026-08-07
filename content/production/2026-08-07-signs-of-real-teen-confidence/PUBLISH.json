@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "status": "published",
   "audience": "parent",
   "slug": "signs-of-real-teen-confidence",
@@ -10,6 +10,17 @@
   "supports_stages": ["SEE", "UNDERSTAND", "GUIDE", "RELEASE"],
   "teen_outcomes": ["judgment", "capability", "ownership", "independence"],
   "release_move": "Name the process lightly, then leave space for the teenager to decide what the next attempt means to them.",
+  "qa_score": 18,
+  "territory": "confidence",
+  "test_angle": "REFLECT",
+  "core_belief_shift": {
+    "from": "Confidence is a trait that parents should praise into existence.",
+    "to": "Confidence grows through observed choices, recovery, and ownership of the next attempt."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "The useful move here is reflection on the teen's own evidence, not directing the parent toward a product."
+  },
   "legacy_output": "articles/signs-of-real-teen-confidence.html",
   "next_step": {
     "kind": "quiz",

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "status": "draft",
   "audience": "parent",
   "slug": "why-teen-friendships-fade-after-one-term",
@@ -9,6 +9,17 @@
   "supports_stages": ["SEE", "REFLECT", "GUIDE", "RELEASE"],
   "teen_outcomes": ["judgment", "capability", "ownership"],
   "release_move": "Support one small follow-up, then let the teenager decide whom they want to keep investing in and how they want to respond.",
+  "qa_score": 18,
+  "territory": "connection",
+  "test_angle": "SEE",
+  "core_belief_shift": {
+    "from": "A fading friendship always proves rejection or a hidden social failure.",
+    "to": "Shared structure can disappear, and one chosen follow-up helps a teen learn what connection needs next."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "The parent first needs to understand friendship drift without taking over; a product CTA would distract from that work."
+  },
   "next_step": {
     "kind": "quiz",
     "concern": "friends",

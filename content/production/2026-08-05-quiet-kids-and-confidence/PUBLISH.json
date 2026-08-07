@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "status": "published",
   "audience": "parent",
   "slug": "quiet-kids-and-confidence",
@@ -10,6 +10,17 @@
   "supports_stages": ["UNDERSTAND", "REFLECT", "GUIDE", "RELEASE"],
   "teen_outcomes": ["judgment", "ownership"],
   "release_move": "Let the teenager answer in their own time and interpret their own experience before offering a solution.",
+  "qa_score": 18,
+  "territory": "confidence",
+  "test_angle": "SEE",
+  "core_belief_shift": {
+    "from": "A quiet teenager must be unconfident or socially behind.",
+    "to": "A pause is information to notice before deciding what support, if any, is useful."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "This guide is about avoiding a premature label; a Playbook is not the most useful next tool at this moment."
+  },
   "legacy_output": "articles/quiet-kids-and-confidence.html",
   "next_step": {
     "kind": "quiz",
