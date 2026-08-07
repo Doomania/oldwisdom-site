@@ -31,6 +31,8 @@ It is usually not a personality problem. It is a first-move problem.
 
 Research on youth connectedness is clear that belonging matters. So do friendships, peer support, and feeling cared for. But those bigger outcomes are built out of smaller moments. A teen does not wake up one day with a strong social world. They build it through repeated low-stakes interactions that become familiarity, then trust, then friendship.
 
+The CDC's overview of [school connectedness](https://www.cdc.gov/youth-behavior/school-connectedness/index.html) makes the same larger point: connection with peers and school supports young people's development and wellbeing. One opener is not a cure-all. It is simply a manageable place to practise connection.
+
 That means your job is not to make your teen instantly charismatic. Your job is to help them handle the first ten seconds better.
 
 ## The easiest opener lives in the room

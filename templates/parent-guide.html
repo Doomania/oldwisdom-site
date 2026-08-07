@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>{{title}} | Old Wisdom Retold</title>
-  <meta name="description" content="{{description}}">
+  <title>{{seo_title}} | Old Wisdom Retold</title>
+  <meta name="description" content="{{seo_description}}">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="{{canonical}}">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="en_NZ">
   <meta property="og:site_name" content="Old Wisdom // Retold">
-  <meta property="og:title" content="{{title}}">
-  <meta property="og:description" content="{{description}}">
+  <meta property="og:title" content="{{article_title}}">
+  <meta property="og:description" content="{{seo_description}}">
   <meta property="og:url" content="{{canonical}}">
   <meta property="og:image" content="{{social_image}}">
   <meta property="og:image:alt" content="{{social_image_alt}}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{title}}">
-  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:title" content="{{article_title}}">
+  <meta name="twitter:description" content="{{seo_description}}">
   <meta name="twitter:image" content="{{social_image}}">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
   </nav>
   <header class="parent-hero">
     <p class="eyebrow">PARENT GROWTH · {{journey_stage}}</p>
-    <h1>{{title}}</h1>
+    <h1>{{article_title}}</h1>
     <p class="dek">{{summary}}</p>
     <p class="byline">By {{author}} · {{published_display}} · {{reading_time}} min read</p>
     {{hero}}
@@ -47,7 +47,8 @@
       <p>{{release_move}}</p>
     </section>
     {{next_step}}
-    <aside class="author-box"><h2>About {{author}}</h2><p>{{author}} writes Old Wisdom Retold, turning classic wisdom into practical tools for teenagers and the parents guiding them.</p></aside>
+    {{parent_growth_signup}}
+    <aside class="author-box" id="author"><h2>About {{author}}</h2><p>{{author}} writes Old Wisdom Retold, turning classic wisdom into practical tools for teenagers and the parents guiding them.</p></aside>
   </main>
   <footer class="parent-footer"><a href="../parents/">Parent Hub</a> · © 2026 Eric Han</footer>
 </body>
