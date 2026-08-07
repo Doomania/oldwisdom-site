@@ -3,28 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Old Wisdom // Retold — Strategy Playbooks for Teens 12–17 by Eric Han</title>
-<meta name="description" content="Old Wisdom // Retold is Eric Han's strategy book series for teens 12–17: explore The Social Playbook and The War Playbook, or take the free quiz.">
+<title>Old Wisdom // Retold — Practical Growth Tools for Teens &amp; Parents</title>
+<meta name="description" content="Old Wisdom // Retold helps teens build judgment, capability, ownership and independence through practical Playbooks, with separate Parent Growth guidance.">
+<meta name="theme-color" content="#0C0C0F">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="canonical" href="https://oldwisdomretold.com/" />
-<meta property="og:type" content="article" />
-<meta property="article:author" content="Eric Han" />
-<meta property="article:published_time" content="2026-07-01T00:00:00+12:00" />
-<meta property="og:locale" content="en_NZ" />
-<meta property="og:site_name" content="Old Wisdom // Retold" />
-<meta property="og:title" content="Old Wisdom // Retold — Strategy Books and Free Quiz for Teens" />
-<meta property="og:description" content="Explore The Social Playbook and The War Playbook by Eric Han, then use the free social skills quiz to find the right starting point." />
-<meta property="og:url" content="https://oldwisdomretold.com/" />
-<meta property="og:image" content="https://oldwisdomretold.com/assets/og-card-2026.jpg" />
-<meta property="og:image:type" content="image/jpeg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Old Wisdom // Retold strategy playbooks for teens by Eric Han" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Old Wisdom // Retold — Strategy Playbooks for Teens" />
-<meta name="twitter:description" content="Explore the books and take the free 15-question social skills quiz." />
-<meta name="twitter:image" content="https://oldwisdomretold.com/assets/og-card-2026.jpg" />
-<meta name="p:domain_verify" content="598da8b35d432de6b8f92f37d04d48a4"/>
+<link rel="canonical" href="https://oldwisdomretold.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_NZ">
+<meta property="og:site_name" content="Old Wisdom // Retold">
+<meta property="og:title" content="Old Wisdom // Retold — Teen Growth, Built for Real Life">
+<meta property="og:description" content="Practical teen-facing Playbooks and a separate Parent Growth layer, built to strengthen judgment, capability, ownership and independence.">
+<meta property="og:url" content="https://oldwisdomretold.com/">
+<meta property="og:image" content="https://oldwisdomretold.com/assets/og-card-2026.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Covers of The Social, War and Discipline Playbooks by Eric Han">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Old Wisdom // Retold — Teen Growth, Built for Real Life">
+<meta name="twitter:description" content="Teen-facing Playbooks, practical Parent Growth guidance, and one clear mission: help teens own their next move.">
+<meta name="twitter:image" content="https://oldwisdomretold.com/assets/og-card-2026.jpg">
+<meta name="p:domain_verify" content="598da8b35d432de6b8f92f37d04d48a4">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>if (window.gsap && window.ScrollTrigger && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('gsap-ready');</script>
@@ -50,7 +49,7 @@
 }
 
 /* ===== BASE ===== */
-html { scroll-behavior: auto; overflow-x: hidden; }
+html { scroll-behavior: auto; overflow-x: hidden; color-scheme: dark; }
 body { background: var(--bg-deep); color: var(--white); font-family: var(--font-body); overflow-x: hidden; -webkit-font-smoothing: antialiased; line-height: 1.6; font-size: 16px; }
 body::after { content: ''; position: fixed; inset: 0; opacity: 0.015; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3rem); }
@@ -60,6 +59,9 @@ body::after { content: ''; position: fixed; inset: 0; opacity: 0.015; background
 .skip-link:focus { top: 0; }
 *:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
 button, a { cursor: pointer; touch-action: manipulation; }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+[id] { scroll-margin-top: 5rem; }
 
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
@@ -72,18 +74,19 @@ button, a { cursor: pointer; touch-action: manipulation; }
 /* ===== NAVBAR ===== */
 .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding-top: max(0.8rem, env(safe-area-inset-top)); padding-right: max(1.5rem, env(safe-area-inset-right)); padding-bottom: 0.8rem; padding-left: max(1.5rem, env(safe-area-inset-left)); display: flex; justify-content: space-between; align-items: center; background: rgba(12,12,15,0.75); backdrop-filter: blur(24px) saturate(1.6); -webkit-backdrop-filter: blur(24px) saturate(1.6); border-bottom: 1px solid var(--border); transition: transform 0.4s var(--ease-out); }
 .navbar.hide { transform: translateY(-100%); }
+.navbar.hide:focus-within { transform: none; }
 .nav-brand { min-height: 44px; display: flex; align-items: center; font-family: var(--font-display); font-size: 1.05rem; letter-spacing: 0.3em; color: var(--gold); text-decoration: none; }
 .nav-right { display: flex; align-items: center; gap: 1rem; }
 .nav-link { color: var(--text-dim); text-decoration: none; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.06em; transition: color 0.25s; padding: 0.4rem 0.2rem; min-height: 44px; display: flex; align-items: center; }
 .nav-link:hover { color: var(--white); }
-.nav-btn { padding: 0.5rem 1.1rem; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-decoration: none; border-radius: 6px; transition: all 0.25s; min-height: 44px; display: inline-flex; align-items: center; border: none; }
+.nav-btn { padding: 0.5rem 1.1rem; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-decoration: none; border-radius: 6px; transition: background-color 0.25s, color 0.25s, transform 0.25s; min-height: 44px; display: inline-flex; align-items: center; border: none; }
 .nav-btn-blue { background: var(--blue); color: var(--white); }
 .nav-btn-blue:hover { background: var(--blue-soft); transform: translateY(-1px); }
 .nav-btn-red { background: var(--red); color: var(--white); }
 .nav-btn-red:hover { background: var(--red-soft); transform: translateY(-1px); }
 .nav-btn-gold { background: var(--gold); color: var(--bg-deep); }
 .nav-btn-gold:hover { background: var(--gold-soft); transform: translateY(-1px); }
-@media (max-width: 640px) { .nav-link { display: none; } .nav-btn { font-size: 0.72rem; padding: 0.45rem 0.8rem; min-height: 44px; } }
+@media (max-width: 640px) { .nav-link { display: none; } .nav-link.nav-parent { display: flex; } .nav-btn { display: none; } }
 @media (max-width: 360px) { .navbar { padding-right: max(1rem, env(safe-area-inset-right)); padding-left: max(1rem, env(safe-area-inset-left)); } .nav-brand { font-size: 0.95rem; letter-spacing: 0.2em; } }
 
 /* ===== PROGRESS ===== */
@@ -103,21 +106,21 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .hero-h1 .accent { color: var(--gold); }
 .hero-sub { font-size: clamp(1rem, 1.8vw, 1.15rem); color: var(--text); line-height: 1.75; margin-bottom: 2rem; max-width: 480px; font-weight: 400; }
 .hero-sub strong { color: var(--white); font-weight: 600; }
-.hero-series-note { margin: -0.75rem 0 1.5rem; color: var(--text-dim); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; }
+.hero-series-note { margin: -0.75rem 0 1.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.2rem 0.45rem; color: var(--text-dim); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; }
 .hero-series-note strong { color: var(--blue-soft); }
-.hero-series-note strong + span { color: var(--text-muted); margin: 0 0.35rem; }
+.hero-series-note strong + span { color: var(--text-muted); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; }
-.btn-primary { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.85rem 2rem; background: var(--gold); color: var(--bg-deep); font-family: var(--font-body); font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; text-decoration: none; transition: all 0.25s var(--ease-out); min-height: 48px; }
+.btn-primary { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.85rem 2rem; background: var(--gold); color: var(--bg-deep); font-family: var(--font-body); font-size: 0.95rem; font-weight: 700; border: none; border-radius: 8px; text-decoration: none; transition: background-color 0.25s var(--ease-out), color 0.25s var(--ease-out), transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out); min-height: 48px; }
 .btn-primary:hover { background: var(--gold-soft); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(212,168,75,0.3); }
 .btn-primary svg { transition: transform 0.25s; flex-shrink: 0; }
 .btn-primary:hover svg { transform: translateX(3px); }
-.btn-secondary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.8rem; background: transparent; color: var(--text); font-family: var(--font-body); font-size: 0.95rem; font-weight: 500; border: 1px solid var(--border); border-radius: 8px; text-decoration: none; transition: all 0.25s; min-height: 48px; }
+.btn-secondary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.8rem; background: transparent; color: var(--text); font-family: var(--font-body); font-size: 0.95rem; font-weight: 500; border: 1px solid var(--border); border-radius: 8px; text-decoration: none; transition: background-color 0.25s, border-color 0.25s, color 0.25s, transform 0.25s; min-height: 48px; }
 .btn-secondary:hover { border-color: var(--text-dim); color: var(--white); background: rgba(255,255,255,0.03); }
 .hero-book-wrap { flex: 0 0 auto; width: clamp(240px, 30vw, 380px); position: relative; }
 .hero-book-img { width: 100%; height: auto; border-radius: 8px; filter: drop-shadow(0 30px 60px rgba(0,0,0,0.6)) drop-shadow(0 4px 12px rgba(0,0,0,0.4)); transition: transform 0.6s var(--ease-out); aspect-ratio: 5/7; object-fit: cover; }
 .hero-book-wrap:hover .hero-book-img { transform: translateY(-8px) rotate(1deg); }
 .hero-book-badge { position: absolute; top: -10px; right: -10px; background: var(--blue); color: var(--white); font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.12em; padding: 0.35rem 0.8rem; border-radius: 6px; transform: rotate(3deg); pointer-events: none; }
-@media (max-width: 768px) { .hero-inner { flex-direction: column-reverse; text-align: center; } .hero-book-wrap { width: 180px; } .hero-sub, .hero-h1 { max-width: 100%; } .hero-sub { margin-left: auto; margin-right: auto; } .hero-actions { justify-content: center; } }
+@media (max-width: 768px) { .hero-inner { flex-direction: column-reverse; text-align: center; } .hero-book-wrap { width: 180px; } .hero-sub, .hero-h1 { max-width: 100%; } .hero-sub { margin-left: auto; margin-right: auto; } .hero-actions, .hero-series-note { justify-content: center; } }
 @media (max-width: 480px) { .hero { padding: max(5.5rem, calc(4.5rem + env(safe-area-inset-top))) 0 3.5rem; } .hero-inner { gap: 1.1rem; } .hero-book-wrap { width: 132px; } .hero-eyebrow { margin-bottom: 0.9rem; padding: 0.3rem 0.65rem; font-size: 0.68rem; } .hero-h1 { font-size: clamp(2.6rem, 14vw, 3.25rem); margin-bottom: 0.9rem; } .hero-sub { line-height: 1.6; margin-bottom: 1.4rem; } .hero-series-note { margin-top: -0.6rem; margin-bottom: 1.2rem; line-height: 1.5; } .hero-actions { gap: 0.65rem; } .hero-actions > a { width: 100%; justify-content: center; } }
 
 /* ===== TRUST BAR ===== */
@@ -157,7 +160,7 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .inside { padding: clamp(5rem, 10vw, 8rem) 0; }
 .inside-header { text-align: center; margin-bottom: clamp(3rem, 5vw, 4rem); }
 .inside-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-.inside-card { padding: 1.8rem 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; transition: all 0.3s var(--ease-out); position: relative; overflow: hidden; }
+.inside-card { padding: 1.8rem 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; transition: background-color 0.3s var(--ease-out), border-color 0.3s var(--ease-out), transform 0.3s var(--ease-out); position: relative; overflow: hidden; }
 .inside-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform 0.35s var(--ease-out); }
 .inside-card:hover::before { transform: scaleX(1); }
 .inside-card:hover { transform: translateY(-4px); border-color: rgba(77,148,255,0.15); background: var(--bg-card-hover); }
@@ -182,6 +185,12 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .parent-quote-mark { font-family: var(--font-display); font-size: 4rem; color: var(--gold); line-height: 1; opacity: 0.25; position: absolute; top: 1rem; left: 1.5rem; pointer-events: none; }
 .parent-quote-text { font-size: 1.05rem; line-height: 1.75; font-style: italic; color: var(--text); padding-top: 2.2rem; margin-bottom: 1rem; }
 .parent-quote-attr { font-size: 0.82rem; color: var(--gold); font-weight: 600; letter-spacing: 0.06em; }
+.journey-steps { display: grid; gap: 0.65rem; margin-top: 1.5rem; list-style: none; }
+.journey-step { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.85rem; align-items: baseline; padding: 0.7rem 0; border-bottom: 1px solid var(--border); }
+.journey-step:last-child { border-bottom: 0; }
+.journey-step strong { color: var(--gold-soft); font-family: var(--font-display); letter-spacing: 0.1em; }
+.journey-step span { color: var(--text); font-size: 0.9rem; line-height: 1.55; }
+.parent-quote-card .btn-primary { margin-top: 1.25rem; }
 @media (max-width: 768px) { .parent-grid { grid-template-columns: 1fr; } }
 
 /* ===== SERIES ===== */
@@ -190,7 +199,7 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .series-header .section-h2 { margin-bottom: 0.8rem; }
 .series-sub { font-size: 1rem; color: var(--text-dim); max-width: 500px; margin: 0 auto; }
 .series-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-.series-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: all 0.35s var(--ease-out); position: relative; }
+.series-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), transform 0.35s var(--ease-out); position: relative; }
 .series-card:hover { transform: translateY(-6px); }
 .series-card.live-blue:hover { border-color: rgba(77,148,255,0.3); box-shadow: 0 20px 40px rgba(77,148,255,0.08); }
 .series-card.live-red:hover { border-color: rgba(204,34,51,0.3); box-shadow: 0 20px 40px rgba(204,34,51,0.08); }
@@ -198,6 +207,10 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .series-card-img { width: 100%; height: auto; aspect-ratio: 5/7; object-fit: cover; object-position: center top; display: block; border-radius: 8px 8px 0 0; }
 .series-card-body { padding: 1.4rem; }
 .series-card-status { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 0.75rem; }
+.series-card-code { margin-bottom: 0.5rem; font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.25em; opacity: 0.7; }
+.series-card-code.social { color: var(--blue-soft); }
+.series-card-code.strategy { color: var(--red-soft); }
+.series-card-code.discipline { color: var(--gold-soft); }
 .status-live-blue { background: rgba(77,148,255,0.15); color: var(--blue-soft); }
 .status-live-red { background: rgba(204,34,51,0.15); color: var(--red-soft); }
 .status-coming { background: rgba(255,255,255,0.06); color: var(--text-dim); }
@@ -208,8 +221,8 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .series-card-desc { font-size: 0.83rem; color: var(--text-dim); line-height: 1.55; margin-bottom: 0.9rem; }
 .series-card-meta { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; margin-bottom: 0.75rem; }
 .series-card .btn-primary { width: 100%; justify-content: center; font-size: 0.85rem; padding: 0.65rem; }
-.series-card .btn-war { background: var(--red); }
-.series-card .btn-war:hover { background: var(--red-soft); box-shadow: 0 8px 30px rgba(204,34,51,0.3); }
+.series-card .btn-war { background: var(--red); color: var(--white); }
+.series-card .btn-war:hover { background: #A81C2B; box-shadow: 0 8px 30px rgba(204,34,51,0.3); }
 .coming-overlay { position: absolute; inset: 0; background: rgba(12,12,15,0.55); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
 .series-card.coming:hover .coming-overlay { opacity: 1; }
 .coming-overlay-inner { padding: 0.6rem 1.3rem; background: rgba(12,12,15,0.92); border: 1px solid var(--border); border-radius: 8px; font-size: 0.83rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem; }
@@ -219,6 +232,9 @@ button, a { cursor: pointer; touch-action: manipulation; }
 /* ===== ADULTS ===== */
 .adults { padding: clamp(5rem,10vw,8rem) 0; background: var(--bg-warm); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .adults-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem,5vw,5rem); align-items: start; }
+.ethics-label { color: var(--red-soft); }
+.ethics-accent { color: var(--gold-soft); }
+.ethics-line { margin: 1rem 0 1.5rem; color: var(--gold-soft); font-family: var(--font-display); font-size: clamp(1.35rem,3vw,2rem); line-height: 1.2; letter-spacing: 0.03em; }
 @media (max-width: 768px) { .adults-grid { grid-template-columns: 1fr; } }
 .adults-gold { color: var(--gold-soft); font-weight: 600; }
 
@@ -255,6 +271,8 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .capture-h3 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.05; margin-bottom: 0.8rem; }
 .capture-sub { font-size: 0.93rem; color: var(--text-dim); margin-bottom: 2rem; line-height: 1.65; }
 .capture-fine { font-size: 0.73rem; color: var(--text-muted); margin-top: 0.75rem; }
+.capture-form-container { max-width: 440px; margin: 0 auto 0.75rem; }
+.capture-form-row { padding: 6px 0; }
 
 /* ===== BREVO ===== */
 #sib-container { background-color: transparent !important; border: none !important; max-width: 100% !important; padding: 0 !important; }
@@ -264,7 +282,7 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .sib-form-block__button { font-family: var(--font-body) !important; font-size: 0.92rem !important; font-weight: 700 !important; color: #0C0C0F !important; background-color: var(--gold) !important; border-radius: 8px !important; border: none !important; padding: 0.8rem 1.5rem !important; width: 100% !important; text-align: center !important; cursor: pointer !important; transition: background-color 0.25s !important; letter-spacing: 0.05em !important; min-height: 48px !important; }
 .sib-form-block__button:hover { background-color: var(--gold-soft) !important; }
 #sib-container input.input { font-family: var(--font-body) !important; font-size: 0.92rem !important; background: rgba(255,255,255,0.05) !important; border: 1px solid var(--border) !important; border-radius: 8px !important; color: var(--white) !important; padding: 0.8rem 1.2rem !important; width: 100% !important; outline: none !important; transition: border-color 0.25s !important; }
-#sib-container input.input:focus { border-color: var(--gold) !important; outline: 2px solid var(--gold) !important; outline-offset: 2px !important; }
+#sib-container input.input:focus-visible { border-color: var(--gold) !important; outline: 2px solid var(--gold) !important; outline-offset: 2px !important; }
 #sib-container input.input::placeholder { color: var(--text-muted) !important; }
 /* Accessible label — visually hidden but readable by screen readers */
 .entry__label { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; }
@@ -285,31 +303,55 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .btn-war-cta { background: var(--red) !important; }
 .btn-war-cta:hover { background: var(--red-soft) !important; box-shadow: 0 8px 30px rgba(204,34,51,0.3) !important; }
 .final-book-strip { display: flex; justify-content: center; gap: 1.2rem; margin-top: 3rem; }
-.final-mini { width: 68px; height: auto; border-radius: 4px; opacity: 0.35; transition: all 0.3s; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.4)); aspect-ratio: 5/7; object-fit: cover; }
+.final-mini { width: 68px; height: auto; border-radius: 4px; opacity: 0.35; transition: opacity 0.3s, transform 0.3s; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.4)); aspect-ratio: 5/7; object-fit: cover; }
 .final-mini.active { opacity: 1; transform: translateY(-4px); }
 .final-mini:hover { opacity: 0.8; }
 
 /* ===== FOOTER ===== */
 .footer { padding: 2.5rem 0 max(2.5rem, calc(1rem + env(safe-area-inset-bottom))); border-top: 1px solid var(--border); text-align: center; }
 .footer-brand { font-family: var(--font-display); font-size: 0.9rem; letter-spacing: 0.3em; color: var(--gold); margin-bottom: 0.3rem; }
+.footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0 0.5rem; margin: 0.6rem 0; }
+.footer-links a { min-height: 44px; display: inline-flex; align-items: center; padding: 0 0.5rem; color: var(--text-dim); font-size: 0.8rem; text-decoration: none; transition: color 0.25s; }
+.footer-links a:hover { color: var(--white); }
 .footer-copy { font-size: 0.73rem; color: var(--text-muted); }
 
 /* ===== AUDIENCE PATHS ===== */
-.paths { padding: 1.5rem 0 0.5rem; }
+.paths { padding: clamp(2.5rem,6vw,4.5rem) 0 1rem; }
 .paths-label { text-align: center; font-family: var(--font-display); font-size: 0.78rem; letter-spacing: 0.45em; color: var(--text-dim); margin-bottom: 1rem; }
-.paths-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
-.path-chip { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; padding: 0.9rem 1.1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: all 0.25s var(--ease-out); min-height: 48px; }
+.paths-intro { max-width: 650px; margin: 0 auto 1.5rem; text-align: center; color: var(--text); line-height: 1.7; }
+.paths-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 900px; margin: 0 auto; }
+.path-chip { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.35rem 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; color: var(--text); text-decoration: none; transition: background-color 0.25s var(--ease-out), border-color 0.25s var(--ease-out), color 0.25s var(--ease-out), transform 0.25s var(--ease-out); min-height: 112px; }
 .path-chip:hover { border-color: rgba(212,168,75,0.35); color: var(--white); transform: translateY(-2px); background: var(--bg-card-hover); }
 .path-chip svg { flex-shrink: 0; color: var(--gold); }
-.parent-guide-card { margin-top: 1rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1.25rem; padding: 1.35rem 1.5rem; background: linear-gradient(135deg, rgba(212,168,75,0.12), rgba(107,165,255,0.06)); border: 1px solid rgba(212,168,75,0.32); border-radius: 14px; color: var(--text); text-decoration: none; transition: all 0.25s var(--ease-out); }
+.path-chip strong { display: block; margin-bottom: 0.3rem; color: var(--white); font-family: var(--font-display); font-size: 1.55rem; letter-spacing: 0.04em; }
+.path-chip span span { display: block; color: var(--text-dim); font-size: 0.88rem; line-height: 1.5; }
+.path-chip.teen-path { border-color: rgba(77,148,255,0.2); }
+.path-chip.teen-path svg { color: var(--blue-soft); }
+.parent-guide-card { margin-top: 1rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1.25rem; padding: 1.35rem 1.5rem; background: linear-gradient(135deg, rgba(212,168,75,0.12), rgba(107,165,255,0.06)); border: 1px solid rgba(212,168,75,0.32); border-radius: 14px; color: var(--text); text-decoration: none; transition: background-color 0.25s var(--ease-out), border-color 0.25s var(--ease-out), transform 0.25s var(--ease-out); }
 .parent-guide-card:hover { transform: translateY(-2px); border-color: rgba(212,168,75,0.6); background: linear-gradient(135deg, rgba(212,168,75,0.17), rgba(107,165,255,0.09)); }
 .parent-guide-kicker { display: block; margin-bottom: 0.35rem; color: var(--gold); font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.22em; }
 .parent-guide-title { display: block; color: var(--white); font-family: var(--font-display); font-size: clamp(1.35rem, 3vw, 1.75rem); letter-spacing: 0.03em; line-height: 1.05; }
 .parent-guide-desc { display: block; max-width: 680px; margin-top: 0.45rem; color: var(--text-dim); font-size: 0.9rem; line-height: 1.5; }
 .parent-guide-link { color: var(--gold-soft); font-size: 0.85rem; font-weight: 700; white-space: nowrap; }
 @media (max-width: 620px) { .parent-guide-card { grid-template-columns: 1fr; } .parent-guide-link { margin-top: 0.2rem; } }
-@media (max-width: 900px) { .paths-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .paths-grid { grid-template-columns: 1fr; } }
+
+/* ===== HANDOVER CARD ===== */
+.handover { padding: clamp(4rem,8vw,6rem) 0; border-top: 1px solid var(--border); background: var(--bg-warm); }
+.handover-head { max-width: 720px; margin-bottom: 2.5rem; }
+.handover-head .section-h2 { margin-bottom: 1rem; }
+.handover-head p { max-width: 65ch; color: var(--text); line-height: 1.75; }
+.handover-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.handover-panel { padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; }
+.handover-panel h3 { margin-bottom: 1rem; font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 0.04em; }
+.handover-panel ul { list-style: none; display: grid; gap: 0.8rem; }
+.handover-panel li { position: relative; padding-left: 1.5rem; color: var(--text); font-size: 0.9rem; line-height: 1.55; }
+.handover-panel li::before { position: absolute; left: 0; top: 0; color: var(--gold); font-weight: 700; }
+.handover-do li::before { content: '✓'; }
+.handover-avoid li::before { content: '×'; color: var(--red-soft); }
+.handover-rule { margin-top: 1rem; padding: 1.2rem 1.4rem; border-left: 3px solid var(--gold); background: rgba(212,168,75,0.08); color: var(--text); }
+.handover-rule strong { color: var(--gold-soft); }
+@media (max-width: 700px) { .handover-grid { grid-template-columns: 1fr; } }
 
 /* ===== SAMPLE PAGES ===== */
 .samples { padding: clamp(4rem,8vw,6rem) 0; border-top: 1px solid var(--border); }
@@ -336,6 +378,7 @@ button, a { cursor: pointer; touch-action: manipulation; }
 .author { padding: clamp(4rem,8vw,6rem) 0; border-top: 1px solid var(--border); }
 .author-inner { max-width: 640px; margin: 0 auto; text-align: center; }
 .author-inner img { border-radius: 50%; margin: 0 auto 1.2rem; display: block; object-fit: cover; }
+.author-title { margin-bottom: 1rem; font-size: clamp(1.8rem,4vw,2.6rem); }
 .author-inner p { font-size: 0.95rem; color: var(--text); line-height: 1.75; margin-bottom: 1rem; }
 
 /* ===== REVEAL ===== */
@@ -351,17 +394,30 @@ button, a { cursor: pointer; touch-action: manipulation; }
       "@id": "https://oldwisdomretold.com/#website",
       "url": "https://oldwisdomretold.com/",
       "name": "Old Wisdom // Retold",
-      "description": "Strategy playbooks for teens aged 12–17 by Eric Han, with a free social skills diagnostic.",
+      "description": "A teen-growth platform with practical Playbooks for teens aged 12–17 and a separate Parent Hub for supporting judgment, capability, ownership and independence.",
       "inLanguage": "en",
       "publisher": {"@id": "https://oldwisdomretold.com/#author"},
-      "about": {"@id": "https://oldwisdomretold.com/#series"}
+      "about": [
+        {"@id": "https://oldwisdomretold.com/#series"},
+        {"@id": "https://oldwisdomretold.com/#parent-hub"}
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://oldwisdomretold.com/#parent-hub",
+      "url": "https://oldwisdomretold.com/parents/",
+      "name": "Old Wisdom // Retold Parent Hub",
+      "description": "Parent Growth guidance organised around SEE, UNDERSTAND, REFLECT, GUIDE and RELEASE, so adults can support teen growth without taking it over.",
+      "isPartOf": {"@id": "https://oldwisdomretold.com/#website"},
+      "audience": {"@type": "PeopleAudience", "audienceType": "Parents and caregivers"},
+      "inLanguage": "en"
     },
     {
       "@type": "BookSeries",
       "@id": "https://oldwisdomretold.com/#series",
       "name": "Old Wisdom // Retold",
       "url": "https://oldwisdomretold.com/#series",
-      "description": "A non-fiction book series translating classic strategy, philosophy, and human psychology into practical playbooks for teens aged 12–17.",
+      "description": "Teen-facing Playbooks that translate durable ideas from strategy, philosophy and human psychology into short, practical chapters for ages 12–17.",
       "author": {"@id": "https://oldwisdomretold.com/#author"},
       "hasPart": [
         {"@id": "https://oldwisdomretold.com/#social-playbook"},
@@ -374,7 +430,7 @@ button, a { cursor: pointer; touch-action: manipulation; }
       "name": "Eric Han",
       "url": "https://oldwisdomretold.com/#author",
       "jobTitle": "Author",
-      "description": "Auckland-based author and cybersecurity professional. Writes the Old Wisdom // Retold series, translating classic strategy texts into practical playbooks for teens. Tests every chapter on his 12-year-old son.",
+      "description": "Auckland-based author, father and cybersecurity professional who translates durable ideas into practical, teen-facing Playbooks.",
       "image": "https://oldwisdomretold.com/assets/Eric-Han.jpg",
       "address": {"@type": "PostalAddress", "addressLocality": "Auckland", "addressCountry": "NZ"},
       "sameAs": [
@@ -389,7 +445,7 @@ button, a { cursor: pointer; touch-action: manipulation; }
       "author": {"@id": "https://oldwisdomretold.com/#author"},
       "isPartOf": {"@id": "https://oldwisdomretold.com/#series"},
       "audience": {"@type": "PeopleAudience", "suggestedMinAge": 12, "suggestedMaxAge": 17},
-      "description": "30 social strategies for teens — friendship, group-chat drama, fake friends, influence — rebuilt from Dale Carnegie and Socrates into game-style cheat codes. 5–8 minute chapters for reluctant readers.",
+      "description": "30 short strategies for teen connection, conversation, social context and ethical influence, with practical reps for everyday situations.",
       "url": "https://a.co/d/0gjqlkB6",
       "image": "https://oldwisdomretold.com/assets/social-cover-2026.webp",
       "inLanguage": "en"
@@ -409,27 +465,32 @@ button, a { cursor: pointer; touch-action: manipulation; }
     },
     {
       "@type": "FAQPage",
-      "dateModified": "2026-07-18",
+      "dateModified": "2026-08-07",
       "mainEntity": [
         {
           "@type": "Question",
           "name": "What is Old Wisdom // Retold?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Old Wisdom // Retold is a non-fiction book series for teens aged 12–17 that rebuilds classic wisdom — Sun Tzu, Dale Carnegie, the Stoics — into game-style playbooks. Each book has 30 short chapters (5–8 minutes each) written for reluctant readers. Author: Eric Han, Auckland NZ."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Old Wisdom // Retold is a teen-growth platform. Its Playbooks turn durable ideas from strategy, philosophy and psychology into short practices for teens aged 12–17. Its separate Parent Hub helps adults support growth without taking ownership away."}
         },
         {
           "@type": "Question",
-          "name": "What age is The Social Playbook for?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Ages 12–17. Chapters run 5–8 minutes, built for teens who don't usually finish books. No dating content, no swearing. Parents report reading it themselves — the strategies apply at any age."}
+          "name": "Are the Playbooks written for parents?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. The Playbooks speak directly to teens aged 12–17. Parent education lives separately in the Parent Hub, where adults can learn how to guide without turning a teen's book into an assignment, diagnosis or monitoring tool."}
         },
         {
           "@type": "Question",
-          "name": "Is The Art of War appropriate for a 12-year-old?",
-          "acceptedAnswer": {"@type": "Answer", "text": "The War Playbook translates Sun Tzu into modern school situations: bullies, group-chat pile-ons, rivalries. It teaches composure, de-escalation and knowing which fights to skip. Zero violence glorification — the core lesson is that the best win is the fight you never enter."}
+          "name": "How should a parent introduce a Playbook?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Offer it as an optional tool around a real challenge, then step back. Let the teen choose what to read, what to try and whether to discuss it. Do not assign chapters after mistakes, quote the book during arguments or grade the outcome."}
         },
         {
           "@type": "Question",
-          "name": "How is this different from How to Win Friends and Influence People?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Same proven principles, rebuilt for teen life. The original uses boardrooms and business deals; The Social Playbook uses group chats, ranked lobbies and hallway dynamics. Teens get the wisdom without translating adult examples first."}
+          "name": "Is The War Playbook appropriate for a 12-year-old?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. It reframes Sun Tzu around composure, de-escalation, boundaries and choosing which conflicts not to enter. It does not glorify violence."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does Old Wisdom // Retold teach manipulation?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. Every strategy should preserve dignity, choice and the possibility of a shared win: strength without cruelty, confidence without arrogance, influence without manipulation and strategy without dehumanising people."}
         }
       ]
     }
@@ -441,15 +502,16 @@ button, a { cursor: pointer; touch-action: manipulation; }
 
 <!-- ACCESSIBILITY: Skip link -->
 <a href="#main" class="skip-link">Skip to main content</a>
-<div class="progress" id="prog" role="progressbar" aria-label="Page scroll progress"></div>
+<div class="progress" id="prog" aria-hidden="true"></div>
 
 <!-- NAVBAR -->
 <nav class="navbar" id="nav" aria-label="Main navigation">
   <a href="/" class="nav-brand" aria-label="Old Wisdom // Retold — Home">OLD WISDOM // RETOLD</a>
   <div class="nav-right">
-    <a href="#inside" class="nav-link">WHAT'S INSIDE</a>
-    <a href="#series" class="nav-link">THE BOOKS</a>
-    <a href="parents/" class="nav-link" data-event="parent_hub_clicked" data-event-label="home nav">PARENT HUB</a>
+    <a href="#what-is-this" class="nav-link">MISSION</a>
+    <a href="#handover" class="nav-link">HOW TO USE</a>
+    <a href="#series" class="nav-link">PLAYBOOKS</a>
+    <a href="parents/" class="nav-link nav-parent" data-event="parent_hub_clicked" data-event-label="home nav">PARENT HUB</a>
     <a href="quiz.html?utm_source=home&utm_medium=owned&utm_campaign=diagnostic" class="nav-btn nav-btn-gold" aria-label="Take the free social skills quiz" data-event="quiz_clicked" data-event-label="home nav">FREE QUIZ</a>
   </div>
 </nav>
@@ -462,24 +524,24 @@ button, a { cursor: pointer; touch-action: manipulation; }
   <div class="container">
     <div class="hero-inner">
       <div class="hero-text">
-        <div class="hero-eyebrow" aria-label="Tag: The curriculum school will never teach">
-          <span class="dot" aria-hidden="true"></span>THE CURRICULUM SCHOOL WILL NEVER TEACH
+        <div class="hero-eyebrow">
+          <span class="dot" aria-hidden="true"></span>PRACTICAL WISDOM FOR TEEN LIFE
         </div>
-        <h1 class="hero-h1">WHAT THE <span class="accent">ELITE</span><br>TEACH THEIR<br>KIDS PRIVATELY</h1>
-        <p class="hero-sub">For centuries, the world's most successful families passed down the real rules of influence, strategy, and social mastery — <strong>behind closed doors.</strong> This is that wisdom. Decoded for the next generation. Finally in your teen's hands.</p>
-        <p class="hero-series-note"><strong>BOOK 1</strong> THE SOCIAL PLAYBOOK <span>•</span> <strong>BOOK 2</strong> THE WAR PLAYBOOK</p>
+        <h1 class="hero-h1">SKILLS TEENS<br>CAN PRACTISE.<br><span class="accent">JUDGMENT THEY OWN.</span></h1>
+        <p class="hero-sub">Old Wisdom // Retold turns durable ideas from strategy, philosophy and human psychology into short, practical Playbooks for teens 12–17 — and gives parents a <strong>separate way to support growth without taking it over.</strong></p>
+        <p class="hero-series-note"><strong>TEEN-FACING PLAYBOOKS</strong><span aria-hidden="true">•</span><span>SEPARATE PARENT GROWTH GUIDANCE</span></p>
         <div class="hero-actions">
-          <a href="#series" class="btn-primary" aria-label="Explore the Old Wisdom Retold books" data-event="books_viewed" data-event-label="home hero">
-            EXPLORE THE BOOKS
+          <a href="#series" class="btn-primary" aria-label="Explore the teen Playbooks" data-event="books_viewed" data-event-label="home hero">
+            EXPLORE TEEN PLAYBOOKS
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="quiz.html?utm_source=home&utm_medium=owned&utm_campaign=diagnostic" class="btn-secondary" aria-label="Take the free social skills quiz" data-event="quiz_clicked" data-event-label="home hero">
-            TAKE THE FREE QUIZ
+          <a href="parents/" class="btn-secondary" aria-label="Visit the Parent Hub" data-event="parent_hub_clicked" data-event-label="home hero">
+            VISIT PARENT HUB
           </a>
         </div>
       </div>
       <div class="hero-book-wrap">
-        <img class="hero-book-img" src="assets/social-cover-2026.webp" alt="The Social Playbook by Eric Han — 30 strategies for teens to connect, influence, and stand out" width="1000" height="1400" fetchpriority="high" />
+        <img class="hero-book-img" src="assets/social-cover-2026.webp" alt="The Social Playbook by Eric Han — practical strategies for teen connection, communication and ethical influence" width="1000" height="1400" fetchpriority="high">
         <div class="hero-book-badge" aria-hidden="true">BOOK 1</div>
       </div>
     </div>
@@ -487,77 +549,62 @@ button, a { cursor: pointer; touch-action: manipulation; }
 </section>
 
 <!-- WHAT IS THIS (GEO extraction block) -->
-<section class="what-is-this container" id="what-is-this" aria-label="About the series">
-  <p><strong>Old Wisdom // Retold</strong> is a book series for teens aged 12–17 that translates classic strategy — Sun Tzu, Dale Carnegie, the Stoics — into game-style social playbooks. Each book: 30 chapters, 5–8 minutes each, written for reluctant readers. Two books are live on Amazon. By Eric Han, Auckland NZ. Last updated: July 2026.</p>
+<section class="what-is-this container" id="what-is-this" aria-label="Our mission">
+  <p><strong>Old Wisdom // Retold is a teen-growth platform built around one aim:</strong> help teens develop the judgment, capability, ownership and independence to handle real life for themselves. The Playbooks speak directly to teens. The Parent Hub helps adults support that growth without turning it into control.</p>
 </section>
 
 <!-- AUDIENCE PATHS -->
-<section class="paths" aria-label="Where does your teen struggle">
+<section class="paths" aria-label="Choose your path">
   <div class="container">
-    <p class="paths-label">WHERE DOES YOUR TEEN STRUGGLE?</p>
+    <p class="paths-label">CHOOSE YOUR PATH</p>
+    <p class="paths-intro">The Playbooks and Parent Hub serve different readers. Start with the route that belongs to you.</p>
     <div class="paths-grid">
-      <a class="path-chip" href="quiz.html?concern=friends">My teen struggles to make friends
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      <a class="path-chip" href="quiz.html?concern=conflict">My teen avoids conflict — or explodes
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      <a class="path-chip" href="articles/quiet-kids-and-confidence?utm_source=home&amp;utm_medium=owned&amp;utm_campaign=los_ch01_quiet_confidence&amp;utm_content=concern_path">My quiet teen needs time to answer
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      <a class="path-chip" href="quiz.html?concern=drama">My teen gets pulled into drama
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a class="path-chip teen-path" href="#series" data-event="books_viewed" data-event-label="home audience path">
+        <span><strong>FOR TEENS — USE A PLAYBOOK</strong><span>Choose a real challenge. Read one short chapter, try one move, and decide what works for you.</span></span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a class="path-chip" href="parents/" data-event="parent_hub_clicked" data-event-label="home audience path">
+        <span><strong>FOR PARENTS — USE PARENT HUB</strong><span>Start with what you are seeing. Understand the moment, guide lightly, and return the next decision.</span></span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
-    <a class="parent-guide-card" href="articles/quiet-kids-and-confidence?utm_source=home&amp;utm_medium=owned&amp;utm_campaign=los_ch01_quiet_confidence&amp;utm_content=parent_guide_card" data-event="parent_guide_clicked" data-event-label="home article card">
-      <span>
-        <span class="parent-guide-kicker">PRACTICAL GUIDE FOR PARENTS · 6 MIN READ</span>
-        <strong class="parent-guide-title">QUIET IS NOT THE SAME AS UNCONFIDENT</strong>
-        <span class="parent-guide-desc">Learn The Ten-Second Space—a simple way to give a quiet teenager room to answer without turning their pause into a label.</span>
-      </span>
-      <span class="parent-guide-link">READ THE GUIDE →</span>
-    </a>
-    <a class="parent-guide-card" href="articles/signs-of-real-teen-confidence?utm_source=home&amp;utm_medium=owned&amp;utm_campaign=los_ch23_confidence_receipts&amp;utm_content=parent_guide_card" data-event="parent_guide_clicked" data-event-label="home confidence receipts article card">
-      <span>
-        <span class="parent-guide-kicker">PRACTICAL GUIDE FOR PARENTS · 8 MIN READ</span>
-        <strong class="parent-guide-title">5 SIGNS YOUR TEEN IS BUILDING REAL CONFIDENCE</strong>
-        <span class="parent-guide-desc">Learn the five Confidence Receipts—choosing, voicing, holding, acting and recovering—without turning one moment into a label.</span>
-      </span>
-      <span class="parent-guide-link">READ THE GUIDE →</span>
-    </a>
   </div>
 </section>
 
 <!-- TRUST BAR -->
-<div class="trust-bar" aria-label="Key features">
+<section class="trust-bar" aria-label="Key features">
   <div class="container">
     <div class="trust-inner">
       <div class="trust-item">
         <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        CENTURIES OF PROVEN WISDOM
+        BUILT FOR TEENS 12–17
       </div>
       <div class="trust-item">
         <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-        NOT TAUGHT IN ANY SCHOOL
+        5–8 MINUTE CHAPTERS
       </div>
       <div class="trust-item">
         <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        LANGUAGE TEENS RESPECT
+        ONE PRACTICAL REP AT A TIME
       </div>
       <div class="trust-item">
         <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg>
-        LIFE SKILLS THAT COMPOUND FOREVER
+        ETHICAL INFLUENCE, NOT CONTROL
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- PROBLEM -->
-<section class="problem" id="problem" aria-label="The problem">
+<section class="problem" id="problem" aria-label="Why these skills need practice">
   <div class="container">
     <div class="problem-grid">
       <div class="reveal">
-        <div class="problem-label">THE UNCOMFORTABLE TRUTH</div>
-        <h2 class="problem-h2">WHILE YOUR TEEN<br>STUDIES FOR TESTS,<br>OTHER KIDS ARE<br>LEARNING THIS</h2>
-        <p class="problem-body">Somewhere right now, a parent is teaching their child how rooms work. How to read people. How to speak so others listen. How to walk into any situation and own it. <strong>They didn't learn it at school. Nobody does.</strong></p>
-        <p class="problem-body">Sun Tzu, Aristotle, Marcus Aurelius, Carnegie — the sharpest minds in human history decoded influence, strategy, and human nature. <strong>Successful families have quietly applied this wisdom for generations.</strong> It's why some kids seem to just "get it" — and others spend years figuring out what they were never taught.</p>
-        <p class="problem-body">Your teen doesn't have to be one of the ones who figures it out too late.</p>
+        <div class="problem-label">THE SKILLS BETWEEN THE SUBJECTS</div>
+        <h2 class="problem-h2">LEARNABLE SKILLS<br>SHOULD NOT BE<br>LEFT TO CHANCE</h2>
+        <p class="problem-body">School teaches subjects. Teen life also asks for judgment: how to enter a conversation, read the room, hold a boundary, choose a conflict and recover after a mistake. Those moments are often left to trial and error.</p>
+        <p class="problem-body"><strong>These are not personality verdicts.</strong> They are practical skills that can be noticed, practised, reviewed and improved.</p>
+        <p class="problem-body">OWR gives teens clear language and small reps. The aim is not to win at people. It is to act with more awareness, composure and choice.</p>
       </div>
       <div class="problem-cards reveal">
         <div class="problem-card">
@@ -565,8 +612,8 @@ button, a { cursor: pointer; touch-action: manipulation; }
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
           </div>
           <div class="problem-card-content">
-            <div class="problem-card-title">School teaches knowledge. Not power.</div>
-            <div class="problem-card-desc">Grades open doors. Social intelligence determines what happens once they're inside. Most teens graduate never learning the difference.</div>
+            <div class="problem-card-title">Judgment before reaction</div>
+            <div class="problem-card-desc">See what is happening before deciding what it means or what to do next.</div>
           </div>
         </div>
         <div class="problem-card">
@@ -574,8 +621,8 @@ button, a { cursor: pointer; touch-action: manipulation; }
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="5" rx="1"/><rect x="3" y="11" width="18" height="5" rx="1"/><path d="M7 8v3M12 8v3M17 8v3"/></svg>
           </div>
           <div class="problem-card-content">
-            <div class="problem-card-title">Social gaps become career gaps</div>
-            <div class="problem-card-desc">The teen who can't read a room or handle conflict becomes the adult who gets overlooked — no matter how talented they are.</div>
+            <div class="problem-card-title">Capability through practice</div>
+            <div class="problem-card-desc">Turn abstract advice into one move small enough to try in real life.</div>
           </div>
         </div>
         <div class="problem-card">
@@ -583,8 +630,8 @@ button, a { cursor: pointer; touch-action: manipulation; }
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <div class="problem-card-content">
-            <div class="problem-card-title">These skills take years to self-teach</div>
-            <div class="problem-card-desc">Most people don't understand how influence works until their 30s — after a decade of missed opportunities, wrong friendships, and avoidable failure.</div>
+            <div class="problem-card-title">Ownership, not compliance</div>
+            <div class="problem-card-desc">Choose whether, where and how to use an idea — then learn from the result.</div>
           </div>
         </div>
         <div class="problem-card">
@@ -592,8 +639,8 @@ button, a { cursor: pointer; touch-action: manipulation; }
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </div>
           <div class="problem-card-content">
-            <div class="problem-card-title">The wisdom exists. It was just never accessible.</div>
-            <div class="problem-card-desc">The classics are dense and written for scholars. Until now, no one had translated them into a form a modern teen would actually pick up and use.</div>
+            <div class="problem-card-title">Independence that grows</div>
+            <div class="problem-card-desc">Build experience so the next decision needs less adult direction.</div>
           </div>
         </div>
       </div>
@@ -602,46 +649,46 @@ button, a { cursor: pointer; touch-action: manipulation; }
 </section>
 
 <!-- INSIDE -->
-<section class="inside" id="inside" aria-label="What your teen gains">
+<section class="inside" id="inside" aria-label="What a teen practises">
   <div class="container">
     <div class="inside-header reveal">
-      <div class="section-label">WHAT YOUR TEEN GAINS</div>
-      <h2 class="section-h2">SKILLS THAT COMPOUND<br>FOR THE REST OF THEIR LIFE</h2>
+      <div class="section-label">WHAT A TEEN PRACTISES</div>
+      <h2 class="section-h2">CAPABILITY,<br>NOT ADVANTAGE</h2>
     </div>
     <div class="inside-grid">
-      <div class="inside-card reveal"><div class="inside-num">01</div><h3 class="inside-card-title">Walk Into Any Room With Confidence</h3><p class="inside-card-desc">Conversation frameworks drawn from ancient rhetoric — rebuilt for how teens actually talk. No more freezing up, no more awkward silences.</p></div>
-      <div class="inside-card reveal"><div class="inside-num">02</div><h3 class="inside-card-title">Read People Before They Speak</h3><p class="inside-card-desc">The same pattern recognition that generals, diplomats, and negotiators use — distilled into habits a teen can start applying tomorrow.</p></div>
-      <div class="inside-card reveal"><div class="inside-num">03</div><h3 class="inside-card-title">Become Someone Others Want to Follow</h3><p class="inside-card-desc">Authentic influence — the kind that opens doors, earns respect, and makes people remember you. Not manipulation. The real thing.</p></div>
-      <div class="inside-card reveal"><div class="inside-num">04</div><h3 class="inside-card-title">Handle Pressure, Conflict and Criticism</h3><p class="inside-card-desc">Stoic and strategic frameworks for staying composed when it matters most — peer pressure, confrontations, high-stakes moments.</p></div>
-      <div class="inside-card reveal"><div class="inside-num">05</div><h3 class="inside-card-title">Stand Apart in Every Setting</h3><p class="inside-card-desc">There's a specific quality that makes certain people unforgettable. This playbook breaks down exactly what it is — and how to develop it.</p></div>
-      <div class="inside-card reveal"><div class="inside-num">06</div><h3 class="inside-card-title">A Compounding Advantage Over Others</h3><p class="inside-card-desc">Every skill in this book builds on the last. Learn these at 15 and you're a decade ahead of people who only discover them at 35.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">01</div><h3 class="inside-card-title">Start Conversations Without Performing</h3><p class="inside-card-desc">Use what is already happening in the room to make a small, natural opening.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">02</div><h3 class="inside-card-title">Read Context Before Reacting</h3><p class="inside-card-desc">Notice tone, timing and patterns without pretending to read minds or turning one signal into a verdict.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">03</div><h3 class="inside-card-title">Influence Without Manipulation</h3><p class="inside-card-desc">Make clear asks, listen well and leave the other person free to choose.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">04</div><h3 class="inside-card-title">Stay Composed Under Pressure</h3><p class="inside-card-desc">Slow the moment down, protect options and respond on purpose.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">05</div><h3 class="inside-card-title">Set Boundaries and Choose Conflicts</h3><p class="inside-card-desc">Know what deserves a response, what can be repaired and what is better left.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">06</div><h3 class="inside-card-title">Review, Adjust and Try Again</h3><p class="inside-card-desc">Treat each attempt as information — not proof of identity, popularity or worth.</p></div>
     </div>
   </div>
 </section>
 
 <!-- PARENT PITCH -->
-<section class="parent-pitch" id="parents" aria-label="For parents">
+<section class="parent-pitch" id="parents" aria-label="The Parent Growth Journey">
   <div class="parent-pitch-glow" aria-hidden="true"></div>
   <div class="container">
     <div class="parent-grid">
       <div class="reveal">
-        <div class="section-label">A NOTE FOR PARENTS</div>
-        <h2 class="parent-h2">THE PRIVATE EDUCATION<br><span class="warm">MONEY USED TO BE<br>THE ONLY WAY TO GET</span></h2>
-        <p class="parent-body">Elite schools don't just teach academics. They teach students how to carry themselves. How to network. How to enter a room and be taken seriously. How to think strategically and act with composure. That's always been the real advantage — and it was never about the curriculum.</p>
-        <p class="parent-body">This series packages that private education into something your teen will actually read — without pressure, without lectures, without it feeling like homework.</p>
-        <div class="parent-checks">
-          <div class="parent-check"><div class="check-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Built on philosophy's greatest minds — Sun Tzu, Aristotle, the Stoics — in language teens absorb naturally</div>
-          <div class="parent-check"><div class="check-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Gives shy or socially anxious teens a system, not just "be more confident" advice</div>
-          <div class="parent-check"><div class="check-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Develops the emotional intelligence and self-awareness employers and universities look for</div>
-          <div class="parent-check"><div class="check-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>No pressure, no shame — reads like a strategy guide, not a self-help lecture</div>
-          <div class="parent-check"><div class="check-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>Skills that transfer to every area of life — friendships, leadership, future careers</div>
-        </div>
+        <div class="section-label">PARENT GROWTH</div>
+        <h2 class="parent-h2">SUPPORT THE GROWTH.<br><span class="warm">DO NOT TAKE IT OVER.</span></h2>
+        <p class="parent-body">Parent Hub is the separate parent-facing layer of OWR. It is not a generic parenting blog, and it does not turn every concern into a book recommendation. It helps adults support capability while long-term ownership stays with the teen.</p>
+        <ol class="journey-steps" aria-label="Parent Growth Journey">
+          <li class="journey-step"><strong>SEE</strong><span>Separate what happened from the story you are tempted to tell about it.</span></li>
+          <li class="journey-step"><strong>UNDERSTAND</strong><span>Make room for context, development and your teen's perspective.</span></li>
+          <li class="journey-step"><strong>REFLECT</strong><span>Notice how your own urgency, fear or habits shape the moment.</span></li>
+          <li class="journey-step"><strong>GUIDE</strong><span>Offer one bounded prompt, practice or scaffold.</span></li>
+          <li class="journey-step"><strong>RELEASE</strong><span>Return an appropriate decision, consequence or next move as capability grows.</span></li>
+        </ol>
       </div>
       <div class="reveal">
         <div class="parent-quote-card">
-          <div class="parent-quote-mark" aria-hidden="true">"</div>
-          <p class="parent-quote-text">The families who've produced the world's most successful people have always understood something the rest of us weren't told: mastering people is a skill — and it can be taught. This is that lesson. Finally written for the generation that needs it most.</p>
-          <div class="parent-quote-attr">— FROM THE INTRODUCTION</div>
+          <div class="parent-quote-mark" aria-hidden="true">→</div>
+          <p class="parent-quote-text">The teen owns the book, the interpretation, the practice and the next move. A parent can make space, ask one honest question and then step back.</p>
+          <div class="parent-quote-attr">THE HANDOVER PRINCIPLE</div>
+          <a href="parents/" class="btn-primary" data-event="parent_hub_clicked" data-event-label="home growth journey">EXPLORE PARENT HUB</a>
         </div>
       </div>
     </div>
@@ -664,24 +711,56 @@ button, a { cursor: pointer; touch-action: manipulation; }
   </div>
 </section>
 
+<!-- PLAYBOOK HANDOVER -->
+<section class="handover" id="handover" aria-label="How to hand over a Playbook">
+  <div class="container">
+    <div class="handover-head reveal">
+      <div class="section-label">HOW TO USE THE PLAYBOOKS</div>
+      <h2 class="section-h2">HAND OVER THE TOOL.<br>KEEP THE CHOICE WITH THE TEEN.</h2>
+      <p>The Playbooks are written to the teen. They work best as an available tool — not an assignment, diagnosis or hidden parenting programme.</p>
+    </div>
+    <div class="handover-grid reveal">
+      <div class="handover-panel handover-do">
+        <h3>WHAT HELPS</h3>
+        <ul>
+          <li>Offer a choice of Playbook or chapter around a real challenge.</li>
+          <li>Let your teen read privately, use their own words and ignore what does not fit.</li>
+          <li>Ask permission before discussing a chapter — “Was anything useful?” is enough.</li>
+          <li>Let the teen choose one small rep and decide what the result means.</li>
+        </ul>
+      </div>
+      <div class="handover-panel handover-avoid">
+        <h3>WHAT TO AVOID</h3>
+        <ul>
+          <li>Assigning a chapter as correction after a mistake.</li>
+          <li>Quoting the book back during an argument.</li>
+          <li>Using an idea to label, diagnose or test your teen.</li>
+          <li>Turning every rep into a progress report or grade.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="handover-rule reveal"><strong>The Playbook belongs to the teen.</strong> Parent Hub is where adults do their own learning.</p>
+  </div>
+</section>
+
 <!-- SERIES -->
 <section class="series" id="series" aria-label="The full series">
   <div class="container">
     <div class="series-header reveal">
-      <div class="section-label">THE BOOK SERIES</div>
-      <h2 class="section-h2">TWO BOOKS LIVE.<br>BOOK 3 IS<br>COMING.</h2>
-      <p class="series-sub">Start with social connection or strategic composure. Both books are available now on Amazon.</p>
+      <div class="section-label">TEEN-FACING PLAYBOOKS</div>
+      <h2 class="section-h2">CHOOSE THE CHALLENGE<br>THAT IS REAL NOW</h2>
+      <p class="series-sub">Each book turns durable ideas into 30 short chapters and practical reps. They are tools for teens — not parenting manuals, and there is no need to buy the whole series at once.</p>
     </div>
     <div class="series-cards">
       <!-- Book 1: Social -->
       <div class="series-card live-blue card-s reveal">
-        <img class="series-card-img" src="assets/social-cover-2026.webp" alt="The Social Playbook — Book 1" width="1000" height="1400" loading="lazy" />
+        <img class="series-card-img" src="assets/social-cover-2026.webp" alt="The Social Playbook — Book 1" width="1000" height="1400" loading="lazy">
         <div class="series-card-body">
           <div class="series-card-status status-live-blue">BOOK 1 — AVAILABLE NOW</div>
-          <div style="font-family:var(--font-display);font-size:0.7rem;letter-spacing:0.25em;color:var(--blue-soft);opacity:0.7;margin-bottom:0.5rem;">CODE 01 — SOCIAL</div>
+          <div class="series-card-code social">CODE 01 — SOCIAL</div>
           <h3 class="series-card-name">THE SOCIAL PLAYBOOK</h3>
-          <p class="series-card-desc">The hidden rules of human connection — how to make people feel seen, remembered, and drawn to you. Start here.</p>
-          <div class="series-card-meta">30 strategies · ~180 pages · Paperback & Kindle</div>
+          <p class="series-card-desc">Connection, conversation, social context and ethical influence — rebuilt for group chats, school corridors and everyday teen life.</p>
+          <div class="series-card-meta">30 strategies · ~180 pages · Paperback &amp; Kindle</div>
           <a href="https://a.co/d/0gjqlkB6" target="_blank" rel="noopener noreferrer" class="btn-primary" aria-label="Buy The Social Playbook on Amazon" data-event="amazon_clicked" data-event-label="social playbook series card">
             GET IT ON AMAZON
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -690,13 +769,13 @@ button, a { cursor: pointer; touch-action: manipulation; }
       </div>
       <!-- Book 2: War -->
       <div class="series-card live-red card-w reveal">
-        <img class="series-card-img" src="assets/war-cover-2026.webp" alt="The War Playbook — Book 2" width="1000" height="1400" loading="lazy" />
+        <img class="series-card-img" src="assets/war-cover-2026.webp" alt="The War Playbook — Book 2" width="1000" height="1400" loading="lazy">
         <div class="series-card-body">
           <div class="series-card-status status-live-red">BOOK 2 — AVAILABLE NOW</div>
-          <div style="font-family:var(--font-display);font-size:0.7rem;letter-spacing:0.25em;color:var(--red-soft);opacity:0.7;margin-bottom:0.5rem;">CODE 02 — STRATEGY</div>
+          <div class="series-card-code strategy">CODE 02 — STRATEGY</div>
           <h3 class="series-card-name">THE WAR PLAYBOOK</h3>
-          <p class="series-card-desc">How to win without fighting — strategic thinking, conflict navigation, and staying three moves ahead. Built on Sun Tzu and the great strategists.</p>
-          <div class="series-card-meta">30 strategies · Paperback & Kindle</div>
+          <p class="series-card-desc">Composure, boundaries, de-escalation and choosing conflicts wisely — Sun Tzu reframed for bullies, pile-ons and pressure.</p>
+          <div class="series-card-meta">30 strategies · Paperback &amp; Kindle</div>
           <a href="https://a.co/d/0gu0a2CR" target="_blank" rel="noopener noreferrer" class="btn-primary btn-war" aria-label="Buy The War Playbook on Amazon" data-event="amazon_clicked" data-event-label="war playbook series card">
             GET IT ON AMAZON
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -705,12 +784,12 @@ button, a { cursor: pointer; touch-action: manipulation; }
       </div>
       <!-- Book 3: Discipline -->
       <div class="series-card coming card-d reveal">
-        <img class="series-card-img" src="assets/discipline-cover-2026.webp" alt="The Discipline Playbook — Book 3, Coming Soon" width="1000" height="1400" loading="lazy" />
+        <img class="series-card-img" src="assets/discipline-cover-2026.webp" alt="The Discipline Playbook — Book 3, Coming Soon" width="1000" height="1400" loading="lazy">
         <div class="series-card-body">
           <div class="series-card-status status-coming">BOOK 3 — COMING SOON</div>
-          <div style="font-family:var(--font-display);font-size:0.7rem;letter-spacing:0.25em;color:var(--gold-soft);opacity:0.7;margin-bottom:0.5rem;">CODE 03 — DISCIPLINE</div>
+          <div class="series-card-code discipline">CODE 03 — DISCIPLINE</div>
           <h3 class="series-card-name">THE DISCIPLINE PLAYBOOK</h3>
-          <p class="series-card-desc">The inner game — habits, self-mastery, and the mental frameworks elite performers have used to outwork everyone around them.</p>
+          <p class="series-card-desc">Habits, attention, follow-through and self-command — helping teens act on what matters without waiting for motivation.</p>
           <div class="series-card-meta">30 strategies · Join the waitlist ↓</div>
         </div>
         <div class="coming-overlay" aria-hidden="true">
@@ -724,16 +803,16 @@ button, a { cursor: pointer; touch-action: manipulation; }
   </div>
 </section>
 
-<!-- ADULTS TOO -->
-<section class="adults" aria-label="Not just for teens">
+<!-- ETHICAL USE -->
+<section class="adults" id="ethics" aria-label="The ethical line">
   <div class="container">
     <div class="adults-grid">
       <div class="reveal">
-        <div class="section-label" style="color: var(--red-soft);">NOT JUST FOR TEENS</div>
-        <h2 class="parent-h2">MOST ADULTS ARE<br><span style="color: var(--gold-soft);">STILL MISSING<br>THESE SKILLS</span></h2>
-        <p class="problem-body">Here's the thing nobody says out loud: <strong>the social gaps that hold teens back don't disappear at 18.</strong> They follow people into careers, marriages, and leadership roles. The adult who struggles to be heard in meetings, who avoids conflict until it explodes, who can't quite connect with the people they need — they're still running the same patterns from adolescence.</p>
-        <p class="problem-body">The Social Playbook works for adults too. And there's something powerful about a parent reading it alongside their teen — not just to understand what they're learning, but to close the same gaps in themselves, at the same time.</p>
-        <p class="problem-body adults-gold">The best thing you can give your teen isn't a book. It's a parent who's applying the same principles.</p>
+        <div class="section-label ethics-label">THE ETHICAL LINE</div>
+        <h2 class="parent-h2">STRATEGY SHOULD MAKE<br><span class="ethics-accent">LIFE MORE HUMAN.</span></h2>
+        <p class="problem-body">OWR does not teach teens to master people, manufacture status or treat every room like a contest. Strategy is useful only when it increases clarity, dignity and choice.</p>
+        <p class="ethics-line">Strength without cruelty.<br>Confidence without arrogance.<br>Influence without manipulation.<br>Strategy without dehumanising people.</p>
+        <p class="problem-body adults-gold">The Empathy Test: does this move leave room for a shared win?</p>
       </div>
       <div class="reveal">
         <div class="problem-cards">
@@ -742,8 +821,8 @@ button, a { cursor: pointer; touch-action: manipulation; }
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
             </div>
             <div class="problem-card-content">
-              <div class="problem-card-title">Career impact — still underestimated</div>
-              <div class="problem-card-desc">Influence, strategic communication, and reading rooms determine who gets promoted. Technical skill is rarely the differentiator past a certain level.</div>
+              <div class="problem-card-title">Shared wins over control</div>
+              <div class="problem-card-desc">A good influence move makes a clear request and leaves the other person free to choose.</div>
             </div>
           </div>
           <div class="problem-card">
@@ -751,8 +830,8 @@ button, a { cursor: pointer; touch-action: manipulation; }
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M10 10.5a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/><path d="M10 14h4"/></svg>
             </div>
             <div class="problem-card-content">
-              <div class="problem-card-title">Conflict patterns run deep</div>
-              <div class="problem-card-desc">Most adult conflict — in relationships, at work, with family — traces to underdeveloped skills formed in adolescence. This is where they get corrected.</div>
+              <div class="problem-card-title">Notice context, do not exploit it</div>
+              <div class="problem-card-desc">Reading a room means paying attention to tone and timing — not inventing motives or hunting for leverage.</div>
             </div>
           </div>
           <div class="problem-card">
@@ -760,8 +839,8 @@ button, a { cursor: pointer; touch-action: manipulation; }
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
             </div>
             <div class="problem-card-content">
-              <div class="problem-card-title">Practice together, compound together</div>
-              <div class="problem-card-desc">When parent and teen work from the same framework, every dinner conversation becomes a low-stakes rehearsal. The learning multiplies.</div>
+              <div class="problem-card-title">Strength protects boundaries</div>
+              <div class="problem-card-desc">Composure and strategy should help a teen protect options, de-escalate and walk away — not dominate.</div>
             </div>
           </div>
         </div>
@@ -771,59 +850,19 @@ button, a { cursor: pointer; touch-action: manipulation; }
 </section>
 
 <!-- QUIZ CTA -->
-<section class="quiz-cta" aria-label="Take the free quiz">
+<section class="quiz-cta" id="quiz" aria-label="Find a useful place to begin">
   <div class="container">
     <div class="quiz-cta-card reveal">
       <div class="quiz-cta-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
       </div>
-      <h2 class="quiz-cta-h">NOT SURE IF YOUR TEEN NEEDS THIS?</h2>
-      <p class="quiz-cta-sub">Take our free 15-question Social Skills Diagnostic. You'll get a personalised breakdown of exactly which skill areas your teen — or you — are missing, and which chapters address each one.</p>
+      <h2 class="quiz-cta-h">NOT SURE WHERE TO START?</h2>
+      <p class="quiz-cta-sub">Use the free 15-question diagnostic to reflect on five practical areas: connection, reading social context, influence, conflict and confidence. Choose the teen or parent path and get one matched next step.</p>
       <a href="quiz.html?utm_source=home&utm_medium=owned&utm_campaign=diagnostic" class="btn-primary" aria-label="Take the free social skills quiz" data-event="quiz_clicked" data-event-label="home diagnostic section">
         TAKE THE FREE QUIZ
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <p class="quiz-cta-fine">~4 minutes · Free · Personalised report delivered instantly</p>
-    </div>
-  </div>
-</section>
-
-<!-- NOT FOR -->
-<section class="notfor" aria-label="Who this book is not for">
-  <div class="container">
-    <div class="notfor-inner">
-      <div class="notfor-head reveal">
-        <div class="section-label">IMPORTANT</div>
-        <h2 class="section-h2" style="font-size: clamp(2rem,5vw,3.2rem);">THIS BOOK IS<br>NOT FOR EVERYONE</h2>
-      </div>
-      <div class="notfor-list reveal">
-        <div class="notfor-row notfor-row-no">
-          <div class="notfor-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
-          <div><div class="notfor-title">Parents who think buying a book is enough</div><div class="notfor-desc">Handing your teen a book and walking away won't move the needle. This works best when a parent is loosely engaged — even just asking "what did you read today?" makes a difference.</div></div>
-        </div>
-        <div class="notfor-row notfor-row-no">
-          <div class="notfor-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
-          <div><div class="notfor-title">Anyone who believes social skills are fixed personality traits</div><div class="notfor-desc">If you genuinely believe people are born social or not — and can't be taught — this book will challenge that. But it won't work if you're not open to it.</div></div>
-        </div>
-        <div class="notfor-row notfor-row-no">
-          <div class="notfor-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
-          <div><div class="notfor-title">Teens who aren't ready to look at themselves honestly</div><div class="notfor-desc">The strategies here require some self-awareness. If a teen isn't willing to reflect on how they come across to others, the insights won't land yet. The timing has to be right.</div></div>
-        </div>
-      </div>
-      <div class="notfor-list reveal">
-        <div class="notfor-row yes">
-          <div class="notfor-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div><div class="notfor-title">Teens who feel overlooked and want to change that — seriously</div><div class="notfor-desc">If you sense the gap and you're ready to close it, the system is here. Tips, frameworks, and the reasoning behind each one — so you actually understand why it works.</div></div>
-        </div>
-        <div class="notfor-row yes">
-          <div class="notfor-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div><div class="notfor-title">Parents who want their kid to thrive — not just survive adolescence</div><div class="notfor-desc">You already know the gap is real. This is the tool you've been looking for — and one you can read alongside them.</div></div>
-        </div>
-        <div class="notfor-row yes">
-          <div class="notfor-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-          <div><div class="notfor-title">Adults who recognise they're still closing these gaps themselves</div><div class="notfor-desc">The most powerful thing you can model for your teen is being a learner. Read it together. Apply it together. The conversations that follow are half the value.</div></div>
-        </div>
-      </div>
+      <p class="quiz-cta-fine">About 4 minutes · Free · Informational, not a clinical or psychological assessment</p>
     </div>
   </div>
 </section>
@@ -833,23 +872,25 @@ button, a { cursor: pointer; touch-action: manipulation; }
   <div class="container faq-inner">
     <h2 class="section-h2">Parent Questions, Answered</h2>
     <h3>What is Old Wisdom // Retold?</h3>
-    <p>A non-fiction series for teens 12–17 rebuilding classic wisdom into game-style playbooks. 30 short chapters per book, built for kids who don't finish books.</p>
-    <h3>What age is The Social Playbook for?</h3>
-    <p>12–17. No dating content, no swearing, 5–8 minute chapters. Plenty of parents read it too.</p>
-    <h3>Is The Art of War appropriate for a 12-year-old?</h3>
-    <p>The War Playbook teaches composure and which fights to skip — bullies, pile-ons, rivalries. Zero violence glorification.</p>
-    <h3>How is this different from How to Win Friends and Influence People?</h3>
-    <p>Same principles, teen-native examples: group chats and ranked lobbies instead of boardrooms.</p>
+    <p>Old Wisdom // Retold is a teen-growth platform. Its Playbooks turn durable ideas from strategy, philosophy and psychology into short practices for teens aged 12–17. Its separate Parent Hub helps adults support growth without taking ownership away.</p>
+    <h3>Are the Playbooks written for parents?</h3>
+    <p>No. The Playbooks speak directly to teens aged 12–17. Parent education lives separately in the Parent Hub, where adults can learn how to guide without turning a teen's book into an assignment, diagnosis or monitoring tool.</p>
+    <h3>How should a parent introduce a Playbook?</h3>
+    <p>Offer it as an optional tool around a real challenge, then step back. Let the teen choose what to read, what to try and whether to discuss it. Do not assign chapters after mistakes, quote the book during arguments or grade the outcome.</p>
+    <h3>Is The War Playbook appropriate for a 12-year-old?</h3>
+    <p>Yes. It reframes Sun Tzu around composure, de-escalation, boundaries and choosing which conflicts not to enter. It does not glorify violence.</p>
+    <h3>Does Old Wisdom // Retold teach manipulation?</h3>
+    <p>No. Every strategy should preserve dignity, choice and the possibility of a shared win: strength without cruelty, confidence without arrogance, influence without manipulation and strategy without dehumanising people.</p>
   </div>
 </section>
 
 <!-- AUTHOR -->
 <section class="author" id="author" aria-label="About the author">
   <div class="container author-inner">
-    <img src="assets/Eric-Han.jpg" alt="Eric Han, author of Old Wisdom // Retold, Auckland NZ" width="140" height="140" loading="lazy" />
-    <h2 class="section-h2" style="font-size: clamp(1.8rem,4vw,2.6rem); margin-bottom: 1rem;">Why a Dad Wrote This</h2>
+    <img src="assets/Eric-Han.jpg" alt="Eric Han, author of Old Wisdom // Retold, Auckland NZ" width="140" height="140" loading="lazy">
+    <h2 class="section-h2 author-title">Why a Dad Wrote This</h2>
     <p>I'm Eric Han — Auckland dad, cybersecurity professional, lifelong manga reader. I wrote this series for my quiet, introverted son, because I recognised his struggle as my own. Every chapter is tested on him first. If he puts it down, I rewrite it.</p>
-    <p>The wisdom in these books is centuries old. Nobody translated it for kids living in group chats. So I did.</p>
+    <p>The wisdom in these books is centuries old. I couldn't find the version he needed for life in group chats. So I wrote it.</p>
   </div>
 </section>
 
@@ -860,29 +901,29 @@ button, a { cursor: pointer; touch-action: manipulation; }
       <div class="capture-icon-wrap" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       </div>
-      <h2 class="capture-h3">GET CHAPTER 1 — FREE</h2>
-      <p class="capture-sub">See the wisdom for yourself before you buy. Get the first chapter delivered to your inbox now — plus first access when Book 3 drops. Most people on this list will have the full series before it's widely known.</p>
-      <div id="sib-form-container" class="sib-form-container" style="max-width:440px;margin:0 auto 0.75rem;">
+      <h2 class="capture-h3">READ CHAPTER 1 BEFORE YOU DECIDE</h2>
+      <p class="capture-sub">Get the first chapter by email and see whether the tone, rhythm and practical format fit your teen. You'll also receive occasional series updates, including news about Book 3.</p>
+      <div id="sib-form-container" class="sib-form-container capture-form-container">
         <div id="sib-container" class="sib-container--large sib-container--vertical">
-          <form id="sib-form" method="POST" action="https://2df17076.sibforms.com/serve/MUIFACze_wUIeuITzxnAEwXh8Gy1hsXVG4fD5YN2aNgM7p4gOSzphsjUKatSn-wAF3cwYJ8oX9dWi70j7B5fevA1xn_QlA_BoRjhbgdH1Z7gGFHpVB0TIjCkQa2lk-oh50sFLt0NlCZerukxI7n9Q2bKJK9VDk3UcDBNB34WM1xNMbSZz9KUCNLfTkJNewBzfhtSUfwTWYLux2pRfA==" data-type="subscription" data-funnel-form="chapter_one" novalidate>
-            <div style="padding:6px 0;">
+          <form id="sib-form" method="POST" action="https://2df17076.sibforms.com/serve/MUIFACze_wUIeuITzxnAEwXh8Gy1hsXVG4fD5YN2aNgM7p4gOSzphsjUKatSn-wAF3cwYJ8oX9dWi70j7B5fevA1xn_QlA_BoRjhbgdH1Z7gGFHpVB0TIjCkQa2lk-oh50sFLt0NlCZerukxI7n9Q2bKJK9VDk3UcDBNB34WM1xNMbSZz9KUCNLfTkJNewBzfhtSUfwTWYLux2pRfA==" data-type="subscription" data-funnel-form="chapter_one">
+            <div class="capture-form-row">
               <div class="sib-input sib-form-block">
                 <div class="form__entry entry_block">
                   <div class="form__label-row">
                     <label class="entry__label" for="EMAIL">Your email address</label>
                     <div class="entry__field">
-                      <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" placeholder="your@email.com" data-required="true" required aria-required="true" aria-describedby="email-error" />
+                      <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" inputmode="email" spellcheck="false" placeholder="your@email.com" data-required="true" required aria-required="true" aria-describedby="email-error">
                     </div>
                   </div>
-                  <label class="entry__error entry__error--primary" id="email-error" role="alert"></label>
+                  <p class="entry__error entry__error--primary" id="email-error" aria-live="polite"></p>
                 </div>
               </div>
             </div>
-            <div style="padding:6px 0;">
+            <div class="capture-form-row">
               <div class="sib-form-block">
-                <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit" aria-label="Subscribe and get Chapter 1 free">
+                <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit" aria-label="Subscribe and receive Chapter 1">
                   <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/></svg>
-                  SEND IT →
+                  SEND CHAPTER 1 →
                 </button>
               </div>
             </div>
@@ -892,7 +933,7 @@ button, a { cursor: pointer; touch-action: manipulation; }
           </form>
         </div>
       </div>
-      <p class="capture-fine">No spam. Unsubscribe anytime. Your email stays between us.</p>
+      <p class="capture-fine">No spam. Unsubscribe anytime. Your email stays private.</p>
     </div>
   </div>
 </section>
@@ -902,22 +943,22 @@ button, a { cursor: pointer; touch-action: manipulation; }
   <div class="final-cta-glow" aria-hidden="true"></div>
   <div class="container">
     <div class="final-cta-content reveal">
-      <h2 class="final-h2">DON'T LET THEM<br><span class="gold">FIGURE IT OUT AT 35.</span></h2>
-      <p class="final-sub">Start with the book that fits the challenge, or use the free quiz to find the right starting point.</p>
+      <h2 class="final-h2">START WITH THE NEXT<br><span class="gold">USEFUL STEP.</span></h2>
+      <p class="final-sub">Choose the route that belongs to you. Teens use the Playbooks. Parents use the Parent Hub. When the starting point is unclear, the quiz can help.</p>
       <div class="final-btns">
         <a href="#series" class="btn-primary" aria-label="Explore both available books" data-event="books_viewed" data-event-label="home final call to action">
-          SEE BOTH BOOKS
+          TEENS: EXPLORE PLAYBOOKS
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="quiz.html?utm_source=home&utm_medium=owned&utm_campaign=diagnostic" class="btn-secondary" aria-label="Take the free social skills quiz" data-event="quiz_clicked" data-event-label="home final call to action">
-          TAKE THE FREE QUIZ
+        <a href="parents/" class="btn-secondary" aria-label="Visit the Parent Hub" data-event="parent_hub_clicked" data-event-label="home final call to action">
+          PARENTS: VISIT PARENT HUB
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
-      <div class="final-book-strip" aria-label="Series overview">
-        <img class="final-mini active" src="assets/social-cover-2026.webp" alt="Book 1: The Social Playbook" width="1000" height="1400" loading="lazy" />
-        <img class="final-mini active" src="assets/war-cover-2026.webp" alt="Book 2: The War Playbook" width="1000" height="1400" loading="lazy" />
-        <img class="final-mini" src="assets/discipline-cover-2026.webp" alt="Book 3: The Discipline Playbook — Coming Soon" width="1000" height="1400" loading="lazy" />
+      <div class="final-book-strip" role="group" aria-label="Series overview">
+        <img class="final-mini active" src="assets/social-cover-2026.webp" alt="Book 1: The Social Playbook" width="1000" height="1400" loading="lazy">
+        <img class="final-mini active" src="assets/war-cover-2026.webp" alt="Book 2: The War Playbook" width="1000" height="1400" loading="lazy">
+        <img class="final-mini" src="assets/discipline-cover-2026.webp" alt="Book 3: The Discipline Playbook — Coming Soon" width="1000" height="1400" loading="lazy">
       </div>
     </div>
   </div>
@@ -927,13 +968,13 @@ button, a { cursor: pointer; touch-action: manipulation; }
 <footer class="footer" aria-label="Site footer">
   <div class="container">
     <div class="footer-brand">OLD WISDOM // RETOLD</div>
-    <div class="footer-links" style="display:flex;gap:1.2rem;justify-content:center;margin:0.6rem 0;flex-wrap:wrap;">
-      <a href="#series" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Books</a>
-      <a href="parents/" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Parent Hub</a>
-      <a href="quiz.html" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Free Quiz</a>
-      <a href="privacy.html" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Privacy Policy</a>
-      <a href="terms.html" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Terms of Service</a>
-      <a href="mailto:hello@oldwisdomretold.com" style="color:var(--text-dim);font-size:0.75rem;text-decoration:none;transition:color 0.3s;">Contact</a>
+    <div class="footer-links">
+      <a href="#series">Playbooks</a>
+      <a href="parents/">Parent Hub</a>
+      <a href="quiz.html">Free Quiz</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="mailto:hello@oldwisdomretold.com">Contact</a>
     </div>
     <div class="footer-copy">© 2026 Eric Han. All rights reserved.</div>
   </div>
