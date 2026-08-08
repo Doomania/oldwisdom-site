@@ -48,3 +48,5 @@ The YouTube monetisation policy excludes repetitive or mass-produced template co
 
 - 2026-07-19: Draft batch created for "How to Help a Teen Start a Conversation Without Making It Weird" in `content/production/2026-07-19-help-teen-start-conversation-without-making-it-weird/`. Not published yet; awaiting human review.
 - 2026-08-03: Draft batch created for "Why Teen Friendships Fade After One Term" in `content/production/2026-08-03-why-teen-friendships-fade-after-one-term/`. Not published yet; awaiting human review.
+- 2026-08-08: Published "Quiet or Lonely? How Parents Can Tell the Difference" at https://oldwisdomretold.com/articles/quiet-or-lonely-teen from `content/production/2026-08-08-quiet-or-lonely-teen/`.
+- 2026-08-09: Published "When Pushing Your Shy Teen Can Make Honesty Harder" at https://oldwisdomretold.com/articles/pushing-shy-teen-socialize from `content/production/2026-08-09-pushing-shy-teen-socialize/`.
