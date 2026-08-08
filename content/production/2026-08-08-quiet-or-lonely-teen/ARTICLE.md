@@ -1,4 +1,4 @@
-<!-- AUDIENCE: PARENT -->
+# AUDIENCE: PARENT
 
 # Quiet or Lonely? How Parents Can Tell the Difference
 
