@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "audience": "parent",
+  "slug": "quiet-or-lonely-teen",
+  "title": "Quiet or Lonely? How Parents Can Tell the Difference",
+  "summary": "Use context, change, and cost to distinguish restorative time alone from unwanted disconnection without treating quietness as a problem.",
+  "seo_title": "Quiet or Lonely? How Parents Can Tell the Difference",
+  "seo_description": "A calmer way to tell whether a teenager's time alone is restorative or unwanted—using context, change, cost, and one neutral question.",
+  "published": "2026-08-08",
+  "journey_stage": "SEE",
+  "supports_stages": [
+    "UNDERSTAND",
+    "REFLECT",
+    "GUIDE",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Create a safe opening, offer one low-pressure option if wanted, and let the teenager name and own the next safe connection step.",
+  "qa_score": 18,
+  "territory": "connection",
+  "test_angle": "SEE",
+  "core_belief_shift": {
+    "from": "A teenager spending many hours alone must be lonely, socially stuck, or falling behind.",
+    "to": "Time alone is an observation; context, change, cost, and the teenager's own experience reveal whether support is useful."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "The useful next move is a calm conversation and transfer of social ownership; a product bridge would distract from that work."
+  },
+  "hero": {
+    "source": "media/quiet-or-lonely.webp",
+    "alt": "A mother pauses outside her teenage son's room while he reads quietly alone near a sunlit window.",
+    "width": 1200,
+    "height": 800,
+    "variants": [
+      {
+        "source": "media/quiet-or-lonely-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/quiet-or-lonely-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/quiet-or-lonely.webp",
+    "alt": "A mother pauses outside her teenage son's room while he reads quietly alone near a sunlit window."
+  },
+  "next_step": {
+    "kind": "guide",
+    "target": "/articles/quiet-kids-and-confidence",
+    "label": "Read Quiet Kids and Confidence"
+  },
+  "pinterest_campaign": {
+    "campaign": "connection",
+    "content": "quiet-or-lonely-teen"
+  }
+}
