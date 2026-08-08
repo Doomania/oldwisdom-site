@@ -1,6 +1,6 @@
 # Evergreen Content Queue
 
-Every idea should produce one durable search asset first, then be repurposed. The canonical piece is usually a 6–10 minute YouTube video or a useful Parent Guide. Short clips and pins point to the diagnostic or the most relevant Parent Hub guide. The journey stage tells Hermes which parent-growth function leads; the teen outcome keeps the work oriented toward independence rather than control.
+Every idea should produce one durable search asset first, then be repurposed. The canonical piece is usually a 6–10 minute YouTube video or a useful Parent Guide. Short clips and pins point to the skills reflection or the most relevant Parent Hub guide. The journey stage tells Hermes which parent-growth function leads; the teen outcome keeps the work oriented toward independence rather than control.
 
 | Gap | Search-led title | Journey | Teen outcome | Destination |
 |---|---|---|---|---|

@@ -6,7 +6,7 @@
 - Estimated read: ~10 minutes
 - Primary audience: parents of quiet, hesitant, or socially rusty teens
 - Secondary audience: teens who want a practical first move
-- Primary CTA: free diagnostic
+- Primary CTA: free skills reflection
 
 ## Script
 
@@ -287,7 +287,7 @@ Sometimes the real gap is reading the room.
 Sometimes it is fear of judgment.
 Sometimes it is conflict history.
 
-That is why we built a free 15-question diagnostic.
+That is why we built a free 15-question skills reflection.
 It is not clinical, and it does not label your teen.
 It helps you see which skill gap is costing the most energy right now, and what to work on next.
 

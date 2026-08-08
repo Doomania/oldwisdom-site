@@ -5,7 +5,7 @@
 - Target length: 8-12 minutes
 - Audience: parents first, teens second
 - Core promise: explain why friendships often drift after one term and give one practical maintenance system
-- Primary CTA: free 15-question diagnostic
+- Primary CTA: free 15-question skills reflection
 - Optional next step: a relevant Parent Hub guide or Playbook only when it fits the topic
 
 ## Script
@@ -282,13 +282,13 @@ That is why the best next step is not another generic pep talk.
 
 It is a clearer picture of the actual skill gap.
 
-Our free 15-question diagnostic helps parents and teens see whether the main problem is connection, reading people, influence, conflict, or confidence.
+Our free 15-question skills reflection helps parents and teens notice whether connection, social context, influence, conflict, or confidence may be a useful area to explore next.
 
 It is informational, not clinical.
 It does not label your teen.
 It helps you choose what to practise next.
 
-But start with the free diagnostic first.
+But start with the free skills reflection first.
 
 Because when a friendship fades after one term, the answer is often not "try harder."
 

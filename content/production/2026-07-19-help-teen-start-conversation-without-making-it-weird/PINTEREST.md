@@ -3,7 +3,7 @@
 ## Pin 1
 
 - Title: How to Help a Teen Start a Conversation
-- Description: Quiet teens usually do not need a lecture. They need one easy opener that fits the room. This guide shows parents how to coach the first move without making it awkward. Start with the free diagnostic: https://oldwisdomretold.com/quiz.html?concern=friends&utm_source=pinterest&utm_medium=organic&utm_campaign=connection&utm_content=help-teen-start-conversation-without-making-it-weird-pin-1
+- Description: Quiet teens usually do not need a lecture. They need one easy opener that fits the room. This guide shows parents how to coach the first move without making it awkward. Start with the free skills reflection: https://oldwisdomretold.com/quiz.html?concern=friends&utm_source=pinterest&utm_medium=organic&utm_campaign=connection&utm_content=help-teen-start-conversation-without-making-it-weird-pin-1
 
 ## Pin 2
 

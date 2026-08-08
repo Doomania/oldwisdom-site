@@ -232,7 +232,7 @@ Sometimes the biggest gap is connection. Sometimes it is reading the room. Somet
 
 That is why a useful next step is not more generic advice. It is a clearer diagnosis of the actual skill gap.
 
-Our free 15-question diagnostic is built for exactly that. It is informational, not clinical. It helps parents and teens see whether the main issue is connection, reading people, influence, conflict, or confidence, then points to the most practical next step.
+Our free 15-question skills reflection is built for that. It is informational, not clinical. It helps parents and teens notice whether connection, social context, influence, conflict, or confidence may be a useful area to explore, then points to one practical next step.
 
 But do not start there in your head.
 

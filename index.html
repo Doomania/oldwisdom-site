@@ -167,6 +167,9 @@ p { text-wrap: pretty; }
 .inside-num { font-family: var(--font-display); font-size: 2.2rem; color: var(--blue); line-height: 1; margin-bottom: 0.8rem; opacity: 0.5; }
 .inside-card-title { font-weight: 700; font-size: 1rem; margin-bottom: 0.4rem; color: var(--white); }
 .inside-card-desc { font-size: 0.85rem; color: var(--text-dim); line-height: 1.6; }
+.inside-ethics { max-width: 820px; margin: 2.5rem auto 0; padding: 1.8rem; text-align: center; background: var(--bg-warm); border: 1px solid var(--border-warm); border-radius: 14px; }
+.inside-ethics .ethics-line { margin: 0 0 0.9rem; }
+.inside-ethics p:last-child { margin: 0; color: var(--text); }
 @media (max-width: 900px) { .inside-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .inside-grid { grid-template-columns: 1fr; } }
 
@@ -237,6 +240,7 @@ p { text-wrap: pretty; }
 .ethics-line { margin: 1rem 0 1.5rem; color: var(--gold-soft); font-family: var(--font-display); font-size: clamp(1.35rem,3vw,2rem); line-height: 1.2; letter-spacing: 0.03em; }
 @media (max-width: 768px) { .adults-grid { grid-template-columns: 1fr; } }
 .adults-gold { color: var(--gold-soft); font-weight: 600; }
+.adults .problem-card-desc + .btn-secondary { margin-top: 0.9rem; }
 
 /* ===== QUIZ CTA ===== */
 .quiz-cta { padding: clamp(4rem,8vw,6rem) 0; }
@@ -465,7 +469,7 @@ p { text-wrap: pretty; }
     },
     {
       "@type": "FAQPage",
-      "dateModified": "2026-08-07",
+      "dateModified": "2026-08-08",
       "mainEntity": [
         {
           "@type": "Question",
@@ -490,7 +494,7 @@ p { text-wrap: pretty; }
         {
           "@type": "Question",
           "name": "Does Old Wisdom // Retold teach manipulation?",
-          "acceptedAnswer": {"@type": "Answer", "text": "No. Every strategy should preserve dignity, choice and the possibility of a shared win: strength without cruelty, confidence without arrogance, influence without manipulation and strategy without dehumanising people."}
+          "acceptedAnswer": {"@type": "Answer", "text": "No. The Playbooks pair practical strategy with empathy, respect and choice. A useful move should protect dignity and leave room for a shared win."}
         }
       ]
     }
@@ -525,14 +529,14 @@ p { text-wrap: pretty; }
     <div class="hero-inner">
       <div class="hero-text">
         <div class="hero-eyebrow">
-          <span class="dot" aria-hidden="true"></span>PRACTICAL WISDOM FOR TEEN LIFE
+          <span class="dot" aria-hidden="true"></span>FOR PARENTS RAISING CAPABLE TEENS
         </div>
         <h1 class="hero-h1">SKILLS TEENS<br>CAN PRACTISE.<br><span class="accent">JUDGMENT THEY OWN.</span></h1>
-        <p class="hero-sub">Old Wisdom // Retold turns durable ideas from strategy, philosophy and human psychology into short, practical Playbooks for teens 12–17 — and gives parents a <strong>separate way to support growth without taking it over.</strong></p>
+        <p class="hero-sub">The group chat goes quiet. Lunch plans change. Your teen says “fine” and closes the bedroom door. OWR gives them short, teen-facing Playbooks for the next move — and gives you a <strong>separate Parent Hub so you can help without taking over.</strong></p>
         <p class="hero-series-note"><strong>TEEN-FACING PLAYBOOKS</strong><span aria-hidden="true">•</span><span>SEPARATE PARENT GROWTH GUIDANCE</span></p>
         <div class="hero-actions">
           <a href="#series" class="btn-primary" aria-label="Explore the teen Playbooks" data-event="books_viewed" data-event-label="home hero">
-            EXPLORE TEEN PLAYBOOKS
+            SEE THE PLAYBOOKS
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
           <a href="parents/" class="btn-secondary" aria-label="Visit the Parent Hub" data-event="parent_hub_clicked" data-event-label="home hero">
@@ -550,21 +554,21 @@ p { text-wrap: pretty; }
 
 <!-- WHAT IS THIS (GEO extraction block) -->
 <section class="what-is-this container" id="what-is-this" aria-label="Our mission">
-  <p><strong>Old Wisdom // Retold is a teen-growth platform built around one aim:</strong> help teens develop the judgment, capability, ownership and independence to handle real life for themselves. The Playbooks speak directly to teens. The Parent Hub helps adults support that growth without turning it into control.</p>
+  <p><strong>Old Wisdom // Retold helps teens handle more of real life for themselves.</strong> A Playbook gives the teen language and one small move for the unread message, the hard conversation or the boundary that needs holding. Parent Hub helps the adult see the moment clearly, guide lightly and return the next decision.</p>
 </section>
 
 <!-- AUDIENCE PATHS -->
 <section class="paths" aria-label="Choose your path">
   <div class="container">
     <p class="paths-label">CHOOSE YOUR PATH</p>
-    <p class="paths-intro">The Playbooks and Parent Hub serve different readers. Start with the route that belongs to you.</p>
+    <p class="paths-intro">This page is for the parent choosing what to offer. The Playbooks speak to the teen; Parent Hub speaks to you.</p>
     <div class="paths-grid">
       <a class="path-chip teen-path" href="#series" data-event="books_viewed" data-event-label="home audience path">
-        <span><strong>FOR TEENS — USE A PLAYBOOK</strong><span>Choose a real challenge. Read one short chapter, try one move, and decide what works for you.</span></span>
+        <span><strong>A TEEN WANTS A TOOL</strong><span>See the Playbooks, then let them choose the challenge, chapter and next move.</span></span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a class="path-chip" href="parents/" data-event="parent_hub_clicked" data-event-label="home audience path">
-        <span><strong>FOR PARENTS — USE PARENT HUB</strong><span>Start with what you are seeing. Understand the moment, guide lightly, and return the next decision.</span></span>
+        <span><strong>YOU NEED TO UNDERSTAND FIRST</strong><span>Start with what you are seeing, guide lightly, and return the next decision.</span></span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -600,11 +604,11 @@ p { text-wrap: pretty; }
   <div class="container">
     <div class="problem-grid">
       <div class="reveal">
-        <div class="problem-label">THE SKILLS BETWEEN THE SUBJECTS</div>
-        <h2 class="problem-h2">LEARNABLE SKILLS<br>SHOULD NOT BE<br>LEFT TO CHANCE</h2>
-        <p class="problem-body">School teaches subjects. Teen life also asks for judgment: how to enter a conversation, read the room, hold a boundary, choose a conflict and recover after a mistake. Those moments are often left to trial and error.</p>
-        <p class="problem-body"><strong>These are not personality verdicts.</strong> They are practical skills that can be noticed, practised, reviewed and improved.</p>
-        <p class="problem-body">OWR gives teens clear language and small reps. The aim is not to win at people. It is to act with more awareness, composure and choice.</p>
+        <div class="problem-label">WHAT THIS LOOKS LIKE AT HOME</div>
+        <h2 class="problem-h2">THE MOMENT IS CONCRETE.<br>THE SKILL CAN BE TOO.</h2>
+        <p class="problem-body">A message goes unanswered. A friend stops appearing at lunch. You ask what happened; your teen says “nothing.” That is not proof they are rude, lazy or unlikeable.</p>
+        <p class="problem-body">The missing step may be smaller: how to reopen a conversation, check whether the other person has space, hold a boundary, or recover after an awkward attempt.</p>
+        <p class="problem-body"><strong>“Be more confident” is too vague to practise.</strong> One clear move gives a teen something they can try, review and choose for themselves.</p>
       </div>
       <div class="problem-cards reveal">
         <div class="problem-card">
@@ -612,8 +616,8 @@ p { text-wrap: pretty; }
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
           </div>
           <div class="problem-card-content">
-            <div class="problem-card-title">Judgment before reaction</div>
-            <div class="problem-card-desc">See what is happening before deciding what it means or what to do next.</div>
+            <div class="problem-card-title">The group chat goes quiet</div>
+            <div class="problem-card-desc">Notice the pattern without turning one silence into a verdict about friendship or worth.</div>
           </div>
         </div>
         <div class="problem-card">
@@ -621,8 +625,8 @@ p { text-wrap: pretty; }
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="5" rx="1"/><rect x="3" y="11" width="18" height="5" rx="1"/><path d="M7 8v3M12 8v3M17 8v3"/></svg>
           </div>
           <div class="problem-card-content">
-            <div class="problem-card-title">Capability through practice</div>
-            <div class="problem-card-desc">Turn abstract advice into one move small enough to try in real life.</div>
+            <div class="problem-card-title">Lunch plans change</div>
+            <div class="problem-card-desc">Find one low-pressure opening instead of demanding a performance or an instant new best friend.</div>
           </div>
         </div>
         <div class="problem-card">
@@ -630,8 +634,8 @@ p { text-wrap: pretty; }
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <div class="problem-card-content">
-            <div class="problem-card-title">Ownership, not compliance</div>
-            <div class="problem-card-desc">Choose whether, where and how to use an idea — then learn from the result.</div>
+            <div class="problem-card-title">A hard talk gets avoided</div>
+            <div class="problem-card-desc">Prepare one clear sentence, ask at a calmer time and leave the other person room to answer.</div>
           </div>
         </div>
         <div class="problem-card">
@@ -639,8 +643,8 @@ p { text-wrap: pretty; }
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </div>
           <div class="problem-card-content">
-            <div class="problem-card-title">Independence that grows</div>
-            <div class="problem-card-desc">Build experience so the next decision needs less adult direction.</div>
+            <div class="problem-card-title">One attempt feels awkward</div>
+            <div class="problem-card-desc">Review what happened, adjust one thing and try again without making it an identity verdict.</div>
           </div>
         </div>
       </div>
@@ -648,20 +652,40 @@ p { text-wrap: pretty; }
   </div>
 </section>
 
+<!-- SAMPLE PAGES -->
+<section class="samples" id="samples" aria-label="Look inside the book">
+  <div class="container">
+    <div class="samples-head reveal">
+      <div class="section-label">LOOK INSIDE</div>
+      <h2 class="section-h2">SEE THE CHAPTER RHYTHM<br>BEFORE YOU BUY</h2>
+      <p class="samples-sub">Every chapter moves through the same practical rhythm: a real pressure scene, one clear strategy, and a small action to run this week.</p>
+    </div>
+    <div class="samples-grid reveal">
+      <figure><div class="sample-page"><div class="sample-page-code">THE PRESSURE SCENE</div><h3>START WHERE THE MOMENT GETS HARD.</h3><p>A familiar situation puts the strategy in context before any explanation begins: the silent lunch table, the unread message, the group that suddenly changes tone.</p><div class="sample-page-action">FIRST: NOTICE WHAT IS ACTUALLY HAPPENING.</div></div><figcaption>Chapters open with a real pressure scene, not a lecture.</figcaption></figure>
+      <figure><div class="sample-page"><div class="sample-page-code">THE CHEAT CODE</div><h3>ONE IDEA. CLEAR ENOUGH TO REMEMBER.</h3><p>The chapter reduces an old principle to one usable move, explains why it works, and shows where it can go wrong when it becomes forced or manipulative.</p><div class="sample-page-action">THEN: CHOOSE THE SMALLEST USEFUL MOVE.</div></div><figcaption>Every strategy lands in one sharp, usable line.</figcaption></figure>
+      <figure><div class="sample-page"><div class="sample-page-code">THE SIDE QUEST</div><h3>RUN ONE REP THIS WEEK.</h3><p>The finish is practical: one conversation to start, one signal to notice, one boundary to rehearse, or one visible action to complete without grading the outcome.</p><div class="sample-page-action">FINALLY: REVIEW THE REP AND ADJUST.</div></div><figcaption>Each chapter ends with one small action to run this week.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <!-- INSIDE -->
-<section class="inside" id="inside" aria-label="What a teen practises">
+<section class="inside" id="inside" aria-label="Real moments and ethical moves">
   <div class="container">
     <div class="inside-header reveal">
-      <div class="section-label">WHAT A TEEN PRACTISES</div>
-      <h2 class="section-h2">CAPABILITY,<br>NOT ADVANTAGE</h2>
+      <div class="section-label">REAL MOMENTS. ETHICAL MOVES.</div>
+      <h2 class="section-h2">PRACTICAL MOVES<br>WITHOUT USING PEOPLE</h2>
     </div>
     <div class="inside-grid">
-      <div class="inside-card reveal"><div class="inside-num">01</div><h3 class="inside-card-title">Start Conversations Without Performing</h3><p class="inside-card-desc">Use what is already happening in the room to make a small, natural opening.</p></div>
-      <div class="inside-card reveal"><div class="inside-num">02</div><h3 class="inside-card-title">Read Context Before Reacting</h3><p class="inside-card-desc">Notice tone, timing and patterns without pretending to read minds or turning one signal into a verdict.</p></div>
-      <div class="inside-card reveal"><div class="inside-num">03</div><h3 class="inside-card-title">Influence Without Manipulation</h3><p class="inside-card-desc">Make clear asks, listen well and leave the other person free to choose.</p></div>
-      <div class="inside-card reveal"><div class="inside-num">04</div><h3 class="inside-card-title">Stay Composed Under Pressure</h3><p class="inside-card-desc">Slow the moment down, protect options and respond on purpose.</p></div>
-      <div class="inside-card reveal"><div class="inside-num">05</div><h3 class="inside-card-title">Set Boundaries and Choose Conflicts</h3><p class="inside-card-desc">Know what deserves a response, what can be repaired and what is better left.</p></div>
-      <div class="inside-card reveal"><div class="inside-num">06</div><h3 class="inside-card-title">Review, Adjust and Try Again</h3><p class="inside-card-desc">Treat each attempt as information — not proof of identity, popularity or worth.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">01</div><h3 class="inside-card-title">The Group Chat Goes Quiet</h3><p class="inside-card-desc">Notice the change, check the pattern and resist pretending one unread message reveals another person's mind.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">02</div><h3 class="inside-card-title">There Is No Easy Seat at Lunch</h3><p class="inside-card-desc">Use what is already happening to make one small opening without trying to perform a different personality.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">03</div><h3 class="inside-card-title">Something Needs to Be Asked</h3><p class="inside-card-desc">Make the request clear, listen to the answer and leave the other person free to choose.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">04</div><h3 class="inside-card-title">A Conflict Starts Running Hot</h3><p class="inside-card-desc">Slow the exchange, protect options and choose whether to answer, repair, leave or return later.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">05</div><h3 class="inside-card-title">A Boundary Keeps Getting Pushed</h3><p class="inside-card-desc">State what is not okay without threats, humiliation or turning strength into domination.</p></div>
+      <div class="inside-card reveal"><div class="inside-num">06</div><h3 class="inside-card-title">The First Attempt Feels Awkward</h3><p class="inside-card-desc">Treat it as information, change one thing and decide whether another attempt is worth making.</p></div>
+    </div>
+    <div class="inside-ethics reveal">
+      <p class="ethics-line">Strength without cruelty.<br>Confidence without arrogance.<br>Influence without manipulation.<br>Strategy without dehumanising people.</p>
+      <p><strong>The Empathy Test:</strong> does this move protect dignity, preserve choice and leave room for a shared win?</p>
     </div>
   </div>
 </section>
@@ -691,22 +715,6 @@ p { text-wrap: pretty; }
           <a href="parents/" class="btn-primary" data-event="parent_hub_clicked" data-event-label="home growth journey">EXPLORE PARENT HUB</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- SAMPLE PAGES -->
-<section class="samples" id="samples" aria-label="Look inside the book">
-  <div class="container">
-    <div class="samples-head reveal">
-      <div class="section-label">LOOK INSIDE</div>
-      <h2 class="section-h2">SEE THE CHAPTER RHYTHM<br>BEFORE YOU BUY</h2>
-      <p class="samples-sub">Every chapter moves through the same practical rhythm: a real pressure scene, one clear strategy, and a small action to run this week.</p>
-    </div>
-    <div class="samples-grid reveal">
-      <figure><div class="sample-page"><div class="sample-page-code">THE PRESSURE SCENE</div><h3>START WHERE THE MOMENT GETS HARD.</h3><p>A familiar situation puts the strategy in context before any explanation begins: the silent lunch table, the unread message, the group that suddenly changes tone.</p><div class="sample-page-action">FIRST: NOTICE WHAT IS ACTUALLY HAPPENING.</div></div><figcaption>Chapters open with a real pressure scene, not a lecture.</figcaption></figure>
-      <figure><div class="sample-page"><div class="sample-page-code">THE CHEAT CODE</div><h3>ONE IDEA. CLEAR ENOUGH TO REMEMBER.</h3><p>The chapter reduces an old principle to one usable move, explains why it works, and shows where it can go wrong when it becomes forced or manipulative.</p><div class="sample-page-action">THEN: CHOOSE THE SMALLEST USEFUL MOVE.</div></div><figcaption>Every strategy lands in one sharp, usable line.</figcaption></figure>
-      <figure><div class="sample-page"><div class="sample-page-code">THE SIDE QUEST</div><h3>RUN ONE REP THIS WEEK.</h3><p>The finish is practical: one conversation to start, one signal to notice, one boundary to rehearse, or one visible action to complete without grading the outcome.</p><div class="sample-page-action">FINALLY: REVIEW THE REP AND ADJUST.</div></div><figcaption>Each chapter ends with one small action to run this week.</figcaption></figure>
     </div>
   </div>
 </section>
@@ -803,16 +811,15 @@ p { text-wrap: pretty; }
   </div>
 </section>
 
-<!-- ETHICAL USE -->
-<section class="adults" id="ethics" aria-label="The ethical line">
+<!-- READER REVIEWS -->
+<section class="adults" id="reviews" aria-label="Leave an honest reader review">
   <div class="container">
     <div class="adults-grid">
       <div class="reveal">
-        <div class="section-label ethics-label">THE ETHICAL LINE</div>
-        <h2 class="parent-h2">STRATEGY SHOULD MAKE<br><span class="ethics-accent">LIFE MORE HUMAN.</span></h2>
-        <p class="problem-body">OWR does not teach teens to master people, manufacture status or treat every room like a contest. Strategy is useful only when it increases clarity, dignity and choice.</p>
-        <p class="ethics-line">Strength without cruelty.<br>Confidence without arrogance.<br>Influence without manipulation.<br>Strategy without dehumanising people.</p>
-        <p class="problem-body adults-gold">The Empathy Test: does this move leave room for a shared win?</p>
+        <div class="section-label">READ IT ALREADY?</div>
+        <h2 class="parent-h2">HELP THE NEXT<br><span class="warm">FAMILY DECIDE.</span></h2>
+        <p class="problem-body">Real reader evidence matters more than borrowed authority. If you have read a Playbook, leave a candid Amazon review: what helped, what did not, and who you think the book fits.</p>
+        <p class="problem-body adults-gold">There is no reward and no request for a positive rating — only an honest account from a real reader.</p>
       </div>
       <div class="reveal">
         <div class="problem-cards">
@@ -821,8 +828,9 @@ p { text-wrap: pretty; }
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
             </div>
             <div class="problem-card-content">
-              <div class="problem-card-title">Shared wins over control</div>
-              <div class="problem-card-desc">A good influence move makes a clear request and leaves the other person free to choose.</div>
+              <div class="problem-card-title">The Social Playbook</div>
+              <div class="problem-card-desc">Share what the chapter rhythm, examples and practice felt like for your family.</div>
+              <a href="https://a.co/d/0gjqlkB6" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-event="amazon_clicked" data-event-label="social playbook review invite">REVIEW ON AMAZON</a>
             </div>
           </div>
           <div class="problem-card">
@@ -830,17 +838,9 @@ p { text-wrap: pretty; }
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M10 10.5a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/><path d="M10 14h4"/></svg>
             </div>
             <div class="problem-card-content">
-              <div class="problem-card-title">Notice context, do not exploit it</div>
-              <div class="problem-card-desc">Reading a room means paying attention to tone and timing — not inventing motives or hunting for leverage.</div>
-            </div>
-          </div>
-          <div class="problem-card">
-            <div class="icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-            </div>
-            <div class="problem-card-content">
-              <div class="problem-card-title">Strength protects boundaries</div>
-              <div class="problem-card-desc">Composure and strategy should help a teen protect options, de-escalate and walk away — not dominate.</div>
+              <div class="problem-card-title">The War Playbook</div>
+              <div class="problem-card-desc">Tell other readers whether the boundaries, composure and de-escalation tools were useful.</div>
+              <a href="https://a.co/d/0gu0a2CR" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-event="amazon_clicked" data-event-label="war playbook review invite">REVIEW ON AMAZON</a>
             </div>
           </div>
         </div>
@@ -857,7 +857,7 @@ p { text-wrap: pretty; }
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
       </div>
       <h2 class="quiz-cta-h">NOT SURE WHERE TO START?</h2>
-      <p class="quiz-cta-sub">Use the free 15-question diagnostic to reflect on five practical areas: connection, reading social context, influence, conflict and confidence. Choose the teen or parent path and get one matched next step.</p>
+      <p class="quiz-cta-sub">Use the free 15-question reflection to notice patterns across connection, social context, influence, conflict and confidence. Choose the teen or parent path and see one useful place to begin.</p>
       <a href="quiz.html?utm_source=home&utm_medium=owned&utm_campaign=diagnostic" class="btn-primary" aria-label="Take the free social skills quiz" data-event="quiz_clicked" data-event-label="home diagnostic section">
         TAKE THE FREE QUIZ
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -880,7 +880,7 @@ p { text-wrap: pretty; }
     <h3>Is The War Playbook appropriate for a 12-year-old?</h3>
     <p>Yes. It reframes Sun Tzu around composure, de-escalation, boundaries and choosing which conflicts not to enter. It does not glorify violence.</p>
     <h3>Does Old Wisdom // Retold teach manipulation?</h3>
-    <p>No. Every strategy should preserve dignity, choice and the possibility of a shared win: strength without cruelty, confidence without arrogance, influence without manipulation and strategy without dehumanising people.</p>
+    <p>No. The Playbooks pair practical strategy with empathy, respect and choice. A useful move should protect dignity and leave room for a shared win.</p>
   </div>
 </section>
 
@@ -944,14 +944,14 @@ p { text-wrap: pretty; }
   <div class="container">
     <div class="final-cta-content reveal">
       <h2 class="final-h2">START WITH THE NEXT<br><span class="gold">USEFUL STEP.</span></h2>
-      <p class="final-sub">Choose the route that belongs to you. Teens use the Playbooks. Parents use the Parent Hub. When the starting point is unclear, the quiz can help.</p>
+      <p class="final-sub">Offer a teen-facing Playbook when they want a tool. Use Parent Hub when you need to understand the moment first. If the starting point is unclear, the quiz can help.</p>
       <div class="final-btns">
         <a href="#series" class="btn-primary" aria-label="Explore both available books" data-event="books_viewed" data-event-label="home final call to action">
-          TEENS: EXPLORE PLAYBOOKS
+          SEE THE PLAYBOOKS
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="parents/" class="btn-secondary" aria-label="Visit the Parent Hub" data-event="parent_hub_clicked" data-event-label="home final call to action">
-          PARENTS: VISIT PARENT HUB
+          VISIT PARENT HUB
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>

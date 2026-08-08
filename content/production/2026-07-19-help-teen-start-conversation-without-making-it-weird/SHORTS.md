@@ -4,7 +4,7 @@
 
 - Target length: 35-45 seconds
 - Audience: parents
-- CTA: free diagnostic
+- CTA: free skills reflection
 
 ### Script
 
@@ -33,15 +33,15 @@ One opener. One follow-up. One clean exit.
 
 That is a real social rep.
 
-[ON SCREEN: "Free 15-question diagnostic below"]
+[ON SCREEN: "Free 15-question skills reflection below"]
 
-If you want to find the real gap behind the awkwardness, start with the free diagnostic below.
+If you want to notice one useful area beneath the awkwardness, start with the free skills reflection below.
 
 ## Short 2: The Follow-Up Question Rule
 
 - Target length: 40-55 seconds
 - Audience: teens and parents
-- CTA: free diagnostic
+- CTA: free skills reflection
 
 ### Script
 
@@ -74,4 +74,4 @@ That is how a normal conversation starts feeling normal.
 
 [ON SCREEN: "Find the real gap: connection, reading people, conflict, confidence"]
 
-If your teen still freezes even with a better opener, use the free diagnostic below to see what the real skill gap is.
+If your teen still freezes even with a better opener, use the free skills reflection below to notice one area worth exploring next.

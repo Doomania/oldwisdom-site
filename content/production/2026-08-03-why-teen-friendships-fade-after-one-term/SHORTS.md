@@ -3,7 +3,7 @@
 ## Short 1: Why friendships die after one term
 
 - Target length: 35-45 seconds
-- CTA: free diagnostic
+- CTA: free skills reflection
 
 **Script**
 
@@ -29,12 +29,12 @@ After one decent interaction, reopen it fast:
 
 Do not wait for the room to do the work again.
 
-If you want to figure out whether your teen's real gap is connection, confidence, reading people, conflict, or influence, start with the free diagnostic.
+If you want to reflect on whether connection, confidence, social context, conflict, or influence may be useful to explore next, start with the free skills reflection.
 
 ## Short 2: Stop asking "Did you make friends?"
 
 - Target length: 30-40 seconds
-- CTA: free diagnostic
+- CTA: free skills reflection
 
 **Script**
 
@@ -61,4 +61,4 @@ Try:
 
 That turns friendship into a skill your teen can practise instead of a mystery they are supposed to solve by personality alone.
 
-If you want help finding the real gap underneath the drift, use the free Old Wisdom // Retold diagnostic.
+If you want help noticing one useful area beneath the drift, use the free Old Wisdom // Retold skills reflection.
