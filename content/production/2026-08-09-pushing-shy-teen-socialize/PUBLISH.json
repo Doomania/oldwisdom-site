@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-09",
+  "audience": "parent",
+  "slug": "pushing-shy-teen-socialize",
+  "title": "When Pushing Your Shy Teen Can Make Honesty Harder",
+  "summary": "Interrupt the Social Pressure Loop and help a shy or socially reluctant teenager take a manageable step without making honest disclosure feel costly.",
+  "seo_title": "Support a Shy Teen Without Overcontrol",
+  "seo_description": "Learn how to support a shy teenager without overcontrol using the Social Pressure Loop and a practical Listen, Offer, Agree conversation for the next social no.",
+  "journey_stage": "REFLECT",
+  "supports_stages": [
+    "UNDERSTAND",
+    "GUIDE",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Keep safety and age-appropriate boundaries while letting the teenager help choose, practise, and evaluate the smallest useful social step.",
+  "qa_score": 19,
+  "territory": "connection",
+  "test_angle": "REFLECT",
+  "core_belief_shift": {
+    "from": "If I do not push my shy teenager into more social situations, they will stay stuck and miss the practice they need.",
+    "to": "Useful social growth combines honest information, proportionate practice, clear boundaries, and increasing teen ownership—not pressure alone."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "The useful next move is a safer parent conversation and one collaborative social step; a Playbook bridge would distract from the parent reflection."
+  },
+  "hero": {
+    "source": "media/pushing-shy-teen-socialize.webp",
+    "alt": "A Black mother listens calmly as her teenage son speaks across their kitchen table, with a blank invitation envelope between them.",
+    "width": 1200,
+    "height": 800,
+    "variants": [
+      {
+        "source": "media/pushing-shy-teen-socialize-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/pushing-shy-teen-socialize-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/pushing-shy-teen-socialize.webp",
+    "alt": "A Black mother listens calmly as her teenage son speaks across their kitchen table, with a blank invitation envelope between them."
+  },
+  "next_step": {
+    "kind": "guide",
+    "target": "quiet-or-lonely-teen",
+    "label": "First decide whether the quiet means loneliness"
+  },
+  "pinterest_campaign": {
+    "campaign": "connection",
+    "content": "pushing-shy-teen-socialize"
+  }
+}
