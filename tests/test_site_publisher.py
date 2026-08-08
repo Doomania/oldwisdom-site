@@ -27,7 +27,7 @@ class ParentGuidePublisherTests(unittest.TestCase):
             encoding="utf-8",
         )
         (self.root / "templates" / "parent-guide.html").write_text(
-            "{{article_title}}|{{seo_title}}|{{seo_description}}|{{canonical}}|{{social_image}}|{{social_image_alt}}|{{article_schema}}|{{journey_stage}}|{{summary}}|{{author}}|{{published_display}}|{{reading_time}}|{{hero}}|{{body}}|{{release_move}}|{{next_step}}|{{parent_growth_signup}}",
+            "<!-- AUDIENCE: PARENT -->\n{{article_title}}|{{seo_title}}|{{seo_description}}|{{canonical}}|{{social_image}}|{{social_image_alt}}|{{article_schema}}|{{journey_stage}}|{{summary}}|{{author}}|{{published_display}}|{{reading_time}}|{{hero}}|{{body}}|{{release_move}}|{{next_step}}|{{parent_growth_signup}}",
             encoding="utf-8",
         )
         (self.root / "templates" / "parent-hub.html").write_text(
@@ -108,7 +108,9 @@ class ParentGuidePublisherTests(unittest.TestCase):
         article = self.root / "articles" / "example-guide.html"
         self.assertIn(article, changed)
         self.assertTrue(article.exists())
-        self.assertIn("Example Guide", article.read_text(encoding="utf-8"))
+        article_content = article.read_text(encoding="utf-8")
+        self.assertIn("<!-- AUDIENCE: PARENT -->", article_content)
+        self.assertIn("Example Guide", article_content)
         self.assertTrue((self.root / "parents" / "index.html").exists())
         self.assertIn("example-guide", (self.root / "sitemap.xml").read_text(encoding="utf-8"))
         self.assertIn("Parent Hub", (self.root / "llms.txt").read_text(encoding="utf-8"))
