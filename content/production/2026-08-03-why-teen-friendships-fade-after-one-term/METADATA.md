@@ -26,7 +26,7 @@ If your teen had people around them last term and now feels shut out, do not ass
 
 In this video, we break down the difference between being included and building a friendship, why term changes hit teen relationships so hard, and the simple follow-up habit that keeps social momentum alive.
 
-Start with the free 15-question diagnostic:
+Start with the free 15-question skills reflection:
 https://oldwisdomretold.com/quiz.html?concern=friends&utm_source=youtube&utm_medium=organic&utm_campaign=connection&utm_content=why-teen-friendships-fade-after-one-term
 
 Old Wisdom // Retold turns durable social strategy into calm, practical tools for parents and teens.
@@ -40,7 +40,7 @@ Old Wisdom // Retold turns durable social strategy into calm, practical tools fo
 05:10 Build one shared loop
 06:50 Better questions for parents
 08:30 The friendship carry-over plan
-10:15 Free diagnostic and next step
+10:15 Free skills reflection and next step
 
 ## Thumbnail Text Options
 
@@ -81,6 +81,6 @@ Old Wisdom // Retold turns durable social strategy into calm, practical tools fo
 
 ## CTA Guidance
 
-- Primary CTA wording: Take the free 15-question diagnostic
-- Truthful CTA note: describe the diagnostic as informational, not clinical
+- Primary CTA wording: Take the free 15-question skills reflection
+- Truthful CTA note: describe the skills reflection as informational, not diagnostic or clinical
 - Secondary CTA rule: link to the most relevant Parent Hub guide; mention a Playbook only when it directly helps with the topic

@@ -1,10 +1,13 @@
 {
   "schema_version": 2,
-  "status": "draft",
+  "status": "published",
   "audience": "parent",
   "slug": "why-teen-friendships-fade-after-one-term",
   "title": "Why Teen Friendships Fade After One Term",
   "summary": "Help a teenager understand friendship drift and choose one small follow-up without taking over the relationship.",
+  "seo_title": "Why Teen Friendships Fade After One Term",
+  "seo_description": "Understand why a teen friendship can fade when classes, clubs, or lunch routines change—and help your teen choose one small follow-up without taking over.",
+  "published": "2026-08-08",
   "journey_stage": "UNDERSTAND",
   "supports_stages": ["SEE", "REFLECT", "GUIDE", "RELEASE"],
   "teen_outcomes": ["judgment", "capability", "ownership"],
@@ -19,6 +22,20 @@
   "book_relevance": {
     "status": "none",
     "reason": "The parent first needs to understand friendship drift without taking over; a product CTA would distract from that work."
+  },
+  "hero": {
+    "source": "media/friendship-drift.webp",
+    "alt": "Two separated notebooks, an unused chair, a face-down phone, and a backpack in a warm family kitchen.",
+    "width": 1200,
+    "height": 800,
+    "variants": [
+      {"source": "media/friendship-drift-480.webp", "width": 480},
+      {"source": "media/friendship-drift-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/friendship-drift.webp",
+    "alt": "Two separated notebooks, an unused chair, a face-down phone, and a backpack in a warm family kitchen."
   },
   "next_step": {
     "kind": "quiz",

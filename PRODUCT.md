@@ -23,7 +23,7 @@ Give teens practical, usable strategies they can own. Give parents calm guidance
 - The Social Playbook: connection, conversation, reading people, and ethical influence.
 - The War Playbook: conflict, pressure, bullies, rivalries, and strategic composure.
 - The Discipline Playbook: habits and self-mastery; currently coming soon.
-- A free 15-question diagnostic with teen and parent paths, personalised profiles, gap analysis, and Brevo email capture.
+- A free 15-question skills reflection with teen and parent paths, personalised profiles, lower-scoring areas to explore, and Brevo email capture.
 - A free Chapter 1 email lead magnet.
 
 ## Platform Direction
@@ -36,9 +36,9 @@ Give teens practical, usable strategies they can own. Give parents calm guidance
 ## Primary Journey
 
 1. A parent discovers an evergreen article, video, pin, search result, or shared quiz result.
-2. They land on a concern-specific page or the diagnostic.
-3. The diagnostic identifies the three weakest skill areas and captures the email with consent.
-4. The result recommends one clear next step matched to the weakest gap.
+2. They land on a concern-specific page or the skills reflection.
+3. The reflection identifies three lower-scoring skill areas and captures the email with consent.
+4. The result suggests one clear next step matched to an area worth exploring.
 5. The reader receives a useful next step: another guide, a reflection, the quiz, or a relevant Playbook.
 6. Brevo follows up with value-first lessons and longer-term evergreen education.
 7. Campaign links preserve attribution so useful topics and channels can be evaluated.
@@ -52,7 +52,7 @@ Give teens practical, usable strategies they can own. Give parents calm guidance
 
 ## Product Boundaries
 
-- The diagnostic is informational, not a clinical or psychological assessment.
+- The skills reflection is informational, not a diagnostic, clinical, or psychological assessment.
 - No violence glorification, dating content, swearing, dark patterns, fake scarcity, fake testimonials, or fabricated results.
 - Do not imply that introversion is a defect.
 - Never expose private quiz responses in URLs or public analytics.

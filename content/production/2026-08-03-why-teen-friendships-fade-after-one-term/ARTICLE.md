@@ -32,7 +32,7 @@ When the term changes, a lot of that borrowed structure disappears:
 - one teen gets pulled into a different group
 - the easy reason to speak vanishes
 
-Research on school friendship stability points in the same general direction: transitions make friendships more fragile, and maintaining at least some ties helps students feel more grounded and connected. That matters because a teen can mistake drifting contact for personal failure, when in reality the social environment has simply become less supportive of automatic contact.
+[Research on school friendship stability](https://pubmed.ncbi.nlm.nih.gov/35311307/) points in the same general direction: transitions make friendships more fragile, and maintaining at least some ties helps students feel more grounded and connected. That matters because a teen can mistake drifting contact for personal failure, when in reality the social environment has simply become less supportive of automatic contact.
 
 A friendship can feel warm for eight weeks and then suddenly cool off without a fight.
 It was real enough for the setting it lived in. It just was not built to travel yet.
@@ -243,7 +243,7 @@ Sometimes it is not knowing how to recover after a gap in contact.
 
 That is why a useful next step is clarity, not more generic encouragement.
 
-The free 15-question Old Wisdom // Retold diagnostic helps parents and teens identify whether the main issue is connection, reading people, influence, conflict, or confidence. It is informational, not clinical, and designed to point to one practical next move rather than hand out labels.
+The free 15-question Old Wisdom // Retold skills reflection helps parents and teens notice whether connection, social context, influence, conflict, or confidence may be a useful area to explore. It is informational, not clinical, and points to one practical next move rather than handing out labels.
 
 But start smaller than that in your head.
 

@@ -25,7 +25,7 @@ If your teen struggles to start conversations, "just talk to people" is not enou
 
 This is built for parents of quiet, hesitant, socially rusty, or easily overwhelmed teens, but teens can use the lines directly too.
 
-Start with the free 15-question diagnostic:
+Start with the free 15-question skills reflection:
 https://oldwisdomretold.com/quiz.html?concern=friends&utm_source=youtube&utm_medium=organic&utm_campaign=connection&utm_content=help-teen-start-conversation-without-making-it-weird
 
 Old Wisdom // Retold turns durable social strategy into calm, practical tools for parents and teens.
@@ -40,7 +40,7 @@ Old Wisdom // Retold turns durable social strategy into calm, practical tools fo
 05:30 Why a short conversation can still win
 06:35 What parents should say instead
 08:10 A simple weekly rep
-09:35 Free diagnostic and next step
+09:35 Free skills reflection and next step
 
 ## Thumbnail Text Options
 
@@ -81,6 +81,6 @@ Old Wisdom // Retold turns durable social strategy into calm, practical tools fo
 
 ## CTA Guidance
 
-- Primary CTA wording: Take the free 15-question diagnostic
-- Truthful CTA note: describe the diagnostic as informational, not clinical
+- Primary CTA wording: Take the free 15-question skills reflection
+- Truthful CTA note: describe the skills reflection as informational, not diagnostic or clinical
 - Secondary CTA rule: link to the most relevant Parent Hub guide; mention a Playbook only when it directly helps with the topic

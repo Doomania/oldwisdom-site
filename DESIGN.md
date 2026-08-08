@@ -27,7 +27,7 @@ Avoid turning the brand into a generic SaaS dashboard, neon gaming interface, se
 - Blue `#4D94FF`: The Social Playbook, connection, and teen path.
 - Red `#CC2233` / `#E84455`: The War Playbook, conflict, and warning emphasis.
 - Green `#3ECF8E`: completion and positive result states.
-- Purple `#A78BFA`: anxiety/confidence diagnostic category only.
+- Purple `#A78BFA`: anxiety/confidence quiz category only.
 
 Use accents to communicate product or state. Do not decorate every surface with glow. Prefer hairline borders, subtle tonal shifts, and quiet lighting.
 
@@ -46,7 +46,7 @@ Use accents to communicate product or state. Do not decorate every surface with 
 - Use strong vertical rhythm and a small number of large editorial sections.
 - Primary responsive breakpoints are approximately 900px, 768px, 640px, and 480px.
 - Mobile layouts collapse to one column, retain 44px minimum touch targets, and keep the primary action visible without crowding the header.
-- Prefer grid for product and comparison structures; prefer a single clear reading column for diagnostic and legal content.
+- Prefer grid for product and comparison structures; prefer a single clear reading column for quiz and legal content.
 
 ## Components
 
@@ -70,7 +70,7 @@ Dark surfaces with a hairline border and 10–16px radius. Use hierarchy through
 
 Inputs use a dark translucent surface, clear labels, visible gold focus rings, useful error text, and explicit consent/fine print. Never remove labels for visual convenience; visually hidden labels are acceptable when the placeholder repeats the same short prompt.
 
-### Diagnostic Results
+### Quiz Results
 
 Profiles use colour plus text, never colour alone. Gap recommendations should name the skill, explain why it matters, give one small practice, and lead to one matched next action.
 
@@ -89,5 +89,5 @@ Book covers and the three-book mockup are the primary brand imagery. Author phot
 
 - One dominant next step per viewport or decision block.
 - For a Parent Guide, choose the next step because it helps the reader, not because it forces a product path.
-- Use honest proof: book contents, sample pages, diagnostic fit, author context, sources, and specific practices.
+- Use honest proof: book contents, sample pages, quiz fit, author context, sources, and specific practices.
 - Keep Amazon Playbooks visible as relevant teen tools. They are never an automatic Parent Hub destination.

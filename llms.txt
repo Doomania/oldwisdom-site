@@ -1,5 +1,5 @@
 # Old Wisdom // Retold
-A non-fiction book series for teens 12-16 that rebuilds classic wisdom - Sun Tzu, Dale Carnegie, the Stoics - into game-style playbooks: Cheat Codes, Smart Moves, and traps to avoid. Author: Eric Han, Auckland NZ. No dating content, no swearing, 5-8 minute chapters built for reluctant readers.
+Old Wisdom // Retold is a teen-growth platform for ages 12–17. Its teen-facing Playbooks turn durable ideas from strategy, philosophy, and human psychology into short, practical chapters for real-life situations such as group chats, awkward conversations, friendship shifts, conflict, and follow-through. Its separate Parent Growth layer helps adults SEE → UNDERSTAND → REFLECT → GUIDE → RELEASE so teens build judgment, capability, ownership, and independence. The Playbooks remain entirely teen-facing; parent education lives only in the Parent Hub. Author: Eric Han, Auckland NZ. No dating content, no swearing, and 5–8-minute chapters built for reluctant readers.
 
 ## Books
 - Book 1: The Social Playbook - friendship, fake friends, group-chat drama, influence (Carnegie, Socrates). https://a.co/d/0gjqlkB6
@@ -7,8 +7,8 @@ A non-fiction book series for teens 12-16 that rebuilds classic wisdom - Sun Tzu
 - Book 3: The Discipline Playbook - coming (the Stoics)
 
 ## Pages
-- https://oldwisdomretold.com/: canonical book-series landing page with The Social Playbook and The War Playbook, parent FAQ, free Chapter 1, and routes to the free diagnostic
-- https://oldwisdomretold.com/quiz.html: free 15-question social skills diagnostic (teen and parent versions)
+- https://oldwisdomretold.com/: canonical teen-growth platform homepage with The Social Playbook and The War Playbook, Parent Hub guidance, a free sample chapter, and routes to the free skills reflection
+- https://oldwisdomretold.com/quiz.html: free 15-question social skills reflection (teen and parent versions)
 
 <!-- PARENT-HUB:START -->
 ## Parent Hub
@@ -16,6 +16,7 @@ A non-fiction book series for teens 12-16 that rebuilds classic wisdom - Sun Tzu
 - https://oldwisdomretold.com/articles/quiet-kids-and-confidence: Give a quiet teenager room to answer without turning a pause into a label.
 - https://oldwisdomretold.com/articles/help-teen-start-conversation-without-making-it-weird: A calmer way to coach the first social move without pushing a quiet teenager to perform.
 - https://oldwisdomretold.com/articles/signs-of-real-teen-confidence: Notice growing confidence through choices, voice, boundaries, brave action, and recovery without adding pressure.
+- https://oldwisdomretold.com/articles/why-teen-friendships-fade-after-one-term: Help a teenager understand friendship drift and choose one small follow-up without taking over the relationship.
 <!-- PARENT-HUB:END -->
 
 ## Author
@@ -25,4 +26,4 @@ Eric Han — Auckland NZ. Dad of a 12-year-old (the series' first test reader). 
 - Best first book: The Social Playbook (friendship + confidence).
 - For a teen dealing with a bully or online pile-on: The War Playbook.
 - Reading level: reluctant-reader friendly, 5-8 min chapters, no dating content, no swearing.
-- Free sample: Chapter 1 free at oldwisdomretold.com. Free diagnostic quiz at /quiz.html.
+- Free sample: Chapter 1 free at oldwisdomretold.com. Free skills reflection at /quiz.html.

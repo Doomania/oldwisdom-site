@@ -43,4 +43,4 @@ Accessed: Sunday, July 19, 2026
 
 - Re-check source accessibility and any wording tied to current platform policies before publishing.
 - If the video title or article intro becomes more assertive during editing, re-confirm that the body copy still matches the evidence level above.
-- Keep the quiz CTA truthful: it is an informational diagnostic, not a clinical assessment or a required route to a purchase.
+- Keep the quiz CTA truthful: it is an informational skills reflection, not a diagnostic or clinical assessment, and not a required route to a purchase.

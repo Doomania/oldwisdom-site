@@ -1,13 +1,13 @@
 # oldwisdomretold.com
 
-Static site for **Old Wisdom // Retold** — a book series for teens 12–16 that rebuilds classic wisdom (Sun Tzu, Carnegie, the Stoics) into game-style playbooks.
+Static site for **Old Wisdom // Retold** — a teen-growth platform for ages 12–17. Teen-facing Playbooks turn durable ideas from strategy, philosophy, and human psychology into practical tools; the separate Parent Hub helps adults support teen judgment, capability, ownership, and independence without taking over.
 
 Live: https://oldwisdomretold.com
 
 ## Structure
 ```
-index.html      series hub — hero, definition strip, book series, FAQ, email capture
-quiz.html       15-question social skills diagnostic → routes to the Playbooks
+index.html      platform homepage — mission, Playbooks, Parent Hub, FAQ, email capture
+quiz.html       15-question social skills reflection → suggests useful places to begin
 articles/       static parent guides using the existing site design and metadata conventions
 parents/        generated Parent Hub, organised by the Parent Growth Journey
 assets/         covers, mockups, article and social images
@@ -18,7 +18,7 @@ templates/      shared static Parent Hub page shells
 config/         site configuration for static publishing
 robots.txt      crawler rules (all allowed + sitemap ref)
 sitemap.xml     production URL index
-llms.txt        AI-engine site map (series, books, articles)
+llms.txt        AI-engine site map (platform, Playbooks, Parent Hub, articles)
 ```
 
 The deployed site is plain static HTML. The Parent Hub uses a Python standard-library build step before commit; production still has no runtime application server or package manager. CDN fonts and GSAP are used only for homepage presentation.
@@ -38,8 +38,8 @@ The deployed site is plain static HTML. The Parent Hub uses a Python standard-li
 
 ## Quiz logic (quiz.html)
 - 15 scenarios, 3 per category: connection / room reading / influence / conflict / confidence
-- Score 0–3 per answer → 4 profile tiers, top-3 weakest categories = "gaps"
-- Routing: results explain the weakest gaps and offer both Playbooks as relevant tools
+- Score 0–3 per answer → 4 profile tiers, with three lower-scoring areas to explore
+- Routing: results explain those skill areas and offer Playbooks only where relevant
 - Email gate posts to Brevo (`sib-form-quiz`) via `fetch`, no page navigation
 - Share: parent path → native share sheet + WhatsApp; teen path → copy-caption first
 

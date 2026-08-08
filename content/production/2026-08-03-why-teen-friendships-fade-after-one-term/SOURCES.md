@@ -47,5 +47,5 @@ Accessed: Monday, August 3, 2026
 ## Review notes for human editor
 
 - If the title is localized for U.S. audiences, "term" may be swapped for "semester" or "school term" in packaging while preserving the queue topic in source files.
-- Keep the diagnostic CTA accurate: it is an informational tool, not a clinical assessment or a required route to a purchase.
+- Keep the skills-reflection CTA accurate: it is informational, not a diagnostic or clinical assessment, and not a required route to a purchase.
 - Re-check source accessibility and any copy edits that make stronger claims than the audit above.

@@ -3,7 +3,7 @@
 ## Pin 1
 
 - Title: Why Teen Friendships Fade After One Term
-- Description: Many teen friendships do not end because of drama. They fade when classes, routines, and shared spaces change. This pin breaks down the missing follow-up habit and points parents to one calmer way to help. Start with the free diagnostic: https://oldwisdomretold.com/quiz.html?concern=friends&utm_source=pinterest&utm_medium=organic&utm_campaign=connection&utm_content=why-teen-friendships-fade-after-one-term
+- Description: Many teen friendships do not end because of drama. They fade when classes, routines, and shared spaces change. This pin breaks down the missing follow-up habit and points parents to one calmer way to help. Start with the free skills reflection: https://oldwisdomretold.com/quiz.html?concern=friends&utm_source=pinterest&utm_medium=organic&utm_campaign=connection&utm_content=why-teen-friendships-fade-after-one-term
 
 ## Pin 2
 
@@ -13,7 +13,7 @@
 ## Pin 3
 
 - Title: Stop Asking "Did You Make Friends?"
-- Description: Parents often ask outcome questions when teens need process questions. Use this better debrief to help a teen keep contact going after a good social moment. Free diagnostic linked here: https://oldwisdomretold.com/quiz.html?concern=friends&utm_source=pinterest&utm_medium=organic&utm_campaign=connection&utm_content=why-teen-friendships-fade-after-one-term
+- Description: Parents often ask outcome questions when teens need process questions. Use this better debrief to help a teen keep contact going after a good social moment. Free skills reflection linked here: https://oldwisdomretold.com/quiz.html?concern=friends&utm_source=pinterest&utm_medium=organic&utm_campaign=connection&utm_content=why-teen-friendships-fade-after-one-term
 
 ## Pin 4
 
