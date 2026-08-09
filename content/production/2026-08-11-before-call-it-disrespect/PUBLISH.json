@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-09",
+  "audience": "parent",
+  "slug": "before-call-it-disrespect",
+  "title": "Before You Call It Disrespect, Notice What Happened First",
+  "summary": "Use BEFORE → BEHAVIOUR → REPAIR to separate context from permission, keep a clear boundary, and help your teenager return to what they still owe.",
+  "seo_title": "Teen Disrespect: What Happened First?",
+  "seo_description": "Before labeling teen behaviour disrespectful, inspect what happened first, name the exact action, preserve the boundary, and require meaningful repair.",
+  "journey_stage": "SEE",
+  "supports_stages": [
+    "UNDERSTAND",
+    "REFLECT",
+    "GUIDE",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Review one real conflict through BEFORE, BEHAVIOUR, and REPAIR; retain safety and household authority while returning restatement, repair, and the original responsibility to the teenager.",
+  "qa_score": 20,
+  "territory": "conflict",
+  "test_angle": "SEE",
+  "core_belief_shift": {
+    "from": "If I do not label and punish disrespect immediately, I am allowing harmful behaviour and losing authority.",
+    "to": "I can stop harmful behaviour immediately, then inspect the sequence, name the exact action, and require proportionate repair without turning one conflict into a verdict on my teenager's character."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "reason": "The Social Playbook is a soft optional bridge because respectful disagreement, restatement, and repair are social capabilities the teenager can practise; the article remains complete without it."
+  },
+  "hero": {
+    "source": "media/before-call-it-disrespect.webp",
+    "alt": "A Black mother stands calmly across the kitchen from her teenage son after a tense homework conversation.",
+    "width": 1200,
+    "height": 800,
+    "variants": [
+      {
+        "source": "media/before-call-it-disrespect-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/before-call-it-disrespect-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/before-call-it-disrespect.webp",
+    "alt": "A Black mother stands calmly across the kitchen from her teenage son after a tense homework conversation."
+  },
+  "next_step": {
+    "kind": "playbook",
+    "id": "social",
+    "label": "Explore The Social Playbook",
+    "reason": "Use the teen-facing exercises only if your teenager wants structured practice with disagreement, restatement, and repair."
+  },
+  "pinterest_campaign": {
+    "campaign": "conflict",
+    "content": "before-call-it-disrespect"
+  }
+}
