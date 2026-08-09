@@ -23,6 +23,20 @@ llms.txt        AI-engine site map (platform, Playbooks, Parent Hub, articles)
 
 The deployed site is plain static HTML. The Parent Hub uses a Python standard-library build step before commit; production still has no runtime application server or package manager. CDN fonts and GSAP are used only for homepage presentation.
 
+## Runtime translation
+
+English remains the source and canonical version of every page. A shared,
+on-demand GTranslate control lets visitors machine-translate the page in their
+browser without creating duplicate language URLs or changing the Hermes
+publishing workflow. The third-party translator is loaded only after a visitor
+opens the **Language** control.
+
+`assets/site-tools.js` owns the translator and article back-to-top behaviour;
+`assets/site-tools.css` owns their shared presentation. Every standalone HTML
+page must load both files. Parent Hub templates already include them, so newly
+generated guides inherit the controls automatically. Machine-translated text
+is a convenience layer, not reviewed editorial copy and not multilingual SEO.
+
 ## Books
 | # | Title | Source wisdom | Amazon |
 |---|---|---|---|

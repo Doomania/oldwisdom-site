@@ -47,6 +47,14 @@ committed, or pushed. Before publication, a person must confirm:
 After publishing, add the live URL and date to the production log in
 `automation/content-queue.md`.
 
+## Translation layer
+
+Hermes continues to write and review one English source bundle. The live site
+offers an on-demand machine-translation control through shared site assets, so
+Hermes does not create translated `ARTICLE.md` files or edit templates. English
+remains the canonical, indexed editorial version; translated text is a visitor
+convenience and may contain errors.
+
 ## Generated files and production smoke test
 
 `parents/index.html`, generated Parent Guide pages, responsive copies in
