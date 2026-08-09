@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-09",
+  "audience": "parent",
+  "slug": "more-friends-better-friendship-judgment",
+  "title": "Does Your Teen Need More Friends—or Better Friendship Judgment?",
+  "summary": "Help your teenager look beyond friend count, notice reciprocity, pressure, boundaries, and repair, and choose one safe next move while you keep the safety line.",
+  "seo_title": "Teen Friendship: Quantity or Judgment?",
+  "seo_description": "Learn when one close friend may be enough, how to spot patterns of reciprocity, pressure, and repair, and when a parent should step in for safety risks.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Review one real interaction, support one proportionate next move, and return age-appropriate friendship appraisal to the teenager while retaining household and concrete safety boundaries.",
+  "qa_score": 19,
+  "territory": "connection",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "My teenager needs more friends or a parent-chosen crowd before the social problem can improve.",
+    "to": "Opportunity can help, but durable progress also means the teenager can notice relationship patterns, make a choice, and review what it revealed."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "reason": "The Social Playbook is a relevant optional bridge because the article builds the teen-facing capability to assess reciprocity, boundaries, disagreement, and repair."
+  },
+  "hero": {
+    "source": "media/more-friends-better-friendship-judgment.webp",
+    "alt": "An Asian father listens as his teenage daughter speaks while walking home, with two teen friends ahead in soft focus.",
+    "width": 1200,
+    "height": 800,
+    "variants": [
+      {
+        "source": "media/more-friends-better-friendship-judgment-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/more-friends-better-friendship-judgment-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/more-friends-better-friendship-judgment.webp",
+    "alt": "An Asian father listens as his teenage daughter speaks while walking home, with two teen friends ahead in soft focus."
+  },
+  "next_step": {
+    "kind": "playbook",
+    "id": "social",
+    "label": "Explore The Social Playbook",
+    "reason": "The Social Playbook is a relevant optional bridge because the article builds the teen-facing capability to assess reciprocity, boundaries, disagreement, and repair."
+  },
+  "pinterest_campaign": {
+    "campaign": "connection",
+    "content": "more-friends-better-friendship-judgment"
+  }
+}
