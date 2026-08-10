@@ -33,23 +33,23 @@
     "reason": "The article completes a parent reflection and ownership-transfer job; a Playbook bridge would add product pressure without serving the reader's immediate need."
   },
   "hero": {
-    "source": "media/helpful-advice-sounds-like-criticism.webp",
+    "source": "media/helpful-advice-sounds-like-criticism-porch.webp",
     "alt": "A Polynesian father pauses at a front-porch railing while his teenage daughter sits below holding a folded school paper.",
     "width": 1536,
     "height": 1024,
     "variants": [
       {
-        "source": "media/helpful-advice-sounds-like-criticism-480.webp",
+        "source": "media/helpful-advice-sounds-like-criticism-porch-480.webp",
         "width": 480
       },
       {
-        "source": "media/helpful-advice-sounds-like-criticism-800.webp",
+        "source": "media/helpful-advice-sounds-like-criticism-porch-800.webp",
         "width": 800
       }
     ]
   },
   "social_image": {
-    "source": "media/helpful-advice-sounds-like-criticism-social.webp",
+    "source": "media/helpful-advice-sounds-like-criticism-porch-social.webp",
     "alt": "A Polynesian father pauses at a front-porch railing while his teenage daughter sits below holding a folded school paper."
   },
   "next_step": {
