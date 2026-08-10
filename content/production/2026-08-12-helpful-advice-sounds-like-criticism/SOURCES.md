@@ -45,15 +45,13 @@ Line references are to `ARTICLE.md` as drafted and read back on 2026-08-10.
 
 | Article line(s) | Published claim | Source/support | Boundary preserved |
 |---|---|---|---|
-| 25 | A teenager may receive advice as a competence verdict, but embarrassment, disagreement, avoidance, or resistance to fair feedback are also possibilities. | OWR editorial hypotheses grounded in the evidence map | Uses “may,” “might,” and alternatives; does not diagnose motive or decide the exchange from one reaction. |
-| 27 | Reports of autonomy support and controlling parenting agreed only at low-to-moderate levels in a two-wave study of 408 Japanese mother–adolescent pairs. | Tanaka et al. | Names questionnaires, design, sample, mothers-only limit, and inability to decide who interpreted one conversation correctly. No advice-effect or causal claim. |
-| 33 | In 194 emerging adults aged 18–25, primarily college students recalling one parent interaction, unsolicited advice was rated comparably helpful to solicited advice when perceived autonomy support was higher and less helpful when it was lower. | Newman & Davis | Explicitly identifies the emerging-adult college sample, recalled single interaction, and perceived autonomy support. |
-| 35 | The Newman/Davis study cannot show that unsolicited advice causes harm or that a sentence makes advice welcome; it does not validate the OWR framework. | Newman & Davis design limits; OWR framework provenance | Explicitly says retrospective, participant-report, correlational, not an experiment with younger teens. NEW → NECESSARY → THEIRS is labelled an editorial tool, not a tested intervention. |
-| 37 | Positive engagement, supervision, guidance, open communication, and increasing autonomous decision-making can coexist in adolescent parenting. | Kobak et al. review | Presented as a developmental-review synthesis; explicitly says the review does not isolate advice wording or prove an outcome. |
-| 59, 97 | Repetition and scaffolding may remain necessary for age, disability, executive-function needs, learning needs, or risk; ownership can be smaller and supported rather than removed. | OWR doctrine and inclusion safeguard from the approved Day 5 evidence map/content card | Normative design requirement, not a claim that one support works for every teenager. Preserves individual needs and capability-aware ownership. |
-| 63–79 | Advice should be distinguished as optional perspective, shared consequence, real boundary, or immediate safety; authority should match the stake. Immediate danger of harm, active violence, imminent self-harm, or a medical emergency warrants direct action and local emergency services; immediate self-harm danger can also warrant a crisis line. | OWR editorial framework; AAP emergency guidance; WHO suicide Q&A | Presented as a practical classification, not a validated clinical instrument. Distinguishes ordinary disagreement, defensiveness, “I know,” and one-off rudeness from immediate danger; avoids jurisdiction-specific numbers; directs non-immediate safeguarding concerns to local professional/reporting routes. |
-| 81 | AAP guidance says parental opinions remain relevant; judgmental or condescending lectures are less likely to be heard, and concrete guidance can be preferable during distress. | HealthyChildren / AAP | Labelled expert guidance, not experimental proof; article explicitly preserves rules, correction, supervision, intervention, and consequences. |
-| 39–113 | NEW → NECESSARY → THEIRS is an advice-pruning and ownership framework. | OWR editorial synthesis | Never described as validated, therapeutic, diagnostic, or guaranteed to prevent defensiveness, improve disclosure, or secure compliance. |
+| 41 | “I know” may reflect embarrassment, avoidance, disagreement, or a missing plan. | OWR editorial hypotheses grounded in the evidence map | Lists possibilities without diagnosing the teenager or deciding who is right. |
+| 99–105 | Some teenagers may need reminders, visual steps, or task breakdowns; support can repeat without adding a character verdict. | OWR doctrine and inclusion safeguard from the approved Day 5 evidence map/content card | Does not promise one support will work for every teenager; preserves age-, disability-, and capability-aware help. |
+| 109–149 | Parents can sort the issue as advice, a shared problem, a firm boundary, or immediate safety, then match their response to the stake. | OWR editorial framework | Presented as an everyday decision aid, not a validated clinical instrument. Rules and consequences remain available. |
+| 147–149 | Immediate danger, violence, imminent self-harm, or serious medical emergency requires direct action and local emergency/crisis help; ordinary defensiveness and one rude reply are not emergencies. | AAP emergency guidance; WHO suicide Q&A | Gives a globally actionable emergency step and preserves the ordinary-behaviour boundary. |
+| 153–225 | After giving the needed point or boundary, parents can return an age-appropriate action or choice while support remains available. | OWR editorial synthesis; Kobak et al. developmental review | Does not guarantee agreement, compliance, or a better outcome. |
+| 229 | Advice may be easier to receive inside a relationship that also allows growing independence; the studies do not supply a perfect sentence and the framework is not a proven treatment. | Newman & Davis; Kobak et al.; HealthyChildren / AAP | Research stays in the background; the published wording explicitly rejects certainty and intervention claims. |
+| 21–233 | NEW → NECESSARY → THEIRS is a practical advice-editing framework. | OWR editorial synthesis | Never described as validated, therapeutic, diagnostic, or guaranteed to prevent defensiveness. |
 
 ## Claims intentionally avoided
 
@@ -83,19 +81,17 @@ The Day 5 research map records anonymous, directional wording from indexed Reddi
 
 ## Human-review notes
 
-- Preserve `status: review`, planned date `2026-08-12`, and verified `qa_score: 19` until human approval.
-- Publication, build, commit, deployment, Pinterest scheduling, and posting are not authorised by this bundle.
-- Confirm the four inline source links and bibliographic metadata during independent QA.
-- Recheck claim-line references if `ARTICLE.md` changes.
-- Review the safety examples for jurisdiction-appropriate wording before publication; the article preserves direct intervention but does not provide jurisdiction-specific legal or medical instructions.
-- Confirm the article stays within the 1,300–1,800 substantive-word requirement after any revision.
+- Eric approved publication on 2026-08-10, then requested a plain-language rewrite for busy parents.
+- The rewrite keeps the same evidence boundaries and NEW → NECESSARY → THEIRS framework while moving study detail out of the reading flow.
+- The revised article is 1,639 substantive words, adds household comparisons and 20 dialogue/example blocks, and reduces explicit academic-method language.
+- Safety wording still directs immediate danger to local emergency or crisis help and distinguishes ordinary defensiveness from an emergency.
 - Keep `book_relevance.status: none` and `next_step.kind: none`; no Playbook CTA is warranted.
-- Pinterest entries are copy and visual briefs only. No media files exist; any future batch requires full-image generation, four or more distinct forms, a human-viewable contact sheet, and a PASS from the project’s pin audit gate before approval.
-- The repository’s `scripts/site.py` validator requires `qa_score` 16–20. The manifest now carries the independently verified article score of 19; this score must not be changed merely to force a different outcome.
+- Pinterest media remains a separate approval and posting workflow.
 
 ## Independent-QA resolution record
 
 - Initial article QA scored 19/20 but returned `REVISION_REQUIRED` because the immediate-safety paragraph lacked claim-level authority, a globally actionable emergency instruction, and a clear distinction from ordinary disagreement.
 - The safety paragraph now directs immediate danger to local emergency services, maps severe illness/injury to AAP emergency guidance, maps imminent self-harm to WHO emergency/crisis guidance, routes non-immediate safeguarding concerns through applicable local professional/reporting processes, and explicitly excludes ordinary disagreement, defensiveness, “I know,” and one-off rudeness from the emergency category.
 - Initial Pinterest QA found all five complete description lines exceeded the project’s 300–450-character standard. All five were shortened while preserving distinct hooks, final hashtags, destination, campaign value, and unique `utm_content` suffixes.
-- Focused independent recheck returned `ARTICLE_READY_FOR_APPROVAL` with no remaining blockers. The verified QA score is 19/20; publication is still unauthorised pending human approval.
+- Focused independent recheck returned `ARTICLE_READY_FOR_APPROVAL` with no remaining blockers. Eric approved publication on 2026-08-10.
+- After Eric's readability correction, the article was rewritten in plain parent language, moved research detail to the final support paragraph and source list, added household comparisons and concrete scripts, and retained the verified safety boundaries.

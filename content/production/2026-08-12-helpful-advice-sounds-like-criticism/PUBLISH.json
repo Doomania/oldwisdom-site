@@ -5,9 +5,9 @@
   "audience": "parent",
   "slug": "helpful-advice-sounds-like-criticism",
   "title": "When Helpful Advice Starts Sounding Like Criticism",
-  "summary": "Use NEW → NECESSARY → THEIRS to keep useful parental guidance, match authority to the real stake, and return age-appropriate ownership to your teenager.",
+  "summary": "A simple three-step check to help parents give useful advice without turning it into another lecture.",
   "seo_title": "When Teen Advice Sounds Like Criticism",
-  "seo_description": "Why does your teenager reject helpful advice? Audit what is new, what is necessary, and what decision or action can remain theirs.",
+  "seo_description": "When your teen hears criticism instead of help, use this simple three-step check to say less, keep clear boundaries, and hand back the next step.",
   "journey_stage": "REFLECT",
   "supports_stages": [
     "UNDERSTAND",
@@ -20,13 +20,13 @@
     "ownership",
     "independence"
   ],
-  "release_move": "Use NEW → NECESSARY → THEIRS to add only needed information, preserve safety and real boundaries, and return the remaining age-appropriate decision, action, or learning consequence to the teenager.",
+  "release_move": "Give the part they need. Keep the boundary that matters. Then let your teenager carry the next piece.",
   "qa_score": 19,
   "territory": "conflict",
   "test_angle": "REFLECT",
   "core_belief_shift": {
-    "from": "If my teenager rejects correct advice, I need to explain the lesson more clearly or firmly until they accept it.",
-    "to": "Correct guidance is more useful when I add what is genuinely new, match my authority to the actual stake, and leave my teenager an age-appropriate part to own."
+    "from": "If my teenager rejects good advice, I need to explain it again until they understand.",
+    "to": "My teenager may need one clear point, one firm boundary, and room to handle the next step."
   },
   "book_relevance": {
     "status": "none",
