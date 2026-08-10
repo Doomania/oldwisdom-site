@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-10",
+  "audience": "parent",
+  "slug": "helpful-advice-sounds-like-criticism",
+  "title": "When Helpful Advice Starts Sounding Like Criticism",
+  "summary": "Use NEW → NECESSARY → THEIRS to keep useful parental guidance, match authority to the real stake, and return age-appropriate ownership to your teenager.",
+  "seo_title": "When Teen Advice Sounds Like Criticism",
+  "seo_description": "Why does your teenager reject helpful advice? Audit what is new, what is necessary, and what decision or action can remain theirs.",
+  "journey_stage": "REFLECT",
+  "supports_stages": [
+    "UNDERSTAND",
+    "GUIDE",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Use NEW → NECESSARY → THEIRS to add only needed information, preserve safety and real boundaries, and return the remaining age-appropriate decision, action, or learning consequence to the teenager.",
+  "qa_score": 19,
+  "territory": "conflict",
+  "test_angle": "REFLECT",
+  "core_belief_shift": {
+    "from": "If my teenager rejects correct advice, I need to explain the lesson more clearly or firmly until they accept it.",
+    "to": "Correct guidance is more useful when I add what is genuinely new, match my authority to the actual stake, and leave my teenager an age-appropriate part to own."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "The article completes a parent reflection and ownership-transfer job; a Playbook bridge would add product pressure without serving the reader's immediate need."
+  },
+  "hero": {
+    "source": "media/helpful-advice-sounds-like-criticism.webp",
+    "alt": "An Asian mother pauses beside her teenage son at a kitchen table with an open school planner.",
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "source": "media/helpful-advice-sounds-like-criticism-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/helpful-advice-sounds-like-criticism-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/helpful-advice-sounds-like-criticism-social.webp",
+    "alt": "A Black mother and teenage son pause together at a kitchen table with a closed planner between them."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "conflict",
+    "content": "helpful-advice-sounds-like-criticism"
+  }
+}
