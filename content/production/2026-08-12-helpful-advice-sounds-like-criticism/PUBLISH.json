@@ -34,9 +34,9 @@
   },
   "hero": {
     "source": "media/helpful-advice-sounds-like-criticism.webp",
-    "alt": "An Asian mother pauses beside her teenage son at a kitchen table with an open school planner.",
-    "width": 1672,
-    "height": 941,
+    "alt": "A Polynesian father pauses at a front-porch railing while his teenage daughter sits below holding a folded school paper.",
+    "width": 1536,
+    "height": 1024,
     "variants": [
       {
         "source": "media/helpful-advice-sounds-like-criticism-480.webp",
@@ -50,7 +50,7 @@
   },
   "social_image": {
     "source": "media/helpful-advice-sounds-like-criticism-social.webp",
-    "alt": "A Black mother and teenage son pause together at a kitchen table with a closed planner between them."
+    "alt": "A Polynesian father pauses at a front-porch railing while his teenage daughter sits below holding a folded school paper."
   },
   "next_step": {
     "kind": "none"
