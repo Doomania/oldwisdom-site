@@ -3,7 +3,7 @@
 # Sources and Claim Audit
 
 Accessed for the Day 5 evidence map: 2026-08-10
-Article planned date: 2026-08-12
+Published: 2026-08-10
 Audience: PARENT
 Status: published; independent article QA passed 19/20; human approval granted 2026-08-10
 
@@ -41,7 +41,7 @@ Status: published; independent article QA passed 19/20; human approval granted 2
 
 ## Claim-line audit
 
-Line references are to `ARTICLE.md` as drafted and read back on 2026-08-10.
+Line references are to the plain-language `ARTICLE.md` rewrite deployed on 2026-08-10.
 
 | Article line(s) | Published claim | Source/support | Boundary preserved |
 |---|---|---|---|
@@ -91,7 +91,7 @@ The Day 5 research map records anonymous, directional wording from indexed Reddi
 ## Independent-QA resolution record
 
 - Initial article QA scored 19/20 but returned `REVISION_REQUIRED` because the immediate-safety paragraph lacked claim-level authority, a globally actionable emergency instruction, and a clear distinction from ordinary disagreement.
-- The safety paragraph now directs immediate danger to local emergency services, maps severe illness/injury to AAP emergency guidance, maps imminent self-harm to WHO emergency/crisis guidance, routes non-immediate safeguarding concerns through applicable local professional/reporting processes, and explicitly excludes ordinary disagreement, defensiveness, “I know,” and one-off rudeness from the emergency category.
+- The current safety paragraph directs immediate danger to local emergency services or an appropriate crisis service, links AAP and WHO guidance, and explicitly separates ordinary defensiveness and one rude reply from emergencies.
 - Initial Pinterest QA found all five complete description lines exceeded the project’s 300–450-character standard. All five were shortened while preserving distinct hooks, final hashtags, destination, campaign value, and unique `utm_content` suffixes.
 - Focused independent recheck returned `ARTICLE_READY_FOR_APPROVAL` with no remaining blockers. Eric approved publication on 2026-08-10.
 - After Eric's readability correction, the article was rewritten in plain parent language, moved research detail to the final support paragraph and source list, added household comparisons and concrete scripts, and retained the verified safety boundaries.
