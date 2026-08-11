@@ -35,7 +35,7 @@
   },
   "hero": {
     "source": "media/why-is-my-teen-avoiding-me-school-exit.webp",
-    "alt": "A mother waits several steps away while her teenage son talks with friends outside a school event.",
+    "alt": "A mother and father wait nearby while their teenage daughter talks with two friends outside a school event.",
     "width": 1536,
     "height": 1024,
     "variants": [
@@ -51,7 +51,7 @@
   },
   "social_image": {
     "source": "media/why-is-my-teen-avoiding-me-school-exit-social.webp",
-    "alt": "A mother waits several steps away while her teenage son talks with friends outside a school event."
+    "alt": "A mother and father wait nearby while their teenage daughter talks with two friends outside a school event."
   },
   "next_step": {
     "kind": "none"
