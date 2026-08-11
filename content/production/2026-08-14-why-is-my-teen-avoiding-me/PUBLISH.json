@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-11",
+  "audience": "parent",
+  "slug": "why-is-my-teen-avoiding-me",
+  "title": "Why Is My Teen Suddenly Avoiding Me?",
+  "summary": "A practical parent guide to reading sudden teen distance without diagnosing it, respecting touch and public-contact boundaries, repairing relational hurts, and keeping a low-pressure route back to connection.",
+  "seo_title": "Why Is My Teen Avoiding Me? A Parent Guide",
+  "seo_description": "When your teen avoids hugs, conversation or being seen with you, use the PORCH LIGHT approach to check safety, lower pressure and rebuild connection.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Give the teenager choice over ordinary touch, public greetings, timing, and communication channel while the parent keeps proportionate safety and household boundaries.",
+  "qa_score": 20,
+  "territory": "connection",
+  "test_angle": "REFLECT",
+  "core_belief_shift": {
+    "from": "My teen's distance proves they are ashamed of me, so I must push through the rejection or pull away first.",
+    "to": "Their distance is a signal, not a verdict; I can respect boundaries, check safety, repair my part, and keep connection available."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "reason": "The Social Playbook is thematically related to peer visibility and adolescent social confidence, but this parent guide stands alone and does not require a product CTA."
+  },
+  "hero": {
+    "source": "media/why-is-my-teen-avoiding-me-school-exit.webp",
+    "alt": "A mother waits several steps away while her teenage son talks with friends outside a school event.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/why-is-my-teen-avoiding-me-school-exit-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/why-is-my-teen-avoiding-me-school-exit-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/why-is-my-teen-avoiding-me-school-exit-social.webp",
+    "alt": "A mother waits several steps away while her teenage son talks with friends outside a school event."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "connection",
+    "content": "why-is-my-teen-avoiding-me"
+  }
+}
