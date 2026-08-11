@@ -295,7 +295,7 @@ def render_template(root: Path, name: str, values: dict[str, str]) -> str:
     unresolved = re.findall(r"{{[a-z_]+}}", template)
     if unresolved:
         raise PublicationError(f"{name}: unresolved placeholders {', '.join(unresolved)}")
-    return template
+    return re.sub(r"[ \t]+$", "", template, flags=re.MULTILINE)
 
 
 def display_date(value: str) -> str:

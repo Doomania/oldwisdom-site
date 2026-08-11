@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-11",
+  "audience": "parent",
+  "slug": "argument-stop-or-communication-improve",
+  "title": "Do You Want the Argument to Stop—or Communication to Improve?",
+  "summary": "A bounded three-step practice for helping teenagers state a view, hear a real limit, and carry the next responsibility after escalation ends.",
+  "seo_title": "Stop Teen Arguments—or Improve Communication?",
+  "seo_description": "After a teen argument ends, use VOICE → HEAR → CARRY to practise clear disagreement, accurate listening, real limits, and ownership of the next step.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "After escalation ends, let the teenager state one clean point, show what they heard, and carry the age-appropriate next action inside the parent’s real limit.",
+  "qa_score": 20,
+  "territory": "conflict",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "If the argument ends and my teenager is quiet, I have completed the communication job.",
+    "to": "I can end escalation, keep legitimate authority, and later practise clear disagreement, accurate listening, and ownership of the next action."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "reason": "The Social Playbook is a soft thematic fit for teen-facing disagreement and listening capabilities, but this parent guide is complete without a product bridge."
+  },
+  "hero": {
+    "source": "media/argument-stop-or-communication-improve-garage.webp",
+    "alt": "A father listens while his teenage son points to a blank note beside a phone and car keys at a garage workbench.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/argument-stop-or-communication-improve-garage-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/argument-stop-or-communication-improve-garage-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/argument-stop-or-communication-improve-garage-social.webp",
+    "alt": "A father listens while his teenage son points to a blank note beside a phone and car keys at a garage workbench."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "conflict",
+    "content": "argument-stop-or-communication-improve"
+  }
+}
