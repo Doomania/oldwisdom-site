@@ -12,7 +12,7 @@
 
 ## Pin 2
 
-- Title: Teen Communication: Use VOICE → HEAR → CARRY
+- Title: Teen Communication: Try the VOICE → HEAR → CARRY Method
 - Description: Teen communication needs more than a final ruling. Try VOICE for one point, HEAR for one fair summary, then CARRY for a clear next action. The parent keeps the limit; the teen carries their part. https://oldwisdomretold.com/articles/argument-stop-or-communication-improve?utm_source=pinterest&utm_medium=organic&utm_campaign=conflict&utm_content=argument-stop-or-communication-improve-pin-2 #TeenCommunication #ParentingFramework #ParentTeenConflict
 - Visual brief: Generate the entire finished vertical pin in one pass with integrated typography. Warm editorial overhead scene of a kitchen island after a phone-cutoff disagreement: phone in a small charging basket, two mugs, and three distinct paper strips forming a clean downward path labelled “VOICE / HEAR / CARRY.” Include one parent hand and one teen hand moving the final “next step” strip together. Dusty denim, cream, charcoal and restrained clay. One dominant reading path, large type, no faces required, no dashboard look, no sales cue, no later overlay, no watermark, and all object text naturally oriented.
 
