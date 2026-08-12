@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-13",
+  "audience": "parent",
+  "slug": "teen-friend-always-in-crisis",
+  "title": "When Your Teen’s Friend Is Always in Crisis",
+  "summary": "Help a caring teenager distinguish ordinary support from dangerous secrets, bring capable adults into serious risk, and set humane limits without taking over the friendship.",
+  "seo_title": "When a Teen’s Friend Is Always in Crisis",
+  "seo_description": "Help your teen care for a friend in crisis without becoming the only responder. Learn when to involve adults, set boundaries, and use practical scripts.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "After safety responsibility is shared with capable help, let the teenager choose and deliver an age-appropriate boundary, ordinary reply timing, and how to continue the friendship.",
+  "qa_score": 20,
+  "territory": "influence",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "Protecting my teen means judging the friend or taking control of the friendship before the situation swallows them.",
+    "to": "I can protect safety and functioning while helping my teen care humanely, widen support, hold a boundary, and retain ordinary friendship ownership."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "reason": "The Social Playbook is a soft teen-facing fit for empathy, boundaries, relationship roles, and dignified language; it is optional practice, not crisis guidance or a substitute for capable help."
+  },
+  "hero": {
+    "source": "media/teen-friend-always-in-crisis-night-hallway.webp",
+    "alt": "A concerned mother sits in the hallway while her tired teenage daughter looks at a phone from the edge of her bed late at night.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/teen-friend-always-in-crisis-night-hallway-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/teen-friend-always-in-crisis-night-hallway-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-friend-always-in-crisis-night-hallway-social.webp",
+    "alt": "A concerned mother sits in the hallway while her tired teenage daughter looks at a phone from the edge of her bed late at night."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "influence",
+    "content": "teen-friend-always-in-crisis"
+  }
+}
