@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-12",
+  "audience": "parent",
+  "slug": "screenshot-test-angry-message",
+  "title": "The Screenshot Test: What Teens Should Check Before Sending an Angry Message",
+  "summary": "A quick parent-and-teen check for turning one angry draft into a clearer choice before it leaves the phone.",
+  "seo_title": "Angry Teen Message: The Screenshot Test",
+  "seo_description": "Before your teen sends an angry message, use the ten-step SCREENSHOT check to review the facts, audience, tone, safety risks and the best next move together.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Keep adult ownership of danger and account safety while returning ordinary send, edit, pause, channel and repair choices to the teenager.",
+  "qa_score": 20,
+  "territory": "conflict",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "I need to take the phone or ban angry texting to stop my teenager making the conflict worse.",
+    "to": "I can hold the safety line, coach one quick pre-send check, and let my teenager increasingly own ordinary communication choices and repair."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "reason": "The War Playbook is a restrained optional bridge for teens who want practice reading pressure, checking facts and weighing the cost of reacting; this guide stands alone."
+  },
+  "hero": {
+    "source": "media/screenshot-test-angry-message.webp",
+    "alt": "A concerned mother waits in a bedroom doorway while her teenage daughter types an angry message on her phone.",
+    "width": 1200,
+    "height": 800,
+    "variants": [
+      {
+        "source": "media/screenshot-test-angry-message-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/screenshot-test-angry-message-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/screenshot-test-angry-message-social.webp",
+    "alt": "A concerned mother gives her teenage daughter space while the teen types an angry phone message."
+  },
+  "next_step": {
+    "kind": "playbook",
+    "id": "war",
+    "label": "Explore The War Playbook",
+    "reason": "Optional teen practice for reading pressure, checking facts and choosing which conflicts are worth entering."
+  },
+  "pinterest_campaign": {
+    "campaign": "conflict",
+    "content": "screenshot-test-angry-message"
+  }
+}

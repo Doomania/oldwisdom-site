@@ -370,6 +370,9 @@ def asset_target(bundle: Bundle, source: str) -> str:
 
 def generated_article(root: Path, config: dict[str, Any], bundle: Bundle) -> tuple[Path, bytes, dict[Path, bytes]]:
     source = (bundle.path / "ARTICLE.md").read_text(encoding="utf-8")
+    # Audience markers are source-level governance metadata. The template already
+    # carries the marker as an HTML comment, so do not render it as reader copy.
+    source = re.sub(r"^\s*<!--\s*AUDIENCE:\s*PARENT\s*-->\s*", "", source, count=1, flags=re.IGNORECASE)
     body = markdown_to_html(source)
     words = re.findall(r"[A-Za-z]+(?:['’][A-Za-z]+)?", source)
     hero = bundle.meta["hero"]

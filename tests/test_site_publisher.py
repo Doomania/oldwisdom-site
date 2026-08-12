@@ -41,7 +41,7 @@ class ParentGuidePublisherTests(unittest.TestCase):
         )
         self.bundle = self.root / "content" / "production" / "2026-08-10-example"
         (self.bundle / "ARTICLE.md").write_text(
-            "# Example Guide\n\n## What to notice\n\nA useful paragraph for parents.", encoding="utf-8"
+            "<!-- AUDIENCE: PARENT -->\n\n# Example Guide\n\n## What to notice\n\nA useful paragraph for parents.", encoding="utf-8"
         )
         (self.bundle / "SOURCES.md").write_text("# Sources\n\n- https://example.com", encoding="utf-8")
         pins = []
@@ -109,7 +109,8 @@ class ParentGuidePublisherTests(unittest.TestCase):
         self.assertIn(article, changed)
         self.assertTrue(article.exists())
         article_content = article.read_text(encoding="utf-8")
-        self.assertIn("<!-- AUDIENCE: PARENT -->", article_content)
+        self.assertEqual(article_content.count("<!-- AUDIENCE: PARENT -->"), 1)
+        self.assertNotIn("&lt;!-- AUDIENCE: PARENT --&gt;", article_content)
         self.assertIn("Example Guide", article_content)
         self.assertTrue((self.root / "parents" / "index.html").exists())
         self.assertIn("example-guide", (self.root / "sitemap.xml").read_text(encoding="utf-8"))
