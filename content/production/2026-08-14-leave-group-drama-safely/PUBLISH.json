@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-14",
+  "audience": "parent",
+  "slug": "leave-group-drama-safely",
+  "title": "How to Help Your Teen Leave Group Drama Without Adding More Fuel",
+  "summary": "Help your teen sort ordinary disagreement from group drama and danger, choose repair or exit, set a neutral boundary, secure accounts, escalate responsibly, and recover.",
+  "seo_title": "Help Your Teen Leave Group Drama With Less Fuel",
+  "seo_description": "A practical parent guide to teen group drama: sort conflict from danger, choose repair or exit, use exact scripts, protect evidence and accounts, and escalate safely.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Keep adult ownership of safety and formal escalation while returning ordinary repair-versus-exit, timing, wording, ally and recovery choices to the teenager.",
+  "qa_score": 20,
+  "hero": {
+    "source": "media/leave-group-drama-safely.webp",
+    "alt": "A mother gives her teenage daughter space after she steps away from a peer group in a community-centre corridor.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/leave-group-drama-safely-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/leave-group-drama-safely-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/leave-group-drama-safely-social.webp",
+    "alt": "A mother gives her teenage daughter space after she steps away from a peer group in a community-centre corridor."
+  },
+  "territory": "conflict",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "To protect my teen, I need to confront the group, expose the full story or control every part of the exit.",
+    "to": "I can own safety and escalation while helping my teen leave ordinary drama with a neutral boundary, less amplification and growing ownership."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "reason": "The War Playbook is a restrained optional fit for reading pressure, choosing which conflicts deserve engagement, setting boundaries and protecting tomorrow from reactive choices; this guide stands alone."
+  },
+  "next_step": {
+    "kind": "playbook",
+    "id": "war",
+    "label": "Explore The War Playbook",
+    "reason": "Optional teen practice for reading group pressure, choosing conflicts and using boundaries without retaliatory escalation."
+  },
+  "pinterest_campaign": {
+    "campaign": "conflict",
+    "content": "leave-group-drama-safely"
+  }
+}
