@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "audience": "parent",
+  "slug": "read-teen-behaviour-without-guessing",
+  "title": "What Is My Teen’s Behaviour Really Telling Me?",
+  "summary": "A plain-language guide to separating visible teen behaviour from assumptions, checking the pattern, asking one useful question, and choosing connection, coaching, a boundary, or qualified help.",
+  "seo_title": "Teen Behaviour: Read the Pattern",
+  "seo_description": "Learn to read teen behaviour without guessing motives. Use the four-step READ guide to spot patterns, ask better questions and respond with calm judgment.",
+  "journey_stage": "SEE",
+  "supports_stages": [
+    "UNDERSTAND",
+    "REFLECT",
+    "GUIDE",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "After checking the pattern and keeping necessary safety limits, return age-appropriate explanation, problem-solving, repair, and next-step ownership to the teenager.",
+  "qa_score": 20,
+  "territory": "reading",
+  "test_angle": "SEE",
+  "core_belief_shift": {
+    "from": "One difficult behaviour tells me what my teenager feels, intends, or is becoming, so I need to react to that meaning now.",
+    "to": "Behaviour is a clue, not a verdict; I can observe the pattern, ask without supplying the answer, and choose a response that fits the evidence and risk."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "This foundational parent decision guide is complete without a teen-facing Playbook and should not divert readers into a product before answering the behaviour question."
+  },
+  "hero": {
+    "source": "media/read-teen-behaviour-without-guessing.webp",
+    "alt": "A mother watches from the kitchen as her teenage son pauses beside his backpack near the front door.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/read-teen-behaviour-without-guessing-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/read-teen-behaviour-without-guessing-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/read-teen-behaviour-without-guessing-social.webp",
+    "alt": "A mother watches from the kitchen as her teenage son pauses beside his backpack near the front door."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "reading",
+    "content": "read-teen-behaviour-without-guessing"
+  },
+  "published": "2026-08-13"
+}
