@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "audience": "parent",
+  "slug": "teen-driving-curfew-trust-ladder",
+  "title": "Curfew After They Start Driving: Build a Trust Ladder, Not One Permanent Rule",
+  "summary": "Separate the driving cut-off from the home time, set a lawful safety floor, and give a newly licensed teen a visible path toward more driving freedom.",
+  "seo_title": "Teen Driving Curfew: Build a Trust Ladder",
+  "seo_description": "Set a teen driving curfew using two clocks, a lawful safety floor, safe-exit scripts, and a reviewable trust ladder for more independence.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Keep law, vehicle access, and immediate safety with the parent while gradually transferring trip proposals, parked updates, safe non-driving decisions, and review evidence to the teen.",
+  "qa_score": 20,
+  "territory": "conflict",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "A strict permanent driving curfew proves I am protecting my teen, while a later one proves I trust them.",
+    "to": "Law and safety set the floor; trust appears in a clear, evidence-based review path that expands one driving condition at a time."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "reason": "The War Playbook is a soft teen-facing fit for reading conditions, staying composed when plans change, choosing a safe retreat, and accepting clean consequences; it is not driver training or legal guidance."
+  },
+  "hero": {
+    "source": "media/teen-driving-curfew-trust-ladder.webp",
+    "alt": "A concerned mother calmly discusses an evening driving plan with her teenage son as he holds car keys beside the family car at dusk.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/teen-driving-curfew-trust-ladder-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/teen-driving-curfew-trust-ladder-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-driving-curfew-trust-ladder-social.webp",
+    "alt": "A concerned mother calmly discusses an evening driving plan with her teenage son as he holds car keys beside the family car at dusk."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "conflict",
+    "content": "teen-driving-curfew-trust-ladder"
+  },
+  "published": "2026-08-13"
+}
