@@ -57,4 +57,15 @@ h1,h2,h3 { font-family:var(--font-display); letter-spacing:.035em; line-height:1
 .parent-signup button:hover { background:var(--gold-soft); }
 .signup-honeypot { position:absolute; left:-9999px; }
 .parent-footer { padding:2.5rem 1.25rem; border-top:1px solid var(--line); text-align:center; color:var(--muted); font-size:.9rem; }
-@media (max-width:680px) { html { scroll-padding-top:calc(96px + 1rem); } :where(main,section,h1,h2,h3)[id] { scroll-margin-top:calc(96px + 1rem); } .journey-map ol { grid-template-columns:1fr; } .parent-nav-inner { min-height:64px; padding:.55rem 1rem; flex-wrap:wrap; gap:.35rem .75rem; } .brand { font-size:1.1rem; } .parent-nav-links { margin-left:auto; gap:.7rem; font-size:.82rem; } }
+@media (max-width:680px) {
+  html { scroll-padding-top:calc(112px + 1rem); }
+  body { overflow-x:clip; }
+  :where(main,section,h1,h2,h3)[id] { scroll-margin-top:calc(112px + 1rem); }
+  .journey-map ol { grid-template-columns:1fr; }
+  .parent-nav-inner { min-height:64px; padding:.55rem 1rem; flex-wrap:wrap; gap:.35rem .75rem; }
+  .brand { flex:1 0 100%; min-width:0; font-size:1.1rem; }
+  .parent-nav-links { width:100%; min-width:0; margin-left:0; gap:.7rem; flex-wrap:wrap; font-size:.82rem; }
+  .hub-hero,.parent-hero { max-width:100%; min-width:0; }
+  .parent-hero h1 { max-width:100%; font-size:clamp(2.4rem,12vw,3.3rem); overflow-wrap:anywhere; }
+  .dek,.byline,.hero-image { max-width:100%; }
+}
