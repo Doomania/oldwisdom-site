@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-14",
+  "audience": "parent",
+  "slug": "teen-left-out-by-friends",
+  "title": "Your Teen Was Left Out: Comfort Them Without Attacking the Other Kids or Taking Over",
+  "summary": "Help your teen name the hurt, separate facts from the story, choose one proportionate next move and widen the week without attacking other teenagers or taking over ordinary friendship decisions.",
+  "seo_title": "Teen Left Out? Help Without Taking Over",
+  "seo_description": "When your teen is left out by friends, comfort the hurt, check facts and safety, offer choices, and avoid taking over ordinary friendship decisions today.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Keep parent ownership of calm, safeguarding, access and system follow-up while the teenager increasingly owns ordinary friendship meaning, timing, wording and next-step choices.",
+  "qa_score": 20,
+  "territory": "connection",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "Protecting my teen means confronting the other family, deciding what the exclusion means or replacing the friendship immediately.",
+    "to": "I can stay emotionally close, act directly on bullying or danger and still leave ordinary friendship decisions with my teenager."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "reason": "The Social Playbook is a restrained optional fit for practising social-signal reading, clear questions and more than one route to connection; the parent guide remains complete without it."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "peer-belonging",
+    "content": "teen-left-out-by-friends"
+  },
+  "hero": {
+    "source": "media/teen-left-out-by-friends.webp",
+    "alt": "A father waits with two warm drinks at a respectful distance while his hurt teenage son sits alone on empty sports-field bleachers.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/teen-left-out-by-friends-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/teen-left-out-by-friends-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-left-out-by-friends-social.webp",
+    "alt": "A father waits with two warm drinks at a respectful distance while his hurt teenage son sits alone on empty sports-field bleachers."
+  }
+}
