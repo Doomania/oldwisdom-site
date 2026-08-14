@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-15",
+  "audience": "parent",
+  "slug": "stand-up-without-fighting",
+  "title": "When Standing Up for Yourself Turns Into a Fight",
+  "summary": "Help your teen use one firm line, move toward safety, report observable facts to a named adult, and follow up without turning dignity into a fight for the crowd.",
+  "seo_title": "Help Your Teen Stand Up Without Fighting",
+  "seo_description": "A practical parent guide to help teens answer peer provocation with one firm line, a purposeful exit, a factual adult report and a follow-up plan for school.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Keep adult ownership of safety, school contact and follow-up while the teenager increasingly owns ordinary boundary wording, purposeful movement, factual reporting and repair for any harm they caused.",
+  "qa_score": 20,
+  "territory": "conflict",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "Standing up for yourself means staying in the exchange long enough to prove that nobody can make you back down.",
+    "to": "Standing up can mean one clear boundary, purposeful movement toward safety and bringing responsible adults into repeated targeting or danger."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "reason": "The War Playbook is a restrained optional fit for choosing which conflicts deserve engagement and protecting tomorrow from a reactive decision; this parent guide is complete and stands alone."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "conflict",
+    "content": "stand-up-without-fighting"
+  },
+  "hero": {
+    "source": "media/stand-up-without-fighting.webp",
+    "alt": "A father talks calmly with his teenage son in a school sports-hall corridor while an adult coach remains visible nearby.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/stand-up-without-fighting-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/stand-up-without-fighting-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/stand-up-without-fighting-social.webp",
+    "alt": "A father talks calmly with his teenage son in a school sports-hall corridor while an adult coach remains visible nearby."
+  }
+}
