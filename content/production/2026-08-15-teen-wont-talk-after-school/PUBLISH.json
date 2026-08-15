@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-15",
+  "audience": "parent",
+  "slug": "teen-wont-talk-after-school",
+  "title": "Why Your Teen Won’t Talk After School",
+  "summary": "A low-pressure arrival routine that helps parents give a quiet teen room to reset, notice meaningful changes, ask one smaller question, and return without turning concern into a chase.",
+  "seo_title": "Teen Won’t Talk After School? Try This",
+  "seo_description": "Use a simple after-school reset to help a quiet teen open up without interrogation—while keeping safety checks, family expectations and follow-up intact.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Keep parent ownership of safety, follow-up and ordinary household expectations while returning timing, response format and the first voluntary account of the school day to the teenager.",
+  "qa_score": 20,
+  "territory": "connection",
+  "test_angle": "SEE",
+  "core_belief_shift": {
+    "from": "If my teenager will not explain their day at the front door, I must keep asking or accept that they are shutting me out.",
+    "to": "I can make room for the transition, read the wider pattern, ask one smaller question and return later without abandoning connection, authority or safety."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "This parent-facing communication routine should stand alone and does not need a product bridge."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "quiet_teen_after_school",
+    "content": "teen-wont-talk-after-school"
+  },
+  "hero": {
+    "source": "media/teen-wont-talk-after-school.webp",
+    "alt": "A tired teenage boy arrives home from school while his father calmly leaves a snack on the kitchen bench several steps away.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/teen-wont-talk-after-school-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/teen-wont-talk-after-school-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-wont-talk-after-school-social.webp",
+    "alt": "A tired teenage boy arrives home from school while his father calmly leaves a snack on the kitchen bench several steps away."
+  }
+}
