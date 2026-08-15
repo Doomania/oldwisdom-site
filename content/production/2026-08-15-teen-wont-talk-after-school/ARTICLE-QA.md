@@ -1,7 +1,7 @@
 # Article QA — Why Your Teen Won’t Talk After School
 
 **Bundle:** `2026-08-15-teen-wont-talk-after-school`
-**Status:** `PUBLICATION_APPROVED_BUILD_COMPLETE_DEPLOY_PENDING`
+**Status:** `LIVE_VERIFIED`
 **Final editorial score:** `20/20`
 **Approval scope:** Eric approved this release package on 2026-08-15: article build/deployment and Pinterest scheduling are authorised. Email draft preparation is authorised; email send remains unauthorised pending a separate explicit send approval and provider preflight.
 
@@ -47,9 +47,9 @@
 
 - `EMAIL.md`: one parent-first email draft and one article CTA.
 - `PINTEREST.md`: exactly five finished parent-first creatives with unique campaign content IDs and five distinct creative forms.
-- All five decoded binaries are unique 1024×1536 one-pass GPT Image 2 generations and have `approval_ready` queue status.
+- All five decoded binaries are unique 1024×1536 one-pass GPT Image 2 generations and passed the approval gate before scheduling.
 - Individual exact-text/emotional-truth review: PASS. Mechanical gate: PASS. Side-by-side contact-sheet review: PASS.
-- Scheduling and publishing flags remain false. Separate distribution/publication approval is required.
+- Scheduling was explicitly approved; all five pins are now verified on Pinterest's Scheduled Pins page. Publishing remains time-gated and requires post-publication verification.
 
 ## Pinterest QA evidence
 
@@ -64,4 +64,11 @@
 - `python -m unittest discover -s tests -v`: 10/10 PASS.
 - `python scripts/seo_article_qa.py ...`: 20/20 PASS.
 
-Public release authorised on 2026-08-15. Build, deployment and live verification must pass before distribution execution.
+## Production verification — 15 August 2026
+
+- Published through merged PR `#18` to `main`.
+- Clean article URL returns HTTP 200 with the approved H1, canonical URL and Article JSON-LD.
+- Live hero, social image, Parent Hub, `sitemap.xml` and `llms.txt` all return HTTP 200.
+- Live SEO QA: 20/20; canonical, keyword and metadata checks pass.
+- Distribution authorisation captured from Eric on 15 August 2026; article deployment and Pinterest scheduling completed.
+- Email sending remains a separate irreversible action and is not authorised by this record.

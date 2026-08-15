@@ -2,7 +2,9 @@
 
 # Email Draft — Why Your Teen Won’t Talk After School
 
-**Status:** approved for provider draft preparation after live article verification; sending remains unauthorised
+**Status:** approval-ready for send; live article verified and sending remains unauthorised
+
+**Provider preflight:** verified OWR sender `Eric Han - Old Wisdom Retold <hello@oldwisdomretold.com>` and opted-in recipient list `Old Wisdom Retold LP` (list 9; one eligible recipient). A separate explicit approval is required before sending.
 
 **Subject:** The worst time to ask, “How was school?”
 

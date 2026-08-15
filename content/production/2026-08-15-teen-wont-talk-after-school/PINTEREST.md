@@ -2,11 +2,11 @@
 
 # Pinterest Pins — Approval-Only Copy and Concept Directions
 
-**Status:** SCHEDULING APPROVED. Five finished one-pass Pinterest creatives passed individual visual QA, decoded-dimension checks, metadata QA, the project mechanical gate and side-by-side contact-sheet review. Schedule only after the article is deployed and production-verified.
+**Status:** SCHEDULED AND PROVIDER-VERIFIED. Five finished one-pass Pinterest creatives passed individual visual QA, decoded-dimension checks, metadata QA, the project mechanical gate and side-by-side contact-sheet review.
 
 **Approval queue:** `D:\Hermes\workspace-import\projects\oldwisdomretold\pinterest_assets\static_generated\quiet_after_school_batch_20260815\APPROVAL_QUEUE.json`
 **Contact sheet:** `D:\Hermes\workspace-import\projects\oldwisdomretold\pinterest_assets\static_generated\quiet_after_school_batch_20260815\qa\gate_contact_sheet_quiet_quiet_20260815_145520.jpg`
-**Asset state:** Five unique 1024×1536 GPT Image 2 full-generation binaries; `approval_ready`; scheduling and publishing remain unauthorised.
+**Asset state:** Five unique 1024×1536 GPT Image 2 full-generation binaries; all five scheduled after explicit approval; publishing remains time-gated.
 
 ## Pin 1
 
@@ -67,3 +67,15 @@
 - Finished-image result: One complete vertical Pin generated in one pass: a Black mother calmly notices from a kitchen table while her quiet teen son remains at a respectful distance in an ordinary routine. The checklist is a saveable observation aid, not a diagnosis form; the scene is warm, restrained and not crisis-coded.
 - CTA: Save the pattern check
 - Alt text: A parent reviews baseline, recovery, function and safety while a quiet teen continues an ordinary evening routine nearby.
+
+## Verified schedule — Pacific/Auckland
+
+| Pin | Pinterest schedule | Destination |
+|---|---|---|
+| `quiet_after_school_01` | 16 Aug 2026, 2:30 PM | Live approved article |
+| `quiet_after_school_02` | 17 Aug 2026, 1:30 PM | Live approved article |
+| `quiet_after_school_03` | 18 Aug 2026, 2:30 PM | Live approved article |
+| `quiet_after_school_04` | 19 Aug 2026, 2:30 PM | Live approved article |
+| `quiet_after_school_05` | 20 Aug 2026, 2:30 PM | Live approved article |
+
+All five records were verified on Pinterest's Scheduled Pins page against their exact titles and dates. No immediate publish occurred.
