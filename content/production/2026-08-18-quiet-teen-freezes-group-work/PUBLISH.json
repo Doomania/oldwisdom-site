@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-18",
+  "audience": "parent",
+  "slug": "quiet-teen-team-sport-belonging",
+  "title": "When Your Quiet Teen Plays Team Sport but Feels Like an Outsider",
+  "summary": "Help your quiet teen access team-sport belonging without turning them into a project: understand the setting, ask without pressure, offer one small bridge, and involve the coach proportionately.",
+  "seo_title": "Quiet Teen Team Sport: Belonging",
+  "seo_description": "Help your quiet teen feel included in team sport without pushing friendships: understand the setting, use one small bridge, and involve the coach calmly.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Keep parent ownership of calm observation, access and proportionate coach follow-up while the teenager owns ordinary social timing, wording and whether to use a small connection step.",
+  "qa_score": 20,
+  "territory": "connection",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "If my teen is quiet around teammates, I must make them socialize or assume the team is excluding them.",
+    "to": "I can protect my teen's choice while helping them access small, natural ways to contribute and belong in the team."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "reason": "The Social Playbook is an optional fit for practising small, low-pressure social signals and clear contribution language; this parent guide remains complete without it."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "quiet-teen-team-sport-belonging",
+    "content": "quiet-teen-team-sport-belonging"
+  },
+  "hero": {
+    "source": "media/quiet-teen-team-sport-belonging.webp",
+    "alt": "A quiet teenage athlete packs a sports bag alone while teammates chat nearby and a parent waits discreetly by the gym door.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/quiet-teen-team-sport-belonging-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/quiet-teen-team-sport-belonging-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/quiet-teen-team-sport-belonging-social.webp",
+    "alt": "A quiet teenage athlete packs a sports bag alone while teammates chat nearby and a parent waits discreetly by the gym door."
+  }
+}
