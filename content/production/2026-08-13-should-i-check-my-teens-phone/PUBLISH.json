@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "audience": "parent",
+  "slug": "should-i-check-my-teens-phone",
+  "title": "Should I Check My Teen\u2019s Phone?",
+  "summary": "A practical guide to balancing teen privacy with parental safety: name the concern, make the smallest useful check, stop at its edge, and set a clear route back after trust is damaged.",
+  "seo_title": "Should I Check My Teen’s Phone?",
+  "seo_description": "Learn when to check your teen’s phone, how to protect privacy and safety, and how to respond to lies, threats, unknown adults or online blackmail with care.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "Keep parent ownership of immediate safety and agreed consequences while returning ordinary privacy, explanation, evidence review and trust rebuilding to the teenager through a defined scope and review point.",
+  "qa_score": 20,
+  "territory": "reading",
+  "test_angle": "SEE",
+  "core_belief_shift": {
+    "from": "Either I search everything to keep my teenager safe, or I respect privacy and risk missing something serious.",
+    "to": "I can name the concrete concern, make the smallest check that answers it, act decisively on real danger, and restore ordinary privacy when the risk or breach is resolved."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "This is a parent authority and online-safety decision guide that should fully answer the privacy question without diverting readers to a teen-facing product."
+  },
+  "hero": {
+    "source": "media/should-i-check-my-teens-phone.webp",
+    "alt": "A parent and teenage daughter sit side by side at a public library table with a phone placed between them.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/should-i-check-my-teens-phone-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/should-i-check-my-teens-phone-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/should-i-check-my-teens-phone-social.webp",
+    "alt": "A parent and teenage daughter sit side by side at a public library table with a phone placed between them."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "reading",
+    "content": "should-i-check-my-teens-phone"
+  },
+  "published": "2026-08-19"
+}
