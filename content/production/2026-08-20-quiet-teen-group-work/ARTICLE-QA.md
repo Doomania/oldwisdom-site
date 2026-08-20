@@ -1,7 +1,7 @@
 # Production-Package QA — When Your Quiet Teen Freezes in Group Work
 
-**Status:** `READY_FOR_RELEASE_AND_SCHEDULING_APPROVAL`  
-**Boundary:** The source bundle, images, email draft, and Pinterest creative are complete. Nothing has been built into production, deployed, uploaded, scheduled, sent, or posted.
+**Status:** `LIVE_PINS_PENDING_SCHEDULING_APPROVAL`  
+**Boundary:** The article is live and independently smoke-verified. No Pinterest Pin has been uploaded or scheduled, and no email draft has been created in an ESP or sent.
 
 ## Article
 

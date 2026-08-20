@@ -1,7 +1,7 @@
 # Pinterest Campaign — Quiet Teen Group Work
 
-**Status:** `PENDING_VISUAL_GENERATION_AND_QA`  
-**Scope:** draft creative and metadata only. The article destination is proposed until its separate production release is approved and verified. Pins must not be uploaded, scheduled, or posted without a full-batch visual/mechanical PASS and Eric’s explicit scheduling approval.
+**Status:** `VISUAL_AND_MECHANICAL_PASS__PENDING_SCHEDULING_APPROVAL`  
+**Scope:** QA-passing creative and metadata. The destination is live. Pins must not be uploaded, scheduled, or posted without Eric’s explicit scheduling approval.
 
 ## Campaign objective
 
