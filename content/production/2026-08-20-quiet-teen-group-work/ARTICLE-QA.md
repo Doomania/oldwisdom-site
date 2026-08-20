@@ -1,7 +1,7 @@
 # Production-Package QA — When Your Quiet Teen Freezes in Group Work
 
-**Status:** `LIVE_PINS_PENDING_SCHEDULING_APPROVAL`  
-**Boundary:** The article is live and independently smoke-verified. No Pinterest Pin has been uploaded or scheduled, and no email draft has been created in an ESP or sent.
+**Status:** `LIVE_AND_PIN_SCHEDULED__EMAIL_UNSENT`  
+**Boundary:** The article is live and independently smoke-verified. All five Pinterest Pins are scheduled and verified in Pinterest’s UI. The email draf...[truncated]
 
 ## Article
 

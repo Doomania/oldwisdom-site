@@ -1,7 +1,7 @@
 # Pinterest Campaign — Quiet Teen Group Work
 
-**Status:** `VISUAL_AND_MECHANICAL_PASS__PENDING_SCHEDULING_APPROVAL`  
-**Scope:** QA-passing creative and metadata. The destination is live. Pins must not be uploaded, scheduled, or posted without Eric’s explicit scheduling approval.
+**Status:** `SCHEDULED_UI_VERIFIED__EMAIL_UNSENT`  
+**Scope:** Five Pins are scheduled via Pinterest UI and independently verified against the scheduler. The email draft remains unsent and requires its own approva...[truncated]
 
 ## Campaign objective
 
