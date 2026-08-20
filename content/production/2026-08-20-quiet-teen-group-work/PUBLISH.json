@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-20",
+  "audience": "parent",
+  "slug": "quiet-teen-group-work",
+  "title": "When Your Quiet Teen Freezes in Group Work",
+  "summary": "Help a quiet teen enter group work without taking over: prepare one entry line, one visible contribution, and one recovery move.",
+  "seo_title": "Quiet Teen Group Work: A Parent Plan",
+  "seo_description": "Help your quiet teen enter group work without forcing confidence: prepare one entry line, visible contribution, recovery move, and a calm parent check-in.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["SEE", "REFLECT", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["capability", "ownership", "independence"],
+  "release_move": "The parent helps prepare a proportionate first move and requests structure if needed; the teenager decides whether and how to use it.",
+  "territory": "connection",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "My quiet teen needs to become more outgoing before group work can go well.",
+    "to": "My teen can enter group work with one small work-focused move, contribute something visible, and recover after an awkward start."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "bridge_strength": "soft",
+    "reason": "The Social Playbook is an optional teen-owned fit for practising conversation, reading a group, and making a useful contribution; the parent guide remains complete without it."
+  },
+  "next_step": {"kind": "none"},
+  "qa_score": 20,
+  "pinterest_campaign": {"campaign": "quiet-teen-group-work", "content": "quiet-teen-group-work"},
+  "hero": {
+    "source": "media/quiet-teen-group-work.webp",
+    "alt": "A quiet teenage boy pauses beside a classroom group while his mother waits discreetly in the doorway.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/quiet-teen-group-work-480.webp", "width": 480},
+      {"source": "media/quiet-teen-group-work-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/quiet-teen-group-work-social.webp",
+    "alt": "A quiet teenage boy pauses beside a classroom group while his mother waits discreetly in the doorway."
+  }
+}

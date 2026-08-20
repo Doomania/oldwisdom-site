@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS",
+  "reason": null,
+  "thresholds": {
+    "layout_corr_fail": 0.6,
+    "max_layout_cluster": 2,
+    "dark_fraction_warn": 0.55,
+    "warm_hue_range": [
+      10,
+      55
+    ],
+    "min_desc_chars": 300,
+    "desc_overlap_fail": 0.6,
+    "min_title_chars": 45,
+    "max_title_chars": 65,
+    "min_alt_chars": 10,
+    "max_text_cluster": 0.4
+  },
+  "images": [
+    "D:\\Claude\\Projects\\oldwisdom-site\\content\\production\\2026-08-20-quiet-teen-group-work\\media\\pinterest\\pin-01-group-work-freeze.png",
+    "D:\\Claude\\Projects\\oldwisdom-site\\content\\production\\2026-08-20-quiet-teen-group-work\\media\\pinterest\\pin-02-ask-this-tonight.png",
+    "D:\\Claude\\Projects\\oldwisdom-site\\content\\production\\2026-08-20-quiet-teen-group-work\\media\\pinterest\\pin-03-three-line-plan.png",
+    "D:\\Claude\\Projects\\oldwisdom-site\\content\\production\\2026-08-20-quiet-teen-group-work\\media\\pinterest\\pin-04-group-already-full.png",
+    "D:\\Claude\\Projects\\oldwisdom-site\\content\\production\\2026-08-20-quiet-teen-group-work\\media\\pinterest\\pin-05-parent-plan.png"
+  ],
+  "layout_clone_pairs": [],
+  "layout_clone_groups": [],
+  "description_failures": [],
+  "title_failures": [],
+  "alt_text_failures": [],
+  "audience_failures": [],
+  "parent_article_routing_failures": [],
+  "batch_text_diversity_failures": [],
+  "palette_warnings": [],
+  "contact_sheet": "D:\\Claude\\Projects\\oldwisdom-site\\content\\production\\2026-08-20-quiet-teen-group-work\\media\\pinterest-audit\\gate_contact_sheet_pin-01-group-work-freeze_pin-05-parent-plan_20260820_171505.jpg"
+}
