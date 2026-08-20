@@ -1,0 +1,39 @@
+{
+  "account": "oldwisdomretold",
+  "approved_by": "Eric Han",
+  "approved_action": "repair three legacy Pinterest scheduler collision slots",
+  "executed_at": "2026-08-20T22:38:13+12:00",
+  "resolution_rule": "retain the more saveable form; delete competing scheduled Pins instead of moving them without a new slot audit",
+  "retained": [
+    {
+      "slot": "2026-08-28 12:30 PM",
+      "title": "What to Say When Your Teen Is Excluded by Friends",
+      "pin_id": "3766983747158365376",
+      "reason": "direct parent script"
+    },
+    {
+      "slot": "2026-08-29 12:30 PM",
+      "title": "Practise CLEAR OUT Before Peer Pressure Peaks",
+      "pin_id": "3766458853534731008",
+      "reason": "named, repeatable safety plan"
+    },
+    {
+      "slot": "2026-08-30 12:30 PM",
+      "title": "Set a Review Path After Your Teen Lies About Location",
+      "pin_id": "3781866969654812800",
+      "reason": "named, repeatable parent plan"
+    }
+  ],
+  "deleted": [
+    {"pin_id": "3781865120267777792", "title": "A Smaller Phone Check That Respects Privacy and Safety"},
+    {"pin_id": "3758406112513984384", "title": "What to Do When Your Teen Avoids You in Public"},
+    {"pin_id": "3781866038285291520", "title": "Five Teen Phone Moments That Need Different Responses"},
+    {"pin_id": "3766031578544307584", "title": "Teen Group Drama? Sort It Before You Step In Safely"}
+  ],
+  "post_action_scheduler_audit": {
+    "scheduled_pins_loaded": 40,
+    "slot_collisions": 0,
+    "queue_scheduled_not_pinterest": 0,
+    "report": "scheduled_pins_audit_20260820.json"
+  }
+}

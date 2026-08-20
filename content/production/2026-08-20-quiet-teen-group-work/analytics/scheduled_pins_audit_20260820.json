@@ -1,72 +1,9 @@
 {
   "account": "oldwisdomretold",
-  "pulled": "2026-08-20T22:24:50.102867",
-  "total_scheduled": 44,
-  "collision_count": 3,
-  "collisions": {
-    "Fri, 28/8 12:30 pm": [
-      {
-        "pin_id": "3781865120267777792",
-        "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3781865120267777792/",
-        "day_date": "Fri, 28/8",
-        "time": "12:30 pm",
-        "title": "A Smaller Phone Check That Respects Privacy and Safety Parenting Teens",
-        "raw_text": "Scheduled for Fri, 28/8 12:30 pm A Smaller Phone Check That Respects Privacy and Safety Parenting Teens"
-      },
-      {
-        "pin_id": "3758406112513984384",
-        "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3758406112513984384/",
-        "day_date": "Fri, 28/8",
-        "time": "12:30 pm",
-        "title": "What to Do When Your Teen Avoids You in Public Parenting Teens",
-        "raw_text": "Scheduled for Fri, 28/8 12:30 pm What to Do When Your Teen Avoids You in Public Parenting Teens"
-      },
-      {
-        "pin_id": "3766983747158365376",
-        "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3766983747158365376/",
-        "day_date": "Fri, 28/8",
-        "time": "12:30 pm",
-        "title": "What to Say When Your Teen Is Excluded by Friends Parenting Teens",
-        "raw_text": "Scheduled for Fri, 28/8 12:30 pm What to Say When Your Teen Is Excluded by Friends Parenting Teens"
-      }
-    ],
-    "Sat, 29/8 12:30 pm": [
-      {
-        "pin_id": "3781866038285291520",
-        "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3781866038285291520/",
-        "day_date": "Sat, 29/8",
-        "time": "12:30 pm",
-        "title": "Five Teen Phone Moments That Need Different Responses Parenting Teens",
-        "raw_text": "Scheduled for Sat, 29/8 12:30 pm Five Teen Phone Moments That Need Different Responses Parenting Teens"
-      },
-      {
-        "pin_id": "3766458853534731008",
-        "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3766458853534731008/",
-        "day_date": "Sat, 29/8",
-        "time": "12:30 pm",
-        "title": "Practise CLEAR OUT Before Peer Pressure Peaks Parenting Teens",
-        "raw_text": "Scheduled for Sat, 29/8 12:30 pm Practise CLEAR OUT Before Peer Pressure Peaks Parenting Teens"
-      }
-    ],
-    "Sun, 30/8 12:30 pm": [
-      {
-        "pin_id": "3781866969654812800",
-        "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3781866969654812800/",
-        "day_date": "Sun, 30/8",
-        "time": "12:30 pm",
-        "title": "Set a Review Path After Your Teen Lies About Location Parenting Teens",
-        "raw_text": "Scheduled for Sun, 30/8 12:30 pm Set a Review Path After Your Teen Lies About Location Parenting Teens"
-      },
-      {
-        "pin_id": "3766031578544307584",
-        "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3766031578544307584/",
-        "day_date": "Sun, 30/8",
-        "time": "12:30 pm",
-        "title": "Teen Group Drama? Sort It Before You Step In Safely Parenting Teens",
-        "raw_text": "Scheduled for Sun, 30/8 12:30 pm Teen Group Drama? Sort It Before You Step In Safely Parenting Teens"
-      }
-    ]
-  },
+  "pulled": "2026-08-20T22:37:56.308894",
+  "total_scheduled": 40,
+  "collision_count": 0,
+  "collisions": {},
   "pins": [
     {
       "pin_id": "3780802322893600896",
@@ -229,22 +166,6 @@
       "raw_text": "Scheduled for Thu, 27/8 02:30 pm Respect Your Teen's Touch Boundary Without Going Cold Parenting Teens"
     },
     {
-      "pin_id": "3781865120267777792",
-      "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3781865120267777792/",
-      "day_date": "Fri, 28/8",
-      "time": "12:30 pm",
-      "title": "A Smaller Phone Check That Respects Privacy and Safety Parenting Teens",
-      "raw_text": "Scheduled for Fri, 28/8 12:30 pm A Smaller Phone Check That Respects Privacy and Safety Parenting Teens"
-    },
-    {
-      "pin_id": "3758406112513984384",
-      "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3758406112513984384/",
-      "day_date": "Fri, 28/8",
-      "time": "12:30 pm",
-      "title": "What to Do When Your Teen Avoids You in Public Parenting Teens",
-      "raw_text": "Scheduled for Fri, 28/8 12:30 pm What to Do When Your Teen Avoids You in Public Parenting Teens"
-    },
-    {
       "pin_id": "3766983747158365376",
       "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3766983747158365376/",
       "day_date": "Fri, 28/8",
@@ -259,14 +180,6 @@
       "time": "02:30 pm",
       "title": "After a Teen Fight: What Parents, Teens and Schools Own Parenting Teens",
       "raw_text": "Scheduled for Fri, 28/8 02:30 pm After a Teen Fight: What Parents, Teens and Schools Own Parenting Teens"
-    },
-    {
-      "pin_id": "3781866038285291520",
-      "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3781866038285291520/",
-      "day_date": "Sat, 29/8",
-      "time": "12:30 pm",
-      "title": "Five Teen Phone Moments That Need Different Responses Parenting Teens",
-      "raw_text": "Scheduled for Sat, 29/8 12:30 pm Five Teen Phone Moments That Need Different Responses Parenting Teens"
     },
     {
       "pin_id": "3766458853534731008",
@@ -299,14 +212,6 @@
       "time": "12:30 pm",
       "title": "Set a Review Path After Your Teen Lies About Location Parenting Teens",
       "raw_text": "Scheduled for Sun, 30/8 12:30 pm Set a Review Path After Your Teen Lies About Location Parenting Teens"
-    },
-    {
-      "pin_id": "3766031578544307584",
-      "href": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3766031578544307584/",
-      "day_date": "Sun, 30/8",
-      "time": "12:30 pm",
-      "title": "Teen Group Drama? Sort It Before You Step In Safely Parenting Teens",
-      "raw_text": "Scheduled for Sun, 30/8 12:30 pm Teen Group Drama? Sort It Before You Step In Safely Parenting Teens"
     },
     {
       "pin_id": "3766986433760664576",
@@ -524,16 +429,6 @@
         "slot": "Thu, 27/8 02:30 pm"
       },
       {
-        "pin_id": "3781865120267777792",
-        "title": "A Smaller Phone Check That Respects Privacy and Safety Parenting Teens",
-        "slot": "Fri, 28/8 12:30 pm"
-      },
-      {
-        "pin_id": "3758406112513984384",
-        "title": "What to Do When Your Teen Avoids You in Public Parenting Teens",
-        "slot": "Fri, 28/8 12:30 pm"
-      },
-      {
         "pin_id": "3766983747158365376",
         "title": "What to Say When Your Teen Is Excluded by Friends Parenting Teens",
         "slot": "Fri, 28/8 12:30 pm"
@@ -542,11 +437,6 @@
         "pin_id": "3766457518538450304",
         "title": "After a Teen Fight: What Parents, Teens and Schools Own Parenting Teens",
         "slot": "Fri, 28/8 02:30 pm"
-      },
-      {
-        "pin_id": "3781866038285291520",
-        "title": "Five Teen Phone Moments That Need Different Responses Parenting Teens",
-        "slot": "Sat, 29/8 12:30 pm"
       },
       {
         "pin_id": "3766458853534731008",
@@ -566,11 +456,6 @@
       {
         "pin_id": "3781866969654812800",
         "title": "Set a Review Path After Your Teen Lies About Location Parenting Teens",
-        "slot": "Sun, 30/8 12:30 pm"
-      },
-      {
-        "pin_id": "3766031578544307584",
-        "title": "Teen Group Drama? Sort It Before You Step In Safely Parenting Teens",
         "slot": "Sun, 30/8 12:30 pm"
       },
       {
