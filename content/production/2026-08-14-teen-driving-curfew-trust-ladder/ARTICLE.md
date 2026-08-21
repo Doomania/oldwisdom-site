@@ -8,6 +8,18 @@ There is no universal “right” driving-curfew hour. Licence stage, local law,
 
 For the next trip, do this: write down two separate times—the latest time your teen may be **driving**, and the time they must be **home or at another approved safe place**. Then name the backup ride if those times do not fit. This turns tonight’s argument into a plan without pretending every late drive is safe.
 
+## The one-minute plan
+
+Before the keys move, agree on five things:
+
+1. **Legal floor:** licence conditions, passengers and driving window are lawful.
+2. **Two times:** the driving cut-off and home/approved-safe-place time.
+3. **Trip facts:** route, weather, vehicle, passengers and energy level.
+4. **Safe exit:** if anything changes, stop somewhere safe and call—help comes before the discussion.
+5. **Review date:** name the driving evidence and date that could expand one condition.
+
+Put those five lines in a shared note. The detailed guide below helps your family make each one realistic.
+
 ## The curfew question is really two questions
 
 Parents often ask, “What is a reasonable curfew for a 16-year-old?” But one clock cannot do two different jobs.
