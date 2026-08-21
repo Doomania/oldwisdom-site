@@ -320,7 +320,7 @@ def destination(bundle: Bundle) -> str:
         href = f"../{html.escape(step['target'], quote=True)}"
     reason = step.get("reason")
     reason_html = f"<p>{html.escape(reason)}</p>" if reason else ""
-    return f'<section class="next-step"><p class="eyebrow">NEXT STEP</p><h2>{label}</h2>{reason_html}<a href="{href}">{label}</a></section>'
+    return f'<section class="next-step"><p class="eyebrow">KEEP GOING</p><h2>{label}</h2>{reason_html}<a href="{href}">{label}</a></section>'
 
 
 def parent_growth_signup(config: dict[str, Any], source: str) -> str:
