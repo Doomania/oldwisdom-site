@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-22",
+  "audience": "parent",
+  "slug": "guide-teen-without-power-struggle",
+  "title": "How to Guide Your Teen Without Making It a Power Struggle",
+  "summary": "A four-step way to keep clear family boundaries while helping teenagers take a real part in solving everyday problems.",
+  "seo_title": "Guide Your Teen Without a Power Struggle",
+  "seo_description": "Use four practical language shifts to guide your teen with clear boundaries, less defensiveness, and scripts for everyday family moments.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["UNDERSTAND", "REFLECT", "RELEASE"],
+  "teen_outcomes": ["judgment", "capability", "ownership", "independence"],
+  "release_move": "Name the real household limit, invite your teenager into the practical next step, then return at one agreed check-in instead of reopening the same fight.",
+  "qa_score": 19,
+  "territory": "conflict",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "Keeping authority means I need to explain or repeat my solution until my teenager complies.",
+    "to": "I can keep a clear boundary while giving my teenager a real part in solving the next practical step."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "This parent guide gives a complete household practice; adding a Playbook bridge would create product pressure instead of serving the reader's immediate need."
+  },
+  "hero": {
+    "source": "media/guide-teen-without-power-struggle-kitchen.webp",
+    "alt": "A mother listens with open hands while her teenage son holds a school notebook at a kitchen table.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/guide-teen-without-power-struggle-kitchen-480.webp", "width": 480},
+      {"source": "media/guide-teen-without-power-struggle-kitchen-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/guide-teen-without-power-struggle-kitchen-social.webp",
+    "alt": "A mother listens with open hands while her teenage son holds a school notebook at a kitchen table."
+  },
+  "next_step": {
+    "kind": "guide",
+    "target": "helpful-advice-sounds-like-criticism",
+    "label": "See why helpful advice can land as criticism",
+    "reason": "Use this next when the boundary is clear but your advice keeps adding a verdict your teenager cannot hear past."
+  },
+  "pinterest_campaign": {
+    "campaign": "conflict",
+    "content": "guide-teen-without-power-struggle"
+  }
+}
