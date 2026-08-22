@@ -24,7 +24,7 @@
     "bridge_strength": "soft",
     "reason": "The Social Playbook is an optional teen-owned fit for practising conversation, reading a group, and making a useful contribution; the parent guide remains complete without it."
   },
-  "next_step": {"kind": "none"},
+  "next_step": {"kind": "guide", "target": "quiet-teen-team-sport-belonging", "label": "Support quiet belonging beyond the classroom", "reason": "Use this next when the same quiet pattern shows up in team settings and your teen needs one low-pressure bridge into belonging."},
   "qa_score": 20,
   "pinterest_campaign": {"campaign": "quiet-teen-group-work", "content": "quiet-teen-group-work"},
   "hero": {

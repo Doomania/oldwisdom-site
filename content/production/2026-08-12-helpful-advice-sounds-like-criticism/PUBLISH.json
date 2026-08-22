@@ -52,9 +52,7 @@
     "source": "media/helpful-advice-sounds-like-criticism-porch-social.webp",
     "alt": "A Polynesian father pauses at a front-porch railing while his teenage daughter sits below holding a folded school paper."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "argument-stop-or-communication-improve", "label": "Turn the next argument into a useful conversation", "reason": "Use this next when advice has already become an argument and you need a calmer way back to understanding."},
   "pinterest_campaign": {
     "campaign": "conflict",
     "content": "helpful-advice-sounds-like-criticism"

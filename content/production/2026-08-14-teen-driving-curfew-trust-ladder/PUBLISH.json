@@ -53,9 +53,7 @@
     "source": "media/teen-driving-curfew-trust-ladder-social.webp",
     "alt": "A concerned mother calmly discusses an evening driving plan with her teenage son as he holds car keys beside the family car at dusk."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "argument-stop-or-communication-improve", "label": "Keep the driving rule from becoming a power struggle", "reason": "Use this next when the curfew itself is clear but the conversation keeps becoming a fight over control."},
   "pinterest_campaign": {
     "campaign": "conflict",
     "content": "teen-driving-curfew-trust-ladder"

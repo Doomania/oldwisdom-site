@@ -52,9 +52,7 @@
     "source": "media/should-i-check-my-teens-phone-social.webp",
     "alt": "A parent and teenage daughter sit side by side at a public library table with a phone placed between them."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "screenshot-test-angry-message", "label": "Help your teen pause before an angry message", "reason": "Use this next when the issue is not only access to the phone, but how to build safer choices before a message spreads."},
   "pinterest_campaign": {
     "campaign": "reading",
     "content": "should-i-check-my-teens-phone"

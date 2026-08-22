@@ -34,9 +34,7 @@
     "id": "social",
     "reason": "The Social Playbook is a restrained optional fit for practising social-signal reading, clear questions and more than one route to connection; the parent guide remains complete without it."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "more-friends-better-friendship-judgment", "label": "Help your teen judge this friendship clearly", "reason": "Use this next when the immediate hurt has settled and your teen needs a calmer way to assess what this friendship is giving back."},
   "pinterest_campaign": {
     "campaign": "peer-belonging",
     "content": "teen-left-out-by-friends"
