@@ -53,9 +53,7 @@
     "source": "media/argument-stop-or-communication-improve-garage-social.webp",
     "alt": "A father listens while his teenage son points to a blank note beside a phone and car keys at a garage workbench."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "helpful-advice-sounds-like-criticism", "label": "See why helpful advice can land as criticism", "reason": "Use this next to change the advice pattern that keeps pulling the conversation back into conflict."},
   "pinterest_campaign": {
     "campaign": "conflict",
     "content": "argument-stop-or-communication-improve"

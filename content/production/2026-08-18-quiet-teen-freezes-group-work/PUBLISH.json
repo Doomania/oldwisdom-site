@@ -33,9 +33,7 @@
     "id": "social",
     "reason": "The Social Playbook is an optional fit for practising small, low-pressure social signals and clear contribution language; this parent guide remains complete without it."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "quiet-or-lonely-teen", "label": "Tell quietness from unwanted disconnection", "reason": "Use this next when group-work silence raises a bigger question about whether your teen wants more connection or simply more room to think."},
   "pinterest_campaign": {
     "campaign": "quiet-teen-team-sport-belonging",
     "content": "quiet-teen-team-sport-belonging"

@@ -34,9 +34,7 @@
     "id": "war",
     "reason": "The War Playbook is a restrained optional fit for choosing which conflicts deserve engagement and protecting tomorrow from a reactive decision; this parent guide is complete and stands alone."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "leave-group-drama-safely", "label": "Help your teen leave group drama safely", "reason": "Use this next when a boundary is not enough and the group itself needs a low-fuel exit."},
   "pinterest_campaign": {
     "campaign": "conflict",
     "content": "stand-up-without-fighting"

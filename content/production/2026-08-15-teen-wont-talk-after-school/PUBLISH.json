@@ -33,9 +33,7 @@
     "status": "none",
     "reason": "This parent-facing communication routine should stand alone and does not need a product bridge."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "why-is-my-teen-avoiding-me", "label": "Understand what may be making your teen pull away", "reason": "Use this next when a quiet after-school answer has become a wider pattern of avoiding contact."},
   "pinterest_campaign": {
     "campaign": "quiet_teen_after_school",
     "content": "teen-wont-talk-after-school"

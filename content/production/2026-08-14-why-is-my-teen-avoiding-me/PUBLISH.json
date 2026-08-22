@@ -53,9 +53,7 @@
     "source": "media/why-is-my-teen-avoiding-me-school-exit-social.webp",
     "alt": "A mother waits several steps away while her teenage son talks with friends outside a school event."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "teen-wont-talk-after-school", "label": "Make after-school conversation feel safer", "reason": "Use this next when the avoidance is most visible at the end of the school day and you need one lower-pressure way in."},
   "pinterest_campaign": {
     "campaign": "connection",
     "content": "why-is-my-teen-avoiding-me"

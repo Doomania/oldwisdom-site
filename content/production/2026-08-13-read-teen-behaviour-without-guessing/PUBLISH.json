@@ -52,9 +52,7 @@
     "source": "media/read-teen-behaviour-without-guessing-social.webp",
     "alt": "A mother watches from the kitchen as her teenage son pauses beside his backpack near the front door."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "before-call-it-disrespect", "label": "Pause before calling it disrespect", "reason": "Use this next when a difficult moment looks like defiance and you need to separate the behaviour from the story about it."},
   "pinterest_campaign": {
     "campaign": "reading",
     "content": "read-teen-behaviour-without-guessing"

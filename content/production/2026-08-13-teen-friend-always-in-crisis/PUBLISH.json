@@ -54,9 +54,7 @@
     "source": "media/teen-friend-always-in-crisis-night-hallway-social.webp",
     "alt": "A concerned mother sits in the hallway while her tired teenage daughter looks at a phone from the edge of her bed late at night."
   },
-  "next_step": {
-    "kind": "none"
-  },
+  "next_step": {"kind": "guide", "target": "more-friends-better-friendship-judgment", "label": "Help your teen judge a friendship, not rescue it", "reason": "Use this next to help your teen notice reciprocity, boundaries and the difference between care and taking over."},
   "pinterest_campaign": {
     "campaign": "influence",
     "content": "teen-friend-always-in-crisis"
