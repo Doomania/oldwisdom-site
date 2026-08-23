@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "status": "review",
+  "audience": "parent",
+  "slug": "teen-wont-ask-teacher-for-help",
+  "title": "Your Teen Is Stuck on an Assignment but Won’t Ask the Teacher for Help",
+  "summary": "Help your teen turn one confusing assignment into a private, specific teacher request they can own—without taking over.",
+  "seo_title": "Teen Won’t Ask the Teacher for Help: Parent Plan",
+  "seo_description": "Help your teen ask a teacher about one confusing assignment using TRY → ASK → NEXT, while you coach without taking over routine contact.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["SEE", "REFLECT", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["capability", "ownership", "independence"],
+  "release_move": "The parent helps identify one stuck point and shape one specific request; the teenager chooses the practical channel and makes routine contact when able.",
+  "territory": "confidence",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "If my teen will not ask the teacher alone, I must either rescue them or leave them to fail.",
+    "to": "I can coach one clear request, let my teen own routine contact, and step in proportionately for access, unresolved school response, or safety."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "bridge_strength": "soft",
+    "reason": "The Social Playbook is an optional teen-owned tool for practising calm requests to adults; the parent guide remains complete without it."
+  },
+  "next_step": {
+    "kind": "guide",
+    "target": "helpful-advice-sounds-like-criticism",
+    "label": "Help your advice land without taking over",
+    "reason": "Use this next when practical help at home starts sounding like criticism to your teen."
+  },
+  "qa_score": 20,
+  "hero": {
+    "source": "media/teen-wont-ask-teacher-for-help.webp",
+    "alt": "A teenager pauses over an unfinished assignment while a parent sits nearby, offering support without taking over.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/teen-wont-ask-teacher-for-help-480.webp", "width": 480},
+      {"source": "media/teen-wont-ask-teacher-for-help-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-wont-ask-teacher-for-help-social.webp",
+    "alt": "A teenager pauses over an unfinished assignment while a parent sits nearby, offering support without taking over.",
+    "width": 1200,
+    "height": 630
+  }
+}
