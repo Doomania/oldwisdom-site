@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-25",
+  "audience": "parent",
+  "slug": "ai-fake-nude-response",
+  "title": "AI Fake Nude: A Parent's First Response",
+  "summary": "If an AI fake nude of your teen is shared, start with a calm first line, check Take It Down's live limits, and use verified support without false promises.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "GUIDE"],
+  "teen_outcomes": ["judgment", "ownership"],
+  "release_move": "The parent offers a calm first response and verified options; the teenager remains included without being asked to solve a high-stakes situation alone.",
+  "qa_score": 20,
+  "territory": "confidence",
+  "test_angle": "SEE",
+  "core_belief_shift": {
+    "from": "If the image is AI-made, I need to fix it immediately or I have failed my teenager.",
+    "to": "I can begin with a calm connection, a verified option, and one careful next conversation."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "The parent guide is complete without a Playbook bridge; an acute image-safety response should not become a product promotion."
+  },
+  "next_step": {"kind": "none"},
+  "hero": {
+    "source": "media/ai-fake-nude-response.webp",
+    "alt": "A parent and teenage boy sit quietly across a kitchen table, with a notebook and two mugs between them.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/ai-fake-nude-response-480.webp", "width": 480},
+      {"source": "media/ai-fake-nude-response-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/ai-fake-nude-response-social.webp",
+    "alt": "A parent and teenage boy sit quietly across a kitchen table, with a notebook and two mugs between them."
+  },
+  "pinterest_campaign": {"campaign": "ai-fake-nude-response", "content": "ai-fake-nude-response"}
+}
