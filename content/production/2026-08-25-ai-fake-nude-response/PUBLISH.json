@@ -24,7 +24,7 @@
   "next_step": {"kind": "none"},
   "hero": {
     "source": "media/ai-fake-nude-response.webp",
-    "alt": "A parent and teenage boy sit quietly across a kitchen table, with a notebook and two mugs between them.",
+    "alt": "A mother and her teenage daughter sit quietly across a kitchen table, with a notebook and two mugs between them.",
     "width": 1536,
     "height": 1024,
     "variants": [
@@ -34,7 +34,7 @@
   },
   "social_image": {
     "source": "media/ai-fake-nude-response-social.webp",
-    "alt": "A parent and teenage boy sit quietly across a kitchen table, with a notebook and two mugs between them."
+    "alt": "A mother and her teenage daughter sit quietly across a kitchen table, with a notebook and two mugs between them."
   },
   "pinterest_campaign": {"campaign": "ai-fake-nude-response", "content": "ai-fake-nude-response"}
 }
