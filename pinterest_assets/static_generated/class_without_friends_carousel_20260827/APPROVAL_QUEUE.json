@@ -1,0 +1,32 @@
+{
+  "batch_id": "class_without_friends_carousel_20260827",
+  "platform": "pinterest",
+  "account": "oldwisdomretold",
+  "object_type": "organic_carousel",
+  "card_count": 5,
+  "generation_method": "image_generation_one_pass",
+  "approval": {
+    "state": "approved_for_upload",
+    "approved_by": "Eric",
+    "approved_action": "Build and upload this blog's Pinterest carousel",
+    "approved_at": "2026-08-27"
+  },
+  "status": "published",
+  "published": {
+    "pin_url": "https://nz.pinterest.com/pin/1140747780646156540/",
+    "published_at": "2026-08-27",
+    "verification": "Live title, Parenting Teens board, exact UTM destination, AI disclosures, and five-card carousel controls verified."
+  },
+  "board": "Parenting Teens",
+  "title": "What to Do When Your Teen Has No Friends in Class",
+  "description": "When a hard class leaves your teen isolated, start with the day—not the timetable. Pause, map the barrier, try one move, then share facts with school if access, learning or safety are affected. Save this. https://oldwisdomretold.com/articles/class-without-friends?utm_source=pinterest&utm_medium=organic&utm_campaign=class-without-friends-carousel&utm_content=class-without-friends-carousel-20260827 #ParentingTeens #TeenFriendships #SchoolSupport",
+  "destination_url": "https://oldwisdomretold.com/articles/class-without-friends?utm_source=pinterest&utm_medium=organic&utm_campaign=class-without-friends-carousel&utm_content=class-without-friends-carousel-20260827",
+  "ai_disclosure": {"ai_modified": true, "synthetic_person": true},
+  "cards": [
+    {"position": 1, "role": "cover-recognition", "id": "class-without-friends-carousel-20260827-card-01", "asset": "assets/card-01-cover.png", "sha256": "2598c8478e155438f1c1f5f26a6dee9f2d7fb2fd836481087798173a58406e1c", "alt_text": "An empty classroom after school with one backpack on a chair and a distant student group beyond the doorway, introducing a parent guide about a teen with no friends in class."},
+    {"position": 2, "role": "pause", "id": "class-without-friends-carousel-20260827-card-02", "asset": "assets/card-02-pause.png", "sha256": "171e0acb9c18725f64ef15018b1e33b70f54ffdd6a46c8823d6d38c44e1d27bc", "alt_text": "A calm parent listens beside their teen at a kitchen table, showing the first step of pausing to hear what has been hardest."},
+    {"position": 3, "role": "map", "id": "class-without-friends-carousel-20260827-card-03", "asset": "assets/card-03-map.png", "sha256": "c607858a371fb950b114b2fbd7ead2f34dcee5e9f40a364f90afa46a1d88bb14", "alt_text": "A teen stands in a quiet school hallway near a classroom doorway, introducing the step of mapping peers, group work, and safety barriers."},
+    {"position": 4, "role": "try", "id": "class-without-friends-carousel-20260827-card-04", "asset": "assets/card-04-try.png", "sha256": "a652d94fbedd6d5d90c31c06be1e41fb5d588e27303a987989f4c2f183138f63", "alt_text": "A teen meets one familiar peer outside a school library, showing one small teen-owned move in a seven-day plan."},
+    {"position": 5, "role": "escalate-save-cta", "id": "class-without-friends-carousel-20260827-card-05", "asset": "assets/card-05-escalate.png", "sha256": "da236abfed75b09fe1af824c5841be89e1e7acab7bc4bed61901f48a5bb47098", "alt_text": "A parent drafts a school-support email while their teen sits nearby, showing how to escalate with observable facts and save the parent plan."}
+  ]
+}

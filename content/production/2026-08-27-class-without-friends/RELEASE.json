@@ -8,11 +8,20 @@
     "deployment": "Cloudflare Pages completed successfully; live smoke passed on 2026-08-27."
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
+    "state": "published",
+    "approval": "Eric explicitly authorised carousel build and upload in Telegram on 2026-08-27.",
     "updated_at": "2026-08-27",
-    "cards": [],
-    "reason": "Article-only approval. No Pinterest assets, uploads, or scheduling are approved."
+    "cards": [
+      {
+        "type": "organic_carousel",
+        "card_count": 5,
+        "board": "Parenting Teens",
+        "pin_url": "https://nz.pinterest.com/pin/1140747780646156540/",
+        "destination_url": "https://oldwisdomretold.com/articles/class-without-friends?utm_source=pinterest&utm_medium=organic&utm_campaign=class-without-friends-carousel&utm_content=class-without-friends-carousel-20260827",
+        "ai_disclosure": "AI-modified and AI-generated-person disclosures enabled.",
+        "qa": "Five-card carousel mode, title, board, destination, disclosure, and live card count verified."
+      }
+    ]
   },
   "email": {
     "state": "held",
