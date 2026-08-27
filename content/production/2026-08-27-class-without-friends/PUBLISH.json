@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-27",
+  "audience": "parent",
+  "slug": "class-without-friends",
+  "title": "What to Do When Your Teen Has No Friends in Their Class",
+  "summary": "A calm parent decision path for understanding a difficult class dynamic, trying one proportionate step, and knowing when school support is warranted.",
+  "seo_title": "Teen Has No Friends in Class: What to Do",
+  "seo_description": "A practical parent plan for when your teen has no friends in their class: listen, map the barrier, try one low-pressure step, and know when to involve school.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["SEE", "REFLECT", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["judgment", "capability", "ownership", "independence"],
+  "release_move": "Listen for the pattern, help your teen choose one proportionate next move, and involve the school with observable facts when access, safety, or functioning is affected.",
+  "qa_score": 20,
+  "territory": "connection",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "If my teen has no friends in a class, I need to demand a class change or solve the friendship problem myself.",
+    "to": "I can listen for the pattern, map the barrier, support one low-pressure move, and escalate observable access or safety concerns."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "The useful next move is a calm parent-school decision path that protects the teenager's ownership; a product bridge would distract from that work."
+  },
+  "next_step": {
+    "kind": "guide",
+    "target": "quiet-or-lonely-teen",
+    "label": "Read Quiet or Lonely?",
+    "reason": "Use this next when you need to tell the difference between restorative time alone and unwanted disconnection without treating quietness as the problem."
+  },
+  "pinterest_campaign": {
+    "campaign": "class-without-friends",
+    "content": "class-without-friends"
+  },
+  "hero": {
+    "source": "media/class-without-friends.webp",
+    "alt": "A teenage girl sits alone at a classroom desk while three classmates work together in the background.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/class-without-friends-480.webp", "width": 480},
+      {"source": "media/class-without-friends-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/class-without-friends-social.webp",
+    "alt": "A teenage girl sits alone at a classroom desk while three classmates work together in the background."
+  }
+}

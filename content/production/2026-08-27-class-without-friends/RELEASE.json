@@ -1,0 +1,22 @@
+{
+  "article": {
+    "state": "approved",
+    "approval": "Eric approved article release in Telegram on 2026-08-27.",
+    "updated_at": "2026-08-27",
+    "url": "https://oldwisdomretold.com/articles/class-without-friends"
+  },
+  "pinterest": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-08-27",
+    "cards": [],
+    "reason": "Article-only approval. No Pinterest assets, uploads, or scheduling are approved."
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-08-27",
+    "provider_id": null,
+    "reason": "Article-only approval. No email draft or send is approved."
+  }
+}
