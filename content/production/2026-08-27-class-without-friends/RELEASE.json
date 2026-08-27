@@ -1,9 +1,11 @@
 {
   "article": {
-    "state": "approved",
+    "state": "published",
     "approval": "Eric approved article release in Telegram on 2026-08-27.",
     "updated_at": "2026-08-27",
-    "url": "https://oldwisdomretold.com/articles/class-without-friends"
+    "url": "https://oldwisdomretold.com/articles/class-without-friends",
+    "content_commit": "b44a23d",
+    "deployment": "Cloudflare Pages completed successfully; live smoke passed on 2026-08-27."
   },
   "pinterest": {
     "state": "held",
