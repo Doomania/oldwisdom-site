@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-28",
+  "audience": "parent",
+  "slug": "stop-reminding-homework",
+  "title": "When to Stop Reminding Him About Homework",
+  "summary": "A structured handoff that helps a teenager carry daily homework tracking while a parent keeps workable conditions and one calm weekly review.",
+  "seo_title": "When to Stop Reminding Teen Homework",
+  "seo_description": "Use an Ownership Handoff to stop nightly homework chasing: set workable conditions, let your teen track daily work, review evidence weekly, and re-enter when support is needed.",
+  "journey_stage": "RELEASE",
+  "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "GUIDE"],
+  "teen_outcomes": ["capability", "ownership", "independence"],
+  "release_move": "The parent keeps workable conditions and one weekly evidence review; the teenager carries daily homework tracking, routine teacher contact and ordinary repair after a missed task.",
+  "qa_score": 19,
+  "territory": "confidence",
+  "v4_test_territory": "Independence / responsibility / helping too much",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "If I stop reminding my teenager about homework, I am being careless and setting him up to fail.",
+    "to": "I can provide structure, agree one check-in, and step back from repeated chasing while my teenager carries the plan, the teacher contact, and the ordinary consequence."
+  },
+  "book_relevance": {
+    "status": "none",
+    "reason": "The parent guide gives a complete ownership handoff; a Playbook bridge would add product pressure without serving the reader's immediate need."
+  },
+  "next_step": {
+    "kind": "guide",
+    "target": "teen-wont-ask-teacher-for-help",
+    "label": "Help your teen ask a teacher for routine help",
+    "reason": "Use this next when the handoff reveals a specific assignment question your teenager can learn to take to the teacher."
+  },
+  "hero": {
+    "source": "media/stop-reminding-homework.webp",
+    "alt": "A teenage boy starts planning homework at a dining table while his mother sits nearby, offering calm support without taking over.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/stop-reminding-homework-480.webp", "width": 480},
+      {"source": "media/stop-reminding-homework-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/stop-reminding-homework-social.webp",
+    "alt": "A teenage boy starts planning homework at a dining table while his mother sits nearby, offering calm support without taking over.",
+    "width": 1200,
+    "height": 630
+  },
+  "pinterest_campaign": {
+    "campaign": "confidence",
+    "content": "stop-reminding-homework"
+  }
+}
