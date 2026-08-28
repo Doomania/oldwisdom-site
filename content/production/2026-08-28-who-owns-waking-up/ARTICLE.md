@@ -1,13 +1,5 @@
 <!-- AUDIENCE: PARENT -->
 
----
-title: "Giving Back the Alarm Clock: Who Owns Waking Up"
-description: "A practical way to transfer morning responsibility to a teenager—without turning one missed alarm into a character verdict or abandoning the support they still need."
-route: "/articles/who-owns-waking-up"
-stage: "RELEASE"
-angle: "LONG_TERM_CAPABILITY"
----
-
 # Giving Back the Alarm Clock: Who Owns Waking Up
 
 There is a particular kind of morning argument that can make a parent feel as if she has somehow become an emergency dispatch system.
