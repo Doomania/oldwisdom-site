@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-28",
+  "audience": "parent",
+  "slug": "who-owns-waking-up",
+  "title": "Giving Back the Alarm Clock: Who Owns Waking Up",
+  "summary": "A planned, reversible handoff that helps a teenager own morning preparation while adults retain safety, access and attendance responsibilities.",
+  "meta_description": "How to transfer the morning routine to a teenager, what a survivable failure looks like, and when to step back in.",
+  "territory": "confidence",
+  "v4_test_territory": "Independence / responsibility / helping too much",
+  "journey_stage": "RELEASE",
+  "supports_stages": ["REFLECT", "GUIDE"],
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "teen_outcomes": ["capability", "ownership", "independence"],
+  "core_belief_shift": {"from":"I have to keep waking him or I am careless.","to":"I can transfer morning responsibility through a planned, reversible handoff while retaining adult duties for safety and access."},
+  "release_move": "Alarm Handoff: launch an explicit agreement, log outcomes, repair the system after a miss, then re-release after a short scaffold.",
+  "book_relevance": {"status":"none","reason":"No Playbook is the useful next tool; this guide needs a practical family handoff."},
+  "qa_score": 18,
+  "pinterest_campaign": {"campaign":"confidence","content":"who-owns-waking-up"},
+  "hero": {
+    "source": "media/who-owns-waking-up.webp",
+    "alt": "A teenage boy checks his own morning alarm and school bag while his mother calmly prepares breakfast nearby.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source":"media/who-owns-waking-up-480.webp","width":480},
+      {"source":"media/who-owns-waking-up-800.webp","width":800}
+    ]
+  },
+  "social_image": {
+    "source":"media/who-owns-waking-up-social.webp",
+    "alt":"A teenage boy checks his own morning alarm and school bag while his mother calmly prepares breakfast nearby.",
+    "width":1200,
+    "height":630
+  }
+}
