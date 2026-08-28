@@ -1,0 +1,44 @@
+date: 2026-08-28
+audience: PARENT
+slug: stop-reminding-homework
+article_title: "When to Stop Reminding Him About Homework"
+# v4 §11 category, preserved from the supplied queue; canonical PUBLISH territory is mapped
+# to confidence because the live schema does not yet support the seven v4 test territories.
+territory: "Independence / responsibility / helping too much"
+canonical_publish_territory: confidence
+stage: RELEASE
+test_angle: LONG_TERM_CAPABILITY
+parent_observation: "A parent has reminded their son about an assignment several times; he still has not started, and the deadline is close."
+automatic_parent_interpretation: "If I stop reminding him, he will fail because he does not care or cannot manage it."
+possible_teen_perspective: "He may already know, may be avoiding a task that feels too large, may lack a workable system, or may be relying on the parent to carry the alerting job. The article must not decide which without evidence."
+parent_intent: "Prevent a missed deadline and protect future options."
+possible_parent_impact: "Repeated unplanned reminders can turn homework into the parent's monitoring job, invite defensiveness, and make the next step less visibly the teenager's."
+short_term_goal: "Know what is due and make a proportionate plan before the deadline."
+long_term_capability: "Notice obligations, choose a planning system, seek help early, and recover from a manageable miss without a parent carrying the whole process."
+core_belief_shift:
+  from: "If I stop reminding my teenager about homework, I am being careless and setting him up to fail."
+  to: "I can provide structure, agree one check-in, and step back from repeated chasing while my teenager carries the plan, the teacher contact, and the ordinary consequence."
+practical_parent_move: "Use the Ownership Handoff: agree the conditions, stop daily chasing, and hold one calm weekly evidence review of the system—not a review of the teen’s character."
+boundary_or_authority_note: "School attendance, access needs, sleep, wellbeing and agreed family conditions remain adult responsibilities. Re-enter temporarily for a pattern of missed or unknown work, an unworkable skill/access route, or distress/attendance/safeguarding concerns."
+ownership_transfer: "The parent owns conditions and a weekly review; the teen records tasks, chooses the work order, checks school information, contacts teachers about routine questions, and carries ordinary school consequences."
+book_relevance: NONE
+book_if_relevant: ""
+search_intent: "Parent asks whether to keep reminding a teenage son about homework and how to stop without letting schoolwork collapse."
+search_language_patterns:
+  - "Should I keep reminding my teenager about homework?"
+  - "My son will not do homework unless I nag him"
+  - "How do I stop nagging about schoolwork?"
+reddit_language_patterns: []
+evidence_required:
+  - "Homework asks adolescents to manage time, attention, and motivation outside normal classroom structure."
+  - "Supportive involvement can combine structure and choice; this is not the same as abandoning expectations."
+  - "The article's three-step handover is OWR editorial synthesis, not a validated intervention or guarantee."
+internal_link_to:
+  - teen-wont-ask-teacher-for-help
+  - guide-teen-without-power-struggle
+portfolio_boundary: "Not a general communication-script guide and not a teacher-contact guide. Its single job is to transfer the monitoring role through a defined handover and re-entry threshold."
+pin_hooks:
+  - "Homework done tonight vs responsibility built for next term"
+  - "Stop repeating the reminder. Start one check-in."
+  - "The homework handover: SET → CHECK → STEP BACK"
+email_candidate: NO
