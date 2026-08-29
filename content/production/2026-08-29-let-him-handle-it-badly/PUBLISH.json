@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-30",
+  "audience": "parent",
+  "slug": "let-him-handle-it-badly",
+  "title": "The First Time You Let Him Handle It Badly",
+  "summary": "A practical way to let a teenager learn from a small, repairable mistake without abandoning him, shaming him, or taking the responsibility back.",
+  "meta_description": "How to let a teenager learn from a manageable mistake, hold the boundary, and help him repair without taking over.",
+  "territory": "confidence",
+  "v4_test_territory": "Independence / responsibility / helping too much",
+  "journey_stage": "RELEASE",
+  "supports_stages": [
+    "REFLECT",
+    "GUIDE"
+  ],
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "teen_outcomes": [
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "core_belief_shift": {
+    "from": "If I do not rescue the mistake, I am failing my teen.",
+    "to": "I can stay connected, hold a clear safety boundary, and let a repairable mistake become practice."
+  },
+  "release_move": "Practice Mistake: make a small handoff explicit, let the proportionate consequence land, run a calm repair conversation, then use a short scaffold only when needed.",
+  "book_relevance": {
+    "status": "none",
+    "reason": "The useful next tool is a concrete parent handoff and repair conversation, not a Playbook."
+  },
+  "qa_score": 18,
+  "pinterest_campaign": {
+    "campaign": "confidence",
+    "content": "let-him-handle-it-badly"
+  },
+  "hero": {
+    "source": "media/let-him-handle-it-badly.webp",
+    "alt": "A teenage boy sits thoughtfully beside an open planner and sports bag while his mother gives him calm space in their kitchen.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/let-him-handle-it-badly-480.webp",
+        "width": 480
+      },
+      {
+        "source": "media/let-him-handle-it-badly-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/let-him-handle-it-badly-social.webp",
+    "alt": "A teenage boy sits thoughtfully beside an open planner and sports bag while his mother gives him calm space in their kitchen.",
+    "width": 1200,
+    "height": 630
+  }
+}
