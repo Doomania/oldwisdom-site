@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-08-30",
+  "audience": "parent",
+  "slug": "quiet-teen-own-voice",
+  "title": "When a Quiet Teen Seems to Go Along: How to Help Them Keep Their Own Voice",
+  "summary": "Help a quiet teen notice a preference, pause before automatic agreement, and make one ordinary decision without turning quietness into a problem to fix.",
+  "seo_title": "Help a Quiet Teen Keep Their Own Voice",
+  "seo_description": "Help a quiet teen notice their preferences, pause before automatic agreement, and make ordinary decisions calmly without forcing loudness or taking over.",
+  "journey_stage": "RELEASE",
+  "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["judgment", "capability", "ownership", "independence"],
+  "release_move": "The parent checks that an ordinary choice is safe, makes room for the teen's own view, and lets the teen decide among the available options.",
+  "territory": "influence",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "A quiet teen who agrees quickly must be weak or easily led.",
+    "to": "A quiet teen can choose compromise or ask for time; the useful skill is noticing and expressing an authentic preference."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "bridge_strength": "soft",
+    "reason": "The War Playbook offers optional teen-owned practice in handling pressure, pausing before reactive choices, and holding a position without escalating; this parent guide remains complete without it."
+  },
+  "next_step": {"kind": "playbook", "id": "war", "label": "Explore The War Playbook", "reason": "Optional teen-owned practice for handling pressure and holding position calmly."},
+  "qa_score": 20,
+  "pinterest_campaign": {"campaign": "quiet-teen-own-voice", "content": "quiet-teen-own-voice"},
+  "hero": {
+    "source": "media/quiet-teen-own-voice.webp",
+    "alt": "A thoughtful teenager raises a hand to share a preference while two friends listen at a kitchen table and a parent stays discreetly in the background.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/quiet-teen-own-voice-480.webp", "width": 480},
+      {"source": "media/quiet-teen-own-voice-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/quiet-teen-own-voice-social.webp",
+    "alt": "A thoughtful teenager raises a hand to share a preference while two friends listen at a kitchen table and a parent stays discreetly in the background."
+  }
+}
