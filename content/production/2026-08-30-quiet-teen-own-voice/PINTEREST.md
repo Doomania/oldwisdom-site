@@ -1,7 +1,9 @@
-# Pinterest Package — Draft Only
+# Pinterest Package — Published
 
-**Status:** `DRAFT — NOT APPROVED FOR GENERATION OR PUBLISHING`
+**Status:** `PUBLISHED — 2026-08-30`
+**Board:** `Old Wisdom Retold → Parenting Teens`
 **Destination:** `https://oldwisdomretold.com/articles/quiet-teen-own-voice`
+**Verified live Pin IDs:** `1140747780646405605`, `1140747780646405631`, `1140747780646405653`, `1140747780646405673`, `1140747780646405687`
 
 ## Pin 1
 - Title: Your Quiet Teen Does Not Need to Be Loud to Have a Voice
