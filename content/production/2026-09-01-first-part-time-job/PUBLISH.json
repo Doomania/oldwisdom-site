@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-09-01",
+  "audience": "parent",
+  "slug": "teen-first-part-time-job",
+  "title": "Your Teen’s First Part-Time Job: How to Help Them Start Without Hovering",
+  "summary": "Use a short first-job routine to help your teen ask normal questions, check basic safety information, and own routine employer communication without taking over.",
+  "seo_title": "Teen First Part-Time Job: Parent Guide",
+  "seo_description": "Help your teen prepare for a first part-time job, check ordinary first-shift basics, and handle normal employer communication without taking over at home.",
+  "journey_stage": "RELEASE",
+  "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["judgment", "capability", "ownership", "independence"],
+  "release_move": "The parent helps the teen prepare questions and check ordinary safety basics, then lets the teen manage routine communication with the employer.",
+  "territory": "confidence",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "A teen needs a parent to manage every detail of a first job in order to be ready.",
+    "to": "A teen can own routine employer communication when a parent provides bounded preparation and keeps appropriate safety safeguards."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "bridge_strength": "soft",
+    "reason": "The War Playbook gives optional teen-owned practice in preparation, clear thinking under pressure, and asking before reacting; this guide remains complete without it."
+  },
+  "next_step": {
+    "kind": "playbook",
+    "id": "war",
+    "label": "Explore The War Playbook",
+    "reason": "Optional teen-owned practice for preparation and clear thinking under pressure."
+  },
+  "qa_score": 20,
+  "pinterest_campaign": {"campaign": "teen-first-part-time-job", "content": "teen-first-part-time-job"},
+  "hero": {
+    "source": "media/teen-first-part-time-job.webp",
+    "alt": "A teenager reviews a first-job schedule and phone at a kitchen table while a parent points gently to a checklist beside them.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/teen-first-part-time-job-480.webp", "width": 480},
+      {"source": "media/teen-first-part-time-job-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-first-part-time-job-social.webp",
+    "alt": "A teenager reviews a first-job schedule and phone at a kitchen table while a parent points gently to a checklist beside them."
+  }
+}

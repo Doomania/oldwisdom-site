@@ -1,0 +1,23 @@
+{
+  "article": {
+    "state": "approved",
+    "approval": "article",
+    "updated_at": "2026-09-01",
+    "url": "https://oldwisdomretold.com/articles/teen-first-part-time-job",
+    "proof": null
+  },
+  "pinterest": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-09-01",
+    "cards": [],
+    "reason": "No Pinterest asset or publishing approval."
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-09-01",
+    "provider_id": null,
+    "reason": "No email draft or send approval."
+  }
+}
