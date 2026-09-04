@@ -7,17 +7,33 @@
     "proof": null
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
-    "updated_at": "2026-09-01",
-    "cards": [],
-    "reason": "No Pinterest asset or publishing approval."
+    "state": "published_verified",
+    "approval": "public publishing authority received 2026-09-01",
+    "updated_at": "2026-09-04",
+    "cards": ["teen-first-part-time-job-pin-1", "teen-first-part-time-job-pin-2", "teen-first-part-time-job-pin-3", "teen-first-part-time-job-pin-4", "teen-first-part-time-job-pin-5"],
+    "proof": {
+      "account": "Old Wisdom Retold",
+      "board": "Parenting Teens",
+      "permalinks": [
+        "https://nz.pinterest.com/pin/1140747780646552239/",
+        "https://nz.pinterest.com/pin/1140747780646552691/",
+        "https://nz.pinterest.com/pin/1140747780646565104/",
+        "https://nz.pinterest.com/pin/1140747780646565688/",
+        "https://nz.pinterest.com/pin/1140747780646567040/"
+      ],
+      "verification": "All five live Pins were read back against pinterest-queue.json for title, description, destination, board, alt text, AI-modified disclosure, and synthetic-person disclosure."
+    }
   },
   "email": {
-    "state": "held",
-    "approval": null,
-    "updated_at": "2026-09-01",
-    "provider_id": null,
-    "reason": "No email draft or send approval."
+    "state": "sent_verified",
+    "approval": "public send authority received 2026-09-01",
+    "updated_at": "2026-09-04",
+    "provider": "Brevo",
+    "provider_id": 21,
+    "sent_at": "2026-09-04T05:29:44Z",
+    "sender": "Eric Han - Old Wisdom Retold <hello@oldwisdomretold.com>",
+    "audience": {"list_id": 9, "list_name": "Old Wisdom Retold LP #9", "eligible_recipients": 6},
+    "delivery": {"sent": 6, "smtp_delivered": 6},
+    "proof": "Provider process reported sent / process complete / all mail sent; campaign listing reported status sent with send date."
   }
 }
