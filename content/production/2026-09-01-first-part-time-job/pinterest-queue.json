@@ -1,0 +1,79 @@
+{
+  "campaign": "teen-first-part-time-job",
+  "platform": "Pinterest",
+  "account": "Old Wisdom Retold",
+  "board": "Parenting Teens",
+  "destination_status": "live_verified",
+  "approval": {
+    "received_at": "2026-09-01",
+    "user_message": "approve both",
+    "scope_interpretation": "Preparation of the Pinterest batch and parent email is authorised. Publishing is held until finished assets and channel QA are reviewed."
+  },
+  "pins": [
+    {
+      "id": "teen-first-part-time-job-pin-1",
+      "status": "published_verified",
+      "provider_pin_id": "1140747780646552239",
+      "permalink": "https://nz.pinterest.com/pin/1140747780646552239/",
+      "asset": "media/pinterest/pin-1-first-job.png",
+      "title": "Help Your Teen Start a First Job Without Taking Over",
+      "description": "A first part-time job brings forms, shifts and manager messages. Use SIGN, SCAN, STEP BACK: let your teen name the questions, check ordinary safety and transport basics together, then leave routine employer communication with them. It is a practical way to stay involved without becoming their manager. Save this for the first-shift week. #ParentingTeens #FirstJob #TeenIndependence #ParentingTips",
+      "alt_text": "A teenager holds their own phone at a kitchen table while a supportive parent sits nearby. The Pin says First Job? Help without taking over, with the SIGN, SCAN, STEP BACK routine.",
+      "url": "https://oldwisdomretold.com/articles/teen-first-part-time-job?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-first-part-time-job&utm_content=teen-first-part-time-job-pin-1",
+      "ai_modified": true,
+      "synthetic_person": true
+    },
+    {
+      "id": "teen-first-part-time-job-pin-2",
+      "status": "published_verified",
+      "provider_pin_id": "1140747780646552691",
+      "permalink": "https://nz.pinterest.com/pin/1140747780646552691/",
+      "asset": "media/pinterest/pin-2-first-shift.png",
+      "title": "What Parents Should Check Before a Teen’s First Shift",
+      "description": "Before a teen’s first shift, check the useful basics together: who trains them, who supervises them, what tasks or equipment are new, and how they get home if plans change. Then let them ask routine questions themselves. This gives a new worker a safer start without turning the parent into the workplace contact. Save this check-in for later. #FirstJob #TeenSafety #ParentingTeens #TeenIndependence",
+      "alt_text": "A teen and parent sit at a kitchen table with a simple checklist, backpack and folded apron. The Pin lists training, supervision and ride home before the first shift.",
+      "url": "https://oldwisdomretold.com/articles/teen-first-part-time-job?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-first-part-time-job&utm_content=teen-first-part-time-job-pin-2",
+      "ai_modified": true,
+      "synthetic_person": true
+    },
+    {
+      "id": "teen-first-part-time-job-pin-3",
+      "status": "published_verified",
+      "provider_pin_id": "1140747780646565104",
+      "permalink": "https://nz.pinterest.com/pin/1140747780646565104/",
+      "asset": "media/pinterest/pin-3-manager-message.png",
+      "title": "One First-Job Message Your Teen Can Send Themselves",
+      "description": "A teen can own a routine first-job message even when they want help finding the words. Try: “Could you confirm who I report to when I arrive?” Review the question if they ask, then let them press send. That small handoff helps them practise clear, normal workplace communication while you stay available for bigger concerns. Save this parent script. #TeenSkills #FirstJob #ParentingTeens #TeenIndependence",
+      "alt_text": "A teenager types on their own phone in a hallway while a parent offers calm support from a nearby chair. The Pin gives a manager-message script.",
+      "url": "https://oldwisdomretold.com/articles/teen-first-part-time-job?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-first-part-time-job&utm_content=teen-first-part-time-job-pin-3",
+      "ai_modified": true,
+      "synthetic_person": true
+    },
+    {
+      "id": "teen-first-part-time-job-pin-4",
+      "status": "published_verified",
+      "provider_pin_id": "1140747780646565688",
+      "permalink": "https://nz.pinterest.com/pin/1140747780646565688/",
+      "asset": "media/pinterest/pin-4-ride-plan.png",
+      "title": "First-Job Ride Plan: Who Replies, Who Sorts Transport?",
+      "description": "When a first-job shift changes, separate the two jobs: your teen replies to the manager; your household sorts the ride, meal or timing impact. That keeps employer communication with the person doing the work while you still handle care, transport and safety. Use this calm handoff before schedule changes become a family argument. Save it for the first few weeks. #FirstJob #ParentingTips #TeenIndependence #FamilyLogistics",
+      "alt_text": "A parent and teen talk in a parked car at dusk, with the teen holding their own phone. The Pin explains a calm first-job ride-plan handoff.",
+      "url": "https://oldwisdomretold.com/articles/teen-first-part-time-job?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-first-part-time-job&utm_content=teen-first-part-time-job-pin-4",
+      "ai_modified": true,
+      "synthetic_person": true
+    },
+    {
+      "id": "teen-first-part-time-job-pin-5",
+      "status": "published_verified",
+      "provider_pin_id": "1140747780646567040",
+      "permalink": "https://nz.pinterest.com/pin/1140747780646567040/",
+      "asset": "media/pinterest/pin-5-parent-role.png",
+      "title": "Your First-Job Parent Role: Sounding Board, Not Manager",
+      "description": "A parent’s first-job role is not manager. It is sounding board: ask what your teen knows, check ordinary safety and logistics, practise one question if useful, then step back from routine messages. Keep support available for immediate safety concerns or problems they cannot handle alone. This simple sequence makes independence practical, not abrupt. Save this parent plan. #ParentingTeens #FirstJob #TeenSafety #TeenIndependence",
+      "alt_text": "A parent and teenage son talk at a kitchen table while a four-step visual path says Ask, Check Safety, Practise and Step Back.",
+      "url": "https://oldwisdomretold.com/articles/teen-first-part-time-job?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-first-part-time-job&utm_content=teen-first-part-time-job-pin-5",
+      "ai_modified": true,
+      "synthetic_person": true
+    }
+  ]
+}
