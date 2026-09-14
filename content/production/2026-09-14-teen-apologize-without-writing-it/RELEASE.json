@@ -1,0 +1,24 @@
+{
+  "article": {
+    "state": "approved_building",
+    "approval": "Eric approved article release in Telegram on 2026-09-14.",
+    "updated_at": "2026-09-14",
+    "url": null,
+    "content_commit": null,
+    "deployment": null
+  },
+  "pinterest": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-09-14",
+    "cards": [],
+    "reason": "Article approval only. No Pinterest creation or publishing authority received."
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-09-14",
+    "provider_id": null,
+    "reason": "Article approval only. No email drafting or send authority received."
+  }
+}
