@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-09-14",
+  "audience": "parent",
+  "slug": "teen-apologize-without-writing-it",
+  "title": "How to Help Your Teen Apologize Without Writing the Apology for Them",
+  "summary": "Coach your teen to own the harm, ask what repair would help, do the practical work, and deliver the apology themselves without forcing forgiveness or contact.",
+  "seo_title": "Teen Apologies Without Taking Over",
+  "seo_description": "Use four clear steps to help your teen own a mistake, apologise, and repair peer harm without writing the message, forcing forgiveness, or taking over.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["judgment", "capability", "ownership", "independence"],
+  "release_move": "The parent holds safety and household boundaries, coaches the structure of repair, and leaves the apology's words, delivery, and reasonable repair work to the teen.",
+  "territory": "conflict",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "A good apology requires me to supply the right words and make sure my teen sends them.",
+    "to": "I can require accountability and coach repair while leaving the apology and its delivery to my teen."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "bridge_strength": "soft",
+    "reason": "The Social Playbook, Chapter 12, gives teens optional practice in admitting a mistake without excuses and asking how to repair it; this parent guide remains complete without the book."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "qa_score": 20,
+  "hero": {
+    "source": "media/teen-apologize-without-writing-it.webp",
+    "alt": "A teenager writes an apology on her own phone while her father sits nearby, attentive without taking over.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/teen-apologize-without-writing-it-480.webp", "width": 480},
+      {"source": "media/teen-apologize-without-writing-it-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-apologize-without-writing-it-social.webp",
+    "alt": "A teenager writes an apology on her own phone while her father sits nearby, attentive without taking over."
+  }
+}
