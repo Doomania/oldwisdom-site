@@ -1,11 +1,18 @@
 {
   "article": {
-    "state": "approved_building",
+    "state": "published",
     "approval": "Eric approved article release in Telegram on 2026-09-14.",
     "updated_at": "2026-09-14",
-    "url": null,
-    "content_commit": null,
-    "deployment": null
+    "url": "https://oldwisdomretold.com/articles/teen-apologize-without-writing-it",
+    "content_commit": "00bd51af6c9e9cf2f9c99dc243e547bf4ee25376",
+    "pull_request": "https://github.com/Doomania/oldwisdom-site/pull/33",
+    "deployment": {
+      "provider": "Cloudflare Pages",
+      "status": "success",
+      "completed_at": "2026-09-14T10:50:41Z",
+      "check_url": "https://dash.cloudflare.com/?to=/b0cceb41d0474f9eb68a4de99d08078c/pages/view/oldwisdomretold/382f445a-3ad9-4482-bd98-c665d0bb0ca3",
+      "production_smoke": "HTTP fetch and live SEO gate 20/20 passed"
+    }
   },
   "pinterest": {
     "state": "held",
