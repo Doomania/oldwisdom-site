@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-09-21",
+  "audience": "parent",
+  "slug": "teen-failed-test-parent-response",
+  "title": "What to Say After Your Teen Fails a Test",
+  "summary": "Use FEEL, FACTS, and ONE CHANGE to respond to a poor test result now, inspect the marked work later, and let your teen choose one method to try next.",
+  "seo_title": "What to Say After Your Teen Fails a Test",
+  "seo_description": "A calm first sentence and a three-step plan for parents after a teen fails a test: let the result land, inspect the marked work, and choose one change.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "RELEASE"],
+  "teen_outcomes": ["judgment", "capability", "ownership", "independence"],
+  "release_move": "The parent steadies the first response and holds access and wellbeing duties; the teen later inspects the evidence and chooses one method change before the next assessment.",
+  "qa_score": 16,
+  "territory": "confidence",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "A failed test needs an immediate lecture and a complete parent-designed recovery plan.",
+    "to": "I can steady the first moment, inspect the evidence later, and let my teen choose one method change."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "bridge_strength": "soft",
+    "reason": "The War Playbook, Chapter 29, helps a teen replace an identity verdict with a method question; the parent article gives the complete response and plan without the book."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "pinterest_campaign": {
+    "campaign": "teen-failed-test-parent-response",
+    "content": "teen-failed-test-parent-response"
+  },
+  "hero": {
+    "source": "media/teen-failed-test-parent-response.webp",
+    "alt": "A disappointed teenager studies a marked test at the kitchen table while a calm parent sits nearby and gives him space.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/teen-failed-test-parent-response-480.webp", "width": 480},
+      {"source": "media/teen-failed-test-parent-response-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-failed-test-parent-response-social.webp",
+    "alt": "A disappointed teenager studies a marked test at the kitchen table while a calm parent sits nearby and gives him space."
+  }
+}
