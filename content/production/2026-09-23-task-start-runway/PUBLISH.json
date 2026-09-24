@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "audience": "parent",
+  "slug": "task-start-runway",
+  "title": "Help Your Teen Start Tomorrow’s Work Without Taking It Over",
+  "summary": "Use a Start-Runway Reset to identify one practical blocker, choose one small visible first move, stage materials, and let your teen try the opening minutes of tomorrow’s work.",
+  "seo_title": "Help a Teen Start Homework Guide",
+  "seo_description": "A parent guide to help a teen start homework without taking over: name one blocker, choose one small first move, stage materials, then step back from the work.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "The parent helps set one practical starting line, holds access and wellbeing duties, and then steps back so the teen can try and judge a small work-session reset.",
+  "qa_score": 16,
+  "territory": "confidence",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "I need to push harder, supervise the whole task, or solve my teen’s difficulty starting work.",
+    "to": "We can lower one practical barrier and let my teen test a small first move without taking over the work."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "bridge_strength": "soft",
+    "reason": "War Playbook Chapter 19 gives a teen-facing way to redesign task conditions; this parent article provides a complete standalone setup tool without the book."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "published": "2026-09-24",
+  "hero": {
+    "source": "media/hero.webp",
+    "alt": "A teen chooses a first schoolwork step at a kitchen table while a parent stays nearby without taking over.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/hero-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "source": "media/hero-800.webp",
+        "width": 800,
+        "height": 533
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/social.webp",
+    "alt": "A teen chooses a first schoolwork step at a kitchen table while a parent stays nearby without taking over.",
+    "width": 1200,
+    "height": 800
+  },
+  "pinterest_campaign": {
+    "campaign": "task_start_runway_20260924"
+  }
+}

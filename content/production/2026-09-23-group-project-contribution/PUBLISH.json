@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "audience": "parent",
+  "slug": "group-project-contribution",
+  "title": "When Your Teen Is Doing More Than Their Share of a Group Project",
+  "summary": "Use a Contribution Ledger to separate agreed work from assumptions, help your teen make one neutral request, and use the school route proportionately when a live group task is at risk.",
+  "seo_title": "Teen Group Project Problems Guide",
+  "seo_description": "A parent guide for a teen group-project problem: record task facts, make one neutral request, and know when to involve the school before the work is at risk.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "judgment",
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "The parent helps separate task facts from assumptions and holds access, wellbeing, and safety duties; the teen makes one usable request and owns their agreed next contribution where able.",
+  "qa_score": 16,
+  "territory": "conflict",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "I need to choose a side, contact the school in anger, or tell my teen to carry the whole group project.",
+    "to": "We can identify the observable work gap, make one neutral request, and use the teacher route proportionately if the live task needs it."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "bridge_strength": "soft",
+    "reason": "Social Playbook Chapter 1 supports the teen-facing move from a personal criticism to a specific usable issue; the parent guide gives a complete standalone response first."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "published": "2026-09-24",
+  "hero": {
+    "source": "media/hero.webp",
+    "alt": "A teen and parent sort group-project notes at a table, focusing on the next practical step.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/hero-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "source": "media/hero-800.webp",
+        "width": 800,
+        "height": 533
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/social.webp",
+    "alt": "A teen and parent sort group-project notes at a table, focusing on the next practical step.",
+    "width": 1200,
+    "height": 800
+  },
+  "pinterest_campaign": {
+    "campaign": "group_project_contribution_20260924"
+  }
+}

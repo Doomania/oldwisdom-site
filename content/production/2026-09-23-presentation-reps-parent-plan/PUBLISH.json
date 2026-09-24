@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "audience": "parent",
+  "slug": "presentation-reps-parent-plan",
+  "title": "Your Teen Doesn’t Need a Confidence Speech Before a Presentation—They Need Reps",
+  "summary": "Use three short preparation reps—one run-through, one likely question, and one reset line—without taking over your teen’s event.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "GUIDE",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "The parent offers one bounded practice role; the teen chooses the material, the amount of rehearsal, and how to participate in the event.",
+  "qa_score": 16,
+  "territory": "confidence",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "My teen needs a big confidence talk or a parent-designed performance plan.",
+    "to": "I can offer a short practice option, preserve their ownership, and leave the outcome alone."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "bridge_strength": "soft",
+    "reason": "The War Playbook, Chapter 16, teaches preparation under pressure; this parent guide stays complete without the book."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "published": "2026-09-24",
+  "hero": {
+    "source": "media/hero.webp",
+    "alt": "A teenager practises a presentation at home while a parent listens as a quiet audience member.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/hero-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "source": "media/hero-800.webp",
+        "width": 800,
+        "height": 533
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/social.webp",
+    "alt": "A teenager practises a presentation at home while a parent listens as a quiet audience member.",
+    "width": 1200,
+    "height": 800
+  },
+  "pinterest_campaign": {
+    "campaign": "presentation_reps_parent_plan_20260924"
+  },
+  "seo_title": "Teen Presentation Practice Guide",
+  "seo_description": "A parent guide for helping a teen prepare for a presentation with one run-through, one likely question, and one reset line, without taking over the event."
+}

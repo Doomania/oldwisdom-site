@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "audience": "parent",
+  "slug": "reliability-signal",
+  "title": "When Your Teen Worries They Seem Unreliable",
+  "summary": "Help a teen practise one visible next commitment with an if–then cue and backup, without promising trust, forgiveness, or reputation repair.",
+  "seo_title": "Teen Missed Commitment Parent Guide",
+  "seo_description": "A parent plan for an ordinary missed commitment: help a teen choose one visible next step, add a cue and backup, and review the plan privately, not publicly.",
+  "journey_stage": "GUIDE",
+  "supports_stages": [
+    "SEE",
+    "UNDERSTAND",
+    "REFLECT",
+    "RELEASE"
+  ],
+  "teen_outcomes": [
+    "capability",
+    "ownership",
+    "independence"
+  ],
+  "release_move": "The parent holds policy, access, wellbeing, and safety duties while the teen chooses one visible next commitment, makes an ordinary ownership statement where needed, and privately reviews the practice.",
+  "qa_score": 16,
+  "territory": "confidence",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "A missed commitment requires a parent rescue, a large apology, or a quick promise that everyone will trust my teen again.",
+    "to": "My teen can practise one observable next commitment while we keep responsibility, policy, support, and social outcomes in their proper lanes."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "bridge_strength": "soft",
+    "reason": "The War Playbook, Chapter 23 offers a teen-owned lens on deliberate signals over time; this parent guide is complete without the book and makes no reputation-repair promise."
+  },
+  "next_step": {
+    "kind": "none"
+  },
+  "published": "2026-09-24",
+  "hero": {
+    "source": "media/hero.webp",
+    "alt": "A teen sets a reminder beside a calendar and sports bag while a parent listens nearby.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "source": "media/hero-480.webp",
+        "width": 480,
+        "height": 320
+      },
+      {
+        "source": "media/hero-800.webp",
+        "width": 800,
+        "height": 533
+      }
+    ]
+  },
+  "social_image": {
+    "source": "media/social.webp",
+    "alt": "A teen sets a reminder beside a calendar and sports bag while a parent listens nearby.",
+    "width": 1200,
+    "height": 800
+  },
+  "pinterest_campaign": {
+    "campaign": "reliability_signal_20260924"
+  }
+}
