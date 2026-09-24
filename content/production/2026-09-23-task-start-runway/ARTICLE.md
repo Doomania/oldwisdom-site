@@ -132,7 +132,7 @@ One hard evening does not establish a condition. But repeated difficulty startin
 
 This setup tool is not the whole response in that situation.
 
-If your teen talks about hurting themselves or someone else, has taken unsafe action, or there is an immediate safety concern, seek urgent local emergency or crisis help now. Do not wait to see whether a work plan helps.
+If your teen talks about hurting themselves or someone else, has taken unsafe action, or there is an immediate safety concern, [seek urgent local emergency or crisis help now, as AAP guidance advises for safety concerns.](https://www.healthychildren.org/English/ages-stages/teen/Pages/Mental-Health-and-Teens-Watch-for-Danger-Signs.aspx) Do not wait to see whether a work plan helps.
 
 ## The whole conversation for tonight
 

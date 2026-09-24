@@ -38,17 +38,17 @@
     "source": "media/hero.webp",
     "alt": "A teenager practises a presentation at home while a parent listens as a quiet audience member.",
     "width": 1536,
-    "height": 1024,
+    "height": 864,
     "variants": [
       {
         "source": "media/hero-480.webp",
         "width": 480,
-        "height": 320
+        "height": 270
       },
       {
         "source": "media/hero-800.webp",
         "width": 800,
-        "height": 533
+        "height": 450
       }
     ]
   },
@@ -56,7 +56,7 @@
     "source": "media/social.webp",
     "alt": "A teenager practises a presentation at home while a parent listens as a quiet audience member.",
     "width": 1200,
-    "height": 800
+    "height": 675
   },
   "pinterest_campaign": {
     "campaign": "presentation_reps_parent_plan_20260924"

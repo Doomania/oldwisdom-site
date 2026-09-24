@@ -107,7 +107,7 @@ This guide is for an ordinary upcoming performance moment. It is not a reason to
 
 If your teen has an accommodation, a communication need, an injury, a disability-related support plan, or a school arrangement that affects the event, use that plan. A parent may need to contact the relevant teacher, coordinator, or support person rather than making the teen manage formal access alone.
 
-Also look beyond rehearsal if fear or distress lasts for weeks, disrupts school, home, friendships, or daily life, or leads to persistent avoidance. A health professional, school support person, or qualified mental-health professional can help assess what is going on. If your teen talks about harming themselves or someone else, or there is immediate danger, seek urgent local help rather than treating it as a presentation problem.
+Also look beyond rehearsal if fear or distress lasts for weeks, disrupts school, home, friendships, or daily life, or leads to persistent avoidance. [NIMH guidance explains these as reasons to seek further help and to act immediately around unsafe behaviour or talk of harm.](https://www.nimh.nih.gov/health/publications/children-and-mental-health) A health professional, school support person, or qualified mental-health professional can help assess what is going on. If your teen talks about harming themselves or someone else, or there is immediate danger, seek urgent local help rather than treating it as a presentation problem.
 
 ## Try this tonight
 

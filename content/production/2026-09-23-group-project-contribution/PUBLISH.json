@@ -42,17 +42,17 @@
     "source": "media/hero.webp",
     "alt": "A teen and parent sort group-project notes at a table, focusing on the next practical step.",
     "width": 1536,
-    "height": 1024,
+    "height": 864,
     "variants": [
       {
         "source": "media/hero-480.webp",
         "width": 480,
-        "height": 320
+        "height": 270
       },
       {
         "source": "media/hero-800.webp",
         "width": 800,
-        "height": 533
+        "height": 450
       }
     ]
   },
@@ -60,7 +60,7 @@
     "source": "media/social.webp",
     "alt": "A teen and parent sort group-project notes at a table, focusing on the next practical step.",
     "width": 1200,
-    "height": 800
+    "height": 675
   },
   "pinterest_campaign": {
     "campaign": "group_project_contribution_20260924"
