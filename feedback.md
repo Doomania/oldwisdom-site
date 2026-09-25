@@ -9,3 +9,10 @@
 - Visual QA must explicitly transcribe and verify the CTA, not only headline/body copy and branding.
 - Character-led Pinterest scenes must not show forms, worksheets, open documents, notebooks with text, phone screens, calendars, or other legible in-scene surfaces. Generated perspective makes them appear upright to the viewer but upside down for characters; use non-text props and place all required copy only in the designed overlay.
 - Across any future character-led Pinterest batch, deliberately balance race/ethnicity and family representation. Do not default to one race; record the intended mix in the creative manifest before generation.
+
+## Repository workflow
+
+- **Single source of truth:** all OWR blogs, Pinterest pins, rules, and guidelines live in ONE repo only: D:\Claude\Projects\oldwisdom-site (remote: Doomania/oldwisdom-site).
+- **Never use git worktrees or standalone clones for OWR updates.** 2026-09-26 cleanup removed 12 worktrees + 4 clones (~1.8 GB duplicate disk).
+- Push/pull to origin from the single checkout. Do not re-clone or copy the repo for a blog, campaign, QA run, or release.
+- Follow docs/OWR_OPERATING_WORKFLOW.md (single-checkout workflow) for every guide lifecycle.
