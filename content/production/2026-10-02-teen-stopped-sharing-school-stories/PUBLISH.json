@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-10-03",
+  "audience": "parent",
+  "slug": "teen-stopped-sharing-school-stories",
+  "title": "When Your Teen Stops Telling You About School",
+  "summary": "When school stories get shorter, make the next small detail easier to finish: listen first, follow their thread, ask before advising, and check before retelling it.",
+  "seo_title": "Teen Stops Telling You About School",
+  "seo_description": "When your teen stops telling you about school, try listening to the small story, asking before you advise, and keeping safety checks separate from daily recaps.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "RELEASE"],
+  "teen_outcomes": ["judgment", "ownership", "independence"],
+  "release_move": "The parent keeps practical and safety responsibilities while giving a teen room to finish an ordinary school story, choose whether to ask for advice, and set reasonable privacy boundaries.",
+  "qa_score": 16,
+  "territory": "connection",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "I need a full school recap every evening to stay connected and catch problems.",
+    "to": "I can keep safety duties while making a small voluntary story easier to finish without turning it into an investigation."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "bridge_strength": "soft",
+    "reason": "The approved article names The Social Playbook Chapter 7 as an optional teen-owned listening parallel; the parent guide stands alone without the book."
+  },
+  "next_step": {"kind": "none"},
+  "pinterest_campaign": {
+    "campaign": "teen-stopped-sharing-school-stories",
+    "content": "teen-stopped-sharing-school-stories"
+  },
+  "hero": {
+    "source": "media/teen-stopped-sharing-school-stories.webp",
+    "alt": "A concerned parent gives her quiet teenager space across the kitchen table after school.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/teen-stopped-sharing-school-stories-480.webp", "width": 480},
+      {"source": "media/teen-stopped-sharing-school-stories-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-stopped-sharing-school-stories-social.webp",
+    "alt": "A concerned parent watches her quiet teenager across the kitchen table while giving him room."
+  }
+}

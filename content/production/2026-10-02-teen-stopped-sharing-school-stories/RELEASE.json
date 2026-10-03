@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-03",
+  "article": {
+    "state": "approved",
+    "approval": "Eric approved the article for publication on 2026-10-03 (New Zealand date); approval applies to the article only. Prior independent editorial QA: SHIP.",
+    "updated_at": "2026-10-03",
+    "url": null,
+    "proof": null,
+    "reason": "Local bundle, build, unit tests and generated SEO QA passed. Commit/push, deployment confirmation and production URL verification are pending. Pinterest and email remain held."
+  },
+  "pinterest": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-10-03",
+    "cards": [],
+    "reason": "Validation-only PINTEREST.md is not creative approval or permission to upload or schedule Pins."
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-10-03",
+    "provider_id": null,
+    "reason": "No email draft or send approval; no email sent."
+  }
+}
