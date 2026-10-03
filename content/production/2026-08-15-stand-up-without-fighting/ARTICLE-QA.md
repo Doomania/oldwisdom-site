@@ -70,6 +70,6 @@
 - `PUBLISH.json` — review manifest with responsive hero/social assets.
 - `EMAIL.md` — parent-first email draft with one article CTA.
 - `PINTEREST.md` — five copy/concept records and unique campaign URLs.
-- Pinterest approval queue and contact sheet: `D:\Hermes\workspace-import\projects\oldwisdomretold\pinterest_assets\static_generated\assertive_exit_lines_batch_20260815\`.
+- Pinterest creative metadata exists only in obsolete external-workspace evidence that was removed during repository consolidation; no local queue or card record remains. Treat the Pinterest channel as held and unreconciled; do not re-post, edit, or delete any related social record.
 
 No public-facing action has been taken.

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-26",
+  "article": {
+    "state": "live",
+    "approval": "Historical release record reconstructed from existing published PUBLISH.json; live URL verified HTTP 200 in the 2026-09-26 content-register audit.",
+    "updated_at": "2026-08-14",
+    "url": "https://oldwisdomretold.com/articles/teen-left-out-by-friends",
+    "proof": "Published source bundle and 2026-09-26 live URL audit."
+  },
+  "pinterest": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-09-26",
+    "cards": [],
+    "reason": "Historical Pinterest status is unreconciled. Do not infer, schedule, change, or delete social records."
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-09-26",
+    "provider_id": null,
+    "reason": "Historical email status is unreconciled. Do not infer a send."
+  }
+}

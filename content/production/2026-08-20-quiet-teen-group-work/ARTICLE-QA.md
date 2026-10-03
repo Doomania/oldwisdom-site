@@ -33,7 +33,7 @@
 | Diversity | PASS — five distinct forms: editorial, pen-pal note, checklist, recovery scenario, strategy map |
 | Visual QA | PASS — full-size review plus contact sheet; no garbled on-image copy accepted |
 | Mechanical gate | PASS — no layout clone pairs, metadata failures, routing failures, palette warnings, or batch text-diversity failures |
-| Audit report | `media/pinterest-audit/gate_contact_sheet_pin-01-group-work-freeze_pin-05-parent-plan_20260820_171505.jpg` |
+| Audit report | `D:/Claude/Projects/oldwisdomretold-social/article_pins/2026-08-20-quiet-teen-group-work/qa/pinterest-audit/gate_contact_sheet_pin-01-group-work-freeze_pin-05-parent-plan_20260820_171505.jpg` |
 
 ## Email
 

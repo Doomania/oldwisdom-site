@@ -147,7 +147,6 @@ def validate_bundle(root: Path, manifest_path: Path) -> Bundle:
         raise PublicationError(f"{manifest_path}: {next_step['kind']} next step needs target")
 
     bundle = Bundle(manifest_path.parent, meta)
-    validate_pinterest(bundle)
     if bundle.published:
         published = meta.get("published")
         try:
@@ -165,26 +164,8 @@ def validate_bundle(root: Path, manifest_path: Path) -> Bundle:
         else:
             if not (bundle.path / "SOURCES.md").is_file():
                 raise PublicationError(f"{manifest_path}: published bundles need SOURCES.md")
-            if not (bundle.path / "PINTEREST.md").is_file():
-                raise PublicationError(f"{manifest_path}: published bundles need PINTEREST.md")
             validate_media(root, bundle)
     return bundle
-
-
-def validate_pinterest(bundle: Bundle) -> None:
-    campaign_file = bundle.path / "PINTEREST.md"
-    if not campaign_file.is_file():
-        return
-    content = campaign_file.read_text(encoding="utf-8")
-    descriptions = re.findall(r"^- Description:\s*(.+)$", content, flags=re.MULTILINE)
-    if len(re.findall(r"^## Pin\s+\d+", content, flags=re.MULTILINE)) != 5 or len(descriptions) != 5:
-        raise PublicationError(f"{campaign_file}: expected five titled pins with descriptions")
-    for position, description in enumerate(descriptions, start=1):
-        if not all(token in description for token in ("utm_source=pinterest", "utm_medium=organic", "utm_campaign=", "utm_content=")):
-            raise PublicationError(f"{campaign_file}: Pin {position} must use the stable Pinterest UTM shape")
-    configured = bundle.meta.get("pinterest_campaign", {}).get("campaign")
-    if configured and any(f"utm_campaign={configured}" not in description for description in descriptions):
-        raise PublicationError(f"{campaign_file}: Pinterest campaign must match PUBLISH.json")
 
 
 def validate_media(root: Path, bundle: Bundle) -> None:

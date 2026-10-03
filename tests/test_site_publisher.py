@@ -44,12 +44,6 @@ class ParentGuidePublisherTests(unittest.TestCase):
             "<!-- AUDIENCE: PARENT -->\n\n# Example Guide\n\n## What to notice\n\nA useful paragraph for parents.", encoding="utf-8"
         )
         (self.bundle / "SOURCES.md").write_text("# Sources\n\n- https://example.com", encoding="utf-8")
-        pins = []
-        for number in range(1, 6):
-            pins.append(
-                f"## Pin {number}\n\n- Title: Example {number}\n- Description: Useful guide https://oldwisdomretold.com/quiz.html?utm_source=pinterest&utm_medium=organic&utm_campaign=example&utm_content=example-{number}"
-            )
-        (self.bundle / "PINTEREST.md").write_text("\n\n".join(pins), encoding="utf-8")
         for name in ("hero.webp", "hero-480.webp", "hero-800.webp", "og.webp"):
             (self.bundle / "media" / name).write_bytes(b"image")
 
@@ -154,14 +148,6 @@ class ParentGuidePublisherTests(unittest.TestCase):
 
         with self.assertRaisesRegex(PublicationError, "must match"):
             validate_bundle(self.root, path)
-
-    def test_pinterest_campaign_requires_every_pin_to_keep_utm_attribution(self):
-        self.write_manifest(self.manifest())
-        campaign = self.bundle / "PINTEREST.md"
-        campaign.write_text("## Pin 1\n\n- Title: Missing attribution\n- Description: No link", encoding="utf-8")
-
-        with self.assertRaisesRegex(PublicationError, "expected five titled pins"):
-            validate_bundle(self.root, self.bundle / "PUBLISH.json")
 
     def test_build_is_deterministic_and_missing_managed_marker_fails_closed(self):
         self.write_manifest(self.manifest())

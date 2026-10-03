@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-26",
+  "article": {
+    "state": "live",
+    "approval": "Published with the 2026-09-21 parent-guide release.",
+    "updated_at": "2026-09-21",
+    "url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response",
+    "proof": "Live URL returned HTTP 200 in the 2026-09-26 content-register audit."
+  },
+  "pinterest": {
+    "state": "scheduled",
+    "approval": "Eric approved generation and scheduling across the next ten days on 2026-09-21.",
+    "updated_at": "2026-09-21",
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens",
+    "cards": [
+      {"id": "teen-failed-test-parent-response-01", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3877331840646610240/", "scheduled_at": "2026-09-26T08:30:00+12:00", "destination_url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-failed-test-parent-response&utm_content=parent-script"},
+      {"id": "teen-failed-test-parent-response-02", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3877334353941357632/", "scheduled_at": "2026-09-27T19:30:00+12:00", "destination_url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-failed-test-parent-response&utm_content=three-step-reset"},
+      {"id": "teen-failed-test-parent-response-03", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3877335502509640896/", "scheduled_at": "2026-09-28T08:30:00+12:00", "destination_url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-failed-test-parent-response&utm_content=doorway-script"},
+      {"id": "teen-failed-test-parent-response-04", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3877336494075726336/", "scheduled_at": "2026-09-29T19:30:00+12:00", "destination_url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-failed-test-parent-response&utm_content=inspect-work-checklist"},
+      {"id": "teen-failed-test-parent-response-05", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3877337448967758912/", "scheduled_at": "2026-09-30T08:30:00+12:00", "destination_url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-failed-test-parent-response&utm_content=one-change-choice"}
+    ],
+    "proof": "Exact scheduled-card URLs, assets, hashes, disclosures, titles, and destination URLs are preserved in pinterest-queue.json and qa/pinterest-schedule-verification.json."
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-09-21",
+    "provider_id": null,
+    "reason": "No email send approval recorded."
+  }
+}

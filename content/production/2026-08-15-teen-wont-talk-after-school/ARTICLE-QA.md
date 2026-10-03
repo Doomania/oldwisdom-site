@@ -53,9 +53,8 @@
 
 ## Pinterest QA evidence
 
-- Queue: `D:\Hermes\workspace-import\projects\oldwisdomretold\pinterest_assets\static_generated\quiet_after_school_batch_20260815\APPROVAL_QUEUE.json`
-- Gate report: `D:\Hermes\workspace-import\projects\oldwisdomretold\pinterest_assets\static_generated\quiet_after_school_batch_20260815\qa\gate_report_quiet_quiet_20260815_145520.json`
-- Contact sheet: `D:\Hermes\workspace-import\projects\oldwisdomretold\pinterest_assets\static_generated\quiet_after_school_batch_20260815\qa\gate_contact_sheet_quiet_quiet_20260815_145520.jpg`
+- Historical external-workspace queue, gate-report, and contact-sheet references were invalidated during repository consolidation.
+- Pinterest card/permalink evidence is unreconciled; treat the channel as held. Do not re-post, edit, or delete until exact provider records are recovered into `RELEASE.json`.
 
 ## Mechanical verification
 
