@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-10-07",
+  "audience": "parent",
+  "slug": "teen-screen-free-activity",
+  "title": "How to Invite Your Teen Into Screen-Free Time Without Making It a Contest",
+  "summary": "Offer teen-chosen shared leisure without turning it into a screen-time battle: protect online commitments, make small invitations, accept refusals, and adjust together.",
+  "seo_title": "Screen-Free Activities With Teens",
+  "seo_description": "How to invite a teen into shared screen-free time without forcing a game night: respect online ties, handle refusals, and try small low-cost choices today.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["SEE", "UNDERSTAND", "REFLECT", "RELEASE"],
+  "teen_outcomes": ["judgment", "ownership", "independence"],
+  "release_move": "The parent keeps separate safety and household boundaries, while the teen can choose, change, decline, or end an ordinary shared leisure activity without punishment.",
+  "qa_score": 16,
+  "territory": "connection",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "I need to replace my teen's screen time with family activities they will eventually enjoy.",
+    "to": "I can offer small shared activities that fit their interests and let them refuse, while handling necessary limits separately."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "bridge_strength": "soft",
+    "reason": "The Social Playbook Chapter 3 contains a board-game example and perspective-taking premise; this parent guide adapts only the ethical, consent-respecting part, not its bait framing or scientific authority."
+  },
+  "next_step": {"kind": "none"},
+  "pinterest_campaign": {"campaign": "teen-screen-free-activity", "content": "teen-screen-free-activity"},
+  "hero": {
+    "source": "media/teen-screen-free-activity.webp",
+    "alt": "A teenager chooses the next card while a parent listens beside him at their kitchen table.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/teen-screen-free-activity-480.webp", "width": 480},
+      {"source": "media/teen-screen-free-activity-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-screen-free-activity-social.webp",
+    "alt": "A teen leads a relaxed card game at home while his parent pays attention."
+  }
+}

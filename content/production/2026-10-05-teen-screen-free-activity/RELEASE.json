@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-07",
+  "article": {
+    "state": "approved",
+    "approval": "Eric explicitly approved publishing and committing this article on 2026-10-07; article only, subject to release QA.",
+    "updated_at": "2026-10-07",
+    "url": "https://oldwisdomretold.com/articles/teen-screen-free-activity",
+    "reason": "Approved for article publication; production verification pending."
+  },
+  "pinterest": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-10-05",
+    "cards": [],
+    "reason": "No promotional assets, scheduling, or Pinterest approval."
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-10-05",
+    "provider_id": null,
+    "reason": "No email draft, send, or approval."
+  }
+}
