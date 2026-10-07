@@ -2,11 +2,11 @@
   "schema_version": 1,
   "updated_at": "2026-10-07",
   "article": {
-    "state": "approved",
-    "approval": "Eric explicitly approved publishing and committing this article on 2026-10-07; article only, subject to release QA.",
+    "state": "live",
+    "approval": "Eric explicitly approved publishing and committing this article on 2026-10-07; article only. Independent editorial/release QA: SHIP.",
     "updated_at": "2026-10-07",
     "url": "https://oldwisdomretold.com/articles/teen-screen-free-activity",
-    "reason": "Approved for article publication; production verification pending."
+    "proof": "Article source, responsive hero and OG, and generated site output pushed in 94b5cf771406ca1278a962b2925f5d8ab2c22433; Cloudflare Pages check completed successfully (https://github.com/Doomania/oldwisdom-site/runs/112708925244). Production canonical article returned HTTP 200 with expected canonical and SEO QA 20/20 on 2026-10-07 NZ. Live hero and OG returned HTTP 200 and their SHA-256 hashes matched local committed assets (6e350278cc28d44bba50b2c1758a72bf972c9080325de250e2c00890a3cfcd9c; 803c3bf22ac2114616edae1c15774684f22833bca19f1f3d7a8751eeecc874ba)."
   },
   "pinterest": {
     "state": "held",

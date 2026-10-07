@@ -19,7 +19,7 @@
 - Initial local generated SEO gate failed 18/20 for title length (81 characters) and description length (149 characters); source metadata repaired and complete gate rerun: 20/20 (53-character title, 155-character description).
 - `python scripts/site.py check content/production/2026-10-05-teen-screen-free-activity` PASS; `python scripts/site.py build` generated 8 files and one SEO-repair update; `python scripts/site.py build --check` PASS; `python scripts/site.py check --all` PASS; `PYTHONPATH=. python -m unittest discover -s tests -p 'test_*.py'`: 9 tests OK.
 - Dedicated review of rendered article: one canonical, index/follow, nine H2 sections, 1,365 visible words, five internal destinations and six external authority links; hero priority and structured data pass. Article continues to acknowledge null trial findings and states suggestions are not tested methods. No social-channel approval inferred.
-- Production deployment and live URL/asset smoke remain to be verified; release proof will be recorded after live readback.
+- Production verified on 2026-10-07 NZ: canonical article HTTP 200; Cloudflare Pages check for source commit `94b5cf771406ca1278a962b2925f5d8ab2c22433` completed success; production SEO gate 20/20. Hero and OG HTTP 200 with byte-identical committed assets. `RELEASE.json` holds exact live proof; Pinterest/email remain held.
 
 ## Prior editorial gate (2026-10-05)
 
