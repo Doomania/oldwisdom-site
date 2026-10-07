@@ -9,11 +9,19 @@
     "proof": "Article source, responsive hero and OG, and generated site output pushed in 94b5cf771406ca1278a962b2925f5d8ab2c22433; Cloudflare Pages check completed successfully (https://github.com/Doomania/oldwisdom-site/runs/112708925244). Production canonical article returned HTTP 200 with expected canonical and SEO QA 20/20 on 2026-10-07 NZ. Live hero and OG returned HTTP 200 and their SHA-256 hashes matched local committed assets (6e350278cc28d44bba50b2c1758a72bf972c9080325de250e2c00890a3cfcd9c; 803c3bf22ac2114616edae1c15774684f22833bca19f1f3d7a8751eeecc874ba)."
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
-    "updated_at": "2026-10-05",
-    "cards": [],
-    "reason": "No promotional assets, scheduling, or Pinterest approval."
+    "state": "scheduled",
+    "approval": "Eric requested scheduling this article's Pins on 2026-10-07 and explicitly approved the completed five-image visual batch in Telegram; Pinterest only, not email.",
+    "updated_at": "2026-10-07",
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens",
+    "cards": [
+      {"id": "p1-timing", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3923650691508471168/", "scheduled_at": "2026-10-11T06:30:00+13:00", "destination_url": "https://oldwisdomretold.com/articles/teen-screen-free-activity?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-screen-free-activity&utm_content=p1-timing-20261007"},
+      {"id": "p2-veto", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3923652347151976128/", "scheduled_at": "2026-10-14T13:00:00+13:00", "destination_url": "https://oldwisdomretold.com/articles/teen-screen-free-activity?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-screen-free-activity&utm_content=p2-veto-20261007"},
+      {"id": "p3-double-standard", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3923653612254725824/", "scheduled_at": "2026-10-17T08:00:00+13:00", "destination_url": "https://oldwisdomretold.com/articles/teen-screen-free-activity?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-screen-free-activity&utm_content=p3-double-standard-20261007"},
+      {"id": "p4-online-connections", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3923654752701270656/", "scheduled_at": "2026-10-19T14:30:00+13:00", "destination_url": "https://oldwisdomretold.com/articles/teen-screen-free-activity?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-screen-free-activity&utm_content=p4-online-connections-20261007"},
+      {"id": "p5-low-cost", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3923656187355597376/", "scheduled_at": "2026-10-22T05:30:00+13:00", "destination_url": "https://oldwisdomretold.com/articles/teen-screen-free-activity?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-screen-free-activity&utm_content=p5-low-cost-20261007"}
+    ],
+    "proof": "owr_video_pins_cdp.py completed dry-run preflight, then returned PINTEREST CONFIRMED and VERIFIED for each card (FINAL 1 / 1 and FINAL 4 / 4 MISSING []). Final --check: five rows, zero pending, fifteen provider scheduled cards. Exact provider URLs, destinations and asset hashes retained in oldwisdomretold-social/article_pins/2026-10-05-teen-screen-free-activity/queue/upload_history.csv. These are scheduled cards, not public Pin permalinks."
   },
   "email": {
     "state": "held",
