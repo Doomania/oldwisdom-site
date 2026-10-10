@@ -9,11 +9,44 @@
     "proof": "Source and generated assets committed/pushed at cddb405. Cloudflare Pages check succeeded (https://github.com/Doomania/oldwisdom-site/runs/114201738102). Canonical production URL passed live SEO QA 20/20 on 2026-10-11. Bundle check, build-current check and 9 unit tests passed before deployment."
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
+    "state": "scheduled",
+    "approval": "Eric requested \"schedule them, one each day\" for the five completed AI friendship verdict Pins on 2026-10-11; Pinterest only, not email.",
     "updated_at": "2026-10-11",
-    "cards": [],
-    "reason": "No Pin visual or publishing approval; no cards scheduled or published."
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens",
+    "cards": [
+      {
+        "id": "p1-first-response",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3933721026031011584/",
+        "scheduled_at": "2026-10-17T05:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-ai-friendship-verdict?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-ai-friendship-verdict&utm_content=p1-first-response-20261011"
+      },
+      {
+        "id": "p2-three-questions",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3933722644964962752/",
+        "scheduled_at": "2026-10-18T13:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-ai-friendship-verdict?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-ai-friendship-verdict&utm_content=p2-three-questions-20261011"
+      },
+      {
+        "id": "p3-private-messages",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3933723843696552512/",
+        "scheduled_at": "2026-10-19T07:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-ai-friendship-verdict?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-ai-friendship-verdict&utm_content=p3-private-messages-20261011"
+      },
+      {
+        "id": "p4-label-versus-evidence",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3933724981292867072/",
+        "scheduled_at": "2026-10-20T15:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-ai-friendship-verdict?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-ai-friendship-verdict&utm_content=p4-label-versus-evidence-20261011"
+      },
+      {
+        "id": "p5-safety-lanes",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3933726145196249792/",
+        "scheduled_at": "2026-10-21T08:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-ai-friendship-verdict?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-ai-friendship-verdict&utm_content=p5-safety-lanes-20261011"
+      }
+    ],
+    "proof": "Five image Pins passed scripted preflight, returned PINTEREST CONFIRMED and VERIFIED with exact scheduled-card URLs and dates; final --check: 5 rows, TO SCHEDULE: 0, provider scheduled cards: 13. Queue/upload_history.csv retains exact destinations and SHA-256 hashes. Scheduled-card URLs are not public Pin permalinks. Disclosure follow-up: scheduler set synthetic-person=true on all 5 despite p2, p3 and p5 depicting no people; supported correction not yet verified."
   },
   "email": {
     "state": "held",
