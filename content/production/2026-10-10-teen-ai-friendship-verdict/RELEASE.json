@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-11",
+  "article": {
+    "state": "approved",
+    "approval": "Eric replied APPROVE on 2026-10-11 to the exact request to publish the QA-reviewed article 'AI Called Your Teen’s Friend ‘Manipulative.’ What Now?' as an article only, with no Pinterest or email authorization.",
+    "updated_at": "2026-10-11",
+    "url": null,
+    "proof": "Editorial independent SHIP for internal review and media QA correction recorded in ARTICLE-QA.md; production release/build verification pending."
+  },
+  "pinterest": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-10-11",
+    "cards": [],
+    "reason": "No Pin visual or publishing approval; no cards scheduled or published."
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-10-11",
+    "provider_id": null,
+    "reason": "No email draft or send approval."
+  }
+}

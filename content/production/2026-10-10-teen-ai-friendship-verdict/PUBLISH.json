@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-10-11",
+  "audience": "parent",
+  "slug": "teen-ai-friendship-verdict",
+  "title": "AI Called Your Teen’s Friend ‘Manipulative.’ What Now?",
+  "summary": "A three-question conversation to check an AI friendship verdict, stop sharing private details, and leave an ordinary next step with your teen while keeping safety in view.",
+  "seo_title": "AI Called Teen’s Friend Manipulative?",
+  "seo_description": "When AI labels your teen’s friend manipulative, use three questions to check the answer, protect private details and choose a teen-owned next step together.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["UNDERSTAND", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["judgment", "ownership", "independence"],
+  "release_move": "The parent owns privacy and safety boundaries; the teen chooses whether and how to respond to an ordinary friendship uncertainty after checking the AI answer.",
+  "qa_score": 16,
+  "territory": "connection",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "I must either accept the bot’s verdict, disprove it, or take over the friendship decision.",
+    "to": "I can take my teen’s worry seriously, inspect what the AI knew, protect private details, and leave an ordinary choice with my teen."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "social",
+    "bridge_strength": "soft",
+    "reason": "The Social Playbook Chapter 17 offers optional perspective-taking about incomplete information, not chatbot safety; the guide works independently."
+  },
+  "next_step": {"kind": "none"},
+  "hero": {
+    "source": "media/teen-ai-friendship-verdict.webp",
+    "alt": "An adult woman watches with concern while a teenager studies a phone at the kitchen table.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/teen-ai-friendship-verdict-480.webp", "width": 480},
+      {"source": "media/teen-ai-friendship-verdict-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-ai-friendship-verdict-social.webp",
+    "alt": "A thoughtful teenager holds a phone while an adult woman watches with quiet concern."
+  }
+}
