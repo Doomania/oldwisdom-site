@@ -2,11 +2,11 @@
   "schema_version": 1,
   "updated_at": "2026-10-11",
   "article": {
-    "state": "approved",
+    "state": "live",
     "approval": "Eric replied APPROVE on 2026-10-11 to the exact request to publish the QA-reviewed article 'AI Called Your Teen’s Friend ‘Manipulative.’ What Now?' as an article only, with no Pinterest or email authorization.",
     "updated_at": "2026-10-11",
-    "url": null,
-    "proof": "Editorial independent SHIP for internal review and media QA correction recorded in ARTICLE-QA.md; production release/build verification pending."
+    "url": "https://oldwisdomretold.com/articles/teen-ai-friendship-verdict",
+    "proof": "Source and generated assets committed/pushed at cddb405. Cloudflare Pages check succeeded (https://github.com/Doomania/oldwisdom-site/runs/114201738102). Canonical production URL passed live SEO QA 20/20 on 2026-10-11. Bundle check, build-current check and 9 unit tests passed before deployment."
   },
   "pinterest": {
     "state": "held",
