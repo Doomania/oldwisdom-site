@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-26",
+  "updated_at": "2026-10-12",
   "article": {
     "state": "live",
     "approval": "Historical release record reconstructed from existing published PUBLISH.json; live URL verified HTTP 200 in the 2026-09-26 content-register audit.",
@@ -9,11 +9,26 @@
     "proof": "Published source bundle and 2026-09-26 live URL audit."
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
-    "updated_at": "2026-09-26",
-    "cards": [],
-    "reason": "Historical Pinterest status is unreconciled. Do not infer, schedule, change, or delete social records."
+    "state": "scheduled",
+    "approval": "Eric: \"schedule posts to pinterest\" on 2026-10-12, referring to the ten-pin evergreen popular-topic refresh.",
+    "updated_at": "2026-10-12",
+    "cards": [
+      {
+        "id": "evergreen-popular-topic-refresh-p1-quiet-ten-second-space",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3938230267937478400/",
+        "scheduled_at": "2026-10-23T05:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/quiet-kids-and-confidence?utm_source=pinterest&utm_medium=organic&utm_campaign=evergreen-popular-topic-refresh&utm_content=p1-quiet-ten-second-space-20261011"
+      },
+      {
+        "id": "evergreen-popular-topic-refresh-p2-quiet-listen-or-ideas",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3938232243855661056/",
+        "scheduled_at": "2026-10-24T13:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/quiet-kids-and-confidence?utm_source=pinterest&utm_medium=organic&utm_campaign=evergreen-popular-topic-refresh&utm_content=p2-quiet-listen-or-ideas-20261011"
+      }
+    ],
+    "historical_status_note": "Historical Pinterest activity before this batch remains unreconciled; this record only certifies the two new cards below.",
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens"
   },
   "email": {
     "state": "held",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-26",
+  "updated_at": "2026-10-12",
   "article": {
     "state": "live",
     "approval": "Historical release record reconstructed from existing published PUBLISH.json; live URL verified HTTP 200 in the 2026-09-26 content-register audit.",
@@ -9,11 +9,26 @@
     "proof": "Published source bundle and 2026-09-26 live URL audit."
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
-    "updated_at": "2026-09-26",
-    "cards": [],
-    "reason": "Historical Pinterest status is unreconciled. Do not infer, schedule, change, or delete social records."
+    "state": "scheduled",
+    "approval": "Eric: \"schedule posts to pinterest\" on 2026-10-12, referring to the ten-pin evergreen popular-topic refresh.",
+    "updated_at": "2026-10-12",
+    "cards": [
+      {
+        "id": "evergreen-popular-topic-refresh-p9-confidence-recovery",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3938242151808995584/",
+        "scheduled_at": "2026-10-31T15:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/signs-of-real-teen-confidence?utm_source=pinterest&utm_medium=organic&utm_campaign=evergreen-popular-topic-refresh&utm_content=p9-confidence-recovery-20261011"
+      },
+      {
+        "id": "evergreen-popular-topic-refresh-p10-confidence-five-receipts",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3938243299705706624/",
+        "scheduled_at": "2026-11-01T08:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/signs-of-real-teen-confidence?utm_source=pinterest&utm_medium=organic&utm_campaign=evergreen-popular-topic-refresh&utm_content=p10-confidence-five-receipts-20261011"
+      }
+    ],
+    "historical_status_note": "Historical Pinterest activity before this batch remains unreconciled; this record only certifies the two new cards below.",
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens"
   },
   "email": {
     "state": "held",
