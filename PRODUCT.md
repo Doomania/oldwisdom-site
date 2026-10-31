@@ -22,7 +22,7 @@ Give teens practical, usable strategies they can own. Give parents calm guidance
 
 - The Social Playbook: connection, conversation, reading people, and ethical influence.
 - The War Playbook: conflict, pressure, bullies, rivalries, and strategic composure.
-- The Discipline Playbook: habits and self-mastery; currently coming soon.
+- The Discipline Playbook: now available; 30 strategies for self-control, habits, consistency and self-mastery.
 - A free 15-question skills reflection with teen and parent paths, personalised profiles, lower-scoring areas to explore, and Brevo email capture.
 - A free Chapter 1 email lead magnet.
 

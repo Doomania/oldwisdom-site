@@ -1,4 +1,15 @@
-# GEO + Conversion rework — commit to Doomania/oldwisdom-site (root)
+# Site changes
+
+## Discipline Playbook launch — 31 October 2026
+
+- Feature the newly released third book in the homepage hero, with its approved front cover, gold release label, and practical self-control / habit copy.
+- Replace Discipline's coming-soon card and inactive footer cover with available-now content; preserve the Social, War, Parent Hub, and quiz journeys.
+- Add the third Book entity to the series schema; synchronize product status in llms.txt and project documentation.
+- Add a proportion-preserving 825 × 1275 WebP cover and a 1200 × 630 launch share card. Remove the outdated approximate Social page-count claim.
+- Until the direct Discipline listing is supplied, the labeled Amazon action searches for the exact title and author rather than inventing a product URL.
+- Validation: nine existing tests pass, publisher check passes, JSON-LD has three books, and desktop/mobile browser checks show no broken images or horizontal overflow.
+
+## GEO + Conversion rework
 
 - Replaced the previous book renders with the July 2026 wraps: extracted the baked checkerboard, normalized all three mockups to a consistent 5:7 transparent canvas, rebuilt the three-book group, and added a dark 1200 × 630 social-sharing image with versioned filenames for cache-safe rollout.
 

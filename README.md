@@ -42,10 +42,10 @@ is a convenience layer, not reviewed editorial copy and not multilingual SEO.
 |---|---|---|---|
 | 1 | The Social Playbook | Dale Carnegie, Socrates | a.co/d/0gjqlkB6 |
 | 2 | The War Playbook | Sun Tzu | a.co/d/0gu0a2CR |
-| 3 | The Discipline Playbook | Stoics | in production |
+| 3 | The Discipline Playbook | Stoics | Available now — homepage links to Amazon title/author search pending the direct listing URL |
 
 ## GEO (AI search) setup
-- JSON-LD on both pages: `BookSeries`, `Book`×2, `Person`, `FAQPage`, `WebSite`/`Quiz`/`BreadcrumbList`
+- Homepage JSON-LD includes `BookSeries`, `Book`×3, `Person`, `FAQPage`, and `WebSite`; quiz has its own page schema.
 - Visible FAQ text mirrors schema exactly (index.html `#faq`)
 - `llms.txt` at root — keep in sync when a book status changes
 - Validate after any content edit: https://search.google.com/test/rich-results
