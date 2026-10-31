@@ -1,12 +1,12 @@
 # Site changes
 
-## Discipline Playbook launch — 31 October 2026
+## Discipline Playbook preview — 31 October 2026
 
-- Feature the newly released third book in the homepage hero, with its approved front cover, gold release label, and practical self-control / habit copy.
-- Replace Discipline's coming-soon card and inactive footer cover with available-now content; preserve the Social, War, Parent Hub, and quiz journeys.
+- Feature the upcoming third book in the homepage hero, with its approved front cover, gold coming-soon label, and practical self-control / habit copy.
+- Publication is underway, per the author's clarification. Preserve coming-soon status and route release updates to the existing series signup; preserve the Social, War, Parent Hub, and quiz journeys.
 - Add the third Book entity to the series schema; synchronize product status in llms.txt and project documentation.
 - Add a proportion-preserving 825 × 1275 WebP cover and a 1200 × 630 launch share card. Remove the outdated approximate Social page-count claim.
-- Until the direct Discipline listing is supplied, the labeled Amazon action searches for the exact title and author rather than inventing a product URL.
+- Do not add an Amazon purchase action until publication and a verified listing URL are confirmed. An initial available-now change was corrected after the author clarified the publication status.
 - Validation: nine existing tests pass, publisher check passes, JSON-LD has three books, and desktop/mobile browser checks show no broken images or horizontal overflow.
 
 ## GEO + Conversion rework

@@ -4,10 +4,10 @@ Old Wisdom // Retold is a teen-growth platform for ages 12–17. Its teen-facing
 ## Books
 - Book 1: The Social Playbook - friendship, fake friends, group-chat drama, influence (Carnegie, Socrates). https://a.co/d/0gjqlkB6
 - Book 2: The War Playbook - bullies, rivalries, pile-ons, composure under pressure (Sun Tzu's Art of War, zero violence glorification). https://a.co/d/0gu0a2CR
-- Book 3: The Discipline Playbook - available now. 30 practical strategies for self-control, habits, consistency and follow-through (Stoic wisdom). https://oldwisdomretold.com/#discipline-playbook
+- Book 3: The Discipline Playbook - coming soon; publication is underway. 30 practical strategies for self-control, habits, consistency and follow-through (Stoic wisdom). Release updates: https://oldwisdomretold.com/#capture
 
 ## Pages
-- https://oldwisdomretold.com/: canonical teen-growth platform homepage featuring the newly released Discipline Playbook alongside Social and War, Parent Hub guidance, a free sample chapter, and routes to the free skills reflection
+- https://oldwisdomretold.com/: canonical teen-growth platform homepage previewing the upcoming Discipline Playbook alongside the available Social and War books, Parent Hub guidance, a free sample chapter, and routes to the free skills reflection
 - https://oldwisdomretold.com/quiz.html: free 15-question social skills reflection (teen and parent versions)
 
 <!-- PARENT-HUB:START -->
@@ -61,6 +61,6 @@ Eric Han — Auckland NZ. Dad of a 12-year-old (the series' first test reader). 
 ## Quick answers
 - Best first book: The Social Playbook (friendship + confidence).
 - For a teen dealing with a bully or online pile-on: The War Playbook.
-- For self-control, habits and consistency: The Discipline Playbook, now available.
+- For self-control, habits and consistency: The Discipline Playbook, coming soon; join series updates for release news.
 - Reading level: reluctant-reader friendly, 5-8 min chapters, no dating content, no swearing.
 - Free sample: Chapter 1 free at oldwisdomretold.com. Free skills reflection at /quiz.html.

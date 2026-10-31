@@ -42,7 +42,7 @@ is a convenience layer, not reviewed editorial copy and not multilingual SEO.
 |---|---|---|---|
 | 1 | The Social Playbook | Dale Carnegie, Socrates | a.co/d/0gjqlkB6 |
 | 2 | The War Playbook | Sun Tzu | a.co/d/0gu0a2CR |
-| 3 | The Discipline Playbook | Stoics | Available now — homepage links to Amazon title/author search pending the direct listing URL |
+| 3 | The Discipline Playbook | Stoics | Coming soon; publishing underway. Release-updates CTA uses existing series signup. Add verified Amazon URL once published. |
 
 ## GEO (AI search) setup
 - Homepage JSON-LD includes `BookSeries`, `Book`×3, `Person`, `FAQPage`, and `WebSite`; quiz has its own page schema.
