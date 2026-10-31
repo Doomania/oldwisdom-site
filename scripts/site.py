@@ -284,6 +284,21 @@ def display_date(value: str) -> str:
     return f"{parsed.day} {parsed.strftime('%B %Y')}"
 
 
+def book_sample_companion(slug: str) -> str:
+    matches = {
+        'help-teen-start-conversation-without-making-it-weird': ('social', 'Social', 'conversation'),
+        'stand-up-without-fighting': ('war', 'War', 'boundaries and pressure'),
+        'stop-reminding-homework': ('discipline', 'Discipline', 'habits and follow-through'),
+    }
+    if slug not in matches:
+        return ''
+    book_id, title, skill = matches[slug]
+    return (f'<section class="next-step"><p class="eyebrow">A TOOL YOUR TEEN CAN CHOOSE</p>'
+            f'<h2>Want a teen-facing way to practise {skill}?</h2>'
+            f'<p>Read a short excerpt from The {title} Playbook together, or let your teen explore it independently.</p>'
+            f'<a href="/books/the-{book_id}-playbook#sample" data-event="sample_opened" data-event-label="{slug}">Read the {title} excerpt</a></section>')
+
+
 def destination(bundle: Bundle) -> str:
     step = bundle.meta.get("next_step", {"kind": "none"})
     kind = step["kind"]
@@ -389,7 +404,7 @@ def generated_article(root: Path, config: dict[str, Any], bundle: Bundle) -> tup
         "published_display": display_date(bundle.meta["published"]),
         "reading_time": str(max(1, math.ceil(len(words) / 220))),
         "hero": hero_html,
-        "body": body,
+        "body": body + book_sample_companion(bundle.slug),
         "release_move": html.escape(bundle.meta["release_move"]),
         "next_step": destination(bundle),
         "parent_growth_signup": parent_growth_signup(config, "guide"),

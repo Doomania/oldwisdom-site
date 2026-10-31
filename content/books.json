@@ -1,0 +1,108 @@
+[
+  {
+    "slug": "social",
+    "name": "The Social Playbook",
+    "code": "01",
+    "accent": "#6ba5ff",
+    "cover": "social-flat-cover.webp",
+    "amazon": "https://a.co/d/0gjqlkB6",
+    "subtitle": "Gen Alpha Edition",
+    "search_label": "Social skills for teens",
+    "description": "30 practical strategies for teens to understand people, handle awkward conversations and build stronger relationships. Read a real excerpt before choosing.",
+    "promise": "Find your words and understand the people around you.",
+    "situations": [
+      "You want to speak up without performing a different personality.",
+      "A joke or criticism has made a conversation harder.",
+      "You want stronger friendships and a better way to disagree."
+    ],
+    "fit": "For teens who want practical language and small exercises for everyday social situations.",
+    "source_heading": "Carnegie's social principles, translated into teen situations",
+    "source_note": "The manuscript explicitly acknowledges Dale Carnegie's How to Win Friends and Influence People alongside Socrates and other thinkers. Chapter 1 explores how criticism can trigger self-defence. This is an adaptation of social principles rather than a translation of a single classic.",
+    "chapter": "Chapter 1 — Don't Kick the Beehive",
+    "excerpt": [
+      "The Cheat Code: Stop roasting, judging, and whining. Ever. It's a self-nerf.",
+      "[…]",
+      "Here's the main quest logic that you need to install in your brain:",
+      "Even the biggest bot in the lobby thinks they're the main character.",
+      "[…]",
+      "They don't listen to your advice. They build a wall of excuses. They blame the lag, the controller, or you."
+    ],
+    "practice": "Before criticising someone today, describe the specific problem and ask one genuine question about what happened. Notice how they respond.",
+    "parent_heading": "Help with a conversation without putting words in their mouth",
+    "parent_note": "Try a small conversation practice with your teen, then give them room to make the first move.",
+    "guide": "help-teen-start-conversation-without-making-it-weird",
+    "source_file": "01_BOOKS/social_playbook/The_Social_Playbook_V4_KDP_FORMATTED.docx"
+  },
+  {
+    "slug": "war",
+    "name": "The War Playbook",
+    "code": "02",
+    "accent": "#e84455",
+    "cover": "war-flat-cover.webp",
+    "amazon": "https://a.co/d/0gu0a2CR",
+    "subtitle": "Ancient Strategy for Modern Pressure, Conflict, and Real Life",
+    "search_label": "Handling conflict and pressure",
+    "description": "30 strategies inspired by Sun Tzu for teens facing pressure, conflict and difficult choices. Practise composure, boundaries and thinking before reacting.",
+    "promise": "Read the situation before you react.",
+    "situations": [
+      "A vague accusation in a group chat makes you want to fire back.",
+      "Someone keeps pushing a boundary.",
+      "You need to choose whether to answer, repair, leave or get help."
+    ],
+    "fit": "For teens facing conflict or pressure who want a calmer way to assess their options.",
+    "source_heading": "Sun Tzu's The Art of War, adapted for everyday decisions",
+    "source_note": "The manuscript identifies The Art of War as its source. Its first section uses the principle of knowing yourself and the situation before acting. The modern message exchange below is Eric Han's example, rather than a quotation from Sun Tzu.",
+    "chapter": "Chapter 1 — Don't Fight Blind",
+    "excerpt": [
+      "Your phone buzzes.",
+      "“I heard what you said about me.”",
+      "Your stomach drops. Your face gets hot. Your thumb is already hovering over the keyboard.",
+      "You don’t know what they heard. You don’t know who told them. You don’t know if it’s true. You don’t even know if this is a real accusation or just bait.",
+      "[…]",
+      "You slow down. You ask one calm question.",
+      "“What exactly did you hear?”",
+      "Then you shut up and wait."
+    ],
+    "practice": "When a message feels loaded, pause and ask one calm question to clarify what actually happened. Bring threats or safety concerns to a trusted adult.",
+    "parent_heading": "Help them hold a boundary without escalating the fight",
+    "parent_note": "Read a practical guide to boundary wording, safety and proportionate adult support.",
+    "guide": "stand-up-without-fighting",
+    "source_file": "01_BOOKS/war_playbook/The_War_Playbook_KDP_v5_final.docx"
+  },
+  {
+    "slug": "discipline",
+    "name": "The Discipline Playbook",
+    "code": "03",
+    "accent": "#e8c878",
+    "cover": "discipline-release-cover.webp",
+    "amazon": "https://a.co/d/06SKeoFm",
+    "subtitle": "30 Cheat Codes for Teens Who Want Focus, Follow-Through, and Self-Respect",
+    "search_label": "Focus, habits and follow-through",
+    "description": "30 practical strategies for teens who struggle to start, stay focused or restart after a setback. Explore self-control and habits through small actions.",
+    "promise": "Give the next useful step a shape.",
+    "situations": [
+      "The assignment is open but you still haven't started.",
+      "A phone or video keeps taking the whole evening.",
+      "You missed a day and feel like giving up the whole plan."
+    ],
+    "fit": "For teens who want to start, follow through and recover after a lapse. Choose a chapter that matches one real task.",
+    "source_heading": "Classical wisdom alongside practical habit research",
+    "source_note": "The Sources and Notes identify Marcus Aurelius's Meditations, Epictetus's Discourses and Benjamin Franklin's Autobiography, alongside modern research. The classical passages are identified as the author's renderings. Chapter 1 turns the question of acting now into a concrete commitment.",
+    "chapter": "Chapter 1 — The Promise Nobody Heard",
+    "excerpt": [
+      "Tane makes the deal at 6:38, standing at the dishwasher.",
+      "Plate in. Straight upstairs. Ninety minutes. Done by eight.",
+      "He says it in his head with real conviction, the way you'd say it to a teacher who was actually listening. Nobody heard it. That's the thing about this kind of promise. There's never anyone in the room.",
+      "[…]",
+      "A promise with no shape isn't a plan. It's a mood you had at 6:38.",
+      "[…]",
+      "One next action. Not the whole thing. The first move, small enough to start without a run-up.",
+      "A rough when. Tonight after dinner. On the bus. Saturday morning."
+    ],
+    "practice": "Name one task, its first visible action, and a rough time you can try it. After that opportunity, notice what helped or got in the way.",
+    "parent_heading": "Try a homework handoff instead of another evening of reminders",
+    "parent_note": "Agree on a simple tracking system and one weekly review while your teen practises owning the daily plan.",
+    "guide": "stop-reminding-homework",
+    "source_file": "C:/Users/wen12/Downloads/The_Discipline_Playbook_KDP.docx"
+  }
+]

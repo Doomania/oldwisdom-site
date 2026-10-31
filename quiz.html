@@ -283,7 +283,8 @@ body.path-parent .ambient-2 { opacity: 0.015; }
         <div class="path-desc">Reflect on what you are seeing without diagnosing or taking over</div>
       </button>
     </div>
-    <div class="splash-note">Takes ~4 minutes · Free · No login required</div>
+    <div class="splash-note">Takes ~4 minutes · Free · Results without email</div>
+    <p style="text-align:center;margin:1rem"><a href="/books/the-discipline-playbook">Here for habits or procrastination? Explore Discipline →</a></p>
     <section aria-label="What this quiz measures" style="max-width:520px;margin:2.5rem auto 0;font-size:0.82rem;color:var(--dim);line-height:1.65;text-align:center;">
       <p>The Teen Social Skills Quiz is a free 15-question reflection for teens 12–17, with a separate parent path. It looks at connection, social context, influence without force, conflict and group pressure, and confidence. Results suggest three areas to explore and one small next step; they are informational, not a clinical or psychological assessment.</p>
     </section>
@@ -313,13 +314,14 @@ body.path-parent .ambient-2 { opacity: 0.015; }
 </div>
 
 <!-- EMAIL GATE -->
-<div class="screen" id="screen-gate" role="main" aria-label="Enter email to unlock results">
+<div class="screen" id="screen-gate" role="main" aria-label="Optional Social chapter signup">
   <div class="inner">
     <div class="gate-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     </div>
-    <h2 class="gate-h2">ONE STEP TO<br>YOUR RESULTS</h2>
-    <p class="gate-sub">Your answers point to three skill areas worth exploring. Enter your email to unlock the report — and get Chapter 1 of <em>The Social Playbook</em> free.</p>
+    <h2 class="gate-h2">TRY A CHAPTER<br>IN YOUR OWN TIME</h2>
+    <p class="gate-sub">Your results are already available. Optionally subscribe for Chapter 1 of <em>The Social Playbook</em> and occasional series updates.</p>
+    <button class="btn-secondary" type="button" onclick="showResults()">BACK TO MY RESULTS</button>
     <div class="gate-preview">
       <span class="gate-pill">Your social profile</span>
       <span class="gate-pill">3 areas to explore</span>
@@ -351,9 +353,9 @@ body.path-parent .ambient-2 { opacity: 0.015; }
           <input type="hidden" name="PATH" id="fldPATH" value="">
           <div style="padding:6px 0;">
             <div class="sib-form-block">
-              <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form-quiz" type="submit" aria-label="Show my results and subscribe">
+              <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form-quiz" type="submit" aria-label="Subscribe for the free Social chapter">
                 <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/></svg>
-                SHOW MY RESULTS →
+                SEND MY FREE CHAPTER →
               </button>
             </div>
           </div>
@@ -735,6 +737,7 @@ let RESULT = null;
 // ==================== QUIZ LOGIC ====================
 
 function startQuiz(path) {
+  if (window.owrTrack) window.owrTrack('quiz_started', 'quiz');
   currentPath = path;
   currentQ = 0;
   answers = {};
@@ -800,7 +803,8 @@ function goNext() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   } else {
     computeResults();
-    showScreen("screen-gate");
+    if (window.owrTrack) window.owrTrack('quiz_completed', 'quiz');
+    showResults();
   }
 }
 
@@ -852,7 +856,7 @@ function initGateForm() {
 
     if (!form.checkValidity() || !emailInput || !emailInput.value.includes("@")) {
       form.reportValidity();
-      status.textContent = "Enter a valid email address to save and open your report.";
+      status.textContent = "Enter a valid email address to request the free chapter.";
       status.classList.add("error");
       return;
     }
@@ -869,7 +873,7 @@ function initGateForm() {
         mode: "no-cors",
         keepalive: true
       });
-      status.textContent = "Saved. Opening your report…";
+      status.textContent = "Request sent. Check your inbox for the next step.";
       showResults();
     } catch (error) {
       status.textContent = "We couldn't save the email. Check your connection and try again.";
@@ -928,7 +932,7 @@ function showResults() {
     '<div class="result-profile" style="color:' + profile.color + '">' + profile.label + '</div>' +
     '<div class="result-tagline">' + profile.tagline + '</div>' +
     '<div class="result-score-bar">' +
-    '<div class="score-label"><span>OVERALL SOCIAL INTELLIGENCE</span><span style="color:' + profile.color + ';font-weight:700">' + profile.pct + '%</span></div>' +
+    '<div class="score-label"><span>YOUR SELF-REPORTED RESPONSES</span><span style="color:' + profile.color + ';font-weight:700">' + profile.pct + '%</span></div>' +
     '<div class="score-track"><div class="score-fill" id="scoreFill" style="background:linear-gradient(90deg,var(--blue),' + profile.color + ')"></div></div>' +
     '</div>' +
     '</div>' +
@@ -951,6 +955,8 @@ function showResults() {
     '<a href="' + BOOK2_URL + '" target="_blank" rel="noopener noreferrer" class="btn-buy war" aria-label="Buy The War Playbook on Amazon" data-event="amazon_clicked" data-event-label="war playbook quiz result">BOOK 2 — WAR</a>' +
     '</div>' +
     '</div>' +
+    '<p style="text-align:center;margin:1.5rem"><a href="/books/the-social-playbook#sample">Read a Social excerpt</a> · <a href="/books/the-war-playbook#sample">Read a War excerpt</a></p>' +
+    '<p style="text-align:center"><button type="button" class="btn-buy book" onclick="showScreen(\'screen-gate\')" data-event="sample_signup_clicked" data-event-label="quiz optional chapter">GET SOCIAL CHAPTER 1 BY EMAIL</button></p>' +
     '<div class="result-retake" onclick="retake()" role="button" tabindex="0">← Retake as the other path</div>';
 
   showScreen("screen-results");

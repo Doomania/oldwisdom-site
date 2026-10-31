@@ -4,9 +4,12 @@ Old Wisdom // Retold is a teen-growth platform for ages 12–17. Its teen-facing
 ## Books
 - Book 1: The Social Playbook - friendship, fake friends, group-chat drama, influence (Carnegie, Socrates). https://a.co/d/0gjqlkB6
 - Book 2: The War Playbook - bullies, rivalries, pile-ons, composure under pressure (Sun Tzu's Art of War, zero violence glorification). https://a.co/d/0gu0a2CR
-- Book 3: The Discipline Playbook - available now. 30 practical strategies for self-control, habits, consistency and follow-through (Stoic wisdom). https://a.co/d/06SKeoFm
+- Book 3: The Discipline Playbook - available now. 30 practical strategies for self-control, habits, consistency and follow-through, drawing on Stoic sources, Franklin and modern research. https://a.co/d/06SKeoFm
 
 ## Pages
+- https://oldwisdomretold.com/books/the-social-playbook: social skills book for teens, with an ungated Chapter 1 excerpt and explanation of its Carnegie-inspired principles.
+- https://oldwisdomretold.com/books/the-war-playbook: conflict and pressure book for teens, with an ungated excerpt and its connection to Sun Tzu.
+- https://oldwisdomretold.com/books/the-discipline-playbook: habits and follow-through book for teens, with an ungated excerpt, classical influences and modern research context.
 - https://oldwisdomretold.com/: canonical teen-growth platform homepage featuring the available Social, War and Discipline Playbooks, Parent Hub guidance, a free sample chapter, and routes to the free skills reflection
 - https://oldwisdomretold.com/quiz.html: free 15-question social skills reflection (teen and parent versions)
 

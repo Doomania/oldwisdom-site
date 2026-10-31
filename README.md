@@ -7,6 +7,8 @@ Live: https://oldwisdomretold.com
 ## Structure
 ```
 index.html      platform homepage — mission, Playbooks, Parent Hub, FAQ, email capture
+books/          book detail pages with manuscript excerpts and free parent companions
+content/books.json reviewed book copy, excerpts, and manuscript provenance
 quiz.html       15-question social skills reflection → suggests useful places to begin
 articles/       static parent guides using the existing site design and metadata conventions
 parents/        generated Parent Hub, organised by the Parent Growth Journey
@@ -22,6 +24,8 @@ llms.txt        AI-engine site map (platform, Playbooks, Parent Hub, articles)
 ```
 
 The deployed site is plain static HTML. The Parent Hub uses a Python standard-library build step before commit; production still has no runtime application server or package manager. CDN fonts and GSAP are used only for homepage presentation.
+
+Regenerate book pages with `python scripts/build_book_pages.py`. See `docs/GROWTH_IMPLEMENTATION.md` for rollout scope, excerpt provenance, QA, and pending analytics access. Browser event hooks alone do not collect an aggregate baseline.
 
 ## Runtime translation
 

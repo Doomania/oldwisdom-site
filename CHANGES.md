@@ -1,5 +1,13 @@
 # Site changes
 
+## Reader journeys and book discovery — 1 November 2026
+
+- Move the three-book selector after a situation-led hero and introduce a free parent homework handoff.
+- Add three book pages with actual manuscript excerpts, verified source descriptions and optional parent companions.
+- Add situation-based Parent Hub entry and three contextual article links to samples.
+- Make quiz results available without email and retain the optional Social chapter signup.
+- Separate purchase and review event hooks, update sitemap and book entities. Measurement access and historical baseline remain pending as documented in docs/GROWTH_IMPLEMENTATION.md.
+
 ## Consistent three-book presentation — 1 November 2026
 
 - Use clean flat front covers for all three series cards and footer thumbnails at matching 11:17 proportions; extract Social and War fronts from the corrected paperback wraps.

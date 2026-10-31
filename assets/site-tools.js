@@ -169,9 +169,34 @@
     updateBackToTop();
   }
 
+  window.owrTrack = function (name, label) {
+    var detail = { event: name, event_label: label, page_path: window.location.pathname };
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(detail);
+    window.dispatchEvent(new CustomEvent('owr:analytics', { detail: detail }));
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', name, { event_label: label, page_path: window.location.pathname });
+    }
+  };
+
   function initialiseSiteTools() {
     createLanguageTool();
     createBackToTopTool();
+    document.addEventListener('click', function (event) {
+      var control = event.target.closest('[data-event]');
+      if (!control) return;
+      var name = control.dataset.event;
+      var label = control.dataset.eventLabel || '';
+      if (name === 'amazon_clicked') {
+        name = label.indexOf('review') >= 0 ? 'amazon_review_clicked' : 'amazon_purchase_clicked';
+      }
+      window.owrTrack(name, label);
+    });
+    document.addEventListener('submit', function (event) {
+      if (event.target.checkValidity()) {
+        window.owrTrack('signup_requested', event.target.id || 'site form');
+      }
+    });
   }
 
   if (document.readyState === 'loading') {
