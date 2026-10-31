@@ -202,14 +202,15 @@ p { text-wrap: pretty; }
 .series-header .section-h2 { margin-bottom: 0.8rem; }
 .series-sub { font-size: 1rem; color: var(--text-dim); max-width: 500px; margin: 0 auto; }
 .series-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-.series-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), transform 0.35s var(--ease-out); position: relative; }
+.series-card { display: flex; flex-direction: column; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), transform 0.35s var(--ease-out); position: relative; }
 .series-card:hover { transform: translateY(-6px); }
 .series-card.live-blue:hover { border-color: rgba(77,148,255,0.3); box-shadow: 0 20px 40px rgba(77,148,255,0.08); }
 .series-card.live-red:hover { border-color: rgba(204,34,51,0.3); box-shadow: 0 20px 40px rgba(204,34,51,0.08); }
 .series-card.live-gold:hover { border-color: rgba(212,168,75,0.4); box-shadow: 0 20px 40px var(--gold-glow); }
-.series-card-img.discipline-cover { aspect-ratio: 11/17; object-fit: contain; }
-.series-card-img { width: 100%; height: auto; aspect-ratio: 5/7; object-fit: cover; object-position: center top; display: block; border-radius: 8px 8px 0 0; }
-.series-card-body { padding: 1.4rem; }
+.series-card-img { width: 100%; height: auto; aspect-ratio: 11/17; object-fit: contain; display: block; flex-shrink: 0; }
+.series-card-body { padding: 1.4rem; display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
+.series-card-body .series-card-meta { margin-top: auto; padding-top: 0.25rem; }
+.series-card-body .btn-primary { min-height: 48px; }
 .series-card-status { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 0.75rem; }
 .series-card-code { margin-bottom: 0.5rem; font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.25em; opacity: 0.7; }
 .series-card-code.social { color: var(--blue-soft); }
@@ -308,7 +309,7 @@ p { text-wrap: pretty; }
 .btn-war-cta { background: var(--red) !important; }
 .btn-war-cta:hover { background: var(--red-soft) !important; box-shadow: 0 8px 30px rgba(204,34,51,0.3) !important; }
 .final-book-strip { display: flex; justify-content: center; gap: 1.2rem; margin-top: 3rem; }
-.final-mini { width: 68px; height: auto; border-radius: 4px; opacity: 0.35; transition: opacity 0.3s, transform 0.3s; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.4)); aspect-ratio: 5/7; object-fit: cover; }
+.final-mini { width: 68px; height: auto; border-radius: 4px; opacity: 0.35; transition: opacity 0.3s, transform 0.3s; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.4)); aspect-ratio: 11/17; object-fit: contain; }
 .final-mini.active { opacity: 1; transform: translateY(-4px); }
 .final-mini:hover { opacity: 0.8; }
 
@@ -453,7 +454,7 @@ p { text-wrap: pretty; }
       "audience": {"@type": "PeopleAudience", "suggestedMinAge": 12, "suggestedMaxAge": 17},
       "description": "30 short strategies for teen connection, conversation, social context and ethical influence, with practical reps for everyday situations.",
       "url": "https://a.co/d/0gjqlkB6",
-      "image": "https://oldwisdomretold.com/assets/social-cover-2026.webp",
+      "image": "https://oldwisdomretold.com/assets/social-flat-cover.webp",
       "inLanguage": "en"
     },
     {
@@ -466,7 +467,7 @@ p { text-wrap: pretty; }
       "audience": {"@type": "PeopleAudience", "suggestedMinAge": 12, "suggestedMaxAge": 17},
       "description": "Sun Tzu's Art of War translated for teens facing bullies, rivalries and online pile-ons. Teaches composure and conflict avoidance — zero violence glorification.",
       "url": "https://a.co/d/0gu0a2CR",
-      "image": "https://oldwisdomretold.com/assets/war-cover-2026.webp",
+      "image": "https://oldwisdomretold.com/assets/war-flat-cover.webp",
       "inLanguage": "en"
     },
     {
@@ -778,7 +779,7 @@ p { text-wrap: pretty; }
     <div class="series-cards">
       <!-- Book 1: Social -->
       <div class="series-card live-blue card-s reveal">
-        <img class="series-card-img" src="assets/social-cover-2026.webp" alt="The Social Playbook — Book 1" width="1000" height="1400" loading="lazy">
+        <img class="series-card-img" src="assets/social-flat-cover.webp" alt="The Social Playbook — Book 1" width="825" height="1275" loading="lazy">
         <div class="series-card-body">
           <div class="series-card-status status-live-blue">BOOK 1 — AVAILABLE NOW</div>
           <div class="series-card-code social">CODE 01 — SOCIAL</div>
@@ -793,7 +794,7 @@ p { text-wrap: pretty; }
       </div>
       <!-- Book 2: War -->
       <div class="series-card live-red card-w reveal">
-        <img class="series-card-img" src="assets/war-cover-2026.webp" alt="The War Playbook — Book 2" width="1000" height="1400" loading="lazy">
+        <img class="series-card-img" src="assets/war-flat-cover.webp" alt="The War Playbook — Book 2" width="825" height="1275" loading="lazy">
         <div class="series-card-body">
           <div class="series-card-status status-live-red">BOOK 2 — AVAILABLE NOW</div>
           <div class="series-card-code strategy">CODE 02 — STRATEGY</div>
@@ -808,14 +809,17 @@ p { text-wrap: pretty; }
       </div>
       <!-- Book 3: Discipline -->
       <div class="series-card live-gold card-d reveal" id="discipline-playbook">
-        <img class="series-card-img discipline-cover" src="assets/discipline-release-cover.webp" alt="The Discipline Playbook — Book 3, available now" width="825" height="1275" loading="lazy">
+        <img class="series-card-img" src="assets/discipline-release-cover.webp" alt="The Discipline Playbook — Book 3, available now" width="825" height="1275" loading="lazy">
         <div class="series-card-body">
           <div class="series-card-status status-live-gold">BOOK 3 — AVAILABLE NOW</div>
           <div class="series-card-code discipline">CODE 03 — DISCIPLINE</div>
           <h3 class="series-card-name">THE DISCIPLINE PLAYBOOK</h3>
           <p class="series-card-desc">Habits, attention, follow-through and self-command — helping teens act on what matters without waiting for motivation.</p>
           <div class="series-card-meta">30 strategies · Self-control, habits &amp; consistency</div>
-          <a href="https://a.co/d/06SKeoFm" target="_blank" rel="noopener noreferrer" class="btn-primary" aria-label="Buy The Discipline Playbook on Amazon" data-event="amazon_clicked" data-event-label="discipline playbook series card">GET IT ON AMAZON</a>
+          <a href="https://a.co/d/06SKeoFm" target="_blank" rel="noopener noreferrer" class="btn-primary" aria-label="Buy The Discipline Playbook on Amazon" data-event="amazon_clicked" data-event-label="discipline playbook series card">
+            GET IT ON AMAZON
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
       </div>
     </div>
@@ -852,6 +856,16 @@ p { text-wrap: pretty; }
               <div class="problem-card-title">The War Playbook</div>
               <div class="problem-card-desc">Tell other readers whether the boundaries, composure and de-escalation tools were useful.</div>
               <a href="https://a.co/d/0gu0a2CR" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-event="amazon_clicked" data-event-label="war playbook review invite">REVIEW ON AMAZON</a>
+            </div>
+          </div>
+          <div class="problem-card">
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="18" rx="2"/><path d="M9 2v4M15 2v4M4 10h16M8 15l3 3 5-5"/></svg>
+            </div>
+            <div class="problem-card-content">
+              <div class="problem-card-title">The Discipline Playbook</div>
+              <div class="problem-card-desc">Share whether the self-control, habit and follow-through practices were useful, and what could be clearer.</div>
+              <a href="https://a.co/d/06SKeoFm" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-event="amazon_clicked" data-event-label="discipline playbook review invite">REVIEW ON AMAZON</a>
             </div>
           </div>
         </div>
@@ -967,9 +981,9 @@ p { text-wrap: pretty; }
         </a>
       </div>
       <div class="final-book-strip" role="group" aria-label="Series overview">
-        <img class="final-mini active" src="assets/social-cover-2026.webp" alt="Book 1: The Social Playbook" width="1000" height="1400" loading="lazy">
-        <img class="final-mini active" src="assets/war-cover-2026.webp" alt="Book 2: The War Playbook" width="1000" height="1400" loading="lazy">
-        <img class="final-mini active" src="assets/discipline-release-cover.webp" alt="Book 3: The Discipline Playbook — available now" width="825" height="1275" loading="lazy" style="object-fit: contain;">
+        <img class="final-mini active" src="assets/social-flat-cover.webp" alt="Book 1: The Social Playbook" width="825" height="1275" loading="lazy">
+        <img class="final-mini active" src="assets/war-flat-cover.webp" alt="Book 2: The War Playbook" width="825" height="1275" loading="lazy">
+        <img class="final-mini active" src="assets/discipline-release-cover.webp" alt="Book 3: The Discipline Playbook — available now" width="825" height="1275" loading="lazy">
       </div>
     </div>
   </div>

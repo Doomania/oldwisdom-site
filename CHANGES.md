@@ -1,5 +1,11 @@
 # Site changes
 
+## Consistent three-book presentation — 1 November 2026
+
+- Use clean flat front covers for all three series cards and footer thumbnails at matching 11:17 proportions; extract Social and War fronts from the corrected paperback wraps.
+- Align card information and purchase buttons with a shared flex layout; add the matching arrow to Discipline's purchase button.
+- Add Discipline to the honest-review invitation with its verified Amazon link. Update Social and War Book schema images to match the displayed covers.
+
 ## Discipline Playbook available — 1 November 2026
 
 - Confirmed the author's Amazon link opens The Discipline Playbook listing; added https://a.co/d/06SKeoFm to hero, product card, Book schema, and product documentation.

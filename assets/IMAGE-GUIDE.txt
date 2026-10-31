@@ -4,8 +4,9 @@ REQUIRED IMAGE ASSETS
 CURRENT WEBSITE ASSETS (JULY 2026 WRAPS)
 =======================================
 
-1. social-cover-2026.webp       ← Book 1 transparent mockup, 1000 × 1400
-2. war-cover-2026.webp          ← Book 2 transparent mockup, 1000 × 1400
+1. social-flat-cover.webp       ← Current Book 1 front, 825 × 1275, extracted from corrected paperback wrap
+2. war-flat-cover.webp          ← Current Book 2 front, 825 × 1275, extracted from corrected paperback wrap
+   social-cover-2026.webp / war-cover-2026.webp ← Archived 3D mockups; not used on homepage
 3. discipline-release-cover.webp ← Current Book 3 front cover, 825 × 1275; use without cropping
    discipline-release-cover.jpg  ← Full-size RGB cover for sharing, 1650 × 2550
    discipline-cover-2026.webp     ← Archived pre-release mockup; no longer used on homepage
