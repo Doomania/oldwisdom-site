@@ -1,5 +1,11 @@
 # Site changes
 
+## Discipline Playbook available — 1 November 2026
+
+- Confirmed the author's Amazon link opens The Discipline Playbook listing; added https://a.co/d/06SKeoFm to hero, product card, Book schema, and product documentation.
+- Changed upcoming/publishing copy to available-now across homepage, metadata, footer, and llms.txt. Retained the existing general sample signup.
+- Added a newly named available-now share image so links no longer reuse the coming-soon image URL.
+
 ## Discipline Playbook preview — 31 October 2026
 
 - Feature the upcoming third book in the homepage hero, with its approved front cover, gold coming-soon label, and practical self-control / habit copy.

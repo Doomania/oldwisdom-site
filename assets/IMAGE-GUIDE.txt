@@ -11,7 +11,8 @@ CURRENT WEBSITE ASSETS (JULY 2026 WRAPS)
    discipline-cover-2026.webp     ← Archived pre-release mockup; no longer used on homepage
 4. series-mockup-2026.webp      ← Three-book transparent group, 1800 × 1120
 5. og-card-2026.jpg             ← Social/Pinterest share image, 1200 × 630
-6. discipline-release-og.jpg   ← Current homepage launch share image, 1200 × 630
+6. discipline-available-og.jpg ← Current available-now homepage share image, 1200 × 630
+   discipline-release-og.jpg   ← Archived coming-soon share image
 
 The dated raw PNG exports remain in this folder as source material. The website
 uses the trimmed, normalized files above so the baked checkerboard is never shown.
