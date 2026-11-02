@@ -2,11 +2,11 @@
   "schema_version": 1,
   "updated_at": "2026-11-02",
   "article": {
-    "state": "approved",
+    "state": "live",
     "approval": "Eric approved publication of the exact attendance-alert article on 2026-11-02; Pinterest and email excluded. Editorial QA and focused independent repairs passed.",
     "updated_at": "2026-11-02",
-    "url": null,
-    "proof": null
+    "url": "https://oldwisdomretold.com/articles/school-says-teen-missed-class",
+    "proof": "Git commit ad22a9a8f17cf9626dac52d6e82312bf7373f32c; Cloudflare Pages check success 2026-11-02T09:11:12Z; canonical clean URL HTTP 200 with title, safety-first body, and all three book bridges; live SEO 20/20; Parent Hub, sitemap, llms index present; four live WebP hashes equal committed binaries."
   },
   "pinterest": {
     "state": "held",
