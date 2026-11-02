@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-02",
+  "article": {
+    "state": "approved",
+    "approval": "Eric approved publication of the exact attendance-alert article on 2026-11-02; Pinterest and email excluded. Editorial QA and focused independent repairs passed.",
+    "updated_at": "2026-11-02",
+    "url": null,
+    "proof": null
+  },
+  "pinterest": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-11-02",
+    "cards": [],
+    "reason": "Not approved for Pinterest assets or scheduling."
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-11-02",
+    "provider_id": null,
+    "reason": "Not approved for email sending."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-11-02",
+  "audience": "parent",
+  "slug": "school-says-teen-missed-class",
+  "title": "The School Says Your Teen Missed Class. They Left Home This Morning. What Now?",
+  "summary": "A safety-first response to an absence alert: locate your teen, check the exact attendance mark, hear their account, and agree the next school-day step.",
+  "seo_title": "Teen Missed Class? What Parents Do First",
+  "seo_description": "Your teen left home, but school says they missed class. Locate them first, check the attendance record, then talk privately and plan one school-day step.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["SEE", "UNDERSTAND", "GUIDE", "RELEASE"],
+  "teen_outcomes": ["judgment", "capability", "ownership"],
+  "release_move": "The parent verifies location, safety, and the attendance record; once safe, the teen can own one feasible school contact or catch-up action with a check-in time.",
+  "qa_score": 16,
+  "territory": "confidence",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "A missed-class alert proves my teen skipped or the school made a mistake; I should confront one of them immediately.",
+    "to": "I should establish safety, verify the exact attendance facts, then hear my teen and agree a proportionate next step."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "war",
+    "bridge_strength": "soft",
+    "reason": "The War Playbook Chapter 1, Don't Fight Blind, supports checking incomplete facts before a charged response only after immediate location and safety duties. Social Chapter 7 and Discipline Chapter 1 are narrower optional listening and next-action connections."
+  },
+  "next_step": {"kind": "none"},
+  "hero": {
+    "source": "media/school-says-teen-missed-class.webp",
+    "alt": "A concerned father checks his phone as his teenage daughter arrives safely home with her school bag; they pause to talk at the doorway.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/school-says-teen-missed-class-480.webp", "width": 480},
+      {"source": "media/school-says-teen-missed-class-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/school-says-teen-missed-class-social.webp",
+    "alt": "A concerned father sees that his teenage daughter is safely home after an attendance alert; they stand a few steps apart at the doorway."
+  }
+}
