@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-11-03",
+  "audience": "parent",
+  "slug": "phone-takes-whole-evening",
+  "title": "When the Phone Takes the Whole Evening: Help Your Teen Take It Back Without Confiscating It",
+  "summary": "Agree on a teen-designed start to the evening while keeping adult-owned sleep, safety, and shared-household limits; review it together instead of repeating nightly phone fights.",
+  "seo_title": "Teen on Phone All Evening? What Works",
+  "seo_description": "Teen on phone all evening? Agree on a first half-hour they design, keep clear sleep and family limits, then review together instead of fighting every night.",
+  "journey_stage": "GUIDE",
+  "supports_stages": ["REFLECT", "RELEASE"],
+  "teen_outcomes": ["capability", "ownership"],
+  "release_move": "The parent keeps sleep, safety, and shared-household boundaries while the teen designs and tries the evening start and reviews it once a week.",
+  "qa_score": 20,
+  "qa_status": "independent_editorial_pass_article_release_approved",
+  "territory": "confidence",
+  "v4_test_territory": "Independence / responsibility / helping too much",
+  "test_angle": "LONG_TERM_CAPABILITY",
+  "core_belief_shift": {
+    "from": "If I do not take the phone away every night, nothing will change.",
+    "to": "We can try a teen-designed start to the evening and review it weekly while I keep necessary sleep and safety limits."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "discipline",
+    "reason": "The live Discipline Playbook names a phone or video taking the whole evening; its teen-owned first-action practice complements the parent's independent evening plan. The article must remain useful without this bridge."
+  },
+  "next_step": {
+    "kind": "guide",
+    "target": "task-start-runway",
+    "label": "Help your teen start a specific task",
+    "reason": "Once the evening has a start, use this for a separate schoolwork starting barrier."
+  },
+  "hero": {
+    "source": "media/phone-takes-whole-evening.webp",
+    "alt": "A teenager puts her phone aside on a hallway shelf and opens her school bag while her father folds laundry in the next room.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/phone-takes-whole-evening-480.webp", "width": 480},
+      {"source": "media/phone-takes-whole-evening-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/phone-takes-whole-evening-social.webp",
+    "alt": "A teen chooses a small evening start after setting her phone down, while her father gives her space in the next room."
+  }
+}

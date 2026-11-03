@@ -1,0 +1,22 @@
+{
+  "article": {
+    "state": "approved",
+    "approval": "Eric approved publishing only the phone-evening article on 2026-11-03; Pinterest and email remain held. Independent editorial QA: PASS 20/20.",
+    "updated_at": "2026-11-03",
+    "url": null
+  },
+  "pinterest": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-11-03",
+    "reason": "No Pinterest asset or scheduling approval for this guide.",
+    "cards": []
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-11-03",
+    "reason": "No email drafting or sending approval for this guide.",
+    "provider_id": null
+  }
+}
