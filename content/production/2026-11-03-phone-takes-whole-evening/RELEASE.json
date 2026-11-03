@@ -7,11 +7,44 @@
     "proof": "Git commit 36c41d90b3d7f11123297dd060adb1e354cab5ae; Cloudflare Pages check completed success 2026-11-03T08:30:55Z; clean canonical URL HTTP 200; live SEO 20/20; Parent Hub, sitemap and llms index present; 4 live WebP files byte-identical to committed assets; clean-URL smoke passed."
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
+    "state": "scheduled",
+    "approval": "Eric requested scheduling the five generated phone-evening image Pins on 2026-11-03 in Telegram; Pinterest only. Email remains held.",
     "updated_at": "2026-11-03",
-    "reason": "No Pinterest asset or scheduling approval for this guide.",
-    "cards": []
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens",
+    "cards": [
+      {
+        "id": "p1-boundary",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4001965693327176000/",
+        "scheduled_at": "2026-11-05T06:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/phone-takes-whole-evening?utm_source=pinterest&utm_medium=organic&utm_campaign=phone-takes-whole-evening-20261103&utm_content=p1-boundary"
+      },
+      {
+        "id": "p2-first-move",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4001968202628118272/",
+        "scheduled_at": "2026-11-06T14:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/phone-takes-whole-evening?utm_source=pinterest&utm_medium=organic&utm_campaign=phone-takes-whole-evening-20261103&utm_content=p2-first-move"
+      },
+      {
+        "id": "p3-refusal",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4001970102345715328/",
+        "scheduled_at": "2026-11-08T07:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/phone-takes-whole-evening?utm_source=pinterest&utm_medium=organic&utm_campaign=phone-takes-whole-evening-20261103&utm_content=p3-refusal"
+      },
+      {
+        "id": "p4-review",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4001971906467331456/",
+        "scheduled_at": "2026-11-09T14:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/phone-takes-whole-evening?utm_source=pinterest&utm_medium=organic&utm_campaign=phone-takes-whole-evening-20261103&utm_content=p4-review"
+      },
+      {
+        "id": "p5-real-life",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4001973020607514944/",
+        "scheduled_at": "2026-11-11T08:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/phone-takes-whole-evening?utm_source=pinterest&utm_medium=organic&utm_campaign=phone-takes-whole-evening-20261103&utm_content=p5-real-life"
+      }
+    ],
+    "proof": "owr_video_pins_cdp.py --check found collision-free slots, one-pin and mixed synthetic-person/faceless dry runs passed; PINTEREST CONFIRMED and VERIFIED for five provider scheduled cards (FINAL 1 / 1 and FINAL 4 / 4 MISSING []). Final --check: five rows, zero pending, 35 scheduled cards. Exact asset SHA-256, AI disclosure, destinations and URLs are in oldwisdomretold-social/article_pins/2026-11-03-phone-takes-whole-evening/queue/upload_history.csv. Scheduled cards are not public Pin permalinks."
   },
   "email": {
     "state": "held",
