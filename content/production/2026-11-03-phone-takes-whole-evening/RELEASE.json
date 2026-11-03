@@ -1,9 +1,10 @@
 {
   "article": {
-    "state": "approved",
+    "state": "live",
     "approval": "Eric approved publishing only the phone-evening article on 2026-11-03; Pinterest and email remain held. Independent editorial QA: PASS 20/20.",
     "updated_at": "2026-11-03",
-    "url": null
+    "url": "https://oldwisdomretold.com/articles/phone-takes-whole-evening",
+    "proof": "Git commit 36c41d90b3d7f11123297dd060adb1e354cab5ae; Cloudflare Pages check completed success 2026-11-03T08:30:55Z; clean canonical URL HTTP 200; live SEO 20/20; Parent Hub, sitemap and llms index present; 4 live WebP files byte-identical to committed assets; clean-URL smoke passed."
   },
   "pinterest": {
     "state": "held",

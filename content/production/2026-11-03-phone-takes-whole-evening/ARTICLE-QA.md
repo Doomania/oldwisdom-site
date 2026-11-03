@@ -1,6 +1,6 @@
 # Article QA — When the Phone Takes the Whole Evening
 
-**State:** INDEPENDENT_EDITORIAL_PASS — Eric approved article-only publication on 2026-11-03; release build and live verification pending. Pinterest and email remain held. `PUBLISH.json.qa_score=20` records the independent v4 §15 score; the article remains a draft until release.
+**State:** ARTICLE_LIVE — Eric approved article-only publication on 2026-11-03. The clean production URL, Cloudflare Pages deployment, SEO, mobile/desktop layout, and media were verified. Pinterest and email remain held. `PUBLISH.json.qa_score=20` records the independent v4 §15 score.
 
 ## Scope and evidence audit
 
@@ -30,4 +30,4 @@
 
 The independent reviewer scored the original draft **18/20**, with practical value and credibility at 1 each, no v4 hard fail, and **FIX** for the busy-parent and evidence-link gates. The revised article adds a clock-time example and refusal script, removes the long research paragraph and unverified attrition figure, and places the NIMH link by the urgent action. A separate targeted recheck scored the revised draft **20/20**, with each v4 dimension 2/2, no hard fail, no remaining line-level fixes, and passing busy-parent, source/link, and optional product-bridge gates. The book-page destination was confirmed previously, though the second QA pass did not independently recheck the live URL.
 
-**Automated validation after revision:** focused `python scripts/site.py check content/production/2026-11-03-phone-takes-whole-evening` returned `PASS: Publishing Bundles are valid.` `python -m unittest discover -s tests` returned `Ran 9 tests ... OK`. Link-stripped regex count: **989 words** including title. These checks do not establish rendered layout. Article release is `approved` pending build/verification; Pinterest and email remain `held` and unapproved.
+**Release verification:** focused and repository-wide `site.py check` passed; `python -m unittest discover -s tests` returned 9 tests OK. Local and live article SEO scored **20/20**. Browser rendering at 375, 390, 768 and 1440 px had no horizontal overflow and loaded the responsive hero. Cloudflare Pages check on commit `36c41d9` completed successfully; the clean article URL returned HTTP 200, as did all clean article routes in the smoke test. The Parent Hub, sitemap and llms index contain the URL; all four live WebP binaries match the committed media bytes. Pinterest and email remain `held` and unapproved.
