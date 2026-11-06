@@ -1,19 +1,19 @@
 {
   "article": {
-    "state": "approved",
+    "state": "live",
     "approval": "Eric replied 'approve' on 2026-11-07 NZDT to the request to publish the attached S2 article only, after independent editorial QA (20/20). Does not authorise Pinterest or email.",
     "updated_at": "2026-11-07",
-    "url": null,
-    "reason": "Article-only approval, hero/social media and independent predeploy QA SHIP are complete; deployment and live verification remain outstanding. Pinterest and email are not authorised.",
-    "proof": null,
+    "url": "https://oldwisdomretold.com/articles/teen-gives-up-after-missed-day",
+    "reason": "Approved article-only release is live and independently verified. Pinterest and email remain held and unauthorised.",
+    "proof": "Git commit 11ce09da13a3f5b7fa996bbe8e0a33b9c13cd28f; Cloudflare Pages check completed success 2026-11-06T11:30:57Z; clean canonical URL HTTP 200; live SEO 20/20; Parent Hub, sitemap and llms index HTTP 200 with article entry; four live WebP files HTTP 200 and byte-identical to committed assets; reader-facing Lally PDF HTTP 200 application/pdf.",
     "gates": {
       "source_and_claim_review": "passed_focused_independent_recheck_2026-11-06",
       "independent_editorial_v4_score_and_hard_fails": "20_of_20_no_hard_fails_2026-11-06",
       "parent_first_and_book_bridge_review": "passed_independent_2026-11-06",
       "hero_and_social_media": "gpt_image_2_full_generation_responsive_and_social_derivatives_qa_2026-11-07",
-      "site_check_and_tests": "passed_bundle_check_repo_check_9_unit_tests_2026-11-06",
+      "site_check_and_tests": "passed_bundle_check_repo_check_build_current_9_unit_tests_seo_20_of_20_2026-11-07",
       "publication_approval": "approved_article_only_2026-11-07",
-      "deployment_and_live_verification": "not_started"
+      "deployment_and_live_verification": "cloudflare_success_live_http_200_seo_20_of_20_media_byte_identical_2026-11-07"
     }
   },
   "pinterest": {

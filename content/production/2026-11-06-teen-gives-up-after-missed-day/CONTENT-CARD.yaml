@@ -58,4 +58,4 @@ persona_check:
     - "P8 — skill and access supports, not willpower or character labels."
   mean: 3.625
 risk_class: standard
-qa_status: "ARTICLE_ONLY_RELEASE_APPROVED — independent editorial v4 20/20 and predeploy QA SHIP; deployment and live URL verification pending. Pinterest/email held."
+qa_status: "ARTICLE_LIVE — independent editorial v4 20/20, predeploy QA SHIP, Cloudflare success and live SEO/media verification. Pinterest/email held."

@@ -4,55 +4,56 @@
 > `PUBLISH.json` and `RELEASE.json` remain the operational source of truth. Legacy evidence is indexed here until reconciled into its owning release record.
 > Pinterest `scheduled` records document scheduling evidence, not a current provider queue census. Past-dated cards may have published; only a verified public permalink establishes their live state.
 
-**Generated:** 2026-11-06
-**Bundles:** 42 · **Published:** 42 · **Recorded live Pinterest permalinks:** 82 · **Recorded scheduled Pinterest cards:** 60
+**Generated:** 2026-11-07
+**Bundles:** 43 · **Published:** 43 · **Recorded live Pinterest permalinks:** 82 · **Recorded scheduled Pinterest cards:** 60
 
 ## Guide register
 
 | Bundle | Status | Article state | Canonical destination | Live check | Pinterest | Email |
 |---|---|---|---|---|---|---|
-| `2026-08-05-quiet-kids-and-confidence` | published | live | https://oldwisdomretold.com/articles/quiet-kids-and-confidence | not checked | scheduled | held |
-| `2026-07-19-help-teen-start-conversation-without-making-it-weird` | published | live | https://oldwisdomretold.com/articles/help-teen-start-conversation-without-making-it-weird | not checked | held | held |
-| `2026-08-07-signs-of-real-teen-confidence` | published | live | https://oldwisdomretold.com/articles/signs-of-real-teen-confidence | not checked | scheduled | held |
-| `2026-08-03-why-teen-friendships-fade-after-one-term` | published | live | https://oldwisdomretold.com/articles/why-teen-friendships-fade-after-one-term | not checked | held | held |
-| `2026-08-08-quiet-or-lonely-teen` | published | live | https://oldwisdomretold.com/articles/quiet-or-lonely-teen | not checked | scheduled | held |
-| `2026-08-09-pushing-shy-teen-socialize` | published | live | https://oldwisdomretold.com/articles/pushing-shy-teen-socialize | not checked | scheduled | held |
-| `2026-08-10-more-friends-better-friendship-judgment` | published | live | https://oldwisdomretold.com/articles/more-friends-better-friendship-judgment | not checked | scheduled | held |
-| `2026-08-11-before-call-it-disrespect` | published | live | https://oldwisdomretold.com/articles/before-call-it-disrespect | not checked | held | held |
-| `2026-08-12-helpful-advice-sounds-like-criticism` | published | live | https://oldwisdomretold.com/articles/helpful-advice-sounds-like-criticism | not checked | held | held |
-| `2026-08-13-argument-stop-or-communication-improve` | published | live | https://oldwisdomretold.com/articles/argument-stop-or-communication-improve | not checked | held | held |
-| `2026-08-14-why-is-my-teen-avoiding-me` | published | live | https://oldwisdomretold.com/articles/why-is-my-teen-avoiding-me | not checked | held | held |
-| `2026-08-12-screenshot-test-angry-message` | published | live | https://oldwisdomretold.com/articles/screenshot-test-angry-message | not checked | held | held |
-| `2026-08-13-read-teen-behaviour-without-guessing` | published | live | https://oldwisdomretold.com/articles/read-teen-behaviour-without-guessing | not checked | held | held |
-| `2026-08-13-teen-friend-always-in-crisis` | published | live | https://oldwisdomretold.com/articles/teen-friend-always-in-crisis | not checked | held | held |
-| `2026-08-14-teen-driving-curfew-trust-ladder` | published | live | https://oldwisdomretold.com/articles/teen-driving-curfew-trust-ladder | not checked | scheduled | held |
-| `2026-08-14-leave-group-drama-safely` | published | live | https://oldwisdomretold.com/articles/leave-group-drama-safely | not checked | scheduled | held |
-| `2026-08-16-teen-left-out-by-friends` | published | live | https://oldwisdomretold.com/articles/teen-left-out-by-friends | not checked | held | held |
-| `2026-08-15-stand-up-without-fighting` | published | live | https://oldwisdomretold.com/articles/stand-up-without-fighting | not checked | held | held |
-| `2026-08-15-teen-wont-talk-after-school` | published | live | https://oldwisdomretold.com/articles/teen-wont-talk-after-school | not checked | held | held |
-| `2026-08-18-quiet-teen-freezes-group-work` | published | live | https://oldwisdomretold.com/articles/quiet-teen-team-sport-belonging | not checked | held | held |
-| `2026-08-13-should-i-check-my-teens-phone` | published | live | https://oldwisdomretold.com/articles/should-i-check-my-teens-phone | not checked | held | held |
-| `2026-08-20-quiet-teen-group-work` | published | live | https://oldwisdomretold.com/articles/quiet-teen-group-work | not checked | scheduled | held |
-| `2026-08-15-guide-without-power-struggle` | published | live | https://oldwisdomretold.com/articles/guide-teen-without-power-struggle | not checked | held | held |
-| `2026-08-23-teen-wont-ask-teacher-for-help` | published | live | https://oldwisdomretold.com/articles/teen-wont-ask-teacher-for-help | not checked | held | held |
-| `2026-08-25-ai-fake-nude-response` | published | live | https://oldwisdomretold.com/articles/ai-fake-nude-response | not checked | held | held |
-| `2026-08-27-class-without-friends` | published | published | https://oldwisdomretold.com/articles/class-without-friends | not checked | published | held |
-| `2026-08-28-stop-reminding-homework` | published | live | https://oldwisdomretold.com/articles/stop-reminding-homework | not checked | held | held |
-| `2026-08-28-who-owns-waking-up` | published | live | https://oldwisdomretold.com/articles/who-owns-waking-up | not checked | held | held |
-| `2026-08-29-let-him-handle-it-badly` | published | live | https://oldwisdomretold.com/articles/let-him-handle-it-badly | not checked | held | held |
-| `2026-08-30-quiet-teen-own-voice` | published | live | https://oldwisdomretold.com/articles/quiet-teen-own-voice | not checked | scheduled | held |
-| `2026-09-01-first-part-time-job` | published | approved | https://oldwisdomretold.com/articles/teen-first-part-time-job | not checked | published_verified | sent_verified |
-| `2026-09-14-teen-apologize-without-writing-it` | published | published | https://oldwisdomretold.com/articles/teen-apologize-without-writing-it | not checked | held | held |
-| `2026-09-21-teen-failed-test-parent-response` | published | live | https://oldwisdomretold.com/articles/teen-failed-test-parent-response | not checked | scheduled | held |
-| `2026-09-23-group-project-contribution` | published | approved | https://oldwisdomretold.com/articles/group-project-contribution | not checked | approved | held |
-| `2026-09-23-presentation-reps-parent-plan` | published | approved | https://oldwisdomretold.com/articles/presentation-reps-parent-plan | not checked | approved | held |
-| `2026-09-23-reliability-signal` | published | approved | https://oldwisdomretold.com/articles/reliability-signal | not checked | approved | held |
-| `2026-09-23-task-start-runway` | published | approved | https://oldwisdomretold.com/articles/task-start-runway | not checked | approved | held |
-| `2026-10-02-teen-stopped-sharing-school-stories` | published | live | https://oldwisdomretold.com/articles/teen-stopped-sharing-school-stories | not checked | scheduled | held |
-| `2026-10-05-teen-screen-free-activity` | published | live | https://oldwisdomretold.com/articles/teen-screen-free-activity | not checked | scheduled | held |
-| `2026-10-10-teen-ai-friendship-verdict` | published | live | https://oldwisdomretold.com/articles/teen-ai-friendship-verdict | not checked | scheduled | held |
-| `2026-11-02-school-says-teen-missed-class` | published | live | https://oldwisdomretold.com/articles/school-says-teen-missed-class | not checked | held | held |
-| `2026-11-03-phone-takes-whole-evening` | published | live | https://oldwisdomretold.com/articles/phone-takes-whole-evening | not checked | scheduled | held |
+| `2026-08-05-quiet-kids-and-confidence` | published | live | https://oldwisdomretold.com/articles/quiet-kids-and-confidence | 200 | scheduled | held |
+| `2026-07-19-help-teen-start-conversation-without-making-it-weird` | published | live | https://oldwisdomretold.com/articles/help-teen-start-conversation-without-making-it-weird | 200 | held | held |
+| `2026-08-07-signs-of-real-teen-confidence` | published | live | https://oldwisdomretold.com/articles/signs-of-real-teen-confidence | 200 | scheduled | held |
+| `2026-08-03-why-teen-friendships-fade-after-one-term` | published | live | https://oldwisdomretold.com/articles/why-teen-friendships-fade-after-one-term | 200 | held | held |
+| `2026-08-08-quiet-or-lonely-teen` | published | live | https://oldwisdomretold.com/articles/quiet-or-lonely-teen | 200 | scheduled | held |
+| `2026-08-09-pushing-shy-teen-socialize` | published | live | https://oldwisdomretold.com/articles/pushing-shy-teen-socialize | 200 | scheduled | held |
+| `2026-08-10-more-friends-better-friendship-judgment` | published | live | https://oldwisdomretold.com/articles/more-friends-better-friendship-judgment | 200 | scheduled | held |
+| `2026-08-11-before-call-it-disrespect` | published | live | https://oldwisdomretold.com/articles/before-call-it-disrespect | 200 | held | held |
+| `2026-08-12-helpful-advice-sounds-like-criticism` | published | live | https://oldwisdomretold.com/articles/helpful-advice-sounds-like-criticism | 200 | held | held |
+| `2026-08-13-argument-stop-or-communication-improve` | published | live | https://oldwisdomretold.com/articles/argument-stop-or-communication-improve | 200 | held | held |
+| `2026-08-14-why-is-my-teen-avoiding-me` | published | live | https://oldwisdomretold.com/articles/why-is-my-teen-avoiding-me | 200 | held | held |
+| `2026-08-12-screenshot-test-angry-message` | published | live | https://oldwisdomretold.com/articles/screenshot-test-angry-message | 200 | held | held |
+| `2026-08-13-read-teen-behaviour-without-guessing` | published | live | https://oldwisdomretold.com/articles/read-teen-behaviour-without-guessing | 200 | held | held |
+| `2026-08-13-teen-friend-always-in-crisis` | published | live | https://oldwisdomretold.com/articles/teen-friend-always-in-crisis | 200 | held | held |
+| `2026-08-14-teen-driving-curfew-trust-ladder` | published | live | https://oldwisdomretold.com/articles/teen-driving-curfew-trust-ladder | 200 | scheduled | held |
+| `2026-08-14-leave-group-drama-safely` | published | live | https://oldwisdomretold.com/articles/leave-group-drama-safely | 200 | scheduled | held |
+| `2026-08-16-teen-left-out-by-friends` | published | live | https://oldwisdomretold.com/articles/teen-left-out-by-friends | 200 | held | held |
+| `2026-08-15-stand-up-without-fighting` | published | live | https://oldwisdomretold.com/articles/stand-up-without-fighting | 200 | held | held |
+| `2026-08-15-teen-wont-talk-after-school` | published | live | https://oldwisdomretold.com/articles/teen-wont-talk-after-school | 200 | held | held |
+| `2026-08-18-quiet-teen-freezes-group-work` | published | live | https://oldwisdomretold.com/articles/quiet-teen-team-sport-belonging | 200 | held | held |
+| `2026-08-13-should-i-check-my-teens-phone` | published | live | https://oldwisdomretold.com/articles/should-i-check-my-teens-phone | 200 | held | held |
+| `2026-08-20-quiet-teen-group-work` | published | live | https://oldwisdomretold.com/articles/quiet-teen-group-work | 200 | scheduled | held |
+| `2026-08-15-guide-without-power-struggle` | published | live | https://oldwisdomretold.com/articles/guide-teen-without-power-struggle | 200 | held | held |
+| `2026-08-23-teen-wont-ask-teacher-for-help` | published | live | https://oldwisdomretold.com/articles/teen-wont-ask-teacher-for-help | 200 | held | held |
+| `2026-08-25-ai-fake-nude-response` | published | live | https://oldwisdomretold.com/articles/ai-fake-nude-response | 200 | held | held |
+| `2026-08-27-class-without-friends` | published | published | https://oldwisdomretold.com/articles/class-without-friends | 200 | published | held |
+| `2026-08-28-stop-reminding-homework` | published | live | https://oldwisdomretold.com/articles/stop-reminding-homework | 200 | held | held |
+| `2026-08-28-who-owns-waking-up` | published | live | https://oldwisdomretold.com/articles/who-owns-waking-up | 200 | held | held |
+| `2026-08-29-let-him-handle-it-badly` | published | live | https://oldwisdomretold.com/articles/let-him-handle-it-badly | 200 | held | held |
+| `2026-08-30-quiet-teen-own-voice` | published | live | https://oldwisdomretold.com/articles/quiet-teen-own-voice | 200 | scheduled | held |
+| `2026-09-01-first-part-time-job` | published | approved | https://oldwisdomretold.com/articles/teen-first-part-time-job | 200 | published_verified | sent_verified |
+| `2026-09-14-teen-apologize-without-writing-it` | published | published | https://oldwisdomretold.com/articles/teen-apologize-without-writing-it | 200 | held | held |
+| `2026-09-21-teen-failed-test-parent-response` | published | live | https://oldwisdomretold.com/articles/teen-failed-test-parent-response | 200 | scheduled | held |
+| `2026-09-23-group-project-contribution` | published | approved | https://oldwisdomretold.com/articles/group-project-contribution | 200 | approved | held |
+| `2026-09-23-presentation-reps-parent-plan` | published | approved | https://oldwisdomretold.com/articles/presentation-reps-parent-plan | 200 | approved | held |
+| `2026-09-23-reliability-signal` | published | approved | https://oldwisdomretold.com/articles/reliability-signal | 200 | approved | held |
+| `2026-09-23-task-start-runway` | published | approved | https://oldwisdomretold.com/articles/task-start-runway | 200 | approved | held |
+| `2026-10-02-teen-stopped-sharing-school-stories` | published | live | https://oldwisdomretold.com/articles/teen-stopped-sharing-school-stories | 200 | scheduled | held |
+| `2026-10-05-teen-screen-free-activity` | published | live | https://oldwisdomretold.com/articles/teen-screen-free-activity | 200 | scheduled | held |
+| `2026-10-10-teen-ai-friendship-verdict` | published | live | https://oldwisdomretold.com/articles/teen-ai-friendship-verdict | 200 | scheduled | held |
+| `2026-11-02-school-says-teen-missed-class` | published | live | https://oldwisdomretold.com/articles/school-says-teen-missed-class | 200 | held | held |
+| `2026-11-03-phone-takes-whole-evening` | published | live | https://oldwisdomretold.com/articles/phone-takes-whole-evening | 200 | scheduled | held |
+| `2026-11-06-teen-gives-up-after-missed-day` | published | live | https://oldwisdomretold.com/articles/teen-gives-up-after-missed-day | 200 | held | held |
 
 ## Pinterest card register
 
@@ -205,7 +206,7 @@
 
 - PASS — published bundles missing generated article file: 0.
 - PASS — published bundles missing RELEASE.json: 0.
-- Live URL GET checks not run (use `--verify-live`).
+- PASS — failed/non-200 published live checks: 0.
 - Public Pinterest permalink GET checks not run (use `--verify-pins`).
 - NOTABLE — Pinterest records without a nearby stored canonical destination: 0. Reconcile before deleting legacy evidence.
 - PASS — malformed PUBLISH.json files: 0.
