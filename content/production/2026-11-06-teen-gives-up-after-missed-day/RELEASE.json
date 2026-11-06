@@ -1,0 +1,34 @@
+{
+  "article": {
+    "state": "approved",
+    "approval": "Eric replied 'approve' on 2026-11-07 NZDT to the request to publish the attached S2 article only, after independent editorial QA (20/20). Does not authorise Pinterest or email.",
+    "updated_at": "2026-11-07",
+    "url": null,
+    "reason": "Article-only approval, hero/social media and independent predeploy QA SHIP are complete; deployment and live verification remain outstanding. Pinterest and email are not authorised.",
+    "proof": null,
+    "gates": {
+      "source_and_claim_review": "passed_focused_independent_recheck_2026-11-06",
+      "independent_editorial_v4_score_and_hard_fails": "20_of_20_no_hard_fails_2026-11-06",
+      "parent_first_and_book_bridge_review": "passed_independent_2026-11-06",
+      "hero_and_social_media": "gpt_image_2_full_generation_responsive_and_social_derivatives_qa_2026-11-07",
+      "site_check_and_tests": "passed_bundle_check_repo_check_9_unit_tests_2026-11-06",
+      "publication_approval": "approved_article_only_2026-11-07",
+      "deployment_and_live_verification": "not_started"
+    }
+  },
+  "pinterest": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-11-06",
+    "reason": "S2 scope excludes pin assets, copy, scheduling and public promotion.",
+    "cards": [],
+    "proof": null
+  },
+  "email": {
+    "state": "held",
+    "approval": null,
+    "updated_at": "2026-11-06",
+    "reason": "S2 scope excludes email drafting and sending.",
+    "provider_id": null
+  }
+}

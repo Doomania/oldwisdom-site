@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "published": "2026-11-07",
+  "audience": "parent",
+  "slug": "teen-gives-up-after-missed-day",
+  "title": "When Your Teen Gives Up After One Missed Day: Make Room for a Restart",
+  "summary": "Ask one neutral next-chance question after a missed personal habit; let your teen choose a feasible restart or adjustment while keeping real promises and safety limits.",
+  "seo_title": "Teen Gives Up After a Missed Day?",
+  "seo_description": "If your teen gives up after a missed day, ask one calm next-chance question. Help them choose a realistic restart without erasing real obligations at home.",
+  "journey_stage": "REFLECT",
+  "supports_stages": ["GUIDE", "RELEASE"],
+  "teen_outcomes": ["judgment", "ownership", "independence"],
+  "release_move": "The parent asks one neutral question, keeps school, family and safety boundaries, and lets the teen decide a feasible next chance or adjustment to a personal plan.",
+  "qa_score": 20,
+  "qa_status": "independent_v4_20_of_20_focused_recheck_pass_article_release_approved_2026-11-07",
+  "territory": "confidence",
+  "v4_test_territory": "Confidence / failure / comparison",
+  "test_angle": "REFLECT",
+  "core_belief_shift": {
+    "from": "One missed day proves my teen was not serious about the habit.",
+    "to": "A lapse is information, not a character verdict; my reaction can make room for the teen to choose a realistic restart."
+  },
+  "book_relevance": {
+    "status": "relevant",
+    "id": "discipline",
+    "reason": "The live Discipline Playbook page names the missed-day situation. Its public Chapter 1 sample models one next action and a rough when, not a missed-day-specific treatment or efficacy evidence; the free parent article is complete without it."
+  },
+  "next_step": {
+    "kind": "guide",
+    "target": "reliability-signal",
+    "label": "When the missed day affected another person",
+    "reason": "A missed personal plan and a promise owed to someone else need different responses; use this guide for the recipient-facing repair job."
+  },
+  "hero": {
+    "source": "media/teen-gives-up-after-missed-day.webp",
+    "alt": "A teen sits beside unused running shoes after a missed session while her mother gives her space to decide what comes next.",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {"source": "media/teen-gives-up-after-missed-day-480.webp", "width": 480},
+      {"source": "media/teen-gives-up-after-missed-day-800.webp", "width": 800}
+    ]
+  },
+  "social_image": {
+    "source": "media/teen-gives-up-after-missed-day-social.webp",
+    "alt": "A teen reflects on a missed running session as her mother waits nearby without taking over."
+  }
+}
