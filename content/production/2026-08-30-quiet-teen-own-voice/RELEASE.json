@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-26",
+  "updated_at": "2026-10-15",
   "article": {
     "state": "live",
     "approval": "Historical release record reconstructed from existing published PUBLISH.json; live URL verified HTTP 200 in the 2026-09-26 content-register audit.",
@@ -9,11 +9,27 @@
     "proof": "Published source bundle and 2026-09-26 live URL audit."
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
-    "updated_at": "2026-09-26",
-    "cards": [],
-    "reason": "Historical Pinterest status is unreconciled. Do not infer, schedule, change, or delete social records."
+    "state": "scheduled",
+    "provider_current_status": "unverified",
+    "approval": "Eric: \"scheduel them all from today\" on 2026-10-15, approving this named 20-pin Pinterest campaign.",
+    "updated_at": "2026-10-15",
+    "cards": [
+      {
+        "id": "top-topic-utility-test-20261014-p17-peer-pressure-refusal",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946618830805163200/",
+        "scheduled_at": "2026-11-01T13:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/quiet-teen-own-voice?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p17-peer-pressure-refusal"
+      },
+      {
+        "id": "top-topic-utility-test-20261014-p18-peer-pressure-choice",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946620108156531072/",
+        "scheduled_at": "2026-11-02T08:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/quiet-teen-own-voice?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p18-peer-pressure-choice"
+      }
+    ],
+    "reason": "Other historical Pinterest activity remains unreconciled. Listed cards were verified when scheduled; their current provider state has not been checked. Do not infer, reschedule, change, or delete other social records.",
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens"
   },
   "email": {
     "state": "held",

@@ -9,11 +9,20 @@
     "proof": "Source and generated page committed/pushed at c9b164c259163a8e33516680c5367e47b38edb52. Cloudflare Pages check succeeded 2026-10-03T09:23:34Z (https://github.com/Doomania/oldwisdom-site/runs/111174085093). Canonical production URL returned HTTP 200 on 2026-10-03 NZ; live generated-page SEO QA passed 20/20. Live hero and OG image returned HTTP 200 and matched committed asset SHA-256 hashes."
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
-    "updated_at": "2026-10-03",
-    "cards": [],
-    "reason": "No Pin images, upload, scheduling or publishing approval for this article; channel remains held."
+    "state": "scheduled",
+    "provider_current_status": "unverified",
+    "approval": "Eric explicitly instructed upload and schedule, then confirmed the dry run passed and instructed the full school-stories manifest schedule in Telegram across 2026-10-03/04 NZ; Pinterest only, not email.",
+    "updated_at": "2026-10-04",
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens",
+    "cards": [
+      {"id": "a1-school-stories", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3912214617313022592/", "scheduled_at": "2026-10-10T14:30:00+13:00", "destination_url": "https://oldwisdomretold.com/articles/teen-stopped-sharing-school-stories?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-stopped-sharing-school-stories&utm_content=A-v1-20261003"},
+      {"id": "b1-school-stories", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3912215813897741248/", "scheduled_at": "2026-10-12T14:30:00+13:00", "destination_url": "https://oldwisdomretold.com/articles/teen-stopped-sharing-school-stories?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-stopped-sharing-school-stories&utm_content=B-v1-20261003"},
+      {"id": "c1-school-stories", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3912217111380298048/", "scheduled_at": "2026-10-14T14:30:00+13:00", "destination_url": "https://oldwisdomretold.com/articles/teen-stopped-sharing-school-stories?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-stopped-sharing-school-stories&utm_content=C-v1-20261003"},
+      {"id": "d1-school-stories", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3912219122700235328/", "scheduled_at": "2026-10-16T14:30:00+13:00", "destination_url": "https://oldwisdomretold.com/articles/teen-stopped-sharing-school-stories?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-stopped-sharing-school-stories&utm_content=D-v1-20261003"},
+      {"id": "e1-school-stories", "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3912220278079992384/", "scheduled_at": "2026-10-18T14:30:00+13:00", "destination_url": "https://oldwisdomretold.com/articles/teen-stopped-sharing-school-stories?utm_source=pinterest&utm_medium=organic&utm_campaign=teen-stopped-sharing-school-stories&utm_content=E-v1-20261003"}
+    ],
+    "proof": "owr_video_pins_cdp.py returned PINTEREST CONFIRMED and VERIFIED for each scheduled card, FINAL 5 / 5 MISSING []; per-card titles, asset hashes, disclosures and destinations retained in oldwisdomretold-social/article_pins/2026-10-02-teen-stopped-sharing-school-stories/queue/upload_history.csv. These are scheduled cards, not public Pin permalinks."
   },
   "email": {
     "state": "held",

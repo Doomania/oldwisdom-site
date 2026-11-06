@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-26",
+  "updated_at": "2026-10-15",
   "article": {
     "state": "live",
     "approval": "Historical release record reconstructed from existing published PUBLISH.json; live URL verified HTTP 200 in the 2026-09-26 content-register audit.",
@@ -9,11 +9,39 @@
     "proof": "Published source bundle and 2026-09-26 live URL audit."
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
-    "updated_at": "2026-09-26",
-    "cards": [],
-    "reason": "Historical Pinterest status is unreconciled. Do not infer, schedule, change, or delete social records."
+    "state": "scheduled",
+    "provider_current_status": "unverified",
+    "approval": "Eric: \"scheduel them all from today\" on 2026-10-15, approving this named 20-pin Pinterest campaign.",
+    "updated_at": "2026-10-15",
+    "cards": [
+      {
+        "id": "top-topic-utility-test-20261014-p05-shy-event-reframe",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946605092815671296/",
+        "scheduled_at": "2026-10-20T07:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/pushing-shy-teen-socialize?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p05-shy-event-reframe"
+      },
+      {
+        "id": "top-topic-utility-test-20261014-p06-small-step-choice",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946606168236031680/",
+        "scheduled_at": "2026-10-21T07:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/pushing-shy-teen-socialize?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p06-small-step-choice"
+      },
+      {
+        "id": "top-topic-utility-test-20261014-p07-honesty-loop-interrupt",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946607285597831744/",
+        "scheduled_at": "2026-10-22T13:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/pushing-shy-teen-socialize?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p07-honesty-loop-interrupt"
+      },
+      {
+        "id": "top-topic-utility-test-20261014-p08-school-boundary-choice",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946608367862176960/",
+        "scheduled_at": "2026-10-23T08:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/pushing-shy-teen-socialize?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p08-school-boundary-choice"
+      }
+    ],
+    "reason": "Other historical Pinterest activity remains unreconciled. Listed cards were verified when scheduled; their current provider state has not been checked. Do not infer, reschedule, change, or delete other social records.",
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens"
   },
   "email": {
     "state": "held",

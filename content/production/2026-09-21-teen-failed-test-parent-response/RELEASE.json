@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-12",
+  "updated_at": "2026-10-15",
   "article": {
     "state": "live",
     "approval": "Published with the 2026-09-21 parent-guide release.",
@@ -10,8 +10,9 @@
   },
   "pinterest": {
     "state": "scheduled",
-    "approval": "Eric: \"schedule posts to pinterest\" on 2026-10-12, referring to the ten-pin evergreen popular-topic refresh.",
-    "updated_at": "2026-10-12",
+    "provider_current_status": "unverified",
+    "approval": "Eric: \"schedule posts to pinterest\" on 2026-10-12, referring to the ten-pin evergreen popular-topic refresh. Eric: \"scheduel them all from today\" on 2026-10-15, approving this named 20-pin Pinterest campaign.",
+    "updated_at": "2026-10-15",
     "account": "oldwisdomretold",
     "board": "Parenting Teens",
     "cards": [
@@ -56,6 +57,30 @@
         "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3938234424088724672/",
         "scheduled_at": "2026-10-26T15:00:00+13:00",
         "destination_url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response?utm_source=pinterest&utm_medium=organic&utm_campaign=evergreen-popular-topic-refresh&utm_content=p4-test-one-change-20261011"
+      },
+      {
+        "id": "top-topic-utility-test-20261014-p09-test-return-time",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946609645616597504/",
+        "scheduled_at": "2026-10-24T14:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p09-test-return-time"
+      },
+      {
+        "id": "top-topic-utility-test-20261014-p10-test-find-error",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946610846595076736/",
+        "scheduled_at": "2026-10-25T15:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p10-test-find-error"
+      },
+      {
+        "id": "top-topic-utility-test-20261014-p11-test-method-menu",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946611978184909760/",
+        "scheduled_at": "2026-10-26T07:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p11-test-method-menu"
+      },
+      {
+        "id": "top-topic-utility-test-20261014-p12-test-access-check",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946613071758425792/",
+        "scheduled_at": "2026-10-27T13:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-failed-test-parent-response?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p12-test-access-check"
       }
     ],
     "proof": "Exact scheduled-card URLs, assets, hashes, disclosures, titles, and destination URLs are preserved in pinterest-queue.json and qa/pinterest-schedule-verification.json."

@@ -12,6 +12,11 @@
 - Character-led Pinterest scenes must not show forms, worksheets, open documents, notebooks with text, phone screens, calendars, or other legible in-scene surfaces. Generated perspective makes them appear upright to the viewer but upside down for characters; use non-text props and place all required copy only in the designed overlay.
 - Across any future character-led Pinterest batch, deliberately balance race/ethnicity and family representation. Do not default to one race; record the intended mix in the creative manifest before generation.
 
+- 2026-10-05: Image-Pin manifest descriptions need 2–5 topic-specific hashtags at the very end and must remain under 500 characters. For testing, randomize half-hour NZ slots that convert into US Eastern 12:00–16:00 or 19:00–23:00, mix both windows and weekdays/weekends, and use at least three distinct times per five-Pin batch. A manifest edit does not alter already scheduled Pinterest cards; report provider/manifest differences explicitly.
+
+## Screen-use / Parent Growth research
+- 2026-10-05: Eric rejected an idealized one-line screen-free invitation as unrealistic for teens. Any OWR screen-use direction must distinguish actual teen response/adherence from expert advice, use directly inspected intervention and observational evidence including null results, account for culturally and economically varied family contexts without stereotyping, and frame change as gradual rather than promising teens will simply put down screens. Do not draft/publish a guide from a trend statistic alone.
+
 ## Repository workflow
 
 - **Repository boundary:** `D:\Claude\Projects\oldwisdom-site` holds only live-site files: website source, article bundles (`ARTICLE.md`, `SOURCES.md`, `PUBLISH.json`, `RELEASE.json`, QA, hero media), rendered site assets and release records. ALL promotional content — Pinterest copy (`PINTEREST.md`), Shorts/YouTube scripts, emails, pin images, queues, QA, audits and Pinterest scripts — lives in `D:\Claude\Projects\oldwisdomretold-social\` (per article: `article_pins\<bundle>\`). 2026-10-03: the site build no longer requires `PINTEREST.md`.
@@ -21,3 +26,4 @@
 - Housekeeping is mandatory: inspect the existing canonical structure before writes; use no speculative work folders; remove temporary test/download/render artifacts immediately after verification; report—not silently delete—ambiguous legacy material.
 - Preserve live integrity: every article URL, Pinterest destination/card record, and social permalink stays recorded in the bundle `RELEASE.json` and generated `docs/OWR_CONTENT_REGISTER.md`. Tidy-up never changes public destinations.
 - Weekly project audits are report-only and should use the cheapest configured capable model; report stale outputs, duplicate/untracked structures, and record gaps before any cleanup.
+- 2026-11-02: Eric approved `docs/OWR_HERMES_ACTION_PLAN_2026-11.md` for the Parent Hub November–January editorial direction and supplied `docs/OWR_CONTENT_DIRECTION_2026-11.md`. The higher-priority v4 execution manual was located in the user's Downloads and copied exactly to `docs/OWR_Parent_Gateway_Hermes_Execution_Manual_v4.md`; its educational-first and product-QA rules govern the work. Approval of the plan is not approval to publish an article, Pinterest asset, email, or site-page change.

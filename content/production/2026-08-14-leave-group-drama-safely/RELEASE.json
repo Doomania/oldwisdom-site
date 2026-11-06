@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-26",
+  "updated_at": "2026-10-15",
   "article": {
     "state": "live",
     "approval": "Historical release record reconstructed from existing published PUBLISH.json; live URL verified HTTP 200 in the 2026-09-26 content-register audit.",
@@ -9,11 +9,21 @@
     "proof": "Published source bundle and 2026-09-26 live URL audit."
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
-    "updated_at": "2026-09-26",
-    "cards": [],
-    "reason": "Historical Pinterest status is unreconciled. Do not infer, schedule, change, or delete social records."
+    "state": "scheduled",
+    "provider_current_status": "unverified",
+    "approval": "Eric: \"scheduel them all from today\" on 2026-10-15, approving this named 20-pin Pinterest campaign.",
+    "updated_at": "2026-10-15",
+    "cards": [
+      {
+        "id": "top-topic-utility-test-20261014-p20-group-drama-private-repair",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/3946622310601124864/",
+        "scheduled_at": "2026-11-04T15:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/leave-group-drama-safely?utm_source=pinterest&utm_medium=organic&utm_campaign=top-topic-utility-test-20261014&utm_content=p20-group-drama-private-repair"
+      }
+    ],
+    "reason": "Other historical Pinterest activity remains unreconciled. Listed cards were verified when scheduled; their current provider state has not been checked. Do not infer, reschedule, change, or delete other social records.",
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens"
   },
   "email": {
     "state": "held",
