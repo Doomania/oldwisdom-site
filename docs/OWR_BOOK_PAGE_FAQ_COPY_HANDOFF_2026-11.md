@@ -1,6 +1,6 @@
-# Book-page FAQ copy handoff — internal review only
+# Book-page FAQs — release record
 
-**Status:** APPROVED FOR H5 PAGE APPLICATION — deployment and live verification pending (Eric: “yea apply”, 2026-11-07 NZDT).
+**Status:** LIVE — independently QA'd and verified on both book pages 2026-11-07 22:56 NZDT (Eric: “yea apply”; release commit `8d7c1c5e585b7ed7f14aa0b0e44fc6daf3202cb3`).
 **Scope:** H5 in `docs/OWR_HERMES_ACTION_PLAN_2026-11.md`. Approved copy is applied to the existing War and Discipline book pages; the Playbooks themselves are unchanged.
 **Reader job:** Answer a parent's buyer question in plain language, without turning age suitability or a habit method into a promise. Each first answer sentence stays under 300 characters.
 
@@ -33,3 +33,4 @@
 - Live War and Discipline book pages returned HTTP 200 on 2026-11-07 NZDT; both have a public `#sample` section. Book descriptions, situations, Chapter 1 titles and excerpts match `content/books.json`.
 - Checked chapter headings and relevant passages against `D:/Claude/Projects/owr-content-engine/01_BOOKS/war_playbook/The_War_Playbook_KDP_v5_final.docx` (chapters “Don't Fight Blind,” “Smart Rebels Read the Rulebook,” “Aim at the Issue, Not the Ego,” “Make Yes Easy”) and `C:/Users/wen12/Downloads/The_Discipline_Playbook_KDP.docx` (Chapter 1 and sources notes). This handoff does not claim a separate age rating or tested outcome.
 - Independent editorial QA passed on the revised handoff before Eric's separate page-change approval. Approval extends to these two FAQs, not H4 or other channels.
+- Live verification: `https://oldwisdomretold.com/books/the-war-playbook` and `https://oldwisdomretold.com/books/the-discipline-playbook` both returned HTTP 200 with FAQ sections matching the released local HTML and live `#sample` anchors. Both FAQs passed 390px mobile render checks without horizontal overflow. A post-approval factual correction to the Discipline sample description was independently rechecked before release.
