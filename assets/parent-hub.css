@@ -31,6 +31,15 @@ h1,h2,h3 { font-family:var(--font-display); letter-spacing:.035em; line-height:1
 .journey-map li { padding:.75rem; border-left:2px solid var(--gold); background:rgba(0,0,0,.18); }
 .journey-map strong { display:block; font-family:var(--font-display); font-size:1.1rem; letter-spacing:.08em; }
 .journey-map span { display:block; color:var(--muted); font-size:.82rem; line-height:1.45; }
+.discipline-cluster { margin:1.5rem 0; padding:1.5rem; border:1px solid var(--line); border-radius:16px; background:var(--card); }
+.discipline-cluster h2 { margin:0 0 1rem; font-size:clamp(1.8rem,4vw,2.3rem); }
+.discipline-cluster p { margin:0 0 1rem; color:var(--body); }
+.discipline-cluster ol { margin:0; padding-left:1.4rem; }
+.discipline-cluster li { padding:.65rem 0 .65rem .3rem; color:var(--body); }
+.discipline-cluster li + li { border-top:1px solid var(--line); }
+.discipline-cluster li::marker { color:var(--gold); font-weight:700; }
+.discipline-cluster a { color:var(--gold-soft); font-weight:600; text-underline-offset:.2em; overflow-wrap:anywhere; }
+.discipline-cluster a:hover { color:var(--text); }
 .guide-stage { padding-top:4rem; }
 .guide-stage h2 { margin:0; font-size:2.5rem; }
 .stage-intro { margin:.5rem 0 1.25rem; color:var(--muted); }
