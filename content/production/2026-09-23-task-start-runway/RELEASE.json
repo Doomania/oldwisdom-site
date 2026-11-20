@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-24",
+  "updated_at": "2026-11-20",
   "approvals": [
     {
       "date": "2026-09-24",
@@ -19,10 +19,32 @@
     "url": "https://oldwisdomretold.com/articles/task-start-runway"
   },
   "pinterest": {
-    "state": "approved",
-    "approval": "approved",
-    "updated_at": "2026-09-24",
-    "cards": []
+    "state": "scheduled",
+    "approval": "approved Eric approved the finished ten-Pin discipline-cluster visual batch for scheduling on 2026-11-14 NZDT; Pinterest only, no email scope.",
+    "updated_at": "2026-11-20",
+    "cards": [
+      {
+        "id": "p7-name-blocker",
+        "title": "Teen Cannot Start Homework? Ask About the First Five Minutes",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4033851256494021248/",
+        "scheduled_at": "2026-11-23T06:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/task-start-runway?utm_source=pinterest&utm_medium=organic&utm_campaign=discipline-cluster-20261111&utm_content=p7-name-blocker",
+        "asset_sha256": "878a963e15bffd27cfeca60034ddfe95b2133748dc45d575ae8331c66cad27d1",
+        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv"
+      },
+      {
+        "id": "p8-stage-runway",
+        "title": "Teen Task Start: Stage the Materials, Then Step Back",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4033852373487558656/",
+        "scheduled_at": "2026-11-24T14:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/task-start-runway?utm_source=pinterest&utm_medium=organic&utm_campaign=discipline-cluster-20261111&utm_content=p8-stage-runway",
+        "asset_sha256": "095581f11f994670db55001a8e9045f475c64dfe8318ac6f78a0426d3d2aad17",
+        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv"
+      }
+    ],
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens",
+    "proof": "Discipline-cluster batch: 10/10 scheduled_ui_verified in authenticated Pinterest Edge CDP on 2026-11-14; exact card URLs, destinations and SHA-256 in oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv and qa/scheduling-evidence.md. Scheduled cards are historical scheduling evidence, not public Pin permalinks or a current provider queue census."
   },
   "email": {
     "state": "held",

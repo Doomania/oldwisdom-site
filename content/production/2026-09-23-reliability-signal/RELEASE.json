@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-24",
+  "updated_at": "2026-11-20",
   "approvals": [
     {
       "date": "2026-09-24",
@@ -19,10 +19,32 @@
     "url": "https://oldwisdomretold.com/articles/reliability-signal"
   },
   "pinterest": {
-    "state": "approved",
-    "approval": "approved",
-    "updated_at": "2026-09-24",
-    "cards": []
+    "state": "scheduled",
+    "approval": "approved Eric approved the finished ten-Pin discipline-cluster visual batch for scheduling on 2026-11-14 NZDT; Pinterest only, no email scope.",
+    "updated_at": "2026-11-20",
+    "cards": [
+      {
+        "id": "p9-own-the-message",
+        "title": "Teen Missed a Commitment? Let Them Own the Message",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4033853470985869952/",
+        "scheduled_at": "2026-11-25T07:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/reliability-signal?utm_source=pinterest&utm_medium=organic&utm_campaign=discipline-cluster-20261111&utm_content=p9-own-the-message",
+        "asset_sha256": "4206a3cf3be6e06dac5f74ef472df0182081bc4779956e58b0cdfa0801866698",
+        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv"
+      },
+      {
+        "id": "p10-cue-backup",
+        "title": "Teen Follow-Through: Pair One Commitment With a Backup",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4033854591704242880/",
+        "scheduled_at": "2026-11-26T15:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/reliability-signal?utm_source=pinterest&utm_medium=organic&utm_campaign=discipline-cluster-20261111&utm_content=p10-cue-backup",
+        "asset_sha256": "2aeed908f4fa4e026f1420b7c336f4649dac90fc2ad21b98152945f3735a1dd8",
+        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv"
+      }
+    ],
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens",
+    "proof": "Discipline-cluster batch: 10/10 scheduled_ui_verified in authenticated Pinterest Edge CDP on 2026-11-14; exact card URLs, destinations and SHA-256 in oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv and qa/scheduling-evidence.md. Scheduled cards are historical scheduling evidence, not public Pin permalinks or a current provider queue census."
   },
   "email": {
     "state": "held",

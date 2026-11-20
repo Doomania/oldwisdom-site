@@ -8,8 +8,8 @@
   },
   "pinterest": {
     "state": "scheduled",
-    "approval": "Eric requested scheduling the five generated phone-evening image Pins on 2026-11-03 in Telegram; Pinterest only. Email remains held.",
-    "updated_at": "2026-11-03",
+    "approval": "Eric requested scheduling the five generated phone-evening image Pins on 2026-11-03 in Telegram; Pinterest only. Email remains held. Eric approved the finished ten-Pin discipline-cluster visual batch for scheduling on 2026-11-14 NZDT; Pinterest only, no email scope.",
+    "updated_at": "2026-11-20",
     "account": "oldwisdomretold",
     "board": "Parenting Teens",
     "cards": [
@@ -42,9 +42,27 @@
         "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4001973020607514944/",
         "scheduled_at": "2026-11-11T08:00:00+13:00",
         "destination_url": "https://oldwisdomretold.com/articles/phone-takes-whole-evening?utm_source=pinterest&utm_medium=organic&utm_campaign=phone-takes-whole-evening-20261103&utm_content=p5-real-life"
+      },
+      {
+        "id": "p1-listen-first",
+        "title": "Teen on Phone All Evening? Ask What the Phone Is For",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4033843077198919104/",
+        "scheduled_at": "2026-11-17T06:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/phone-takes-whole-evening?utm_source=pinterest&utm_medium=organic&utm_campaign=discipline-cluster-20261111&utm_content=p1-listen-first",
+        "asset_sha256": "fcc8705212108315f4ea3791410cce0f46cebee67d331169069dfd77c11a741d",
+        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv"
+      },
+      {
+        "id": "p2-parent-screen",
+        "title": "Teen Phone Arguments: Check Your Own Screen First",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4033844780656927488/",
+        "scheduled_at": "2026-11-18T14:00:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/phone-takes-whole-evening?utm_source=pinterest&utm_medium=organic&utm_campaign=discipline-cluster-20261111&utm_content=p2-parent-screen",
+        "asset_sha256": "c0b78866754d24007352ec9435edd14fd17ecfea730138efbbb177bbc54e6f15",
+        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv"
       }
     ],
-    "proof": "owr_video_pins_cdp.py --check found collision-free slots, one-pin and mixed synthetic-person/faceless dry runs passed; PINTEREST CONFIRMED and VERIFIED for five provider scheduled cards (FINAL 1 / 1 and FINAL 4 / 4 MISSING []). Final --check: five rows, zero pending, 35 scheduled cards. Exact asset SHA-256, AI disclosure, destinations and URLs are in oldwisdomretold-social/article_pins/2026-11-03-phone-takes-whole-evening/queue/upload_history.csv. Scheduled cards are not public Pin permalinks."
+    "proof": "owr_video_pins_cdp.py --check found collision-free slots, one-pin and mixed synthetic-person/faceless dry runs passed; PINTEREST CONFIRMED and VERIFIED for five provider scheduled cards (FINAL 1 / 1 and FINAL 4 / 4 MISSING []). Final --check: five rows, zero pending, 35 scheduled cards. Exact asset SHA-256, AI disclosure, destinations and URLs are in oldwisdomretold-social/article_pins/2026-11-03-phone-takes-whole-evening/queue/upload_history.csv. Scheduled cards are not public Pin permalinks. Discipline-cluster batch: 10/10 scheduled_ui_verified in authenticated Pinterest Edge CDP on 2026-11-14; exact card URLs, destinations and SHA-256 in oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv and qa/scheduling-evidence.md. Scheduled cards are historical scheduling evidence, not public Pin permalinks or a current provider queue census."
   },
   "email": {
     "state": "held",

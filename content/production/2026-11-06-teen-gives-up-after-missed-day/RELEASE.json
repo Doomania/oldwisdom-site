@@ -17,12 +17,32 @@
     }
   },
   "pinterest": {
-    "state": "held",
-    "approval": null,
-    "updated_at": "2026-11-06",
-    "reason": "S2 scope excludes pin assets, copy, scheduling and public promotion.",
-    "cards": [],
-    "proof": null
+    "state": "scheduled",
+    "approval": "Eric approved the finished ten-Pin discipline-cluster visual batch for scheduling on 2026-11-14 NZDT; Pinterest only, no email scope.",
+    "updated_at": "2026-11-20",
+    "cards": [
+      {
+        "id": "p3-next-chance",
+        "title": "Teen Gives Up After One Missed Day? Ask About the Goal",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4033845946673439488/",
+        "scheduled_at": "2026-11-19T07:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-gives-up-after-missed-day?utm_source=pinterest&utm_medium=organic&utm_campaign=discipline-cluster-20261111&utm_content=p3-next-chance",
+        "asset_sha256": "fc42582fff12136bc7f388c576a9e568852fe2ebe3f1f201bdfa6652ddfceb34",
+        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv"
+      },
+      {
+        "id": "p4-restart-shape",
+        "title": "Teen Habit Restart: Let Them Choose What, When and If",
+        "scheduled_card_url": "https://nz.pinterest.com/oldwisdomretold/scheduled-pin/4033847074302364224/",
+        "scheduled_at": "2026-11-20T15:30:00+13:00",
+        "destination_url": "https://oldwisdomretold.com/articles/teen-gives-up-after-missed-day?utm_source=pinterest&utm_medium=organic&utm_campaign=discipline-cluster-20261111&utm_content=p4-restart-shape",
+        "asset_sha256": "9da3bc66e2b2e8297e906d318eb8dcd6b5079b42db366f6823024345f4f28bdb",
+        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv"
+      }
+    ],
+    "proof": "Discipline-cluster batch: 10/10 scheduled_ui_verified in authenticated Pinterest Edge CDP on 2026-11-14; exact card URLs, destinations and SHA-256 in oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv and qa/scheduling-evidence.md. Scheduled cards are historical scheduling evidence, not public Pin permalinks or a current provider queue census.",
+    "account": "oldwisdomretold",
+    "board": "Parenting Teens"
   },
   "email": {
     "state": "held",
