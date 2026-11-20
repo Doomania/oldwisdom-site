@@ -13,10 +13,11 @@
     }
   ],
   "article": {
-    "state": "approved",
+    "state": "live",
     "approval": "approved",
-    "updated_at": "2026-09-24",
-    "url": "https://oldwisdomretold.com/articles/task-start-runway"
+    "updated_at": "2026-11-20",
+    "url": "https://oldwisdomretold.com/articles/task-start-runway",
+    "proof": "Published PUBLISH.json and read-only HTTP 200 canonical URL check on 2026-11-20; historical article approval retained."
   },
   "pinterest": {
     "state": "scheduled",

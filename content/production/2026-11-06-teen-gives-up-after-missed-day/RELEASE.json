@@ -17,7 +17,7 @@
     }
   },
   "pinterest": {
-    "state": "scheduled",
+    "state": "published",
     "approval": "Eric approved the finished ten-Pin discipline-cluster visual batch for scheduling on 2026-11-14 NZDT; Pinterest only, no email scope.",
     "updated_at": "2026-11-20",
     "cards": [
@@ -28,7 +28,10 @@
         "scheduled_at": "2026-11-19T07:30:00+13:00",
         "destination_url": "https://oldwisdomretold.com/articles/teen-gives-up-after-missed-day?utm_source=pinterest&utm_medium=organic&utm_campaign=discipline-cluster-20261111&utm_content=p3-next-chance",
         "asset_sha256": "fc42582fff12136bc7f388c576a9e568852fe2ebe3f1f201bdfa6652ddfceb34",
-        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv"
+        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv",
+        "public_pin_url": "https://nz.pinterest.com/pin/1140747780653179283/",
+        "public_verified_at": "2026-11-20T08:37:35+00:00",
+        "status": "published"
       },
       {
         "id": "p4-restart-shape",
@@ -37,10 +40,13 @@
         "scheduled_at": "2026-11-20T15:30:00+13:00",
         "destination_url": "https://oldwisdomretold.com/articles/teen-gives-up-after-missed-day?utm_source=pinterest&utm_medium=organic&utm_campaign=discipline-cluster-20261111&utm_content=p4-restart-shape",
         "asset_sha256": "9da3bc66e2b2e8297e906d318eb8dcd6b5079b42db366f6823024345f4f28bdb",
-        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv"
+        "evidence": "oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv",
+        "public_pin_url": "https://nz.pinterest.com/pin/1140747780653291784/",
+        "public_verified_at": "2026-11-20T08:37:35+00:00",
+        "status": "published"
       }
     ],
-    "proof": "Discipline-cluster batch: 10/10 scheduled_ui_verified in authenticated Pinterest Edge CDP on 2026-11-14; exact card URLs, destinations and SHA-256 in oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv and qa/scheduling-evidence.md. Scheduled cards are historical scheduling evidence, not public Pin permalinks or a current provider queue census.",
+    "proof": "Discipline-cluster batch: 10/10 scheduled_ui_verified in authenticated Pinterest Edge CDP on 2026-11-14; exact card URLs, destinations and SHA-256 in oldwisdomretold-social/article_pins/2026-11-11-discipline-cluster/queue/upload_history.csv and qa/scheduling-evidence.md. Scheduled cards are historical scheduling evidence, not public Pin permalinks or a current provider queue census. Authenticated @oldwisdomretold _created feed audit on 2026-11-20 verified each card's exact public /pin/ URL and destination; source: oldwisdomretold-social/legacy_pinterest_assets/analytics/live_profile_audit_20261120.json. Historical scheduled-card URLs retained.",
     "account": "oldwisdomretold",
     "board": "Parenting Teens"
   },
